@@ -1,0 +1,16 @@
+.btn {
+    transition: all $transitionSpeed $transitionFunction;
+    @apply flex-center-all font-semibold rounded-[20px] h-14 px-8;
+}
+
+.btn-primary {
+    @apply bg-black text-white hover:bg-blue;
+}
+
+.btn-secondary {
+    @apply bg-white text-black hover:bg-grayLight;
+}
+
+.btn-third {
+    @apply bg-green text-white h-[60px] hover:bg-black;
+}

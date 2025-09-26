@@ -1,0 +1,13 @@
+.tag {
+    @apply flex-center-all font-semibold rounded-[55px] h-[54px] px-5;
+}
+
+.tag-primary {
+    @apply text-white;
+    backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.tag-secondary {
+    @apply bg-white text-black border border-solid border-black;
+}

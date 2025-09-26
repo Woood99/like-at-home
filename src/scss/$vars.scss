@@ -1,8 +1,8 @@
 @use "sass:math";
 
 // break points
-$desktop: var(--content-width) + px;
-$desktop-min: (var(--content-width) + 1) + px;
+$desktop: 1296px;
+$desktop-min: 1297px;
 $tablet-max: 1024px;
 $tablet-min: 1025px;
 
@@ -16,6 +16,6 @@ $smallMobile-max: 480px;
 $smallMobile-min: 481px;
 
 // others vars
-$transitionSpeed: 0.2s;
-$transitionSpeedFast: 0.1s;
+$transitionSpeed: 0.14s;
+$transitionSpeedFast: 0.08s;
 $transitionFunction: ease-in-out;

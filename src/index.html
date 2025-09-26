@@ -1,12 +1,20 @@
 <!doctype html>
 <html lang="ru">
-	@include('partials/head.html', { "title": "Главная" })
+    @include('partials/head.html', { "title": "Главная" })
 
-	<body>
-		<div class="site-container">
-			@include('partials/header.html')
-			<main class="main">home</main>
-			@include('partials/footer.html')
-		</div>
-	</body>
+    <body>
+        <div class="site-container">
+            @include('partials/header.html')
+            <main class="main">
+                @include('partials/home/hero.html')
+                @include('partials/home/product-lines.html')
+                @include('partials/home/our-growth.html')
+                @include('partials/home/banner.html')
+                @include('partials/home/work-cities-block.html')
+                @include('partials/home/our-solutions.html')
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
 </html>

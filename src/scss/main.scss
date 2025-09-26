@@ -5,5 +5,12 @@
 @import "fonts";
 @import "settings";
 
-// подключения компонентов страницы
+@import "./ui/ui";
+
 @import "./components/header";
+@import "./components/footer";
+
+@import "./components/our-growth";
+@import "./components/product-card";
+@import "./components/banner-slide";
+@import "./components/complex-card";

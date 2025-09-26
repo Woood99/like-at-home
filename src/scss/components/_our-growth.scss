@@ -1,0 +1,24 @@
+.our-growth {
+    &__container {
+        @media (min-width: $desktop-min) {
+            padding: 0;
+        }
+    }
+    &__number {
+        @apply block font-Inter;
+
+        font-weight: 800;
+        font-size: 200px;
+        line-height: 1.05;
+        background: linear-gradient(215deg, #44ca6d 0%, #249e4a 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all $transitionSpeed $transitionFunction;
+    }
+    @media (min-width: $desktop-min) {
+        width: 1189px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

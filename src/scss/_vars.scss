@@ -1,10 +1,19 @@
 :root {
-	// base
-	--font-family: "Open Sans", sans-serif;
-	--content-width: 1170px;
-	--container-offset: 15px;
-	--container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+    // base
+    --font-family: "Manrope", sans-serif;
+    --second-family: "Inter", sans-serif;
+    --content-width: 1296px;
+    --container-offset: 15px;
+    --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-	// colors
-	--light-color: #fff;
+    --white: #fff;
+    --black: #000;
+    --dark: #202020;
+    --green: #26ad50;
+    --orange: #f65f31;
+    --blue: #3273f5;
+    --gray: #f6f6f6;
+    --gray-light: #bababa;
+
+    --default-fz: 16px;
 }
