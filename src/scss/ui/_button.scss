@@ -1,6 +1,6 @@
 .btn {
     transition: all $transitionSpeed $transitionFunction;
-    @apply flex-center-all font-semibold rounded-[20px] h-14 px-8;
+    @apply flex-center-all font-semibold rounded-[20px] px-8;
 }
 
 .btn-primary {
@@ -12,5 +12,12 @@
 }
 
 .btn-third {
-    @apply bg-green text-white h-[60px] hover:bg-black;
+    @apply bg-green text-white hover:bg-black;
+}
+
+.btn-s-default {
+    @apply h-[56px];
+}
+.btn-s-big {
+    @apply h-[60px];
 }

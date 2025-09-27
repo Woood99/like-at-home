@@ -1,0 +1,30 @@
+.form-input {
+    @apply block;
+    .just-validate-error-label {
+        color: var(--red) !important;
+        @apply block font-medium mt-2 ml-2;
+    }
+}
+
+.input {
+    @apply px-7 leading-[1.4] text-[16px] font-medium w-full;
+    &::placeholder {
+        @apply text-grayLight;
+    }
+}
+
+.input-primary {
+    @apply bg-[#f8f8f8] text-black;
+}
+
+.input-secondary {
+    @apply bg-white text-black;
+}
+
+.input-s-default {
+    @apply h-[56px] rounded-[20px];
+}
+
+.input-s-big {
+    @apply h-[60px] rounded-[20px];
+}

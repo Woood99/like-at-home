@@ -6,16 +6,48 @@
         role="dialog"
         aria-modal="true"
         data-graph-target="create-bid">
-        <div class="graph-modal__content">
+        <form action="#" class="graph-modal__content" id="create-bid-form">
             <h3 class="title-3 mb-6 !text-[28px]">Оставьте заявку</h3>
             <p class="text-[20px] leading-normal">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
-            <p>input1</p>
-            <p>input2</p>
-            <p>input3</p>
-            <p>input4</p>
-            <button class='mt-[25px] btn btn-third w-full'>
-                Отправить заявку
-            </button>
-        </div>
+            <div class="mt-[36px] flex flex-col gap-[25px]">
+                <label class="form-input">
+                    <input type="text" name="name" class="input input-primary input-s-big" placeholder="Имя" />
+                </label>
+                <label class="form-input">
+                    <input type="text" name="email" class="input input-primary input-s-big" placeholder="Электронная почта" />
+                </label>
+                <label class="form-input">
+                    <input type="tel" name="tel" class="input input-primary input-s-big" placeholder="Телефон" />
+                </label>
+                <label class="form-input">
+                    <input type="text" name="company_name" class="input input-primary input-s-big" placeholder="Название компании" />
+                </label>
+            </div>
+            <button type="submit" class="mt-[25px] btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
+            <div class="mt-[25px] checkbox">
+                <input id="c_agreement" name="agreement" class="checkbox__input" type="checkbox" />
+                <label for="c_agreement" class="checkbox__label">
+                    <span class="checkbox__text">
+                        Заполняя форму, вы соглашаетесь на
+                        <a href="#" class="link-primary inline">
+                            обработку
+                            <br />
+                            персональных данных
+                        </a>
+                    </span>
+                </label>
+            </div>
+
+            <!-- const createBidForm = document.querySelector("#create-bid-form");
+            createBidForm.addEventListener("submit", e => {
+                if (e.target.classList.contains("is-valid")) {
+                    console.log("submit");
+                    const formData = new FormData(createBidForm);
+                    for (let pair of formData.entries()) {
+                        console.log(pair[0] + ": " + pair[1]);
+                    }
+                }
+            }); -->
+        </form>
     </div>
 </div>
