@@ -1,15 +1,17 @@
 <div class="graph-modal">
-    <button class="btn-reset js-modal-close graph-modal__close z-[9999999]" aria-label="Закрыть модальное окно"></button>
+    <button class="btn-reset js-modal-close graph-modal__close z-[9999999] md1:hidden" aria-label="Закрыть модальное окно"></button>
 
     <div
-        class="graph-modal__container graph-modal-container-fadeInUp mmd3:w-[560px] rounded-[40px] px-[45px] pt-[51px] pb-[63px]"
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
         role="dialog"
         aria-modal="true"
         data-graph-target="create-bid">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+
         <form action="#" class="graph-modal__content" id="create-bid-form">
-            <h3 class="title-3 mb-6 !text-[28px]">Оставьте заявку</h3>
-            <p class="text-[20px] leading-normal">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
-            <div class="mt-[36px] flex flex-col gap-[25px]">
+            <h3 class="title-3 mb-6 !text-[28px] md1:mb-4">Оставьте заявку</h3>
+            <p class="text-paragraph">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
+            <div class="mt-[36px] flex flex-col gap-[25px] md1:gap-4">
                 <label class="form-input">
                     <input type="text" name="name" class="input input-primary input-s-big" placeholder="Имя" />
                 </label>
@@ -23,17 +25,13 @@
                     <input type="text" name="company_name" class="input input-primary input-s-big" placeholder="Название компании" />
                 </label>
             </div>
-            <button type="submit" class="mt-[25px] btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
-            <div class="mt-[25px] checkbox">
+            <button type="submit" class="mt-[25px] md1:mt-4 btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
+            <div class="mt-[25px] md1:mt-4 checkbox">
                 <input id="c_agreement" name="agreement" class="checkbox__input" type="checkbox" />
                 <label for="c_agreement" class="checkbox__label">
                     <span class="checkbox__text">
                         Заполняя форму, вы соглашаетесь на
-                        <a href="#" class="link-primary inline">
-                            обработку
-                            <br />
-                            персональных данных
-                        </a>
+                        <a href="#" class="link-primary inline"> обработку персональных данных </a>
                     </span>
                 </label>
             </div>

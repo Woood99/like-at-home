@@ -23,43 +23,68 @@
         <div class="site-container">
             <header class="header">
     <div class="container flex items-center h-full">
-        <a href="/">
-            <img src="./img/logo.svg" width='137' height='36' alt="КАК ДОМА" />
+        <a href="#">
+            <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
-        <div class="ml-14">
-            <a href="/" class="link-primary !font-semibold">Продуктовые направления</a>
+        <div class="nav" data-menu>
+            <a href="#" class="link-primary !font-semibold">Продуктовые направления</a>
+            <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
+                <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00 </a>
+                <button
+                    class="btn btn-primary btn-s-default md1:w-full"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
+            </div>
         </div>
-        <div class="ml-auto flex items-center gap-6">
-            <a href="tel:88007000000" class="link-primary">8 800 700 00 00</a>
-            <button class="btn btn-primary btn-s-default" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">
-                Оставить заявку
-            </button>
-        </div>
+
+        <a href="tel:88007000000" class="ml-auto mmd1:hidden">
+            <svg class="w-6 h-6 fill-blue">
+                <use xlink:href="img/sprite.svg#call"></use>
+            </svg>
+        </a>
+
+        <button class="ml-6 burger mmd1:hidden" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
             <main class="main">
-                <section class="mt-[50px]" id="hero-block">
-    <div class="container flex gap-6">
+                <section class="mt-[50px] md1:mt-4" id="hero-block">
+    <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
         <div class="h-full flex-grow">
-            <div class="bg-orange rounded-[48px] py-[54px] px-14">
+            <div class="bg-orange rounded-[48px] py-[54px] px-14 md1:p-6 md1:rounded-3xl">
                 <h1 class="title-1 text-white">
                     Управляйте недвижимостью <br />
                     по-новому
                 </h1>
-                <p class="mt-7 text-white text-[20px] leading-normal font-medium">
+                <p class="mt-7 text-white text-paragraph">
                     Разрабатываем современные решения в рамках концепции умного города и цифровизации многоквартирных домов
                 </p>
-                <button class="mt-14 btn btn-secondary btn-s-default" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">Оставить заявку</button>
+                <button
+                    class="mt-14 btn btn-secondary btn-s-default"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
             </div>
         </div>
-        <div class="w-[416px] flex-shrink-0 relative">
+        <div class="mmd1:w-[416px] flex-shrink-0 relative">
             <div class="swiper h-full" id="swiper-banner">
-                <div class="swiper-wrapper h-full">
-                    <div class="swiper-slide h-full">
+                <div class="swiper-wrapper h-full items-stretch">
+                    <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: var(--blue)">
-                            <h3 class="title-3 text-white">Экосистема сервисов для ЖКХ</h3>
-                            <p class="mt-4 text-white text-[20px] leading-normal font-medium">Всё, что нужно УК и ТСЖ</p>
+                            <h3 class="title-3 text-white mb-4 relative z-20">
+                                Экосистема <br />
+                                сервисов для ЖКХ
+                            </h3>
+                            <p class="text-white text-paragraph mb-12 relative z-20">Всё, что нужно УК и ТСЖ</p>
                             <div class="mt-auto flex flex-wrap gap-2 relative z-20">
                                 <div class="tag tag-primary">Приложение собственника</div>
                                 <div class="tag tag-primary">Диспетчерская</div>
@@ -77,10 +102,10 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="swiper-slide h-full">
+                    <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: #ff4053">
-                            <h3 class="title-3 text-white">Аварийно диспетчерская служба УК</h3>
-                            <div class="mt-auto flex flex-wrap gap-2 relative z-20">
+                            <h3 class="title-3 text-white mb-4 relative z-20">Аварийно диспетчерская служба УК</h3>
+                            <div class="mt-auto flex flex-wrap gap-2 relative z-20 relative z-20">
                                 <div class="tag tag-primary">Принимаем звонки</div>
                                 <div class="tag tag-primary">Фиксируем обращения</div>
                             </div>
@@ -97,16 +122,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination" id="swiper-banner-pagination"></div>
+                <div
+                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
+                    id="swiper-banner-pagination"></div>
             </div>
         </div>
     </div>
 </section>
 
-                <section class="mt-[128px]">
+                <section class="mt-[128px] md1:mt-20">
     <div class="container">
-        <h2 class="title-2 mmd1:ml-[56px] mb-[90px]">Продуктовые направления</h2>
-        <div class="grid grid-cols-4 gap-6">
+        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-6">Продуктовые направления</h2>
+        <div class="grid grid-cols-4 gap-6 md1:gap-5 md1:grid-cols-2 md3:grid-cols-1">
             <a href="#" class="product-card">
                 <div class="product-card__badge product-card__badge--white">онлайн-платформа</div>
                 <div class="product-card__content">
@@ -151,14 +178,20 @@
     </div>
 </section>
 
-                <section class="our-growth mt-[128px]">
+                <section class="our-growth mt-[134px] md1:mt-20">
     <div class="our-growth__container container">
-        <h2 class="title-2 mb-[25px]">Мы активно растём</h2>
-        <div class="flex items-end gap-4">
-            <div class="flex-grow">
-                <div class="mmd1:w-[486px] mmd1:h-[232px] relative flex-center-all">
+        <h2 class="title-2 mb-[25px] md1:mb-8">Мы активно растём</h2>
+        <div class="flex mmd1:items-end gap-8 md1:flex-col md1:items-center">
+            <div class="mmd3:w-[639px] md3:flex-grow">
+                <div class="mmd3:w-[486px] mmd3:h-[215px] relative mmd3:ml-[26px] mmd3:mt-[26px]">
                     <span class="our-growth__number">384</span>
-                    <svg width="78" height="79" viewBox="0 0 78 79" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-[14px] left-0">
+                    <svg
+                        width="78"
+                        height="79"
+                        viewBox="0 0 78 79"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute top-[5px] -left-[50px] md3:hidden">
                         <path
                             d="M39 0.142822L48.2935 29.8493L78 39.1428L48.2935 48.4363L39 78.1428L29.7065 48.4363L0 39.1428L29.7065 29.8493L39 0.142822Z"
                             fill="url(#paint0_linear_2147_667)" />
@@ -174,7 +207,13 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg" class="absolute top-0 right-0">
+                    <svg
+                        width="45"
+                        height="45"
+                        viewBox="0 0 45 45"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="absolute -top-[25px] right-[48px] md3:hidden">
                         <path
                             d="M22.5 0L27.8616 16.8663L45 22.1429L27.8616 27.4194L22.5 44.2857L17.1384 27.4194L0 22.1429L17.1384 16.8663L22.5 0Z"
                             fill="url(#paint0_linear_2147_668)" />
@@ -190,7 +229,7 @@
                         viewBox="0 0 62 63"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="absolute bottom-3 right-[109px]">
+                        class="absolute bottom-[13px] right-[157px] md3:hidden">
                         <path
                             d="M31 0.142822L38.3871 23.7557L62 31.1428L38.3871 38.53L31 62.1428L23.6129 38.53L0 31.1428L23.6129 23.7557L31 0.142822Z"
                             fill="url(#paint0_linear_2147_669)" />
@@ -201,28 +240,28 @@
                         </defs>
                     </svg>
                 </div>
-                <span class="block ml-[54px] mt-2 text-[20px] leading-normal">
+                <span class="block mmd1:ml-[31px] text-paragraph md1:text-center">
                     объект под нашим чутким <br />
                     присмотром
                 </span>
             </div>
-            <div class="mmd1:w-[496px]">
-                <p class="text-[20px] leading-normal font-medium">
+            <div class="mmd1:w-[496px] md1:flex md1:flex-col md1:items-center">
+                <p class="text-paragraph md1:text-center">
                     Сотрудничаем с управляющими компаниями по всей России. Увеличиваем доходность бизнеса и помогаем
                     с автоматизацией.
                 </p>
-                <button class="btn btn-primary btn-s-default mmd1:mt-[110px] md1:mt-6">Стать клиентом</button>
+                <button class="btn btn-primary btn-s-default mmd1:mt-[110px] md1:mt-6 md1:w-3/4">Стать клиентом</button>
             </div>
         </div>
     </div>
 </section>
 
-                <section class="mt-[128px] relative">
+                <section class="mt-[128px] relative md1:mt-20">
     <div class="container">
-        <div class="bg-gray rounded-[48px] px-14 py-[60px] relative">
+        <div class="bg-gray rounded-[48px] px-14 py-[60px] relative md1:rounded-3xl md1:p-8">
             <div class="max-w-[840px]">
                 <h2 class="title-1 !text-[28px]">Внедряем ИИ-технологии в коммуникации</h2>
-                <p class="mt-6 text-[20px] leading-normal">
+                <p class="mt-6 text-paragraph">
                     AI-консьерж это полноценный голосовой интерфейс взаимодействия с  <br />
                     собственником который станет стандартом. Дом «говорит» и «заботится».
                 </p>
@@ -233,7 +272,7 @@
                 <img
                     loading="lazy"
                     src="../../img/robot-hand.png"
-                    class="absolute -bottom-[43px] -right-[43px]"
+                    class="absolute -bottom-[41px] -right-[53px] md1:hidden"
                     width="540"
                     height="351"
                     alt="Внедряем ИИ-технологии в коммуникации" />
@@ -242,11 +281,11 @@
     </div>
 </section>
 
-                <section class="work-cities-block mt-[128px] overflow-hidden">
+                <section class="work-cities-block mt-[128px] overflow-hidden md1:mt-20">
     <div class="container">
-        <div class="mmd1:ml-[56px] mb-[90px]">
-            <h2 class="title-2">Работаем по всей России</h2>
-            <p class="mt-6 font-medium text-[20px] leading-normal">Помогаем нашим клиентам обеспечивать высокий уровень сервиса</p>
+        <div class="mmd1:ml-[56px] mb-[60px] md1:mb-12">
+            <h2 class="title-2 !leading-[1.2]">Работаем по всей России</h2>
+            <p class="mt-6 text-paragraph">Помогаем нашим клиентам обеспечивать высокий уровень сервиса</p>
         </div>
     </div>
     <div class="container mmd1:max-w-[2900px] overflow-hidden">
@@ -290,7 +329,7 @@
 
 <section class="mt-[160px]" id="our-solutions">
     <div class="container">
-        <h2 class="title-2 mmd1:ml-[56px] mb-[90px]">Наши решения уже используют</h2>
+        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-8">Наши решения уже используют</h2>
         <div class="swiper" id="swiper-solutions">
             <div class="swiper-wrapper">
                 <a href="/" class="swiper-slide complex-card">
@@ -346,19 +385,16 @@
     </div>
 </section>
 
-                <section class="mt-[106px]">
-    <div class="container">
-        <div class="bg-dark rounded-[48px] py-[54px] px-14">
-            <div class="flex gap-14">
+                <section class="mt-[132px]">
+    <div class="container-desktop">
+        <div class="bg-dark rounded-[48px] py-[54px] px-14 md1:p-8 md1:rounded-3xl">
+            <div class="flex gap-14 md1:flex-col md1:gap-8">
                 <div class="flex-grow">
                     <h1 class="title-1 text-white">Поможем подобрать продукты для вашего бизнеса</h1>
-                    <p class="mt-6 text-[20px] leading-normal text-white">
-                        Наши менеджеры проведут презентацию и ответят на <br />
-                        все возникшие вопросы
-                    </p>
+                    <p class="mt-6 text-paragraph text-white">Наши менеджеры проведут презентацию и ответят на все возникшие вопросы</p>
                 </div>
                 <div class="mmd1:w-[470px] flex-shrink-0">
-                    <form action="#" id="form-bid" class="p-[42px] rounded-[42px] bg-[rgba(255,255,255,0.08)]">
+                    <form action="#" id="form-bid" class="mmd1:p-[42px] mmd1:rounded-[42px] mmd1:bg-[rgba(255,255,255,0.08)]">
                         <div class="flex flex-col gap-4">
                             <label class="form-input">
                                 <input type="text" name="name" class="input input-secondary input-s-default" placeholder="Имя" />
@@ -372,8 +408,8 @@
                         </div>
                         <button type="submit" class="mt-4 btn btn-third btn-s-default w-full js-modal-close">Отправить заявку</button>
                         <div class="mt-4 checkbox checkbox-gray">
-                            <input id="c_agreement" name="agreement" class="checkbox__input" type="checkbox" />
-                            <label for="c_agreement" class="checkbox__label">
+                            <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
+                            <label for="c_agreement_2" class="checkbox__label">
                                 <span class="checkbox__text">
                                     Заполняя форму, вы соглашаетесь на
                                     <a href="#" class="link-primary inline">
@@ -398,11 +434,12 @@
                     }); -->
                 </div>
             </div>
-            <div class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-[48px] py-[54px] px-14 flex justify-between gap-6">
+            <div
+                class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-[48px] py-[54px] px-14 md1:p-6 md1:rounded-xl flex justify-between gap-6 md1:flex-col">
                 <h4 class="title-4 text-white">Не хотите ждать звонка?</h4>
-                <div>
+                <div class="mmd1:w-[413px]">
                     <a href="tel:88006004657" class="link-primary title-4 text-white"> 8 (800) 600 46 57 </a>
-                    <p class="mt-4 font-medium text-[20px] leading-normal text-white">
+                    <p class="mt-4 text-paragraph text-white">
                         Свяжитесь с нами — ответим на все <br />
                         вопросы
                     </p>
@@ -413,15 +450,15 @@
 </section>
 
             </main>
-            <footer class="footer mt-[95px]">
+            <footer class="footer mt-[95px] md1:mt-16">
     <div class="container">
         <div class="footer__items">
-            <div>
-                <img src="./img/logo.svg" width='137' height='36' alt="КАК ДОМА" />
-                <p class="mt-[25px]">Текст в процессе</p>
+            <div class="mt-2">
+                <img src="./img/logo.svg" width="137" height="36" alt="КАК ДОМА" />
+                <p class="mt-[38px]">Текст в процессе</p>
             </div>
             <div>
-                <h4 class="text-[18px] leading-[1.22] font-bold mb-6">Информация</h4>
+                <h4 class="text-[18px] leading-[1.22] font-bold mb-6 md1:mb-4">Информация</h4>
                 <ul>
                     <li>
                         <a class="footer__link link-primary" href="/">О компании</a>
@@ -429,7 +466,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-[18px] leading-[1.22] font-bold mb-6">Продукты</h4>
+                <h4 class="text-[18px] leading-[1.22] font-bold mb-6 md1:mb-4">Продукты</h4>
                 <ul>
                     <li>
                         <a class="footer__link link-primary" href="/">Экосистема для ЖКХ</a>
@@ -446,7 +483,7 @@
                 </ul>
             </div>
             <div>
-                <h4 class="text-[18px] leading-[1.22] font-bold mb-6">Контакты</h4>
+                <h4 class="text-[18px] leading-[1.22] font-bold mb-6 md1:mb-4">Контакты</h4>
                 <ul>
                     <li>
                         <a class="footer__link link-primary" href="/">Форма обратной связи</a>
@@ -476,17 +513,19 @@
         </div>
     </body>
     <div class="graph-modal">
-    <button class="btn-reset js-modal-close graph-modal__close z-[9999999]" aria-label="Закрыть модальное окно"></button>
+    <button class="btn-reset js-modal-close graph-modal__close z-[9999999] md1:hidden" aria-label="Закрыть модальное окно"></button>
 
     <div
-        class="graph-modal__container graph-modal-container-fadeInUp mmd3:w-[560px] rounded-[40px] px-[45px] pt-[51px] pb-[63px]"
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
         role="dialog"
         aria-modal="true"
         data-graph-target="create-bid">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+
         <form action="#" class="graph-modal__content" id="create-bid-form">
-            <h3 class="title-3 mb-6 !text-[28px]">Оставьте заявку</h3>
-            <p class="text-[20px] leading-normal">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
-            <div class="mt-[36px] flex flex-col gap-[25px]">
+            <h3 class="title-3 mb-6 !text-[28px] md1:mb-4">Оставьте заявку</h3>
+            <p class="text-paragraph">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
+            <div class="mt-[36px] flex flex-col gap-[25px] md1:gap-4">
                 <label class="form-input">
                     <input type="text" name="name" class="input input-primary input-s-big" placeholder="Имя" />
                 </label>
@@ -500,17 +539,13 @@
                     <input type="text" name="company_name" class="input input-primary input-s-big" placeholder="Название компании" />
                 </label>
             </div>
-            <button type="submit" class="mt-[25px] btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
-            <div class="mt-[25px] checkbox">
+            <button type="submit" class="mt-[25px] md1:mt-4 btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
+            <div class="mt-[25px] md1:mt-4 checkbox">
                 <input id="c_agreement" name="agreement" class="checkbox__input" type="checkbox" />
                 <label for="c_agreement" class="checkbox__label">
                     <span class="checkbox__text">
                         Заполняя форму, вы соглашаетесь на
-                        <a href="#" class="link-primary inline">
-                            обработку
-                            <br />
-                            персональных данных
-                        </a>
+                        <a href="#" class="link-primary inline"> обработку персональных данных </a>
                     </span>
                 </label>
             </div>

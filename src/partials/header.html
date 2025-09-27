@@ -1,16 +1,32 @@
 <header class="header">
     <div class="container flex items-center h-full">
-        <a href="/">
-            <img src="./img/logo.svg" width='137' height='36' alt="КАК ДОМА" />
+        <a href="#">
+            <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
-        <div class="ml-14">
-            <a href="/" class="link-primary !font-semibold">Продуктовые направления</a>
+        <div class="nav" data-menu>
+            <a href="#" class="link-primary !font-semibold">Продуктовые направления</a>
+            <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
+                <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00 </a>
+                <button
+                    class="btn btn-primary btn-s-default md1:w-full"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
+            </div>
         </div>
-        <div class="ml-auto flex items-center gap-6">
-            <a href="tel:88007000000" class="link-primary">8 800 700 00 00</a>
-            <button class="btn btn-primary btn-s-default" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">
-                Оставить заявку
-            </button>
-        </div>
+
+        <a href="tel:88007000000" class="ml-auto mmd1:hidden">
+            <svg class="w-6 h-6 fill-blue">
+                <use xlink:href="img/sprite.svg#call"></use>
+            </svg>
+        </a>
+
+        <button class="ml-6 burger mmd1:hidden" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>

@@ -1,24 +1,33 @@
-<section class="mt-[50px]" id="hero-block">
-    <div class="container flex gap-6">
+<section class="mt-[50px] md1:mt-4" id="hero-block">
+    <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
         <div class="h-full flex-grow">
-            <div class="bg-orange rounded-[48px] py-[54px] px-14">
+            <div class="bg-orange rounded-[48px] py-[54px] px-14 md1:p-6 md1:rounded-3xl">
                 <h1 class="title-1 text-white">
                     Управляйте недвижимостью <br />
                     по-новому
                 </h1>
-                <p class="mt-7 text-white text-[20px] leading-normal font-medium">
+                <p class="mt-7 text-white text-paragraph">
                     Разрабатываем современные решения в рамках концепции умного города и цифровизации многоквартирных домов
                 </p>
-                <button class="mt-14 btn btn-secondary btn-s-default" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">Оставить заявку</button>
+                <button
+                    class="mt-14 btn btn-secondary btn-s-default"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
             </div>
         </div>
-        <div class="w-[416px] flex-shrink-0 relative">
+        <div class="mmd1:w-[416px] flex-shrink-0 relative">
             <div class="swiper h-full" id="swiper-banner">
-                <div class="swiper-wrapper h-full">
-                    <div class="swiper-slide h-full">
+                <div class="swiper-wrapper h-full items-stretch">
+                    <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: var(--blue)">
-                            <h3 class="title-3 text-white">Экосистема сервисов для ЖКХ</h3>
-                            <p class="mt-4 text-white text-[20px] leading-normal font-medium">Всё, что нужно УК и ТСЖ</p>
+                            <h3 class="title-3 text-white mb-4 relative z-20">
+                                Экосистема <br />
+                                сервисов для ЖКХ
+                            </h3>
+                            <p class="text-white text-paragraph mb-12 relative z-20">Всё, что нужно УК и ТСЖ</p>
                             <div class="mt-auto flex flex-wrap gap-2 relative z-20">
                                 <div class="tag tag-primary">Приложение собственника</div>
                                 <div class="tag tag-primary">Диспетчерская</div>
@@ -36,10 +45,10 @@
                             </picture>
                         </div>
                     </div>
-                    <div class="swiper-slide h-full">
+                    <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: #ff4053">
-                            <h3 class="title-3 text-white">Аварийно диспетчерская служба УК</h3>
-                            <div class="mt-auto flex flex-wrap gap-2 relative z-20">
+                            <h3 class="title-3 text-white mb-4 relative z-20">Аварийно диспетчерская служба УК</h3>
+                            <div class="mt-auto flex flex-wrap gap-2 relative z-20 relative z-20">
                                 <div class="tag tag-primary">Принимаем звонки</div>
                                 <div class="tag tag-primary">Фиксируем обращения</div>
                             </div>
@@ -56,7 +65,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination" id="swiper-banner-pagination"></div>
+                <div
+                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
+                    id="swiper-banner-pagination"></div>
             </div>
         </div>
     </div>

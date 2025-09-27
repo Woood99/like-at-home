@@ -15,9 +15,15 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         transition: all $transitionSpeed $transitionFunction;
+        @media (max-width: $desktop) {
+            font-size: 165px;
+        }
+        @media (max-width: $mobile-max) {
+            font-size: 120px;
+        }
     }
     @media (min-width: $desktop-min) {
-        width: 1189px;
+        width: 1184px;
         margin-left: auto;
         margin-right: auto;
     }

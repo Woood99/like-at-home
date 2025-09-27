@@ -1,5 +1,7 @@
 import validateForms from "./components/validate-forms.js";
+import "./functions/burger.js";
 import "./functions/fix-fullheight.js";
+import { getHeaderHeight } from "./functions/header-height.js";
 import Modal from "./functions/modal.js";
 import Marquee3k from "marquee3000";
 import Swiper from "swiper";
@@ -7,6 +9,7 @@ import { Navigation, Pagination } from "swiper/modules";
 
 Swiper.use([Navigation, Pagination]);
 Marquee3k.init();
+getHeaderHeight();
 new Modal();
 
 const swiperBannerEl = document.querySelector("#swiper-banner");
@@ -25,11 +28,22 @@ if (swiperBannerEl) {
 
 if (ourSolutionsEl) {
     new Swiper(ourSolutionsEl.querySelector("#swiper-solutions"), {
-        slidesPerView: 4,
+        slidesPerView: 1,
         spaceBetween: 24,
         navigation: {
             nextEl: ourSolutionsEl.querySelector("#our-solutions-next"),
             prevEl: ourSolutionsEl.querySelector("#our-solutions-prev")
+        },
+        breakpoints: {
+            499: {
+                slidesPerView: 2
+            },
+            820: {
+                slidesPerView: 3
+            },
+            1201: {
+                slidesPerView: 4
+            }
         }
     });
 }
@@ -84,6 +98,16 @@ if (createBidForm) {
         },
         {
             ruleSelector: "[name='company_name']",
+            rules: [
+                {
+                    rule: "required",
+                    value: true,
+                    errorMessage: "Обязательное поле"
+                }
+            ]
+        },
+        {
+            ruleSelector: "[name='agreement']",
             rules: [
                 {
                     rule: "required",

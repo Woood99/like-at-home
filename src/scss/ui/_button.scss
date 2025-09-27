@@ -4,15 +4,15 @@
 }
 
 .btn-primary {
-    @apply bg-black text-white hover:bg-blue;
+    @apply bg-black text-white mmd1:hover:bg-blue active:bg-blue;
 }
 
 .btn-secondary {
-    @apply bg-white text-black hover:bg-grayLight;
+    @apply bg-white text-black mmd1:hover:bg-grayLight active:bg-blue;
 }
 
 .btn-third {
-    @apply bg-green text-white hover:bg-black;
+    @apply bg-green text-white mmd1:hover:bg-black active:bg-blue;
 }
 
 .btn-s-default {

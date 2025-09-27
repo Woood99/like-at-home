@@ -62,8 +62,8 @@
 
     &__arrow {
         position: absolute;
-        top: 27px;
-        right: 27px;
+        top: 34px;
+        right: 28px;
         width: 25px;
         height: 25px;
         fill: var(--black);
@@ -121,5 +121,8 @@
                 }
             }
         }
+    }
+    @media (max-width:$desktop){
+         padding: 32px; 
     }
 }

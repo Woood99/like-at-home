@@ -1,0 +1,58 @@
+.burger {
+    --burger-width: 26px;
+    --burger-height: 18px;
+    --burger-line-height: 2px;
+    position: relative;
+    z-index: 12;
+    border: none;
+    padding: 0;
+    width: var(--burger-width);
+    height: var(--burger-height);
+    color: var(--black);
+    background-color: transparent;
+    cursor: pointer;
+    transform: rotate(0);
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: var(--burger-line-height);
+    background-color: currentColor;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0);
+    transition: 435ms ease-in-out;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.burger span:nth-child(3) {
+    transform: translateY(-100%);
+    top: 100%;
+}
+
+.burger--active span:nth-child(1) {
+    top: 9px;
+    transform: rotate(135deg) translateY(-50%);
+}
+
+.burger--active span:nth-child(2) {
+    opacity: 0;
+    left: 40px;
+}
+
+.burger--active span:nth-child(3) {
+    top: 9px;
+    transform: rotate(-135deg) translateY(-50%);
+    left: 1px;
+}
