@@ -11,6 +11,7 @@
         "dev": "gulp",
         "build-stylelint": "npm run stylelint && npm run code && gulp build --build",
         "build": "gulp build --build",
+        "build:git": "gulp build --build && git add . && git commit -m \"fix\" && git push",
         "cache": "gulp cache",
         "backend": "gulp backend",
         "zip": "gulp zip --build"
