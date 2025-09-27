@@ -5,8 +5,7 @@
 
     &__items {
         display: grid;
-        grid-template-columns: 1fr repeat(3,250px);
-        grid-column-gap: 16px;
+        grid-template-columns: 1fr repeat(3, 266px);
         grid-row-gap: 32px;
         margin-bottom: 64px;
         @media (max-width: $desktop) {
@@ -37,16 +36,18 @@
 
     &__bottom {
         margin-top: 38px;
+        margin-left: 12px;
 
         display: flex;
         align-items: center;
-        gap: 45px;
+        gap: 62px;
         font-weight: 500;
         line-height: 1.5;
         @media (max-width: $desktop) {
             margin-top: 24px;
             flex-direction: column;
             gap: 12px;
+            margin-left: 0;
         }
     }
     @media (max-width: $desktop) {
