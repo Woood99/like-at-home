@@ -12,7 +12,6 @@
     position: fixed;
     inset: 0;
     z-index: 1000;
-    display: flex;
     padding: 30px 0;
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -23,7 +22,9 @@
     transition:
         opacity var(--transition-time),
         visibility var(--transition-time);
+    display: flex;
     @media (max-width: 1200px) {
+        display: block;
         padding: 0;
     }
 }
@@ -36,7 +37,10 @@
     padding: 20px;
     cursor: default;
     display: none;
+    vertical-align: middle;
+
     @media (max-width: 1200px) {
+        min-height: var(--vh);
         border-radius: 0;
         width: 100%;
         margin: 0;
