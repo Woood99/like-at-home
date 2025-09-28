@@ -10,13 +10,13 @@
         height: 0;
         opacity: 0;
 
-        &:checked + .checkbox__label:after {
+        &:checked + .checkbox__label .checkbox__mark-check {
             transform: scale(1);
         }
 
         &.just-validate-error-field {
             + .checkbox__label {
-                &::before {
+                .checkbox__mark {
                     border-color: var(--red);
                 }
                 .checkbox__text {
@@ -28,43 +28,45 @@
 
     &__label {
         cursor: pointer;
-        display: inline-flex;
+        display: flex;
         align-items: center;
         position: relative;
+    }
 
-        &:before {
-            content: "";
-            align-self: flex-start;
-            flex: 0 0 var(--size);
-            width: var(--size);
-            height: var(--size);
-            border: 1px solid var(--color);
-            border-radius: 5px;
-            transition: border $transitionSpeed $transitionFunction;
-            position: relative;
-            top: 0px;
-        }
+    &__mark {
+        flex: 0 0 var(--size);
+        width: var(--size);
+        height: var(--size);
+        border: 1px solid var(--color);
+        border-radius: 5px;
+        transition: border $transitionSpeed $transitionFunction;
 
-        &::after {
-            content: "";
-            background-color: var(--color);
-            flex: 0 0 var(--size-inner);
-            width: var(--size-inner);
-            height: var(--size-inner);
-            position: absolute;
-            top: 3px;
-            left: 3px;
-            border-radius: 5px;
-            transform: scale(0);
-            transition: transform $transitionSpeed $transitionFunction;
-        }
+        @apply flex-center-all;
+    }
+
+    &__mark-check {
+        background-color: var(--color);
+        flex: 0 0 var(--size-inner);
+        width: var(--size-inner);
+        height: var(--size-inner);
+        border-radius: 5px;
+        transform: scale(0);
+        transition: transform $transitionSpeed $transitionFunction;
     }
 
     &__text {
         color: var(--color);
+        transition: color $transitionSpeed $transitionFunction;
+
         @apply text-[14px] font-medium leading-[1.35] ml-5;
         a {
-            @apply underline;
+            @apply underline font-medium;
+            &:hover {
+                color: var(--blue);
+            }
+        }
+        @media (max-width: $desktop) {
+            @apply ml-4;
         }
     }
 
