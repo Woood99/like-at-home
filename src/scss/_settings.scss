@@ -102,6 +102,9 @@ input {
     display: flex;
     flex-direction: column;
     justify-content: start;
+    @media (max-width: $desktop) {
+        margin-top: var(--header-height, 60px);
+    }
 }
 
 img {
