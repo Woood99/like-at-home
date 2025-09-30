@@ -8,13 +8,13 @@
               "customContent": '<a href="#" class="link-primary">Продукты и решения</a>'
             })
             <main class="main">
-                @include('partials/home/hero.html') 
-                @include('partials/home/product-lines.html') 
-                @include('partials/home/our-growth.html')
-                @include('partials/home/banner.html') 
-                @include('partials/home/work-cities-block.html') 
-                @include('partials/home/our-solutions.html')
-                @include('partials/home/form-bid.html')
+                @include('partials/ads/hero.html') 
+                @include('partials/ads/real-savings.html') 
+                @include('partials/ads/how-it-works.html') 
+                @include('partials/ads/call-analytics.html') 
+                @include('partials/ads/tariff-selection.html') 
+                @include('partials/ads/provide-solution.html') 
+                @include('partials/home/form-bid.html', { "title":"Поможем подобрать индивидуальный тариф" })
             </main>
             @include('partials/footer.html')
         </div>

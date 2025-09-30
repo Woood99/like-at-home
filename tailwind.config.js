@@ -6,11 +6,15 @@ module.exports = {
             white: "var(--white)",
             black: "var(--black)",
             dark: "var(--dark)",
+            darkPressed: "var(--dark-pressed)",
             green: "var(--green)",
             orange: "var(--orange)",
             red: "var(--red)",
             blue: "var(--blue)",
+            veryLightBlue: "var(--very-light-blue)",
+            lightBlue: "var(--light-blue)",
             gray: "var(--gray)",
+            grayTwo: "var(--gray-two)",
             grayLight: "var(--gray-light)"
         },
         fontFamily: {

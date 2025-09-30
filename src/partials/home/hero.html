@@ -1,7 +1,7 @@
 <section class="mt-[50px] md1:mt-4" id="hero-block">
     <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
         <div class="h-full flex-grow">
-            <div class="bg-orange rounded-[48px] py-[54px] px-14 md1:p-6 md1:rounded-3xl">
+            <div class="bg-orange rounded-primary py-[54px] px-14 md1:p-6">
                 <h1 class="title-1 text-white">
                     Управляйте недвижимостью <br />
                     по-новому
@@ -9,18 +9,20 @@
                 <p class="mt-7 text-white text-paragraph">
                     Разрабатываем современные решения в рамках концепции умного города и цифровизации многоквартирных домов
                 </p>
-                <button
-                    class="mt-14 btn btn-secondary btn-s-default"
-                    data-graph-path="create-bid"
-                    data-graph-animation="fadeInUp"
-                    data-graph-speed="350">
-                    Оставить заявку
-                </button>
+                <div class="mt-14 flex gap-[13px] md3:flex-col">
+                    <button
+                        class="btn btn-secondary btn-s-default"
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350">
+                        Оставить заявку
+                    </button>
+                </div>
             </div>
         </div>
         <div class="mmd1:w-[416px] flex-shrink-0 relative">
             <div class="swiper h-full" id="swiper-banner">
-                <div class="swiper-wrapper h-full items-stretch">
+                <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
                     <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: var(--blue)">
                             <h3 class="title-3 text-white mb-4 relative z-20">

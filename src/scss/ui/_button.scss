@@ -4,20 +4,92 @@
 }
 
 .btn-primary {
-    @apply bg-black text-white mmd1:hover:bg-blue active:bg-blue;
+    @apply bg-black text-white;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-darkPressed;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-darkPressed;
+        }
+    }
 }
 
 .btn-secondary {
-    @apply bg-white text-black mmd1:hover:bg-grayLight active:bg-blue;
+    @apply bg-white text-black;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-darkPressed text-white;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-darkPressed text-white;
+        }
+    }
 }
 
 .btn-third {
-    @apply bg-green text-white mmd1:hover:bg-black active:bg-blue;
+    @apply bg-green text-white;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-darkPressed;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-darkPressed;
+        }
+    }
+}
+
+.btn-four {
+    @apply bg-[#323232] border border-solid border-white text-white;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-darkPressed;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-darkPressed;
+        }
+    }
+}
+
+.btn-five {
+    @apply border-[1.5px] border-solid border-black text-black;
+
+    &.btn-five--white {
+        @apply bg-white;
+    }
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-darkPressed text-white;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-darkPressed text-white;
+        }
+    }
+}
+
+.btn-s-small {
+    @apply h-[51px];
 }
 
 .btn-s-default {
     @apply h-[56px];
 }
+
 .btn-s-big {
     @apply h-[60px];
 }
