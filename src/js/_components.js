@@ -14,6 +14,7 @@ new Modal();
 
 const swiperBannerEl = document.querySelector("#swiper-banner");
 const ourSolutionsEl = document.querySelector("#our-solutions");
+const featuresEl = document.querySelector("#features-block");
 
 if (swiperBannerEl) {
     new Swiper(swiperBannerEl, {
@@ -46,6 +47,40 @@ if (ourSolutionsEl) {
             }
         }
     });
+}
+
+if (featuresEl) {
+    new Swiper(featuresEl.querySelector("#features-block-swiper"), {
+        slidesPerView: 1,
+        spaceBetween: 8,
+        navigation: {
+            nextEl: featuresEl.querySelector("#features-block-next"),
+            prevEl: featuresEl.querySelector("#features-block-prev")
+        },
+
+        on: {
+            init: function () {
+                updateActiveImage(this.activeIndex);
+            },
+            slideChange: function () {
+                updateActiveImage(this.activeIndex);
+            }
+        }
+    });
+
+    function updateActiveImage(activeIndex) {
+        const images = Array.from(featuresEl.querySelectorAll("[data-features-image]"));
+        if (images.length === 0) return;
+
+        images.forEach(img => {
+            img.style.opacity = "0";
+        });
+
+        const activeImage = images.find(img => +img.dataset.featuresImage === activeIndex);
+        if (activeImage) {
+            activeImage.style.opacity = "1";
+        }
+    }
 }
 
 const createBidForm = document.querySelector("#create-bid-form");

@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Главная" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "customContent": '<a href="#" class="link-primary">Продукты и решения</a>'
+            })
+            <main class="main">
+                @include('partials/owner-app/hero.html')
+                @include('partials/owner-app/features.html')
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

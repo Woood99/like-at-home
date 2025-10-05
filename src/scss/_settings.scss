@@ -222,10 +222,20 @@ button {
 .title-4 {
     font-size: 24px;
     line-height: 1.3;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.01em;
     font-weight: 600;
     @media (max-width: $desktop) {
         font-size: 20px;
+    }
+}
+
+.title-4-5 {
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    font-weight: 600;
+    @media (max-width: $desktop) {
+        font-size: 16px;
     }
 }
 
@@ -293,5 +303,17 @@ button {
     }
     .rounded-primary {
         @apply rounded-[48px] md1:rounded-3xl;
+    }
+    .transition-primary-all{
+        transition: all $transitionSpeed $transitionFunction;
+    }
+
+    .cut-1 {
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-hyphens: manual;
+        hyphens: manual;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
     }
 }

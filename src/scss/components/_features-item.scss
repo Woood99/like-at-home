@@ -1,0 +1,29 @@
+.features-item {
+    @apply flex flex-col justify-center;
+
+    &__title {
+        @apply mb-4;
+        @media (min-width: $desktop-min) {
+            @apply cut-1;
+        }
+    }
+
+    &__descr {
+        @apply leading-[1.5625] text-[#676767] font-medium;
+        @media (min-width: $desktop-min) {
+            @apply cut-1;
+        }
+    }
+
+    &:not(:last-child) {
+        @apply border-b border-solid border-[#d4e3fb];
+    }
+
+    @media (min-width: $desktop-min) {
+        @apply h-[130px];
+    }
+
+    @media (max-width: $desktop) {
+        @apply pb-8 mb-8;
+    }
+}

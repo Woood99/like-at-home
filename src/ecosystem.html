@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Экосистема ЖКХ" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "customContent": '<a href="#" class="link-primary">Продуктовые направления</a>'
+            })
+            <main class="main">
+                @include('partials/ecosystem/hero.html') 
+                @include('partials/ecosystem/platform.html') 
+                @include('partials/ecosystem/features.html') 
+                @include('partials/ecosystem/setup-process.html') 
+                @include('partials/ecosystem/savings-on-ads.html') 
+                @include('partials/home/our-solutions.html')
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вашего бизнеса", "className":"mt-[102px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

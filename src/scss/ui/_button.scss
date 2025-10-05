@@ -64,20 +64,23 @@
 }
 
 .btn-five {
-    @apply border-[1.5px] border-solid border-black text-black;
+    @apply border-[1.5px] border-solid text-black border-black;
 
     &.btn-five--white {
         @apply bg-white;
     }
+    &.btn-five--white-border {
+        @apply text-white border-white;
+    }
 
     @media (min-width: $desktop-min) {
         &:hover {
-            @apply bg-darkPressed text-white;
+            @apply bg-darkPressed text-white border-darkPressed;
         }
     }
     @media (max-width: $desktop) {
         &:active {
-            @apply bg-darkPressed text-white;
+            @apply bg-darkPressed text-white border-darkPressed;
         }
     }
 }

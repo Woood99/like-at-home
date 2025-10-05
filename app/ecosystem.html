@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#111111" />
+    <title>Экосистема ЖКХ</title>
+    <link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/InterExtraBold.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="css/vendor.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <script defer src="js/main.js"></script>
+</head>
+
+    <body>
+        <div class="site-container">
+            <header class="header">
+    <div class="container flex items-center h-full">
+        <a href="#">
+            <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
+        </a>
+        <div class="nav" data-menu>
+            <a href="#" class="link-primary">Продуктовые направления</a>
+            <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
+                <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00</a>
+                <button
+                    class="btn btn-primary btn-s-default md1:w-full"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+
+        <a href="tel:88007000000" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 800 700 00 00">
+            <svg class="w-6 h-6 fill-blue">
+                <use xlink:href="img/sprite.svg#call"></use>
+            </svg>
+        </a>
+
+        <button class="ml-6 burger mmd1:hidden" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>
+
+            <main class="main">
+                <section class="mt-[50px] md1:mt-4" id="hero-block">
+    <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
+        <div class="h-full flex-grow">
+            <div class="bg-lightBlue rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col">
+                <h1 class="title-1 text-white">
+                    Экосистема <br class="md1:hidden" />
+                    сервисов для ЖКХ
+                </h1>
+                <p class="mt-6 text-white text-paragraph">
+                    Онлайн-платформа, мобильное приложение собственника, <br class="md1:hidden" />
+                    мобильное приложение исполнителеля, сайт для УК, ГИС ЖКХ
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-[75px] flex gap-[13px] md3:flex-col">
+                        <button class="btn btn-secondary btn-s-default">Подключить</button>
+                        <button class="btn btn-five btn-five--white-border btn-s-default">Демо доступ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mmd1:w-[416px] flex-shrink-0 relative">
+            <div class="swiper h-full" id="swiper-banner">
+                <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
+                    <div class="swiper-slide h-full md1:h-auto">
+                        <div class="banner-slide h-full" style="background-color: var(--light-blue)">
+                            <div
+                                class="absolute top-[168px] left-[64px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
+                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        fill-rule="evenodd"
+                                        clip-rule="evenodd"
+                                        d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
+                                        fill="#26AD50" />
+                                </svg>
+                                <div class="flex flex-col items-center text-center font-Inter">
+                                    <span class="text-[20px] text-[#141414] font-medium">+ 3500 ₽</span>
+                                    <span class="mt-1 font-medium text-[9px] text-[#6e6e6e]">Оплата ЖКУ</span>
+                                </div>
+                            </div>
+                            <div
+                                class="absolute bottom-[92px] right-[64px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
+                                <picture>
+                                    <source srcset="./img/avatar.webp" type="image/webp" />
+                                    <img loading="lazy" src="./img/avatar.png" class="image" width="38" height="38" alt="Исполнитель" />
+                                </picture>
+                                <div class="flex flex-col items-center text-center font-Inter">
+                                    <span class="text-[15px] text-[#141414] font-medium">Новая заявка</span>
+                                    <span class="mt-1 font-medium text-[9px] text-[#6e6e6e]">Исполнитель назначен</span>
+                                </div>
+                            </div>
+                            <picture>
+                                <source srcset="./img/hero-banner-1.webp" type="image/webp" />
+                                <img
+                                    loading="lazy"
+                                    src="./img/hero-banner-3.png"
+                                    class="absolute bottom-0 right-0"
+                                    width="416"
+                                    height="488"
+                                    alt="Аварийно-диспетчерская служба для управляющих компаний и ТСЖ" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
+                    id="swiper-banner-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container-desktop !mt-6">
+        <div class="bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:grid-cols-1 md1:p-8">
+            <div>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Имидж современной управляющей компании</h3>
+                <p class="leading-[1.875] text-[#676767] font-medium">Цифровой сервис для собственников становится стандартом для УК</p>
+            </div>
+            <div>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Снижение дебиторской задолженности</h3>
+                <p class="leading-[1.875] text-[#676767] font-medium">За счёт автоматизации процессов и системы оповещений</p>
+            </div>
+            <div>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Доверительные отношения с жителями</h3>
+                <p class="leading-[1.875] text-[#676767] font-medium">Коммуникация и архив взаимодействия доступны в едином канале</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container flex gap-6">
+        <div class="mmd1:w-[636px] flex-shrink-0">
+            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-6">Платформа</h2>
+            <div class="grid grid-cols-2 gap-6">
+                <a href="#" class="product-card">
+                    <div class="product-card__badge product-card__badge--white">жителям</div>
+                    <div class="product-card__content">
+                        <h4 class="title-4 product-card__title">Мобильное приложение собственника</h4>
+                        <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
+                    </div>
+                    <svg class="product-card__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                    </svg>
+                </a>
+                <a href="#" class="product-card">
+                    <div class="product-card__badge product-card__badge--white">мастерам</div>
+                    <div class="product-card__content">
+                        <h4 class="title-4 product-card__title">Мобильное приложение исполнителя</h4>
+                        <p class="product-card__descr">Бесплатный сервис для контроля заявок и постановки задач</p>
+                    </div>
+                    <svg class="product-card__arrow">
+                        <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="flex-grow relative">
+            <picture>
+                <source srcset="./img/platform-image.webp" type="image/webp" />
+                <img loading="lazy" src="./img/platform-image.jpg" class="w-full" width="621" height="373" alt="Заявки от жителей" />
+            </picture>
+            <div class="bg-lightBlue text-white p-8 rounded-[32px] flex flex-col absolute bottom-0 left-0 w-full">
+                <span class="h-[34px] text-white font-medium flex-center-all self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
+                    для ук и тсж
+                </span>
+                <h3 class="title-4 mt-[46px]">CRM-система</h3>
+                <p class="text-paragraph mt-4 leading-[1.5625]">Автоматизация рабочих процессов</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[128px] md1:mt-20">
+    <div class="container">
+        <div class="border border-solid border-[#d4e3fb] rounded-primary pt-[60px] pb-11 px-11 md1:p-8">
+            <h2 class="title-2">Дополнительные <span class="text-lightBlue">направления и сервисы</span></h2>
+            <div class="mt-[51px] md1:8 flex gap-20 md1:flex-col">
+                <div class="mmd1:w-[500px]">
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Готовый сайт УК</div>
+                        <p class="features-item__descr">Полноценный уже готовый сайт, всего за 24 часа</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Магазин платных услуг</div>
+                        <p class="features-item__descr">Возможности предлагать собственные платные услуги</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Аварийно-диспетчерская служба</div>
+                        <p class="features-item__descr">Круглосуточный прием обращения от собственников</p>
+                    </div>
+                </div>
+                <div class="mmd1:w-[500px]">
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Отслеживание заявок ЕДС</div>
+                        <p class="features-item__descr">Круглосуточный мониторинг и прием в работу заявок</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Охрана и заказ пропусков</div>
+                        <p class="features-item__descr">CRM для сотрудников охраны на КПП</p>
+                    </div>
+                    <div class="features-item">
+                        <div class="title-4 features-item__title">Управление в меседжерах</div>
+                        <p class="features-item__descr">Подача заявок, оформления пропусков в меседжере</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[128px] md1:mt-20 bg-gray rounded-primary pt-[80px] pb-[98px] md1:p-8">
+    <div class="container mmd1:max-w-[1184px] mmd1:p-0">
+        <h2 class="title-2 flex items-center gap-4">
+            Настроим систему всего за неделю
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" fill="none">
+                <path
+                    d="M13.5 2a1.5 1.5 0 0 0-3 0h3Zm-2.56 25.956a1.5 1.5 0 0 0 2.12 0l9.547-9.546a1.5 1.5 0 1 0-2.122-2.122L12 24.774l-8.485-8.486a1.5 1.5 0 1 0-2.122 2.122l9.546 9.546ZM12 2h-1.5v24.895h3V2H12Z"
+                    fill="#000" />
+            </svg>
+        </h2>
+        <div class="mt-14 md1:mt-8 flex rounded-primary overflow-hidden">
+            <div class="bg-lightBlue w-[306px] flex-shrink-0 md1:hidden" aria-label="Декоративный элемент"></div>
+            <div class="flex-grow py-12 px-14 bg-white">
+                <h4 class="title-3-5 mb-6">Берем все вопросы внедрения на себя</h4>
+                <p class="text-paragraph">
+                    Не тратьте своё время на организацию подключения. Мы перенесем данные, обучим сотрудников и настроим сервис под ваши задачи.
+                </p>
+                <button class="btn btn-primary btn-s-default mt-16 md1:mt-6">Подключить</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-24 md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:p-0">
+        <div class="bg-lightBlue rounded-primary p-14 md1:p-8 text-white flex">
+            <div class="mmd1:max-w-[430px]">
+                <h2 class="title-2 mb-7">Используйте АДС и экономьте до 80%</h2>
+                <p class="mb-4 text-paragraph">Аварийно-диспетчерская служба для вашей управляющей компании</p>
+                <p class="text-paragraph">
+                    Мы примем все заявки от собственников и <br class="md1:hidden" />
+                    проконтролируем исполнителей
+                </p>
+                <div class="mt-[102px] flex gap-[13px] md3:flex-col">
+                    <button class="btn btn-primary btn-s-default">Подключить</button>
+                    <button class="btn btn-secondary btn-s-default">Смотреть тарифы</button>
+                </div>
+            </div>
+            <div class="flex-grow">
+                <div class="banner-slide h-full w-[370px] ml-auto" style="background-color: #95beff">
+                    <picture>
+                        <source srcset="./img/hero-banner-3.webp" type="image/webp" />
+                        <img
+                            loading="lazy"
+                            src="./img/hero-banner-3.png"
+                            class="absolute bottom-0 right-0"
+                            width="370"
+                            height="434"
+                            alt="Используйте АДС  и экономьте до 80%" />
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <!-- <picture class="">
+    <source srcset="../../img/hero-banner-1.webp" type="image/webp" />
+    <img loading="lazy" src="../../img/hero-banner-1.png" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+</picture> -->
+
+<section class="mt-[160px] md1:mt-20" id="our-solutions">
+    <div class="container">
+        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-8">Наши решения уже используют</h2>
+        <div class="swiper" id="swiper-solutions">
+            <div class="swiper-wrapper">
+                <a href="/" class="swiper-slide complex-card">
+                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
+                    <div class="ml-[22px]">
+                        <p class="complex-card__title">ЖК Небо</p>
+                        <p class="complex-card__subtitle">использует систему</p>
+                    </div>
+                </a>
+                <a href="/" class="swiper-slide complex-card">
+                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
+                    <div class="ml-[22px]">
+                        <p class="complex-card__title">ЖК Лайнер</p>
+                        <p class="complex-card__subtitle">использует систему</p>
+                    </div>
+                </a>
+                <a href="/" class="swiper-slide complex-card">
+                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
+                    <div class="ml-[22px]">
+                        <p class="complex-card__title">ЖК Небо</p>
+                        <p class="complex-card__subtitle">использует систему</p>
+                    </div>
+                </a>
+                <a href="/" class="swiper-slide complex-card">
+                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
+                    <div class="ml-[22px]">
+                        <p class="complex-card__title">ЖК Небо</p>
+                        <p class="complex-card__subtitle">использует систему</p>
+                    </div>
+                </a>
+                <a href="/" class="swiper-slide complex-card">
+                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
+                    <div class="ml-[22px]">
+                        <p class="complex-card__title">ЖК Небо</p>
+                        <p class="complex-card__subtitle">использует систему</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="mt-12 flex-center-all gap-3">
+            <button class="btn-nav btn-nav--prev" id="our-solutions-prev" aria-label="Предыдущий слайд">
+                <svg>
+                    <use xlink:href="img/sprite.svg#arrow-left"></use>
+                </svg>
+            </button>
+            <button class="btn-nav btn-nav--next" id="our-solutions-next" aria-label="Следующий слайд">
+                <svg>
+                    <use xlink:href="img/sprite.svg#arrow-right"></use>
+                </svg>
+            </button>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[102px] md1:mt-20">
+    <div class="container-desktop">
+        <div class="bg-dark rounded-primary py-[54px] px-14 md1:p-8">
+            <div class="flex gap-14 md1:flex-col md1:gap-8">
+                <div class="flex-grow">
+                    <h1 class="title-1 text-white">Поможем подобрать продукты для вашего бизнеса</h1>
+                    <p class="mt-6 text-paragraph text-white">Наши менеджеры проведут презентацию и ответят на все возникшие вопросы</p>
+                </div>
+                <div class="mmd1:w-[470px] flex-shrink-0">
+                    <form action="#" id="form-bid" class="mmd1:p-[42px] mmd1:rounded-[42px] mmd1:bg-[rgba(255,255,255,0.08)]">
+                        <div class="flex flex-col gap-4">
+                            <label class="form-input">
+                                <input type="text" name="name" class="input input-secondary input-s-default" placeholder="Имя" />
+                            </label>
+                            <label class="form-input">
+                                <input type="text" name="email" class="input input-secondary input-s-default" placeholder="Электронная почта" />
+                            </label>
+                            <label class="form-input">
+                                <input type="tel" name="tel" class="input input-secondary input-s-default" placeholder="Телефон" />
+                            </label>
+                        </div>
+                        <button type="submit" class="mt-4 btn btn-third btn-s-default w-full">Отправить заявку</button>
+                        <div class="mt-5 checkbox checkbox-gray">
+                            <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
+                            <label for="c_agreement_2" class="checkbox__label">
+                                <div class="checkbox__mark">
+                                    <div class="checkbox__mark-check"></div>
+                                </div>
+                                <span class="checkbox__text !text-[12px]">
+                                    Заполняя форму, вы соглашаетесь на
+                                    <a href="#" class="inline">обработку персональных данных</a>
+                                </span>
+                            </label>
+                        </div>
+                    </form>
+
+                    <!-- const formBid = document.querySelector("#form-bid");
+                    formBid.addEventListener("submit", e => {
+                        if (e.target.classList.contains("is-valid")) {
+                            console.log("submit");
+                            const formData = new FormData(formBid);
+                            for (let pair of formData.entries()) {
+                                console.log(pair[0] + ": " + pair[1]);
+                            }
+                        }
+                    }); -->
+                </div>
+            </div>
+            <div class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-primary py-[54px] px-14 md1:p-6 flex justify-between gap-6 md1:flex-col">
+                <h4 class="title-4 text-white">Не хотите ждать звонка?</h4>
+                <div class="mmd1:w-[413px]">
+                    <a href="tel:88006004657" class="link-primary title-4 text-white"> 8 (800) 600 46 57 </a>
+                    <p class="mt-4 text-paragraph text-white">Свяжитесь с нами — ответим на все вопросы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+            </main>
+            <footer class="footer mt-[95px] md1:mt-16">
+    <div class="container-big">
+        <div class="footer__items">
+            <div class="mt-2 mmd1:ml-3">
+                <img src="./img/logo.svg" width="137" height="36" alt="КАК ДОМА" />
+                <p class="mt-[38px]">Текст в процессе</p>
+            </div>
+            <div>
+                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Информация</h4>
+                <ul>
+                    <li>
+                        <a class="footer__link link-primary" href="/">О компании</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Продукты</h4>
+                <ul>
+                    <li>
+                        <a class="footer__link link-primary" href="/">Экосистема для ЖКХ</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="/">Диспетчерская служба</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="/">Контроль доступа</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="/">Доверительное управление</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Контакты</h4>
+                <ul>
+                    <li>
+                        <a class="footer__link link-primary" href="/">Форма обратной связи</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="tel:+74957707000">+7 495 770-70-00</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__app">
+            <h4 class="leading-[1.375] font-semibold mr-14">Мобильные приложения</h4>
+            <div class="flex gap-3">
+                <div class="w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)]"></div>
+                <div class="w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)]"></div>
+                <div class="w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)]"></div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <span class="text-center">© 2025 ООО «КАК ДОМА» </span>
+            <a href="/" class="link-primary text-center">Политика конфиденциальности</a>
+            <a href="/" class="link-primary text-center">Согласие на обработку персональных данных</a>
+        </div>
+    </div>
+</footer>
+
+        </div>
+    </body>
+    <div class="graph-modal">
+    <button class="btn-reset js-modal-close graph-modal__close z-[9999999] md1:hidden" aria-label="Закрыть модальное окно"></button>
+
+    <div
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="create-bid">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+
+        <form action="#" class="graph-modal__content" id="create-bid-form">
+            <h3 class="title-3-5 mb-6 md1:mb-4">Оставьте заявку</h3>
+            <p class="text-paragraph">Мы предоставим доступ для тестирования системы или поможем подобрать продукт</p>
+            <div class="mt-[36px] flex flex-col gap-[25px] md1:gap-4">
+                <label class="form-input">
+                    <input type="text" name="name" class="input input-primary input-s-big" placeholder="Имя" />
+                </label>
+                <label class="form-input">
+                    <input type="text" name="email" class="input input-primary input-s-big" placeholder="Электронная почта" />
+                </label>
+                <label class="form-input">
+                    <input type="tel" name="tel" class="input input-primary input-s-big" placeholder="Телефон" />
+                </label>
+                <label class="form-input">
+                    <input type="text" name="company_name" class="input input-primary input-s-big" placeholder="Название компании" />
+                </label>
+            </div>
+            <button type="submit" class="mt-[25px] md1:mt-4 btn btn-third btn-s-big w-full js-modal-close">Отправить заявку</button>
+            <div class="mt-[25px] md1:mt-4 checkbox">
+                <input id="c_agreement" name="agreement" class="checkbox__input" type="checkbox" />
+                <label for="c_agreement" class="checkbox__label">
+                    <div class="checkbox__mark">
+                        <div class="checkbox__mark-check"></div>
+                    </div>
+                    <span class="checkbox__text">
+                        Заполняя форму, вы соглашаетесь на
+                        <a href="#" class="inline">обработку персональных данных </a>
+                    </span>
+                </label>
+            </div>
+
+            <!-- const createBidForm = document.querySelector("#create-bid-form");
+            createBidForm.addEventListener("submit", e => {
+                if (e.target.classList.contains("is-valid")) {
+                    console.log("submit");
+                    const formData = new FormData(createBidForm);
+                    for (let pair of formData.entries()) {
+                        console.log(pair[0] + ": " + pair[1]);
+                    }
+                }
+            }); -->
+        </form>
+    </div>
+</div>
+
+</html>
