@@ -1,15 +1,14 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Приложение собственника" })
+    @include('partials/head.html', { "title": "CRM - для УК" })
 
     <body>
         <div class="site-container">
             @include('partials/header.html', { 
-              "customContent": '<a href="#" class="link-primary">Продукты и решения</a>'
+              "customContent": '<a href="#" class="link-primary">Продуктовые направления</a>'
             })
             <main class="main">
-                @include('partials/owner-app/hero.html')
-                @include('partials/owner-app/features.html')
+                @include('partials/crm/hero.html') 
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

@@ -241,7 +241,7 @@ button {
 
 .text-paragraph {
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.5;
     @media (max-width: $desktop) {
         font-size: 16px;
@@ -250,7 +250,7 @@ button {
 
 .text-paragraph-2 {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1.66;
     @media (max-width: $desktop) {
         font-size: 16px;
@@ -269,11 +269,17 @@ button {
     .marquee3k__wrapper {
         display: inline-flex !important;
         gap: 15px;
+        @media (max-width: $desktop) {
+            gap: 12px;
+        }
     }
     .marquee3k__copy {
         display: inline-flex !important;
         align-items: center;
         gap: 15px;
+        @media (max-width: $desktop) {
+            gap: 12px;
+        }
     }
 }
 
@@ -304,7 +310,7 @@ button {
     .rounded-primary {
         @apply rounded-[48px] md1:rounded-3xl;
     }
-    .transition-primary-all{
+    .transition-primary-all {
         transition: all $transitionSpeed $transitionFunction;
     }
 

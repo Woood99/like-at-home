@@ -6,7 +6,7 @@
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="theme-color" content="#111111" />
-	<title>Приложение собственника</title>
+	<title>CRM - для УК</title>
 	<link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
@@ -28,7 +28,7 @@
             <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
         <div class="nav" data-menu>
-            <a href="#" class="link-primary">Продукты и решения</a>
+            <a href="#" class="link-primary">Продуктовые направления</a>
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
                 <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00</a>
                 <button
@@ -58,24 +58,26 @@
             <main class="main">
                 <section class="mt-[50px] md1:mt-4" id="hero-block">
     <div class="container-desktop">
-        <div class="bg-[#cdebf1] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative">
-            <div class="mmd1:max-w-[435px] flex flex-col flex-grow">
-                <h1 class="title-1">Мобильное приложения собственника</h1>
+        <div
+            class="bg-[#5046e5] rounded-primary mmd1:rounded-br-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative overflow-hidden">
+            <div class="mmd1:max-w-[525px] flex flex-col flex-grow">
+                <h1 class="title-1 text-white">CRM-система для управляющих компаний</h1>
                 <div class="mt-auto">
                     <div class="mt-[75px] flex gap-[13px] md3:flex-col">
-                        <button class="btn btn-primary btn-s-default">Скачать приложение</button>
+                        <button class="btn btn-secondary btn-s-default">Подключить</button>
+                        <button class="btn btn-five btn-five--white-border btn-s-default">Демо доступ</button>
                     </div>
                 </div>
             </div>
 
             <picture>
-                <source srcset="./img/owner-app-hero-phones.webp" type="image/webp" />
+                <source srcset="./img/crm-hero-banner.webp" type="image/webp" />
                 <img
                     loading="lazy"
-                    src="./img/owner-app-hero-phones.png"
-                    class="absolute bottom-0 right-[71px]"
-                    width="552"
-                    height="454"
+                    src="./img/crm-hero-banner.png"
+                    class="absolute -bottom-1 right-0 rounded-tl-[30px]"
+                    width="634"
+                    height="431"
                     alt=""
                     role="presentation"
                     aria-hidden="true" />
@@ -83,131 +85,27 @@
         </div>
     </div>
     <div class="container-desktop !mt-6">
-        <div class="bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:grid-cols-1 md1:p-8">
+        <div class="bg-[rgba(80,70,229,0.1)] px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-10 rounded-primary md1:grid-cols-1 md1:p-8">
             <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Имидж современной управляющей компании</h3>
-                <p class="leading-[1.875] text-[#676767]">Цифровой сервис для собственников становится стандартом для УК</p>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Автоматизация процессов УК</h3>
+                <p class="leading-[1.875]">Предоставляем для работы современное програмное обеспечение</p>
             </div>
             <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Снижение нагрузки на диспетчерскую и офис</h3>
-                <p class="leading-[1.875] text-[#676767]">
-                    При наличии мобильного приложения, более 65% собственников выбирают именно этот канал коммуникации
-                </p>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Быстрая обработка обращений</h3>
+                <p class="leading-[1.875]">Заявки направляются нужным специалистам, что снижает нагрузку на диспетчерскую</p>
             </div>
             <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Автоматизация, прозрачность и контроль для УК</h3>
-                <p class="leading-[1.875] text-[#676767]">Коммуникация и архив взаимодействия в едином канале</p>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Push-уведомления о начиследниях</h3>
+                <p class="leading-[1.875]">Вовремя сообщайте о&nbsp;событиях и&nbsp;начислениях за&nbsp;ЖКУ</p>
+            </div>
+            <div>
+                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Рост собираемости платежей</h3>
+                <p class="leading-[1.875]">Улучшайте финансовые показатели управляющей компании</p>
             </div>
         </div>
     </div>
 </section>
-
-                <section class="mt-[160px] md1:mt-20" id="features-block">
-    <div class="container flex gap-[81px]">
-        <div class="mmd1:w-[640px] mmd1:h-[640px] flex-shrink-0 bg-[#cdebf1] flex justify-center items-end rounded-[54px] md1:rounded-3xl">
-            <picture class="absolute transition-primary-all opacity-100" data-features-image="0">
-                <source srcset="./img/owner-app-banner-1.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-banner-1.png"
-                    class=""
-                    width="326"
-                    height="568"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100" style="opacity: 0" data-features-image="1">
-                <source srcset="./img/owner-app-banner-2.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-banner-2.png"
-                    class=""
-                    width="326"
-                    height="568"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100" style="opacity: 0" data-features-image="2">
-                <source srcset="./img/owner-app-banner-3.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-banner-3.png"
-                    class=""
-                    width="326"
-                    height="568"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100" style="opacity: 0" data-features-image="3">
-                <source srcset="./img/owner-app-banner-4.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-banner-4.png"
-                    class=""
-                    width="326"
-                    height="568"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100" style="opacity: 0" data-features-image="4">
-                <source srcset="./img/owner-app-banner-5.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-banner-5.png"
-                    class=""
-                    width="326"
-                    height="568"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
-            </picture>
-        </div>
-        <div class="flex-grow relative min-w-0">
-            <h3 class="title-4-5 mt-[115px] mb-[46px]">Функции приложения</h3>
-            <div class="swiper" id="features-block-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-[#676767] mt-5">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-[#676767] mt-5">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-[#676767] mt-5">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-[#676767] mt-5">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-[#676767] mt-5">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 flex gap-3">
-                <button class="btn-nav btn-nav--prev" id="features-block-prev" aria-label="Предыдущий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-left"></use>
-                    </svg>
-                </button>
-                <button class="btn-nav btn-nav--next" id="features-block-next" aria-label="Следующий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
+ 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container-desktop">
         <div class="bg-dark rounded-primary py-[54px] px-14 md1:p-8">

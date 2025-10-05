@@ -11,3 +11,7 @@
 .tag-secondary {
     @apply bg-white text-black border border-solid border-black;
 }
+
+.tag-big {
+    @apply h-[70px] md1:h-[50px];
+}
