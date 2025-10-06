@@ -9,6 +9,16 @@
             })
             <main class="main">
                 @include('partials/crm/hero.html') 
+                @include('partials/crm/tools.html') 
+                @include('partials/components/analytics.html', { 
+                    "title":"Всегда доступна подробная аналитика", 
+                    "descr": "Система собирает данные и формирует полную аналитику по всем <br class='md1:hidden' /> необходимым параметрам.",
+                    "className":"mt-[128px]",
+                    "imageDefault": "crm-analytics.png",
+                    "imageWebp": "crm-analytics.webp",
+                    "classNameImage": "pt-9 px-10 pb-[49px]"
+                })
+                @include('partials/crm/ecosystem-of-services.html') 
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
