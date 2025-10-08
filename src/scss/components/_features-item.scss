@@ -15,8 +15,16 @@
         }
     }
 
-    &:not(:last-child) {
-        @apply border-b border-solid border-[#d4e3fb];
+    @media (min-width: $desktop-min) {
+        &:not(:last-child) {
+            @apply border-b border-solid border-[#d4e3fb];
+        }
+    }
+
+    @media (max-width: $desktop) {
+        &:not(.features-item--last) {
+            @apply border-b border-solid border-[#d4e3fb];
+        }
     }
 
     @media (min-width: $desktop-min) {
@@ -24,6 +32,8 @@
     }
 
     @media (max-width: $desktop) {
-        @apply pb-8 mb-8;
+        &:not(.features-item--last) {
+            @apply pb-8 mb-8;
+        }
     }
 }

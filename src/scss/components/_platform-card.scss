@@ -1,0 +1,82 @@
+.platform-card {
+    position: relative;
+
+    &__content {
+        padding: 32px 32px 0 32px;
+        border-radius: 32px;
+        background-color: var(--light-blue);
+        color: var(--white);
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        overflow: hidden;
+        position: relative;
+
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &__title {
+        margin-top: 44px;
+    }
+    &__descr {
+        padding-top: 16px;
+        line-height: 1.56;
+
+        opacity: 0;
+        max-height: 32px;
+        transition:
+            opacity 0.2s $transitionFunction,
+            max-height 0.25s $transitionFunction;
+        @media (min-width: $desktop-min) {
+            &::after {
+                content: "";
+                display: block;
+                height: 0;
+                transition: height 0.25s $transitionFunction;
+            }
+        }
+        @media (max-width: $desktop) {
+            opacity: 1;
+            max-height: 170px;
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 34px;
+        right: 28px;
+        width: 25px;
+        height: 25px;
+        fill: var(--white);
+
+        opacity: 0;
+        transform: translate3d(-4px, 4px, 0);
+        transition:
+            opacity 0.2s ease-out 0.05s,
+            transform 0.2s ease-out 0.05s;
+    }
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            .platform-card {
+                &__descr {
+                    opacity: 1;
+                    max-height: 170px;
+                    &::after {
+                        height: 32px;
+                    }
+                }
+                &__arrow {
+                    opacity: 1;
+                    transform: translateZ(0);
+                }
+            }
+        }
+    }
+    @media (max-width: $desktop) {
+        padding: 32px;
+        min-height: 300px;
+    }
+}

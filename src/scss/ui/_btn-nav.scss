@@ -1,6 +1,6 @@
 .btn-nav {
     transition: all $transitionSpeed $transitionFunction;
-    @apply w-12 h-12 flex-center-all border border-solid border-blue rounded-full;
+    @apply w-12 h-12 flex-center-all border border-solid border-greenDark rounded-full;
 
     &--prev {
     }
@@ -9,7 +9,7 @@
 
     svg {
         transition: all $transitionSpeed $transitionFunction;
-        @apply w-[18px] h-[18px] fill-none stroke-blue;
+        @apply w-[18px] h-[18px] fill-none stroke-greenDark;
     }
     &:disabled {
         @apply opacity-55 pointer-events-none;
@@ -17,7 +17,7 @@
 
     @media (min-width: $desktop-min) {
         &:hover {
-            @apply bg-blue;
+            @apply bg-greenDark;
             svg {
                 @apply stroke-white;
             }

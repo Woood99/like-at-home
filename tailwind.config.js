@@ -8,6 +8,7 @@ module.exports = {
             dark: "var(--dark)",
             darkPressed: "var(--dark-pressed)",
             green: "var(--green)",
+            greenDark: "var(--green-dark)",
             orange: "var(--orange)",
             red: "var(--red)",
             blue: "var(--blue)",
@@ -23,13 +24,16 @@ module.exports = {
         },
         extend: {
             screens: {
-                md1: { max: "1222px" },
+                md1: { max: "1296px" },
                 md2: { max: "799px" },
                 md3: { max: "599px" },
+                md4: { max: "399px" },
+                md5: { max: "359px" },
 
-                mmd1: { min: "1222px" },
-                mmd2: { min: "799px" },
-                mmd3: { min: "599px" }
+                mmd1: { min: "1296px" },
+                mmd2: { min: "800px" },
+                mmd3: { min: "600px" },
+                mmd4: { max: "400px" }
             }
         }
     },
