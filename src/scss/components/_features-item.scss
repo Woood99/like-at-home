@@ -9,7 +9,7 @@
     }
 
     &__descr {
-        @apply leading-[1.5625] text-[#676767];
+        @apply leading-[1.5625] text-grayDark;
         @media (min-width: $desktop-min) {
             @apply cut-1;
         }

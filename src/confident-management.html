@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Доверительно управление" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "customContent": '<a href="#" class="link-primary">Продукты и решения</a>'
+            })
+            <main class="main">
+                @include('partials/confident-management/hero.html') 
+                @include('partials/confident-management/info.html') 
+                @include('partials/confident-management/banner.html') 
+                @include('partials/confident-management/info-banners.html') 
+                @include('partials/confident-management/how-it-works.html') 
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

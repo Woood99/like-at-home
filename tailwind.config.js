@@ -16,7 +16,8 @@ module.exports = {
             lightBlue: "var(--light-blue)",
             gray: "var(--gray)",
             grayTwo: "var(--gray-two)",
-            grayLight: "var(--gray-light)"
+            grayLight: "var(--gray-light)",
+            grayDark: "var(--gray-dark)"
         },
         fontFamily: {
             Manrope: ["Manrope", "sans-serif"],

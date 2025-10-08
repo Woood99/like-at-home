@@ -1,5 +1,5 @@
 .banner-slide {
-    @apply bg-gray rounded-[48px] px-9 pt-[42px] pb-[77px] relative overflow-hidden flex flex-col;
+    @apply bg-gray rounded-primary px-9 pt-[42px] pb-[77px] relative overflow-hidden flex flex-col;
     @media (max-width: $desktop) {
         @apply pt-6 px-6 pb-14;
     }
