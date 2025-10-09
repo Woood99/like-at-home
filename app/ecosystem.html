@@ -28,7 +28,33 @@
             <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
         <div class="nav" data-menu>
-            <a href="#" class="link-primary">Продуктовые направления</a>
+            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-4 md1:flex-col">
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary nav-dropdown__link" data-spoller>
+                        <span><a href="#" class="link-primary">Продуктовые направления</a></span>
+                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                    <ul class="nav-dropdown__list">
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Экосистема для ЖКХ</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Аварийно-диспетчерская служба</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Системы контроля доступа</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Датчики и интернет вещей</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Доверительное управление</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
                 <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00</a>
                 <button
@@ -282,49 +308,64 @@
     </div>
 </section>
  
-                <!-- <picture class="">
-    <source srcset="../../img/hero-banner-1.webp" type="image/webp" />
-    <img loading="lazy" src="../../img/hero-banner-1.png" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
-</picture> -->
-
-<section class="mt-[160px] md1:mt-20" id="our-solutions">
+                <section class="mt-[160px] md1:mt-20" id="our-solutions">
     <div class="container">
         <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-8">Наши решения уже используют</h2>
         <div class="swiper" id="swiper-solutions">
             <div class="swiper-wrapper">
-                <a href="/" class="swiper-slide complex-card">
-                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
-                    <div class="ml-[22px]">
-                        <p class="complex-card__title">ЖК Небо</p>
-                        <p class="complex-card__subtitle">использует систему</p>
+                <a href="#" class="swiper-slide complex-card">
+                    <div class="ibg complex-card__image">
+                        <picture>
+                            <source srcset="./img/card-1.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-1.jpg" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+                        </picture>
+                    </div>
+                    <div class="ml-4 mt-4">
+                        <p class="complex-card__title">ЖК Лайнер Восток</p>
                     </div>
                 </a>
-                <a href="/" class="swiper-slide complex-card">
-                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
-                    <div class="ml-[22px]">
-                        <p class="complex-card__title">ЖК Лайнер</p>
-                        <p class="complex-card__subtitle">использует систему</p>
+                <a href="#" class="swiper-slide complex-card">
+                    <div class="ibg complex-card__image">
+                        <picture>
+                            <source srcset="./img/card-2.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-2.jpg" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+                        </picture>
+                    </div>
+                    <div class="ml-4 mt-4">
+                        <p class="complex-card__title">ЖК Лайнер Запад</p>
                     </div>
                 </a>
-                <a href="/" class="swiper-slide complex-card">
-                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
-                    <div class="ml-[22px]">
-                        <p class="complex-card__title">ЖК Небо</p>
-                        <p class="complex-card__subtitle">использует систему</p>
+                <a href="#" class="swiper-slide complex-card">
+                    <div class="ibg complex-card__image">
+                        <picture>
+                            <source srcset="./img/card-3.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-3.jpg" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+                        </picture>
+                    </div>
+                    <div class="ml-4 mt-4">
+                        <p class="complex-card__title">ЖК Прайм Тайм</p>
                     </div>
                 </a>
-                <a href="/" class="swiper-slide complex-card">
-                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
-                    <div class="ml-[22px]">
+                <a href="#" class="swiper-slide complex-card">
+                    <div class="ibg complex-card__image">
+                        <picture>
+                            <source srcset="./img/card-4.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-4.jpg" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+                        </picture>
+                    </div>
+                    <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Небо</p>
-                        <p class="complex-card__subtitle">использует систему</p>
                     </div>
                 </a>
-                <a href="/" class="swiper-slide complex-card">
-                    <div class="w-full bg-gray rounded-[32px] h-[322px]"></div>
-                    <div class="ml-[22px]">
-                        <p class="complex-card__title">ЖК Небо</p>
-                        <p class="complex-card__subtitle">использует систему</p>
+                <a href="#" class="swiper-slide complex-card">
+                    <div class="ibg complex-card__image">
+                        <picture>
+                            <source srcset="./img/card-2.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-2.jpg" width="306" height="322" alt="ЖК Небо" class="w-full bg-gray rounded-[32px]" />
+                        </picture>
+                    </div>
+                    <div class="ml-4 mt-4">
+                        <p class="complex-card__title">ЖК Лайнер Запад</p>
                     </div>
                 </a>
             </div>

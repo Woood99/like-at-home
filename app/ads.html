@@ -28,7 +28,33 @@
             <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
         <div class="nav" data-menu>
-            <a href="#" class="link-primary">Продукты и решения</a>
+            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-4 md1:flex-col">
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary nav-dropdown__link" data-spoller>
+                        <span>Продукты и решения</span>
+                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                    <ul class="nav-dropdown__list">
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Экосистема для ЖКХ</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Аварийно-диспетчерская служба</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Системы контроля доступа</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Датчики и интернет вещей</a>
+                        </li>
+                        <li class="nav-dropdown__subitem">
+                            <a href="#" class="link-primary">Доверительное управление</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
                 <a href="tel:88007000000" class="link-primary md1:hidden">8 800 700 00 00</a>
                 <button

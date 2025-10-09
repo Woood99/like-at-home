@@ -1,6 +1,5 @@
 .complex-card {
     &__title {
-        margin-top: 24px;
         transition: color $transitionSpeed $transitionFunction;
         font-weight: 500;
         font-size: 18px;
@@ -12,6 +11,9 @@
         font-weight: 500;
         line-height: 1.8252;
         color: #8f8f90;
+    }
+    &__image {
+        padding-bottom: percent(322, 306);
     }
     @media (min-width: $desktop-min) {
         &:hover {
