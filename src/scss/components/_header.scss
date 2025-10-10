@@ -99,7 +99,7 @@
     @media (min-width: $desktop-min) {
         &:hover {
             .nav-dropdown__link {
-                color: var(--blue);
+                color: var(--hover-primary);
             }
             .nav-dropdown__list {
                 opacity: 1;

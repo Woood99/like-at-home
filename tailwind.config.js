@@ -17,7 +17,8 @@ module.exports = {
             gray: "var(--gray)",
             grayTwo: "var(--gray-two)",
             grayLight: "var(--gray-light)",
-            grayDark: "var(--gray-dark)"
+            grayDark: "var(--gray-dark)",
+            hoverPrimary: "var(--hover-primary)"
         },
         fontFamily: {
             Manrope: ["Manrope", "sans-serif"],

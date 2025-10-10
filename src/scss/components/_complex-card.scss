@@ -18,7 +18,7 @@
     @media (min-width: $desktop-min) {
         &:hover {
             .complex-card__title {
-                color: var(--blue);
+                color: var(--hover-primary);
             }
         }
     }

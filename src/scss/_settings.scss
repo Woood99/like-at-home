@@ -262,7 +262,7 @@ button {
     font-weight: 500;
     @media (min-width: $desktop-min) {
         &:hover {
-            color: var(--blue);
+            color: var(--hover-primary);
         }
     }
 }

@@ -62,7 +62,7 @@
         a {
             @apply underline font-medium;
             &:hover {
-                color: var(--blue);
+                color: var(--hover-primary);
             }
         }
         @media (max-width: $desktop) {
