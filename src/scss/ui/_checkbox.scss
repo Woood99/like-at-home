@@ -1,8 +1,9 @@
 .checkbox {
     position: relative;
     --size: 22px;
-    --size-inner: 16px;
+    --size-inner: 20px;
     --color: var(--black);
+    user-select: none;
 
     &__input {
         position: absolute;
@@ -10,8 +11,15 @@
         height: 0;
         opacity: 0;
 
-        &:checked + .checkbox__label .checkbox__mark-check {
-            transform: scale(1);
+        &:checked + .checkbox__label {
+            .checkbox__mark {
+                background-color: var(--hover-primary);
+                border-color: var(--hover-primary);
+            }
+            .checkbox__mark-check {
+                visibility: visible;
+                opacity: 1;
+            }
         }
 
         &.just-validate-error-field {
@@ -39,19 +47,21 @@
         height: var(--size);
         border: 1px solid var(--color);
         border-radius: 5px;
-        transition: border $transitionSpeed $transitionFunction;
+        transition: all $transitionSpeed $transitionFunction;
 
         @apply flex-center-all;
     }
 
     &__mark-check {
-        background-color: var(--color);
         flex: 0 0 var(--size-inner);
         width: var(--size-inner);
         height: var(--size-inner);
-        border-radius: 5px;
-        transform: scale(0);
-        transition: transform $transitionSpeed $transitionFunction;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0;
+        visibility: hidden;
     }
 
     &__text {

@@ -14,7 +14,8 @@ document.addEventListener("DOMContentLoaded", () => {
     spollers();
     Marquee3k.init();
     getHeaderHeight();
-    new Modal();
+    const modal = new Modal();
+    if (modal) window.modal = modal;
 
     window.addEventListener("resize", () => {
         getHeaderHeight();
@@ -218,5 +219,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         ]);
+    }
+
+    const actionTg = document.querySelector(".action-tg");
+    if (actionTg) {
+        const link = actionTg.querySelector(".action-tg-link");
+        const btn = actionTg.querySelector(".action-tg-btn");
+        if (!link || !btn) return;
+        btn.addEventListener("click", () => {
+            actionTg.classList.toggle("_active");
+            btn.classList.toggle("_active");
+        });
     }
 });

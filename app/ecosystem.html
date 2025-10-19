@@ -31,7 +31,7 @@
             <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-4 md1:flex-col">
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link" data-spoller>
-                        <span><a href="#" class="link-primary">Продуктовые направления</a></span>
+                        <span>Продуктовые направления</span>
                         <svg class="w-2.5 h-2.5 fill-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
@@ -207,7 +207,7 @@
                 </div>
                 <div>
                     <h3 class="title-4 platform-card__title">CRM-система</h3>
-                    <p class="platform-card__descr text-paragraph">Автоматизация рабочих процессов</p>
+                    <p class="platform-card__descr">Автоматизация рабочих процессов</p>
                 </div>
                 <svg class="platform-card__arrow">
                     <use xlink:href="img/sprite.svg#arrow-right-top"></use>
@@ -322,6 +322,7 @@
                     </div>
                     <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Лайнер Восток</p>
+                        <p class="complex-card__subtitle">Москва серый</p>
                     </div>
                 </a>
                 <a href="#" class="swiper-slide complex-card">
@@ -333,6 +334,7 @@
                     </div>
                     <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Лайнер Запад</p>
+                        <p class="complex-card__subtitle">Москва серый</p>
                     </div>
                 </a>
                 <a href="#" class="swiper-slide complex-card">
@@ -344,6 +346,7 @@
                     </div>
                     <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Прайм Тайм</p>
+                        <p class="complex-card__subtitle">Москва серый</p>
                     </div>
                 </a>
                 <a href="#" class="swiper-slide complex-card">
@@ -355,6 +358,7 @@
                     </div>
                     <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Небо</p>
+                        <p class="complex-card__subtitle">Москва серый</p>
                     </div>
                 </a>
                 <a href="#" class="swiper-slide complex-card">
@@ -366,6 +370,7 @@
                     </div>
                     <div class="ml-4 mt-4">
                         <p class="complex-card__title">ЖК Лайнер Запад</p>
+                        <p class="complex-card__subtitle">Москва серый</p>
                     </div>
                 </a>
             </div>
@@ -421,8 +426,8 @@
                             </label>
                         </div>
                     </form>
-
-                    <!-- const formBid = document.querySelector("#form-bid");
+                    <!-- у полей "name" связаны с валидацией, если валидация не нужна то с формы убирай id="form-bid"
+                    const formBid = document.querySelector("#form-bid");
                     formBid.addEventListener("submit", e => {
                         if (e.target.classList.contains("is-valid")) {
                             console.log("submit");
@@ -431,7 +436,7 @@
                                 console.log(pair[0] + ": " + pair[1]);
                             }
                         }
-                    }); -->
+                    });  -->
                 </div>
             </div>
             <div class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-primary py-[54px] px-14 md1:p-6 flex justify-between gap-6 md1:flex-col">
@@ -586,8 +591,8 @@
                     </span>
                 </label>
             </div>
-
-            <!-- const createBidForm = document.querySelector("#create-bid-form");
+            <!-- у полей "name" связаны с валидацией, если валидация не нужна то с формы убирай id="create-bid-form"
+            const createBidForm = document.querySelector("#create-bid-form");
             createBidForm.addEventListener("submit", e => {
                 if (e.target.classList.contains("is-valid")) {
                     console.log("submit");
@@ -595,6 +600,7 @@
                     for (let pair of formData.entries()) {
                         console.log(pair[0] + ": " + pair[1]);
                     }
+                    window.modal?.close(); - при необходимости закрыть попап (или на кнопке есть класс js-modal-close который закрывает попап но без асинхронности)
                 }
             }); -->
         </form>

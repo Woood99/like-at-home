@@ -230,8 +230,8 @@
                             </label>
                         </div>
                     </form>
-
-                    <!-- const formBid = document.querySelector("#form-bid");
+                    <!-- у полей "name" связаны с валидацией, если валидация не нужна то с формы убирай id="form-bid"
+                    const formBid = document.querySelector("#form-bid");
                     formBid.addEventListener("submit", e => {
                         if (e.target.classList.contains("is-valid")) {
                             console.log("submit");
@@ -240,7 +240,7 @@
                                 console.log(pair[0] + ": " + pair[1]);
                             }
                         }
-                    }); -->
+                    });  -->
                 </div>
             </div>
             <div class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-primary py-[54px] px-14 md1:p-6 flex justify-between gap-6 md1:flex-col">
@@ -395,8 +395,8 @@
                     </span>
                 </label>
             </div>
-
-            <!-- const createBidForm = document.querySelector("#create-bid-form");
+            <!-- у полей "name" связаны с валидацией, если валидация не нужна то с формы убирай id="create-bid-form"
+            const createBidForm = document.querySelector("#create-bid-form");
             createBidForm.addEventListener("submit", e => {
                 if (e.target.classList.contains("is-valid")) {
                     console.log("submit");
@@ -404,6 +404,7 @@
                     for (let pair of formData.entries()) {
                         console.log(pair[0] + ": " + pair[1]);
                     }
+                    window.modal?.close(); - при необходимости закрыть попап (или на кнопке есть класс js-modal-close который закрывает попап но без асинхронности)
                 }
             }); -->
         </form>

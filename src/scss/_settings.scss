@@ -342,3 +342,165 @@ button {
     left: 0;
     object-fit: cover;
 }
+
+.provide-solution__arrow-top-right {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    fill: var(--black);
+
+    opacity: 0;
+    transform: translate3d(-4px, 4px, 0);
+    transition:
+        opacity 0.2s ease-out 0.05s,
+        transform 0.2s ease-out 0.05s;
+    @media (max-width: $desktop) {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+}
+
+.btn-tg {
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #fff;
+    svg {
+        width: 16px;
+        height: 14px;
+    }
+}
+
+.action-tg {
+    position: fixed;
+    bottom: 36px;
+    right: 36px;
+
+    display: flex;
+
+    z-index: 20;
+
+    &._active {
+        .action-tg-link {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+    @media (max-width: $desktop) {
+        bottom: 20px;
+        right: 20px;
+    }
+}
+.action-tg-link {
+    background-color: white;
+    box-shadow: 0px 0px 15px 0px #456ac733;
+    height: 70px;
+    padding: 0 calc(70px + 15px) 0 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    white-space: nowrap;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 70px;
+
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--black);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        opacity $transitionSpeed $transitionFunction,
+        visibility $transitionSpeed $transitionFunction;
+
+    @media (max-width: $desktop) {
+        font-size: 14px;
+        height: 48px;
+        padding: 0 calc(45px + 15px) 0 30px;
+    }
+}
+
+.action-tg-btn {
+    width: 70px;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background-color: #000;
+
+    position: relative;
+    z-index: 1;
+
+    &:not(._active) {
+        animation: pulse_1 500ms ease-in-out infinite alternate;
+    }
+
+    svg {
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+
+        transition:
+            opacity $transitionSpeed $transitionFunction,
+            visibility $transitionSpeed $transitionFunction;
+
+        @media (max-width: $desktop) {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    .action-tg-btn-message {
+    }
+
+    .action-tg-btn-tg {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &._active {
+        .action-tg-btn-message {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .action-tg-btn-tg {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    @media (max-width: $desktop) {
+        width: 48px;
+        height: 48px;
+    }
+}
+
+@keyframes pulse_1 {
+    from {
+        opacity: 0.75;
+        transform: scale(1);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+}

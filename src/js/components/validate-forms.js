@@ -4,7 +4,8 @@ import JustValidate from "just-validate";
 const validateForms = (formEl, rules) => {
     if (!formEl) return;
     const validation = new JustValidate(formEl, {
-        validateBeforeSubmitting: true,
+        // validateBeforeSubmitting: true,
+        validateBeforeSubmitting: false,
         lockForm: false
     });
 
