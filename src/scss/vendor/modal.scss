@@ -23,7 +23,7 @@
         opacity var(--transition-time),
         visibility var(--transition-time);
     display: flex;
-    @media (max-width: 1200px) {
+    @media (max-width: 1296px) {
         display: block;
         padding: 0;
     }
@@ -39,13 +39,16 @@
     display: none;
     vertical-align: middle;
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1296px) {
         min-height: var(--vh);
         border-radius: 0;
         width: 100%;
         margin: 0;
-        padding: 38px 20px 20px;
+        padding: 52px 20px 20px;
     }
+}
+.graph-modal__content {
+    width: 100%;
 }
 .graph-modal__container.graph-modal-container-fadeInUp {
     transform: translateY(60%) scale(0.6);
@@ -66,7 +69,7 @@
     background-color: transparent;
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001'%3E%3Cpath fill='white' d='M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
     cursor: pointer;
-    @media (max-width: 1200px) {
+    @media (max-width: 1296px) {
         width: 18px;
         height: 18px;
         background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512.001 512.001'%3E%3Cpath fill='black' d='M284.286 256.002L506.143 34.144c7.811-7.811 7.811-20.475 0-28.285-7.811-7.81-20.475-7.811-28.285 0L256 227.717 34.143 5.859c-7.811-7.811-20.475-7.811-28.285 0-7.81 7.811-7.811 20.475 0 28.285l221.857 221.857L5.858 477.859c-7.811 7.811-7.811 20.475 0 28.285a19.938 19.938 0 0014.143 5.857 19.94 19.94 0 0014.143-5.857L256 284.287l221.857 221.857c3.905 3.905 9.024 5.857 14.143 5.857s10.237-1.952 14.143-5.857c7.811-7.811 7.811-20.475 0-28.285L284.286 256.002z'/%3E%3C/svg%3E");
@@ -80,7 +83,7 @@
         visibility var(--transition-time);
 }
 .graph-modal__container.graph-modal-open {
-    display: block;
+    display: flex;
 }
 .fade {
     opacity: 0;
