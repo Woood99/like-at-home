@@ -28,12 +28,14 @@ module.exports = {
         extend: {
             screens: {
                 md1: { max: "1296px" },
+                md1_5: { max: "899px" },
                 md2: { max: "799px" },
                 md3: { max: "599px" },
                 md4: { max: "399px" },
                 md5: { max: "359px" },
 
                 mmd1: { min: "1296px" },
+                mmd1_5: { min: "900px" },
                 mmd2: { min: "800px" },
                 mmd3: { min: "600px" },
                 mmd4: { max: "400px" }

@@ -504,3 +504,95 @@ button {
         transform: scale(1.05);
     }
 }
+
+.features-tabs-btn {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 1.33;
+    white-space: nowrap;
+    &._active {
+        cursor: default;
+        color: #5046e5;
+        box-shadow: 0 2px 0 0 currentColor;
+    }
+    @media (max-width:$desktop){
+         font-size: 20px; 
+    }
+    @media (min-width: $desktop-min) {
+        &:hover {
+            box-shadow: 0 2px 0 0 currentColor;
+        }
+    }
+    & ~ .features-tabs-text {
+        @media (max-width: $tablet-max) {
+            display: none;
+        }
+    }
+}
+
+.features-tabs-text {
+    font-size: 18px;
+    line-height: 1.66667;
+    color: var(--black);
+    @media (max-width:$desktop){
+         font-size: 16px; 
+    }
+    @media (max-width: $tablet-max) {
+        margin-bottom: 32px;
+    }
+}
+
+.features-tabs-text-anim {
+    max-height: 0;
+    max-width: 100%;
+    opacity: 0;
+    overflow: hidden;
+    transform: translate3d(0, -32px, 0);
+    transform: translate3d(0, calc(32px * -1), 0);
+    transition:
+        opacity 0.25s ease-out,
+        transform 0.15s ease-out;
+
+    &::before {
+        content: "";
+        display: block;
+        height: 22px;
+    }
+    &._active {
+        max-height: 732px;
+        opacity: 1;
+        overflow: visible;
+        overflow: initial;
+        transform: translateZ(0);
+    }
+}
+
+.features-tabs-image {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition:
+        opacity 0.35s ease-in-out,
+        height 0.35s ease-in-out;
+    visibility: hidden;
+    display: block;
+
+    .features-tabs-image-text {
+        @media (max-width: $tablet-min) {
+            display: none;
+        }
+    }
+
+    &._active {
+        height: auto;
+        opacity: 1;
+        overflow: visible;
+        overflow: initial;
+        visibility: visible;
+    }
+    img{
+        @media (max-width:$tablet-max){
+              margin: 0 auto;
+        }
+    }
+}

@@ -1,3 +1,4 @@
+import featuresTabs from "./components/featuresTabs.js";
 import validateForms from "./components/validate-forms.js";
 import "./functions/burger.js";
 import "./functions/fix-fullheight.js";
@@ -12,6 +13,7 @@ Swiper.use([Navigation, Pagination]);
 
 document.addEventListener("DOMContentLoaded", () => {
     spollers();
+    featuresTabs();
     Marquee3k.init();
     getHeaderHeight();
     const modal = new Modal();
