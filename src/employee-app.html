@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Мобильное приложение для сотрудников" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "linkName": 'Продукты и решения'
+            })
+            
+            <main class="main">
+                @include('partials/employee-app/hero.html')
+                @include('partials/employee-app/who-use-app.html')
+                @include('partials/employee-app/without-internet.html')
+                @include('partials/components/install-application.html', { 
+                    "className":"mt-[160px]", 
+                    "QrCodeApple": "qr-code-employee-apple-store",
+                    "QrCodeGoogle": "qr-code-employee-app-google-play",
+                    "QrCodeRuStore": "qr-code-employee-app-rustore"
+                })
+                @include('partials/components/ecosystem-of-services.html', { "className":"mt-[160px]" })
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

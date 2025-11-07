@@ -1,11 +1,14 @@
 import featuresTabs from "./components/featuresTabs.js";
 import validateForms from "./components/validate-forms.js";
+import { parallaxOnBodyConfig } from "./constants/parallax.constants.js";
 import "./functions/burger.js";
 import "./functions/fix-fullheight.js";
 import { getHeaderHeight } from "./functions/header-height.js";
+import { isDesktop } from "./functions/isDesktop.js";
 import Modal from "./functions/modal.js";
 import spollers from "./functions/spollers.js";
 import Marquee3k from "marquee3000";
+import Parallax from "parallax-js";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -231,6 +234,16 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.addEventListener("click", () => {
             actionTg.classList.toggle("_active");
             btn.classList.toggle("_active");
+        });
+    }
+
+    if (isDesktop()) {
+        document.querySelectorAll(".banner-parallax").forEach(item => {
+            new Parallax(item, parallaxOnBodyConfig);
+        });
+
+        document.querySelectorAll(".cloud-pass-service-parallax").forEach(item => {
+            new Parallax(item, parallaxOnBodyConfig);
         });
     }
 });

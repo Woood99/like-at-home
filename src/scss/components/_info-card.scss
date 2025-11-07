@@ -1,0 +1,17 @@
+.info-card {
+    @apply border border-solid border-[#e0e0e0] rounded-32 md1:rounded-3xl p-8 md1:p-6;
+
+    &__icon {
+        @apply flex-center-all bg-cyan w-[58px] h-[58px] md1:w-11 md1:h-11 rounded-full mb-[121px] md1:mb-16;
+
+        svg {
+            @apply w-6 h-6 text-black;
+        }
+    }
+    &__title {
+        @apply mb-4;
+    }
+    &__descr {
+        @apply leading-[1.5625];
+    }
+}

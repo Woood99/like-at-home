@@ -44,7 +44,7 @@
         "gulp-rev-delete-original": "^0.2.3",
         "gulp-rev-rewrite": "^6.0.0",
         "gulp-sass": "^5.1.0",
-        "gulp-svg-sprite": "^2.0.3",
+        "gulp-svg-sprite": "^1.5.0",
         "gulp-svgmin": "^4.1.0",
         "gulp-typograf": "^4.1.0",
         "gulp-webp": "^5.0.0",
@@ -67,6 +67,7 @@
         "inputmask": "^5.0.7",
         "just-validate": "^3.3.3",
         "marquee3000": "^1.1.1",
+        "parallax-js": "^3.1.0",
         "sass": "^1.75.0",
         "swiper": "^11.1.1"
     }

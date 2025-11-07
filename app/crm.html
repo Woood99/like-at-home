@@ -12,8 +12,6 @@
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterExtraBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="stylesheet" href="css/vendor.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<script defer src="js/main.js"></script>
@@ -32,7 +30,7 @@
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link" data-spoller>
                         <span>Продуктовые направления</span>
-                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </a>
@@ -68,7 +66,7 @@
         </div>
 
         <a href="tel:88007000000" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 800 700 00 00">
-            <svg class="w-6 h-6 fill-blue">
+            <svg class="w-6 h-6 text-blue">
                 <use xlink:href="img/sprite.svg#call"></use>
             </svg>
         </a>
@@ -278,7 +276,12 @@
         </div>
         <div class="grid grid-cols-3 gap-8 md1:grid-cols-1">
             <a href="#" class="product-card">
-                <div class="product-card__badge product-card__badge--white">app</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#smartphone"></use>
+                    </svg>
+                    <span>АРР</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Мобильное приложение собственника</h4>
                     <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
@@ -288,7 +291,12 @@
                 </svg>
             </a>
             <a href="#" class="product-card">
-                <div class="product-card__badge product-card__badge--white">app</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#smartphone"></use>
+                    </svg>
+                    <span>АРР</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Мобильное приложение исполнителя</h4>
                     <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
@@ -298,7 +306,12 @@
                 </svg>
             </a>
             <a href="#" class="product-card">
-                <div class="product-card__badge product-card__badge--white">диспетчерская</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#headset"></use>
+                    </svg>
+                    <span>Контакт-центр</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Аварийно-диспетчерская служба</h4>
                     <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
@@ -421,14 +434,14 @@
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#apple"></use>
                     </svg>
                 </a>
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#store"></use>
                     </svg>
                 </a>
@@ -441,7 +454,7 @@
                         viewBox="0 0 26 26"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-[25px] h-[25px] fill-black">
+                        class="w-[25px] h-[25px] text-black">
                         <path
                             d="M13.9542 3.13803C13.9321 1.81341 15.1807 0.833699 16.462 1.17025L23.6232 3.05115C24.4789 3.27591 25.0853 4.03619 25.1141 4.92046L25.5112 17.1183C25.5547 18.4535 24.302 19.4552 23.009 19.119L15.6538 17.2067C14.7844 16.9806 14.1724 16.2026 14.1574 15.3044L13.9542 3.13803Z"
                             fill="black" />

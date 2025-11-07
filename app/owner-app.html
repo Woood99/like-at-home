@@ -12,8 +12,6 @@
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterExtraBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="stylesheet" href="css/vendor.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<script defer src="js/main.js"></script>
@@ -32,7 +30,7 @@
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link" data-spoller>
                         <span>Продукты и решения</span>
-                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </a>
@@ -68,7 +66,7 @@
         </div>
 
         <a href="tel:88007000000" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 800 700 00 00">
-            <svg class="w-6 h-6 fill-blue">
+            <svg class="w-6 h-6 text-blue">
                 <use xlink:href="img/sprite.svg#call"></use>
             </svg>
         </a>
@@ -82,9 +80,9 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-4" id="hero-block">
+                <section class="mt-[50px] md1:mt-4">
     <div class="container-desktop">
-        <div class="bg-[#cdebf1] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:pb-0 gap-12">
+        <div class="bg-cyan rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:pb-0 gap-12">
             <div class="mmd1:max-w-[435px] flex flex-col flex-grow">
                 <h1 class="title-1">Мобильное приложения собственника</h1>
                 <div class="mt-auto">
@@ -94,17 +92,9 @@
                 </div>
             </div>
 
-            <picture>
+            <picture class="mmd1:absolute bottom-0 right-[71px]">
                 <source srcset="./img/owner-app-hero-phones.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/owner-app-hero-phones.png"
-                    class="mmd1:absolute bottom-0 right-[71px]"
-                    width="552"
-                    height="454"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
+                <img loading="lazy" src="./img/owner-app-hero-phones.png" width="552" height="454" alt="" role="presentation" aria-hidden="true" />
             </picture>
         </div>
     </div>
@@ -131,7 +121,7 @@
                 <section class="mt-[160px] md1:mt-20" id="features-block">
     <div class="container flex gap-20 md1:flex-col md1:gap-9">
         <div
-            class="w-[640px] h-[640px] flex-shrink-0 bg-[#cdebf1] flex justify-center items-end rounded-[54px] md1:rounded-3xl relative md1:w-full md4:h-[580px] md5:h-[515px]">
+            class="w-[640px] h-[640px] flex-shrink-0 bg-cyan flex justify-center items-end rounded-[54px] md1:rounded-3xl relative md1:w-full md4:h-[580px] md5:h-[515px]">
             <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" data-features-image="0">
                 <source srcset="./img/owner-app-banner-1.webp" type="image/webp" />
                 <img loading="lazy" src="./img/owner-app-banner-1.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
@@ -305,14 +295,14 @@
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#apple"></use>
                     </svg>
                 </a>
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#store"></use>
                     </svg>
                 </a>
@@ -325,7 +315,7 @@
                         viewBox="0 0 26 26"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-[25px] h-[25px] fill-black">
+                        class="w-[25px] h-[25px] text-black">
                         <path
                             d="M13.9542 3.13803C13.9321 1.81341 15.1807 0.833699 16.462 1.17025L23.6232 3.05115C24.4789 3.27591 25.0853 4.03619 25.1141 4.92046L25.5112 17.1183C25.5547 18.4535 24.302 19.4552 23.009 19.119L15.6538 17.2067C14.7844 16.9806 14.1724 16.2026 14.1574 15.3044L13.9542 3.13803Z"
                             fill="black" />

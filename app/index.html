@@ -12,8 +12,6 @@
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterExtraBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="stylesheet" href="css/vendor.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<script defer src="js/main.js"></script>
@@ -32,7 +30,7 @@
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link" data-spoller>
                         <span>Продуктовые направления</span>
-                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </a>
@@ -68,7 +66,7 @@
         </div>
 
         <a href="tel:88007000000" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 800 700 00 00">
-            <svg class="w-6 h-6 fill-blue">
+            <svg class="w-6 h-6 text-blue">
                 <use xlink:href="img/sprite.svg#call"></use>
             </svg>
         </a>
@@ -162,10 +160,15 @@
  
                 <section class="mt-[128px] md1:mt-20">
     <div class="container">
-        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-6">Продуктовые направления</h2>
+        <h2 class="title-2 mmd1:ml-[56px] mb-20 md1:mb-8">Продуктовые направления</h2>
         <div class="grid grid-cols-4 gap-6 md1:gap-5 md1:grid-cols-2 md3:grid-cols-1">
             <a href="#" class="product-card">
-                <div class="product-card__badge product-card__badge--white">онлайн-платформа</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#monitor"></use>
+                    </svg>
+                    <span>Платформа</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Экосистема сервисов для ЖКХ</h4>
                     <p class="product-card__descr">Готовый сайт УК, кабинет собственника, мобильные приложения, ГИС ЖКХ</p>
@@ -175,7 +178,12 @@
                 </svg>
             </a>
             <a href="#" class="product-card product-card--green">
-                <div class="product-card__badge product-card__badge--white">контакт-центр</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#headset"></use>
+                    </svg>
+                    <span>Контакт-центр</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Аварийно диспетчерская служба</h4>
                     <p class="product-card__descr">Принимаем звонки и обрабатываем заявки от собственников</p>
@@ -185,7 +193,12 @@
                 </svg>
             </a>
             <a href="#" class="product-card">
-                <div class="product-card__badge product-card__badge--white">доступ на объект</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#shield"></use>
+                    </svg>
+                    <span>Доступ на объект</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Системы контроля доступа</h4>
                     <p class="product-card__descr">Управление всеми видами турникетов, дверными замками, шлагбаумами</p>
@@ -195,7 +208,12 @@
                 </svg>
             </a>
             <a href="#" class="product-card product-card--white">
-                <div class="product-card__badge product-card__badge--white">iot</div>
+                <div class="product-card__badge">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#umbrella"></use>
+                    </svg>
+                    <span>Сервис</span>
+                </div>
                 <div class="product-card__content">
                     <h4 class="title-4 product-card__title">Датчики и интернет вещей</h4>
                     <p class="product-card__descr">Приложения и сервисы, которые анализируют данные и управляют устройствами</p>
@@ -237,7 +255,7 @@
                         alt="Заявки от жителей" />
                 </picture>
                 <svg
-                    class="provide-solution__arrow-top-right !fill-white group-hover:opacity-100 group-hover:translate-x-0 top-10 right-10 md1:top-7 md1:right-7">
+                    class="provide-solution__arrow-top-right !text-white group-hover:opacity-100 group-hover:translate-x-0 top-10 right-10 md1:top-7 md1:right-7">
                     <use xlink:href="img/sprite.svg#arrow-right-top"></use>
                 </svg>
             </a>
@@ -436,7 +454,7 @@
  
                 <section class="mt-[160px] md1:mt-20" id="our-solutions">
     <div class="container">
-        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-8">Наши решения уже используют</h2>
+        <h2 class="title-2 mmd1:ml-[56px] mb-20 md1:mb-8">Наши решения уже используют</h2>
         <div class="swiper" id="swiper-solutions">
             <div class="swiper-wrapper">
                 <a href="#" class="swiper-slide complex-card">
@@ -627,14 +645,14 @@
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#apple"></use>
                     </svg>
                 </a>
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#store"></use>
                     </svg>
                 </a>
@@ -647,7 +665,7 @@
                         viewBox="0 0 26 26"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-[25px] h-[25px] fill-black">
+                        class="w-[25px] h-[25px] text-black">
                         <path
                             d="M13.9542 3.13803C13.9321 1.81341 15.1807 0.833699 16.462 1.17025L23.6232 3.05115C24.4789 3.27591 25.0853 4.03619 25.1141 4.92046L25.5112 17.1183C25.5547 18.4535 24.302 19.4552 23.009 19.119L15.6538 17.2067C14.7844 16.9806 14.1724 16.2026 14.1574 15.3044L13.9542 3.13803Z"
                             fill="black" />

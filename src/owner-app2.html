@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Приложение собственника" })
+    @include('partials/head.html', { "title": "Мобильное приложения собственника" })
 
     <body>
         <div class="site-container">
@@ -10,6 +10,14 @@
             <main class="main">
                 @include('partials/owner-app/hero.html')
                 @include('partials/owner-app/features2.html')
+                @include('partials/components/install-application.html', { 
+                    "className":"mt-[160px]", 
+                    "QrCodeApple": "qr-code-owner-apple-store",
+                    "QrCodeGoogle": "qr-code-owner-app-google-play",
+                    "QrCodeRuStore": "qr-code-owner-app-rustore"
+                })
+                @include('partials/components/ecosystem-of-services.html', { "className":"mt-[160px]" })
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

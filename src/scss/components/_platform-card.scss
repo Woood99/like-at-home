@@ -16,6 +16,9 @@
         position: absolute;
         bottom: 0;
         left: 0;
+        @media (max-width:$desktop){
+             padding: 32px; 
+        }
     }
     &__title {
         margin-top: 44px;
@@ -50,7 +53,7 @@
         right: 28px;
         width: 25px;
         height: 25px;
-        fill: var(--white);
+        color: var(--white);
 
         opacity: 0;
         transform: translate3d(-4px, 4px, 0);

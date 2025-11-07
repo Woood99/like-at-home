@@ -12,8 +12,6 @@
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeExtraBold.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterMedium.woff2" as="font" type="font/woff2" crossorigin />
-	<link rel="preload" href="fonts/InterExtraBold.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="stylesheet" href="css/vendor.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<script defer src="js/main.js"></script>
@@ -32,7 +30,7 @@
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link" data-spoller>
                         <span>Продуктовые направления</span>
-                        <svg class="w-2.5 h-2.5 fill-[currentColor]">
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </a>
@@ -68,7 +66,7 @@
         </div>
 
         <a href="tel:88007000000" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 800 700 00 00">
-            <svg class="w-6 h-6 fill-blue">
+            <svg class="w-6 h-6 text-blue">
                 <use xlink:href="img/sprite.svg#call"></use>
             </svg>
         </a>
@@ -106,30 +104,46 @@
             <div class="swiper h-full" id="swiper-banner">
                 <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
                     <div class="swiper-slide h-full md1:h-auto">
-                        <div class="banner-slide h-full" style="background-color: var(--light-blue)">
-                            <div
-                                class="absolute top-[168px] left-[64px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
-                                        fill="#26AD50" />
-                                </svg>
-                                <div class="flex flex-col items-center text-center font-Inter">
-                                    <span class="text-[20px] text-[#141414] font-medium">+ 3500 ₽</span>
-                                    <span class="mt-1 font-medium text-[9px] text-[#6e6e6e]">Оплата ЖКУ</span>
+                        <div class="banner-slide banner-slide--parallax h-full" style="background-color: var(--light-cyan)">
+                            <div class="banner-slide__parallax banner-parallax">
+                                <div data-depth="0.25" class="parallax-layer" style="padding: 168px 0 0 64px">
+                                    <div
+                                        class="flex-center-all gap-5 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
+                                                fill="#26AD50" />
+                                        </svg>
+                                        <div class="flex flex-col items-center text-center">
+                                            <span class="text-[20px] text-[#141414] font-medium">+ 3500 ₽</span>
+                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">Оплата ЖКУ</span>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div
-                                class="absolute bottom-[92px] right-[64px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                <picture>
-                                    <source srcset="./img/avatar.webp" type="image/webp" />
-                                    <img loading="lazy" src="./img/avatar.png" class="image" width="38" height="38" alt="Исполнитель" />
-                                </picture>
-                                <div class="flex flex-col items-center text-center font-Inter">
-                                    <span class="text-[15px] text-[#141414] font-medium">Новая заявка</span>
-                                    <span class="mt-1 font-medium text-[9px] text-[#6e6e6e]">Исполнитель назначен</span>
+                                <div data-depth="0.3" class="parallax-layer" style="padding: 327px 0px 0px 157px">
+                                    <div
+                                        class="flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[67px] px-5 rounded-[20px]">
+                                        <svg width="37" height="37" viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M18.3333 36.6667C8.20783 36.6667 0 28.4588 0 18.3333C0 8.20783 8.20783 0 18.3333 0C28.4588 0 36.6667 8.20783 36.6667 18.3333C36.6667 28.4588 28.4588 36.6667 18.3333 36.6667Z"
+                                                fill="#2C7EFF" />
+                                            <path
+                                                d="M20.314 12.529C20.1211 12.7257 20.0131 12.9902 20.0131 13.2656C20.0131 13.5411 20.1211 13.8056 20.314 14.0023L21.9977 15.686C22.1944 15.8789 22.4589 15.9869 22.7344 15.9869C23.0098 15.9869 23.2743 15.8789 23.471 15.686L27.4384 11.7187C27.9676 12.888 28.1278 14.1909 27.8977 15.4536C27.6677 16.7164 27.0582 17.879 26.1506 18.7866C25.243 19.6942 24.0804 20.3036 22.8177 20.5337C21.5549 20.7637 20.2521 20.6035 19.0827 20.0744L11.8109 27.3461C11.3923 27.7648 10.8245 28 10.2324 28C9.64032 28 9.0725 27.7648 8.65385 27.3461C8.2352 26.9275 8 26.3597 8 25.7676C8 25.1755 8.2352 24.6077 8.65385 24.1891L15.9256 16.9173C15.3965 15.7479 15.2363 14.4451 15.4663 13.1823C15.6964 11.9196 16.3058 10.757 17.2134 9.84937C18.121 8.94179 19.2836 8.33235 20.5464 8.10227C21.8091 7.8722 23.112 8.03242 24.2813 8.56158L20.3245 12.5184L20.314 12.529Z"
+                                                fill="#2C7EFF"
+                                                stroke="white"
+                                                stroke-width="1.66667"
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                        <div class="flex flex-col items-center text-center">
+                                            <span class="text-[15px] text-[#141414] font-medium">Новая заявка</span>
+                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">Исполнитель назначен</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <picture>
@@ -151,6 +165,7 @@
             </div>
         </div>
     </div>
+
     <div class="container-desktop !mt-6">
         <div class="bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:grid-cols-1 md1:p-6">
             <div>
@@ -175,7 +190,12 @@
             <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-6">Платформа</h2>
             <div class="grid grid-cols-2 gap-6 md2:grid-cols-1">
                 <a href="#" class="product-card">
-                    <div class="product-card__badge product-card__badge--white">жителям</div>
+                    <div class="product-card__badge">
+                        <svg class="">
+                            <use xlink:href="img/sprite.svg#users"></use>
+                        </svg>
+                        <span>Собственникам</span>
+                    </div>
                     <div class="product-card__content">
                         <h4 class="title-4 product-card__title">Мобильное приложение собственника</h4>
                         <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
@@ -185,7 +205,12 @@
                     </svg>
                 </a>
                 <a href="#" class="product-card">
-                    <div class="product-card__badge product-card__badge--white">мастерам</div>
+                    <div class="product-card__badge">
+                        <svg class="">
+                            <use xlink:href="img/sprite.svg#user-check"></use>
+                        </svg>
+                        <span>Сотрудникам</span>
+                    </div>
                     <div class="product-card__content">
                         <h4 class="title-4 product-card__title">Мобильное приложение исполнителя</h4>
                         <p class="product-card__descr">Бесплатный сервис для контроля заявок и постановки задач</p>
@@ -202,8 +227,11 @@
                 <img loading="lazy" src="./img/platform-image.jpg" class="w-full md1:pb-[120px]" width="621" height="373" alt="Заявки от жителей" />
             </picture>
             <div class="platform-card__content">
-                <div class="h-[34px] text-white font-medium flex-center-all self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
-                    для ук и тсж
+                <div class="h-[34px] text-white font-medium flex-center-all gap-2 self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="img/sprite.svg#monitor"></use>
+                    </svg>
+                    <span>Для УК и ТСЖ</span>
                 </div>
                 <div>
                     <h3 class="title-4 platform-card__title">CRM-система</h3>
@@ -217,100 +245,114 @@
     </div>
 </section>
  
-                <section class="mt-[128px] md1:mt-20">
-    <div class="container">
-        <div class="border border-solid border-[#d4e3fb] rounded-primary pt-[60px] pb-11 px-11 md1:p-6">
-            <h2 class="title-2">Дополнительные <span class="text-lightBlue">направления и сервисы</span></h2>
-            <div class="mt-[50px] md1:8 flex gap-20 md1:flex-col md1:gap-0">
-                <div class="mmd1:w-[500px]">
-                    <div class="features-item">
-                        <div class="title-4 features-item__title">Готовый сайт УК</div>
-                        <p class="features-item__descr">Полноценный уже готовый сайт, всего за 24 часа</p>
-                    </div>
-                    <div class="features-item">
-                        <div class="title-4 features-item__title">Магазин платных услуг</div>
-                        <p class="features-item__descr">Возможности предлагать собственные платные услуги</p>
-                    </div>
-                    <div class="features-item">
-                        <div class="title-4 features-item__title">Аварийно-диспетчерская служба</div>
-                        <p class="features-item__descr">Круглосуточный прием обращения от собственников</p>
-                    </div>
-                </div>
-                <div class="mmd1:w-[500px]">
-                    <div class="features-item">
-                        <div class="title-4 features-item__title">Отслеживание заявок ЕДС</div>
-                        <p class="features-item__descr">Круглосуточный мониторинг и прием в работу заявок</p>
-                    </div>
-                    <div class="features-item">
-                        <div class="title-4 features-item__title">Охрана и заказ пропусков</div>
-                        <p class="features-item__descr">CRM для сотрудников охраны на КПП</p>
-                    </div>
-                    <div class="features-item features-item--last">
-                        <div class="title-4 features-item__title">Управление в меседжерах</div>
-                        <p class="features-item__descr">Подача заявок, оформления пропусков в меседжере</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- 
-                <section class="mt-[128px] md1:mt-20 bg-gray rounded-primary pt-[80px] pb-[98px] md1:p-6">
-    <div class="container mmd1:max-w-[1184px] !p-0">
-        <h2 class="title-2 flex items-center gap-4">
-            Настроим систему всего за неделю
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="29" fill="none" class='md1:hidden'>
-                <path
-                    d="M13.5 2a1.5 1.5 0 0 0-3 0h3Zm-2.56 25.956a1.5 1.5 0 0 0 2.12 0l9.547-9.546a1.5 1.5 0 1 0-2.122-2.122L12 24.774l-8.485-8.486a1.5 1.5 0 1 0-2.122 2.122l9.546 9.546ZM12 2h-1.5v24.895h3V2H12Z"
-                    fill="#000" />
-            </svg>
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <h2 class="title-1-25">
+            Дополнительные <br class="md1:hidden" />
+            направления и&nbsp;сервисы
         </h2>
-        <div class="mt-14 md1:mt-8 flex rounded-primary overflow-hidden">
-            <div class="bg-lightBlue w-[306px] flex-shrink-0 md1:hidden" aria-label="Декоративный элемент"></div>
-            <div class="flex-grow py-12 px-14 bg-white md1:p-6">
-                <h4 class="title-3-5 mb-6">Берем все вопросы внедрения на себя</h4>
-                <p class="text-paragraph">
-                    Не тратьте своё время на организацию подключения. Мы перенесем данные, обучим сотрудников и настроим сервис под ваши задачи.
-                </p>
-                <button class="btn btn-primary btn-s-default mt-16 md1:mt-12">Подключить</button>
-            </div>
+        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-4 gap-y-5 md3:grid-cols-1">
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--stroke" stroke="none">
+                    <use xlink:href="img/sprite.svg#monitor"></use>
+                </svg>
+                <h4 class="title-4-5">Готовый сайт управляющей компании</h4>
+            </a>
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--stroke">
+                    <use xlink:href="img/sprite.svg#shield"></use>
+                </svg>
+                <h4 class="title-4-5">Охрана и заказ пропусков</h4>
+            </a>
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--stroke">
+                    <use xlink:href="img/sprite.svg#shopping-cart"></use>
+                </svg>
+                <h4 class="title-4-5">Магазин платных услуг</h4>
+            </a>
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--stroke">
+                    <use xlink:href="img/sprite.svg#message-square"></use>
+                </svg>
+                <h4 class="title-4-5">Управление в меседжерах</h4>
+            </a>
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--fill">
+                    <use xlink:href="img/sprite.svg#headset"></use>
+                </svg>
+                <h4 class="title-4-5">Аварийно-диспетчерская служба</h4>
+            </a>
+            <a href="#" class="features-item-link">
+                <svg class="features-item-link__icon features-item-link__icon--stroke">
+                    <use xlink:href="img/sprite.svg#check-square"></use>
+                </svg>
+                <h4 class="title-4-5">Отслеживание заявок ЕДС</h4>
+            </a>
         </div>
     </div>
 </section>
  
-                <section class="mt-24 md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px] mmd1:p-0">
-        <div class="bg-lightBlue rounded-primary p-14 md1:p-6 text-white flex gap-6">
-            <div class="mmd1:max-w-[430px]">
-                <h2 class="title-2 mb-7">Используйте АДС и экономьте до 80%</h2>
-                <p class="mb-4 text-paragraph">Аварийно-диспетчерская служба для вашей управляющей компании</p>
-                <p class="text-paragraph">Мы примем все заявки от собственников и проконтролируем исполнителей</p>
-                <div class="mt-[102px] flex gap-3 md3:flex-col">
-                    <button class="btn btn-primary btn-s-default">Подключить</button>
-                    <button class="btn btn-secondary btn-s-default">Смотреть тарифы</button>
-                </div>
-            </div>
-            <div class="flex-grow md1:hidden">
-                <div class="banner-slide h-full w-[370px] ml-auto min-h-[434px]" style="background-color: #95beff">
-                    <picture>
-                        <source srcset="./img/hero-banner-3.webp" type="image/webp" />
-                        <img
-                            loading="lazy"
-                            src="./img/hero-banner-3.png"
-                            class="absolute bottom-0 right-0"
-                            width="370"
-                            height="434"
-                            alt="Используйте АДС  и экономьте до 80%" />
-                    </picture>
-                </div>
-            </div>
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <h2 class="title-1-25">
+            Берем на&nbsp;себя задачи <br class="md1:hidden" />
+            по&nbsp;внедрению
+        </h2>
+        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-4 md3:grid-cols-1">
+            <article class="task-card">
+                <svg class="task-card__icon">
+                    <use xlink:href="img/sprite.svg#download"></use>
+                </svg>
+                <h3 class="title-3 mb-7-5">Перенесем данные</h3>
+                <ul class="task-card__items">
+                    <li class="task-card__item">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p>Перенесем справочники, лицевые счета, списки объектов и&nbsp;другую информацию</p>
+                    </li>
+                    <li class="task-card__item">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p>Настроим базовые интеграции со&nbsp;сторонними системами и&nbsp;сервисами если необходимо</p>
+                    </li>
+                </ul>
+                <button class="btn btn-primary btn-s-small mt-[50px]">Подключить</button>
+            </article>
+            <article class="task-card">
+                <svg class="task-card__icon">
+                    <use xlink:href="img/sprite.svg#coffee"></use>
+                </svg>
+                <h3 class="title-3 mb-7-5">Настроим процессы</h3>
+                <ul class="task-card__items">
+                    <li class="task-card__item">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p>Пригласим сотрудников и&nbsp;разграничим для них права доступа</p>
+                    </li>
+                    <li class="task-card__item">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p>Научим сострудников пользоваться мобильными приложениями</p>
+                    </li>
+                    <li class="task-card__item">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check"></use>
+                        </svg>
+                        <p>В&nbsp;течении всего времени будем сопровождать и&nbsp;отвечать на&nbsp;вопросы связанные с&nbsp;работой системы</p>
+                    </li>
+                </ul>
+            </article>
         </div>
     </div>
 </section>
  
                 <section class="mt-[160px] md1:mt-20" id="our-solutions">
     <div class="container">
-        <h2 class="title-2 mmd1:ml-[56px] mb-[90px] md1:mb-8">Наши решения уже используют</h2>
+        <h2 class="title-2 mmd1:ml-[56px] mb-20 md1:mb-8">Наши решения уже используют</h2>
         <div class="swiper" id="swiper-solutions">
             <div class="swiper-wrapper">
                 <a href="#" class="swiper-slide complex-card">
@@ -387,6 +429,76 @@
                     <use xlink:href="img/sprite.svg#arrow-right"></use>
                 </svg>
             </button>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20 faq">
+    <div class="container mmd1:max-w-[1184px] mmd1:p-0 flex gap-8 md1:flex-col">
+        <div class="flex-shrink-0">
+            <h2 class="title-1-25">
+                Вопросы <br class='md1:hidden' />
+                и ответы
+            </h2>
+        </div>
+        <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-4">
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Оставьте заявку</h3>
+                        <svg class="faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-2" hidden>
+                        <p>Мы свяжемся с вами в удобное время</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Бесплатно настроим сервис</h3>
+                        <svg class="faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-2" hidden>
+                        <p>Мы свяжемся с вами в удобное время</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Бесплатно настроим сервис</h3>
+                        <svg class="faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-2" hidden>
+                        <p>Мы свяжемся с вами в удобное время</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Бесплатно настроим сервис</h3>
+                        <svg class="faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-2" hidden>
+                        <p>Мы свяжемся с вами в удобное время</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Бесплатно настроим сервис</h3>
+                        <svg class="faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-2" hidden>
+                        <p>Мы свяжемся с вами в удобное время</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -501,14 +613,14 @@
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#apple"></use>
                     </svg>
                 </a>
                 <a
                     href="#"
                     class="flex-center-all w-[50px] h-[50px] rounded-2xl bg-[rgba(0,0,0,0.06)] transition-primary-all hover:bg-[rgba(0,0,0,0.1)]">
-                    <svg class="w-[25px] h-[25px] fill-black">
+                    <svg class="w-[25px] h-[25px] text-black">
                         <use xlink:href="img/sprite.svg#store"></use>
                     </svg>
                 </a>
@@ -521,7 +633,7 @@
                         viewBox="0 0 26 26"
                         fill="none"
                         xmlns="http://www.w3.org/2000/svg"
-                        class="w-[25px] h-[25px] fill-black">
+                        class="w-[25px] h-[25px] text-black">
                         <path
                             d="M13.9542 3.13803C13.9321 1.81341 15.1807 0.833699 16.462 1.17025L23.6232 3.05115C24.4789 3.27591 25.0853 4.03619 25.1141 4.92046L25.5112 17.1183C25.5547 18.4535 24.302 19.4552 23.009 19.119L15.6538 17.2067C14.7844 16.9806 14.1724 16.2026 14.1574 15.3044L13.9542 3.13803Z"
                             fill="black" />

@@ -15,17 +15,26 @@ module.exports = {
             purple: "var(--purple)",
             veryLightBlue: "var(--very-light-blue)",
             lightBlue: "var(--light-blue)",
+            cyan: "var(--cyan)",
+            lightCyan: "var(--light-cyan)",
+            darkCyan: "var(--dark-cyan)",
             gray: "var(--gray)",
             grayTwo: "var(--gray-two)",
             grayLight: "var(--gray-light)",
             grayDark: "var(--gray-dark)",
+            grayMedium: "var(--gray-medium)",
             hoverPrimary: "var(--hover-primary)"
         },
         fontFamily: {
-            Manrope: ["Manrope", "sans-serif"],
-            Inter: ["Inter", "sans-serif"]
+            Manrope: ["Manrope", "sans-serif"]
         },
         extend: {
+            borderRadius: {
+                32: "32px"
+            },
+            spacing: {
+                "7-5": "1.875rem"
+            },
             screens: {
                 md1: { max: "1296px" },
                 md1_5: { max: "899px" },

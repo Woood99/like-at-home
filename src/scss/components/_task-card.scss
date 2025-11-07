@@ -1,0 +1,35 @@
+.task-card {
+    @apply bg-lightCyan rounded-32 pt-10 pb-12 px-9;
+
+    &__icon {
+        @apply w-[50px] h-[50px] text-lightBlue mb-11;
+
+        @media (max-width: $desktop) {
+            @apply w-10 h-10 mb-8;
+        }
+    }
+
+    &__items {
+        @apply flex flex-col gap-[15px];
+    }
+
+    &__item {
+        @apply flex items-start gap-[15px] leading-[1.875];
+
+        svg {
+            @apply w-[25px] h-[25px] text-lightBlue flex-shrink-0 mt-1;
+
+            @media (max-width: $desktop) {
+                @apply w-5 h-5;
+            }
+        }
+
+        @media (max-width: $desktop) {
+            @apply gap-3;
+        }
+    }
+
+    @media (max-width: $desktop) {
+        @apply p-8;
+    }
+}

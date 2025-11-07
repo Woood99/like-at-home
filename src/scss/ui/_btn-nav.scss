@@ -9,7 +9,7 @@
 
     svg {
         transition: all $transitionSpeed $transitionFunction;
-        @apply w-[18px] h-[18px] fill-none stroke-greenDark;
+        @apply w-[18px] h-[18px] text-greenDark;
     }
     &:disabled {
         @apply opacity-55 pointer-events-none;
@@ -19,7 +19,7 @@
         &:hover {
             @apply bg-greenDark;
             svg {
-                @apply stroke-white;
+                @apply text-white;
             }
         }
     }
