@@ -100,40 +100,70 @@
                 </div>
             </div>
         </div>
-        <div class="mmd1:w-[416px] flex-shrink-0 relative">
+        <!-- <div class="mmd1:w-[416px] flex-shrink-0 relative">
             <div class="swiper h-full" id="swiper-banner">
                 <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
                     <div class="swiper-slide h-full md1:h-auto">
                         <div class="banner-slide h-full" style="background-color: var(--light-blue)">
-                            <div
-                                class="absolute top-[170px] left-[60px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
-                                        fill="#26AD50" />
-                                </svg>
-                                <div class="flex flex-col items-center text-center">
-                                    <span class="text-[20px] text-[#141414] font-medium">+70 000 ₽</span>
-                                    <span class="mt-1 font-medium text-[9px] text-grayMedium">от Ольги, арендатор</span>
-                                </div>
-                            </div>
-                            <div
-                                class="absolute bottom-[63px] right-[70px] z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
-                                        fill="#26AD50" />
-                                </svg>
-                                <div class="flex flex-col items-center text-center">
-                                    <span class="text-[20px] text-[#141414] font-medium">+50 000 ₽</span>
-                                    <span class="mt-1 font-medium text-[9px] text-grayMedium">от Натальи, арендатор</span>
-                                </div>
-                            </div>
 
+                 
+                            <picture>
+                                <source srcset="./img/bed-banner.webp" type="image/webp" />
+                                <img
+                                    loading="lazy"
+                                    src="./img/bed-banner.jpg"
+                                    class="absolute bottom-0 right-0 w-full h-full"
+                                    width="416"
+                                    height="488"
+                                    alt="Доверительное управление арендой" />
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
+                    id="swiper-banner-pagination"></div>
+            </div>
+        </div> -->
+        <div class="mmd1:w-[416px] flex-shrink-0 relative">
+            <div class="swiper h-full" id="swiper-banner">
+                <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
+                    <div class="swiper-slide h-full md1:h-auto">
+                        <div class="banner-slide banner-slide--parallax h-full" style="background-color: var(--light-cyan)">
+                            <div class="banner-slide__parallax banner-parallax">
+                                <div data-depth="0.25" class="parallax-layer" style="padding: 170px 0 0 60px">
+                                    <div
+                                        class="flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
+                                                fill="#26AD50" />
+                                        </svg>
+                                        <div class="flex flex-col items-center text-center">
+                                            <span class="text-[20px] text-[#141414] font-medium">+70 000 ₽</span>
+                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">от Ольги, арендатор</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-depth="0.3" class="parallax-layer" style="padding: 353px 0px 0px 142px">
+                                    <div
+                                        class="z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
+                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
+                                                fill="#26AD50" />
+                                        </svg>
+                                        <div class="flex flex-col items-center text-center">
+                                            <span class="text-[20px] text-[#141414] font-medium">+50 000 ₽</span>
+                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">от Натальи, арендатор</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <picture>
                                 <source srcset="./img/bed-banner.webp" type="image/webp" />
                                 <img
