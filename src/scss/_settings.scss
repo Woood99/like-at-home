@@ -478,9 +478,6 @@ button {
         }
     }
 
-    .action-tg-btn-message {
-    }
-
     .action-tg-btn-tg {
         opacity: 0;
         visibility: hidden;
@@ -516,12 +513,12 @@ button {
 
 .features-tabs-btn {
     font-weight: 600;
-    font-size: 25px;
-    line-height: 1.33;
+    font-size: 24px;
+    line-height: 1.2;
     white-space: nowrap;
+
     &._active {
         cursor: default;
-        color: #5046e5;
         box-shadow: 0 2px 0 0 currentColor;
     }
     @media (max-width: $desktop) {
@@ -543,12 +540,6 @@ button {
     font-size: 18px;
     line-height: 1.66667;
     color: var(--black);
-    @media (max-width: $desktop) {
-        font-size: 16px;
-    }
-    @media (max-width: $tablet-max) {
-        margin-bottom: 32px;
-    }
 }
 
 .features-tabs-text-anim {
@@ -563,9 +554,11 @@ button {
         transform 0.15s ease-out;
 
     &::before {
-        content: "";
-        display: block;
-        height: 22px;
+        @media (min-width: $desktop-min) {
+            content: "";
+            display: block;
+            height: 22px;
+        }
     }
     &._active {
         max-height: 732px;
@@ -574,6 +567,10 @@ button {
         overflow: initial;
         transform: translateZ(0);
     }
+}
+
+.features-tabs-images {
+    @apply mmd1:w-[640px] h-[640px] md1:h-[550px] md1_5:h-[450px] md3:h-[400px] md4:h-[350px] flex-shrink-0 bg-[#cdebf1] flex justify-center items-end rounded-[54px] md1:rounded-3xl relative md1:w-full md1:order-3;
 }
 
 .features-tabs-image {
@@ -596,12 +593,27 @@ button {
         height: auto;
         opacity: 1;
         overflow: visible;
-        overflow: initial;
         visibility: visible;
     }
-    img {
-        @media (max-width: $tablet-max) {
-            margin: 0 auto;
+
+    picture {
+        @apply absolute transition-primary-all opacity-100 bottom-0 left-1/2 transform -translate-x-1/2;
+
+        img {
+            @media (max-width: $desktop) {
+                margin: 0 auto;
+                max-height: 500px;
+                width: 100%;
+                height: 100%;
+            }
+
+            @media (max-width: $tablet-max) {
+                max-height: 400px;
+            }
+
+            @media (max-width: $mobile-max) {
+                max-height: 350px;
+            }
         }
     }
 }
