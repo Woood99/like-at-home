@@ -7,8 +7,8 @@ export const parallaxOnBodyConfig = {
     invertY: true,
     limitX: false,
     limitY: false,
-    scalarX: 10,
-    scalarY: 10
+    scalarX: 3,
+    scalarY: 3
 };
 
 export const parallaxOnContainerConfig = {
