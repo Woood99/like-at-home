@@ -237,13 +237,13 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    if (isDesktop()) {
-        document.querySelectorAll(".banner-parallax").forEach(item => {
-            new Parallax(item, parallaxOnBodyConfig);
-        });
+    // if (isDesktop()) {
+    //     document.querySelectorAll(".banner-parallax").forEach(item => {
+    //         new Parallax(item, parallaxOnBodyConfig);
+    //     });
 
-        document.querySelectorAll(".cloud-pass-service-parallax").forEach(item => {
-            new Parallax(item, parallaxOnBodyConfig);
-        });
-    }
+    //     document.querySelectorAll(".cloud-pass-service-parallax").forEach(item => {
+    //         new Parallax(item, parallaxOnBodyConfig);
+    //     });
+    // }
 });
