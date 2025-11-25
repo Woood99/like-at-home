@@ -4,21 +4,24 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продукты и решения'
             })
             <main class="main">
                 @include('partials/owner-app/hero.html')
                 @include('partials/owner-app/features2.html')
-                @include('partials/components/install-application.html', { 
-                    "className":"mt-[160px]", 
+                @include('partials/components/install-application.html', {
+                    "className":"mt-[160px]",
                     "QrCodeApple": "qr-code-owner-apple-store",
                     "QrCodeGoogle": "qr-code-owner-app-google-play",
-                    "QrCodeRuStore": "qr-code-owner-app-rustore"
+                    "QrCodeRuStore": "qr-code-owner-app-rustore",
+                    "urlApple": "https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0/id6746429678",
+                    "urlGoogle": "https://play.google.com/store/apps/details?id=life.kakdoma.app&hl=ru",
+                    "urlRuStore": "https://www.rustore.ru/catalog/app/life.kakdoma.app",
                 })
-                @include('partials/components/ecosystem-of-services.html', { "className":"mt-[160px]" })
+                @include('partials/owner-app/ecosystem-of-services.html', { "className":"mt-[160px]" })
                 @include('partials/components/faq.html', { "className":"mt-[160px]" })
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>

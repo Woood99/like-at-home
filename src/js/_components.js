@@ -1,3 +1,4 @@
+import Api from "./components/api.js";
 import featuresTabs from "./components/featuresTabs.js";
 import validateForms from "./components/validate-forms.js";
 import { parallaxOnBodyConfig } from "./constants/parallax.constants.js";
@@ -127,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             {
-                ruleSelector: "[name='tel']",
+                ruleSelector: "[name='phone']",
                 tel: true,
                 rules: [
                     {
@@ -138,7 +139,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         rule: "function",
                         validator: function () {
-                            const phone = createBidForm.querySelector("[name='tel']")?.inputmask.unmaskedvalue();
+                            const phone = createBidForm.querySelector("[name='phone']")?.inputmask.unmaskedvalue();
                             return phone.length === 10;
                         },
                         errorMessage: "Введите корректный телефон"
@@ -146,7 +147,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             {
-                ruleSelector: "[name='company_name']",
+                ruleSelector: "[name='company']",
                 rules: [
                     {
                         rule: "required",
@@ -166,6 +167,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         ]);
+
+        createBidForm.addEventListener("submit", e => {
+            if (e.target.classList.contains("is-valid")) {
+                console.log("submit");
+                const formData = new FormData(e.target);
+                const resp = (new Api()).sendRequest(formData);
+                resp.then(isSuccess => {
+                    console.log(isSuccess);
+                    if (isSuccess) {
+                        window.modal.animation = "fadeInUp";
+                        window.modal.speed = 350;
+                        window.modal._nextContainer = document.querySelector(`[data-graph-target="success-bid"]`);
+                        window.modal.open();
+                    }
+                });
+            }
+        });
     }
 
     if (formBidForm) {
@@ -195,7 +213,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             },
             {
-                ruleSelector: "[name='tel']",
+                ruleSelector: "[name='phone']",
                 tel: true,
                 rules: [
                     {
@@ -206,7 +224,7 @@ document.addEventListener("DOMContentLoaded", () => {
                     {
                         rule: "function",
                         validator: function () {
-                            const phone = formBidForm.querySelector("[name='tel']")?.inputmask.unmaskedvalue();
+                            const phone = formBidForm.querySelector("[name='phone']")?.inputmask.unmaskedvalue();
                             return phone.length === 10;
                         },
                         errorMessage: "Введите корректный телефон"
@@ -224,6 +242,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 ]
             }
         ]);
+
+        formBidForm.addEventListener("submit", e => {
+            if (e.target.classList.contains("is-valid")) {
+                console.log("submit");
+                const formData = new FormData(e.target);
+                const resp = (new Api()).sendRequest(formData);
+                resp.then(isSuccess => {
+                    console.log(isSuccess);
+                    if (isSuccess) {
+                        window.modal.animation = "fadeInUp";
+                        window.modal.speed = 350;
+                        window.modal._nextContainer = document.querySelector(`[data-graph-target="success-bid"]`);
+                        window.modal.open();
+                    }
+                });
+            }
+        });
     }
 
     const actionTg = document.querySelector(".action-tg");

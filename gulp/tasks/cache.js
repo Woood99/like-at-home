@@ -2,7 +2,7 @@ import rev from "gulp-rev";
 import revDel from "gulp-rev-delete-original";
 
 export const cacheTask = () => {
-  return app.gulp.src(`${app.paths.base.build}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2}`, {
+  return app.gulp.src([`${app.paths.base.build}/**/*.{css,js,svg,png,jpg,jpeg,webp,woff2}`, '!app/favicon.png'], {
       base: app.paths.base.build,
       encoding: false,
     })

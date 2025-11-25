@@ -1,21 +1,20 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Главная" })
+    @include('partials/head.html', { "title": "КАК ДОМА — цифровая платформа для девелоперов и управляющих компаний" })
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продуктовые направления'
             })
             <main class="main">
-                @include('partials/home/hero.html') 
-                @include('partials/home/product-lines.html') 
-                @include('partials/ads/provide-solution.html') 
+                @include('partials/home/hero.html')
+                @include('partials/home/product-lines.html')
                 @include('partials/home/our-growth.html')
-                @include('partials/home/banner.html') 
-                @include('partials/home/work-cities-block.html') 
+                @include('partials/home/banner.html')
+                @include('partials/home/work-cities-block.html')
                 @include('partials/home/our-solutions.html')
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вашего бизнеса", "className":"mt-[132px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[132px]" })
             </main>
             @include('partials/footer.html')
         </div>

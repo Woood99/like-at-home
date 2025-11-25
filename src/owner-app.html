@@ -4,13 +4,13 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продукты и решения'
             })
             <main class="main">
                 @include('partials/owner-app/hero.html')
                 @include('partials/owner-app/features.html')
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вас", "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>

@@ -4,17 +4,17 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продуктовые направления'
             })
             <main class="main">
-                @include('partials/ecosystem/hero.html') 
-                @include('partials/ecosystem/platform.html') 
-                @include('partials/ecosystem/features2.html') 
-                @include('partials/ecosystem/our-tasks.html') 
+                @include('partials/ecosystem/hero.html')
+                @include('partials/ecosystem/platform.html')
+                @include('partials/ecosystem/features2.html')
+                @include('partials/ecosystem/our-tasks.html')
                 @include('partials/home/our-solutions.html')
                 @include('partials/components/faq.html', { "className":"mt-[160px]" })
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукты для вашего бизнеса", "className":"mt-[102px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[102px]" })
             </main>
             @include('partials/footer.html')
         </div>

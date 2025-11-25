@@ -25,7 +25,10 @@ global.app = {
 const watcher = () => {
 	browserSync.init({
 		server: {
-			baseDir: `${app.paths.base.build}`
+			baseDir: `${app.paths.base.build}`,
+            serveStaticOptions: {
+                extensions: ['html']
+            }
 		},
 		notify: false,
 		port: 3000
