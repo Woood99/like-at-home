@@ -1,26 +1,45 @@
-<section class="mt-[50px] md1:mt-4" id="hero-block">
+<section class="mt-[50px] md1:mt-0" id="hero-block">
     <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
         <div class="h-full flex-grow">
-            <div class="bg-orange rounded-primary py-[54px] px-14 md1:p-6">
-                <h1 class="title-1 text-white">
-                    Управляйте недвижимостью <br />
-                    эффективно
-                </h1>
-                <p class="mt-7 text-white text-paragraph">
-                    КАК ДОМА — цифровая платформа<br class="md1:hidden" />для девелоперов и управляющих компаний
-                </p>
-                <div class="mt-14 flex gap-3 md3:flex-col">
-                    <button
-                        class="btn btn-secondary btn-s-default"
-                        data-graph-path="create-bid"
-                        data-graph-animation="fadeInUp"
-                        data-graph-speed="350">
-                        Оставить заявку
-                    </button>
+            <div class="bg-orange rounded-primary py-[54px] px-14 md1:p-6 relative md1:rounded-none min-h-[450px]">
+                <div class="relative z-20">
+                    <h1 class="title-1 text-white">
+                        Управляйте недвижимостью <br />
+                        эффективно
+                    </h1>
+                    <p class="mt-7 text-white text-paragraph">
+                        КАК ДОМА — цифровая платформа<br class="md1:hidden" />для девелоперов и управляющих компаний
+                    </p>
+                    <div class="mmd1:hidden mt-7 flex flex-wrap gap-2">
+                        <div class="tag tag-primary">Приложение собственника</div>
+                        <div class="tag tag-primary">Диспетчерская</div>
+                        <div class="tag tag-primary">CRM-система</div>
+                    </div>
+                    <div class="mt-14 flex gap-3 md3:flex-col">
+                        <button
+                            class="btn btn-secondary btn-s-default"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </div>
+                <div class="mmd1:hidden">
+                    <picture>
+                        <source srcset="./img/hero-banner-1.webp" type="image/webp" />
+                        <img
+                            loading="lazy"
+                            src="./img/hero-banner-1.png"
+                            class="absolute bottom-0 right-0 z-10"
+                            width="262"
+                            height="270"
+                            alt="Управляйте недвижимостью эффективно" />
+                    </picture>
                 </div>
             </div>
         </div>
-        <div class="mmd1:w-[416px] flex-shrink-0 relative">
+        <div class="mmd1:w-[416px] flex-shrink-0 relative md1:hidden">
             <div class="swiper h-full" id="swiper-banner">
                 <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
                     <div class="swiper-slide h-full md1:h-auto">
