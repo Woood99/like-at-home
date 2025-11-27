@@ -18,7 +18,7 @@
     }
     &__arrow {
         transition: transform $transitionSpeed $transitionFunction;
-        @apply w-7-5 h-7-5 text-black md1:w-7 md1:h-7;
+        @apply w-7-5 h-7-5 basis-7-5 text-black md1:w-7 md1:h-7 md1:basis-7 flex-grow-0 shrink-0;
     }
     &__content {
         @apply mt-4 md1:mt-3;

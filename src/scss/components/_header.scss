@@ -1,6 +1,8 @@
 .header {
     height: 104px;
-    border-bottom: 1px solid #e6e6e6;
+    @media (min-width: $desktop-min) {
+        border-bottom: 1px solid #e6e6e6;
+    }
     @media (max-width: $desktop) {
         height: 55px;
         position: fixed;
@@ -9,7 +11,6 @@
         width: 100%;
         z-index: 999;
         background-color: var(--white);
-        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 }
 

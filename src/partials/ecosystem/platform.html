@@ -1,8 +1,8 @@
 <section class="mt-[160px] md1:mt-20">
     <div class="container flex gap-6 md1:flex-col">
         <div class="mmd1:w-[636px] flex-shrink-0">
-            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-6">Платформа</h2>
-            <div class="grid grid-cols-2 gap-6 md2:grid-cols-1">
+            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-8">Платформа</h2>
+            <div class="grid grid-cols-2 gap-6 md2:grid-cols-1" id="platform-blocks">
                 <a href="/owner-app2" class="product-card">
                     <div class="product-card__badge">
                         <svg class="">
@@ -35,13 +35,14 @@
                 </a>
             </div>
         </div>
-        <a href="/crm" class="flex-grow platform-card">
+        <a href="/crm" class="flex-grow platform-card" data-da="#platform-blocks,799,first">
             <picture>
                 <source srcset="./img/platform-image.webp" type="image/webp" />
                 <img loading="lazy" src="./img/platform-image.jpg" class="w-full md1:pb-[120px]" width="621" height="373" alt="Заявки от жителей" />
             </picture>
             <div class="platform-card__content">
-                <div class="h-[34px] text-white font-medium flex-center-all gap-2 self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
+                <div
+                    class="h-[34px] text-white font-medium flex-center-all gap-2 self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
                     <svg class="w-5 h-5 text-white">
                         <use xlink:href="img/sprite.svg#monitor"></use>
                     </svg>

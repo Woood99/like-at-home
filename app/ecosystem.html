@@ -71,7 +71,7 @@
 
         <a href="tel:84997068428" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 (499) 706-84-28">
             <svg class="w-6 h-6 text-blue">
-                <use xlink:href="img/sprite.svg#call"></use>
+                <use xlink:href="img/sprite.svg#phone"></use>
             </svg>
         </a>
 
@@ -88,8 +88,8 @@
     <div class="container-desktop flex gap-6 md1:flex-col md1:gap-3">
         <div class="h-full flex-grow">
             <div
-                class="bg-lightBlue rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] md1:min-h-[450px] relative md1:rounded-t-none flex flex-col overflow-hidden">
-                <div class="relative z-20">
+                class="bg-lightBlue rounded-primary py-[54px] px-14 md1:p-0 mmd1:min-h-[488px] md1:min-h-[520px] relative md1:rounded-none flex flex-col overflow-hidden">
+                <div class="relative z-20 md1:flex md1:flex-col md1:flex-grow md1:px-6 md1:pt-6 md1:pb-16">
                     <h1 class="title-1 text-white">
                         Экосистема <br class="md1:hidden" />
                         сервисов для ЖКХ
@@ -98,8 +98,14 @@
                         Онлайн-платформа, мобильное приложение собственника, <br class="md1:hidden" />
                         мобильное приложение исполнителеля, сайт для УК, ГИС ЖКХ
                     </p>
-                    <div class="mt-auto">
-                        <div class="mt-[76px] flex gap-3 md3:flex-col">
+                    <div class="mmd1:hidden mt-8 flex flex-wrap gap-2">
+                        <div class="tag tag-primary">Мобильные приложение</div>
+                        <div class="tag tag-primary">CRM-система</div>
+                        <div class="tag tag-primary">Готовый сайт УК</div>
+                        <div class="tag tag-primary">Магазин платный услуг</div>
+                    </div>
+                    <div class="mt-auto md1:hidden">
+                        <div class="mt-[76px] flex gap-3">
                             <button
                                 data-graph-path="create-bid"
                                 data-graph-animation="fadeInUp"
@@ -110,17 +116,20 @@
                             <a href="https://crm.kakdoma.life/" class="btn btn-five btn-five--white-border btn-s-default">Демо доступ</a>
                         </div>
                     </div>
+                    <div class="mmd1:hidden mt-[14%] flex flex-col gap-3">
+                        <button
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350"
+                            class="btn btn-secondary btn-s-default">
+                            Оставить заявку
+                        </button>
+                    </div>
                 </div>
-                <div class="mmd1:hidden">
+                <div class="mmd1:hidden -bottom-[20.5%] absolute right-0 z-10 md1:w-3/4 md2:w-full">
                     <picture>
                         <source srcset="./img/hero-banner-1.webp" type="image/webp" />
-                        <img
-                            loading="lazy"
-                            src="./img/hero-banner-1.png"
-                            class="absolute bottom-0 right-0 z-10"
-                            width="262"
-                            height="270"
-                            alt="Экосистема сервисов для ЖКХ" />
+                        <img loading="lazy" src="./img/hero-banner-1.png" class="w-full" width="416" height="488" alt="Экосистема сервисов для ЖКХ" />
                     </picture>
                 </div>
             </div>
@@ -172,10 +181,10 @@
                                 </div>
                             </div>
                             <picture>
-                                <source srcset="./img/hero-banner-1.webp" type="image/webp" />
+                                <source srcset="./img/hero-banner-1_3.webp" type="image/webp" />
                                 <img
                                     loading="lazy"
-                                    src="./img/hero-banner-1.png"
+                                    src="./img/hero-banner-1_3.png"
                                     class="absolute bottom-0 right-0"
                                     width="416"
                                     height="488"
@@ -212,8 +221,8 @@
                 <section class="mt-[160px] md1:mt-20">
     <div class="container flex gap-6 md1:flex-col">
         <div class="mmd1:w-[636px] flex-shrink-0">
-            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-6">Платформа</h2>
-            <div class="grid grid-cols-2 gap-6 md2:grid-cols-1">
+            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-8">Платформа</h2>
+            <div class="grid grid-cols-2 gap-6 md2:grid-cols-1" id="platform-blocks">
                 <a href="/owner-app2" class="product-card">
                     <div class="product-card__badge">
                         <svg class="">
@@ -246,13 +255,14 @@
                 </a>
             </div>
         </div>
-        <a href="/crm" class="flex-grow platform-card">
+        <a href="/crm" class="flex-grow platform-card" data-da="#platform-blocks,799,first">
             <picture>
                 <source srcset="./img/platform-image.webp" type="image/webp" />
                 <img loading="lazy" src="./img/platform-image.jpg" class="w-full md1:pb-[120px]" width="621" height="373" alt="Заявки от жителей" />
             </picture>
             <div class="platform-card__content">
-                <div class="h-[34px] text-white font-medium flex-center-all gap-2 self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
+                <div
+                    class="h-[34px] text-white font-medium flex-center-all gap-2 self-start rounded-[55px] px-4 blur-[20px] bg-[rgba(255,255,255,0.2)]">
                     <svg class="w-5 h-5 text-white">
                         <use xlink:href="img/sprite.svg#monitor"></use>
                     </svg>

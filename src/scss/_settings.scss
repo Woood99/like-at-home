@@ -364,8 +364,7 @@ button {
         opacity 0.2s ease-out 0.05s,
         transform 0.2s ease-out 0.05s;
     @media (max-width: $desktop) {
-        opacity: 1;
-        transform: translateZ(0);
+        display: none;
     }
 }
 
