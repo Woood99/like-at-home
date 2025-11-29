@@ -1,0 +1,27 @@
+.qr-code {
+    position: relative;
+    z-index: 99;
+    &__btn {
+        @apply flex-center-all rounded-20 h-14 w-14 bg-black;
+    }
+    &__main {
+        @apply absolute right-0 top-full pt-3 opacity-0 invisible transition-primary-all w-max translate-y-5;
+    }
+    &__content {
+        @apply pt-8 rounded-32 bg-white px-[70px] flex gap-[60px] border 
+        border-solid border-[#dbe2ed];
+    }
+    &__scan {
+        @apply mt-6 w-40 text-center;
+    }
+    &__scan-descr {
+        @apply mt-4 text-[14px] leading-[1.28] block;
+    }
+    @media (min-width: $desktop-min) {
+        &:hover {
+            .qr-code__main {
+                @apply opacity-100 visible translate-y-0;
+            }
+        }
+    }
+}

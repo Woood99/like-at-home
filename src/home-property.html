@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Главная" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/components/header-top.html')
+            @include('partials/header-property.html')
+            <main class="main">
+                @include('partials/property/home/hero.html')
+                @include('partials/property/home/about-us.html')
+                @include('partials/property/home/services.html')
+                @include('partials/property/home/banner.html')
+                @include('partials/property/home/news.html')
+                @include('partials/property/home/banner-gosuslugi.html')
+                @include('partials/components/objects-second.html', { "title": "Объекты в управлении" })
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[132px]" })
+            </main>
+            @include('partials/footer-property.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

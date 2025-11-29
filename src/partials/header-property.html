@@ -1,0 +1,79 @@
+<header class="header header--property">
+    <div class="container flex items-center h-full">
+        <a href="/" class="mmd1:mb-3">
+            <img src="./img/logo-property.png" class="logo-property" width="99" height="40" alt="М-Проперти" />
+        </a>
+        <div class="nav" data-menu>
+            <ul class="md1:w-full flex items-center gap-14 md1:flex-col">
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary">
+                        <span>Новости</span>
+                    </a>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary">
+                        <span>Объекты</span>
+                    </a>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary">
+                        <span>Информация</span>
+                    </a>
+                </li>
+                <li class="nav-dropdown">
+                    <a href="#" class="link-primary">
+                        <span>Контакты</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
+                <div class="flex flex-col gap-2">
+                    <a href="tel:84997068428" class="link-primary md1:hidden">8 (499) 706-84-28</a>
+                    <span class="text-[12px]">Диспетчерская служба</span>
+                </div>
+                <div class="qr-code">
+                    <button type="button" class="qr-code__btn">
+                        <img loading="lazy" src="./img/qr-code-btn.svg" width="22" height="22" alt="Qr Code" />
+                    </button>
+                    <div class="qr-code__main">
+                        <div class="qr-code__content">
+                            <picture>
+                                <source srcset="./img/qr-code-phone.webp" type="image/webp" />
+                                <img loading="lazy" src="./img/qr-code-phone.png" width="254" height="307" alt="Санкт-Петербург, «Матисов остров»" />
+                            </picture>
+                            <div class="qr-code__scan">
+                                <picture>
+                                    <source srcset="./img/qr-code-property.webp" type="image/webp" />
+                                    <img
+                                        loading="lazy"
+                                        src="./img/qr-code-property.png"
+                                        width="160"
+                                        height="160"
+                                        alt="Отсканируте qr-code и скачайте приложение собственника" />
+                                </picture>
+                                <span class="qr-code__scan-descr">Отсканируте qr-code и скачайте приложение собственника</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a href="tel:84997068428" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 (499) 706-84-28">
+            <svg class="w-6 h-6 text-blue">
+                <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+        </a>
+
+        <button class="ml-6 burger mmd1:hidden" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>

@@ -11,10 +11,13 @@ module.exports = {
             greenDark: "var(--green-dark)",
             orange: "var(--orange)",
             red: "var(--red)",
+            yellow: "var(--yellow)",
             blue: "var(--blue)",
             purple: "var(--purple)",
+            purpleSecond: "var(--purple-second)",
             veryLightBlue: "var(--very-light-blue)",
             lightBlue: "var(--light-blue)",
+            bluePale: "var(--blue-pale)",
             cyan: "var(--cyan)",
             lightCyan: "var(--light-cyan)",
             darkCyan: "var(--dark-cyan)",
@@ -30,10 +33,17 @@ module.exports = {
         },
         extend: {
             borderRadius: {
-                32: "32px"
+                32: "2rem",
+                20: "1.25rem"
             },
             spacing: {
                 "7-5": "1.875rem"
+            },
+            width: {
+                25: "1.5625rem"
+            },
+            height: {
+                25: "1.5625rem"
             },
             screens: {
                 md1: { max: "1296px" },

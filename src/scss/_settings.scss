@@ -266,16 +266,6 @@ button {
     }
 }
 
-.link-primary {
-    transition: color $transitionSpeed $transitionFunction;
-    font-weight: 500;
-    @media (min-width: $desktop-min) {
-        &:hover {
-            color: var(--hover-primary);
-        }
-    }
-}
-
 .ticker-slider {
     .marquee3k__wrapper {
         display: inline-flex !important;
@@ -314,6 +304,10 @@ button {
     }
 }
 
+.logo-property {
+    width: 99px;
+}
+
 @layer utilities {
     .flex-center-all {
         @apply flex items-center justify-center;
@@ -323,6 +317,23 @@ button {
     }
     .transition-primary-all {
         transition: all $transitionSpeed $transitionFunction;
+    }
+
+    .link-primary {
+        transition: color $transitionSpeed $transitionFunction;
+        font-weight: 500;
+        @media (min-width: $desktop-min) {
+            &:hover {
+                color: var(--hover-primary);
+            }
+        }
+    }
+
+    .link-arrow {
+        @apply link-primary flex items-center gap-3;
+        svg {
+            @apply w-6 h-6;
+        }
     }
 
     .cut-1 {
