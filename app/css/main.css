@@ -105,6 +105,10 @@
     -ms-flex-order: 2;
     order: 2;
 }
+.col-span-2 {
+    -ms-grid-column-span: 2;
+    grid-column: span 2 / span 2;
+}
 .mx-auto {
     margin-left: auto;
     margin-right: auto;
@@ -487,6 +491,9 @@
     width: -moz-max-content;
     width: max-content;
 }
+.w-32 {
+    width: 8rem;
+}
 .min-w-0 {
     min-width: 0px;
 }
@@ -649,6 +656,9 @@
 }
 .gap-\[60px\] {
     gap: 60px;
+}
+.gap-60 {
+    gap: 15rem;
 }
 .gap-x-4 {
     -webkit-column-gap: 1rem;
@@ -1094,6 +1104,9 @@
 }
 .leading-normal {
     line-height: 1.5;
+}
+.leading-\[1\.6\] {
+    line-height: 1.6;
 }
 .tracking-\[0\.01em\] {
     letter-spacing: 0.01em;
@@ -4044,6 +4057,9 @@ button {
     }
     .md1\:rounded-none {
         border-radius: 0px;
+    }
+    .md1\:rounded-20 {
+        border-radius: 1.25rem;
     }
     .md1\:rounded-t-2xl {
         border-top-left-radius: 1rem;

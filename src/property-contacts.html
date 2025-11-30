@@ -1,13 +1,13 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Новости" })
+    @include('partials/head.html', { "title": "Контакты" })
     <body>
         <div class="site-container">
             @include('partials/header-property.html', {
                  "isLoggedIn": false
             })
             <main class="main">
-                @include('partials/property/news/hero.html')
+                @include('partials/property/contacts/hero.html')
             </main>
             @include('partials/footer-property.html')
         </div>
