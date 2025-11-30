@@ -336,13 +336,24 @@ button {
         }
     }
 
-    .cut-1 {
+    .cut {
         display: -webkit-box;
         overflow: hidden;
         -webkit-hyphens: manual;
         hyphens: manual;
         -webkit-box-orient: vertical;
+    }
+
+    .cut-1 {
         -webkit-line-clamp: 1;
+    }
+
+    .cut-2 {
+        -webkit-line-clamp: 2;
+    }
+
+    .cut-3 {
+        -webkit-line-clamp: 3;
     }
 }
 

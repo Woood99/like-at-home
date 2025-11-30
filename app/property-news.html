@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="theme-color" content="#111111" />
-	<title>Приложение собственника</title>
+	<title>Новости</title>
 	<link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
@@ -18,54 +18,49 @@
 	<script defer src="js/main.js"></script>
 </head>
 
-
     <body>
         <div class="site-container">
-            <header class="header">
+            <header class="header header--property">
     <div class="container flex items-center h-full">
-        <a href="/">
-            <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
+        <a href="/" class="mmd1:mb-3">
+            <img src="./img/logo-property.png" class="logo-property" width="99" height="40" alt="М-Проперти" />
         </a>
         <div class="nav" data-menu>
-            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-4 md1:flex-col">
-                <li class="nav-dropdown">
-                    <a href="#" class="link-primary nav-dropdown__link" data-spoller>
-                        <span>Продукты и решения</span>
-                        <svg class="w-2.5 h-2.5 text-[currentColor]">
-                            <use xlink:href="img/sprite.svg#arrow-down"></use>
-                        </svg>
+            <ul class="md1:w-full flex items-center gap-14 md1:flex-col md1:gap-6">
+                <li>
+                    <a href="#" class="link-primary py-[10px]">
+                        <span>Новости</span>
                     </a>
-                    <ul class="nav-dropdown__list">
-                        <li class="nav-dropdown__subitem">
-                            <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
-                        </li>
-                        <li class="nav-dropdown__subitem">
-                            <a href="/ads" class="link-primary">Аварийно-диспетчерская служба</a>
-                        </li>
-                        <li class="nav-dropdown__subitem">
-                            <a href="/cloud-pass-service" class="link-primary">Мобильное бюро пропусков</a>
-                        </li>
-                        <li class="nav-dropdown__subitem">
-                            <a href="/confident-management" class="link-primary">Доверительное управление арендой</a>
-                        </li>
-                        <li class="nav-dropdown__subitem">
-                            <a class="link-primary" href="/owner-app2">Приложение собственника</a>
-                        </li>
-                        <li class="nav-dropdown__subitem">
-                            <a class="link-primary" href="/employee-app">Приложение сотрудника</a>
-                        </li>
-                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="link-primary py-[10px]">
+                        <span>Объекты</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-primary py-[10px]">
+                        <span>Услуги</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-primary py-[10px]">
+                        <span>Информация</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="link-primary py-[10px]">
+                        <span>Контакты</span>
+                    </a>
                 </li>
             </ul>
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
-                <a href="tel:84997068428" class="link-primary md1:hidden">8 (499) 706-84-28</a>
-                <button
-                    class="btn btn-primary btn-s-default md1:w-full"
-                    data-graph-path="create-bid"
-                    data-graph-animation="fadeInUp"
-                    data-graph-speed="350">
-                    Оставить заявку
-                </button>
+                <div class="flex flex-col gap-2 md1:hidden">
+                    <a href="tel:84997068428" class="link-primary">8 (499) 706-84-28</a>
+                    <span class="text-[12px]">Диспетчерская служба</span>
+                </div>
+                 
+                <button class="btn btn-primary btn-s-default md1:w-full">Вход</button>
+                
             </div>
         </div>
 
@@ -84,228 +79,146 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo rounded-b-3xl">
+                <section class="mt-11">
     <div class="container-desktop">
-        <div class="bg-cyan rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
-            <div class="mmd1:max-w-[435px] flex flex-col flex-grow">
-                <h1 class="title-1">Мобильное приложения собственника</h1>
-                <div class="mt-auto">
-                    <div class="mt-[76px] flex gap-3 md3:flex-col md1:mt-12">
-                        <button
-                            data-graph-path="app-for-onwners"
-                            data-graph-animation="fadeInUp"
-                            data-graph-speed="350"
-                            class="btn btn-primary btn-s-default">Скачать приложение</button>
-                    </div>
-                </div>
-            </div>
+        <h2 class="title-2 text-center">Новости</h2>
 
-            <picture class="mmd1:absolute bottom-0 right-[71px]">
-                <source srcset="./img/owner-app-hero-phones.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-hero-phones.png" width="552" height="454" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-        </div>
-    </div>
-    <div class="container-desktop !mt-6 md1:!mt-0">
-        <div class="mmd1:bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:rounded-none md1:grid-cols-1 md1:p-6">
-            <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Имидж современной управляющей компании</h3>
-                <p class="leading-[1.875] text-grayDark">Цифровой сервис для собственников становится стандартом для УК</p>
+        <div class="mt-20 md1:mt-8 bg-gray rounded-primary px-14 py-[52px] md1:p-6">
+            <div class="grid grid-cols-2 gap-6 md1:gap-5 md2:grid-cols-1">
+                <article class="news-card news-card--big">
+                    <a href="#" class="news-card__wrapper">
+                        <span class="news-card__badge">Новости УК</span>
+                        <h3 class="news-card__title title-4">Мобильное приложение собственника</h3>
+                        <p class="news-card__descr text-paragraph-2">
+                            Своевременно предоставляйте собвственникам сведения о работе УК предоставляйте собвственникам сведения
+                        </p>
+                        <time datetime="2025-12-12" class="news-card__time">12.12.2025</time>
+                        <svg class="news-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </a>
+                </article>
+                <article class="news-card news-card--big">
+                    <a href="#" class="news-card__wrapper">
+                        <span class="news-card__badge">Новости УК</span>
+                        <h3 class="news-card__title title-4">Мобильное приложение исполнителя</h3>
+                        <p class="news-card__descr text-paragraph-2">
+                            Своевременно предоставляйте собвственникам сведения о работе УК предоставляйте собвственникам сведения
+                        </p>
+                        <time datetime="2022-12-13" class="news-card__time">13.12.2022</time>
+                        <svg class="news-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </a>
+                </article>
+                <article class="news-card news-card--big">
+                    <a href="#" class="news-card__wrapper">
+                        <span class="news-card__badge">Новости УК</span>
+                        <h3 class="news-card__title title-4">Мобильное приложение исполнителя</h3>
+                        <p class="news-card__descr text-paragraph-2">
+                            Своевременно предоставляйте собвственникам сведения о работе УК предоставляйте собвственникам сведения
+                        </p>
+                        <time datetime="2022-12-13" class="news-card__time">13.12.2022</time>
+                        <svg class="news-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </a>
+                </article>
+                <article class="news-card news-card--big">
+                    <a href="#" class="news-card__wrapper">
+                        <span class="news-card__badge">Новости УК</span>
+                        <h3 class="news-card__title title-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, incidunt?</h3>
+                        <p class="news-card__descr text-paragraph-2">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis incidunt facilis est tempore impedit nostrum provident
+                            assumenda nesciunt praesentium vitae mollitia deserunt ipsa cum aperiam ea numquam quia obcaecati, nisi, perferendis eius
+                            soluta? Rem quis aliquam magni excepturi maxime optio deleniti vero, beatae officia blanditiis debitis reprehenderit iure
+                            id vitae.
+                        </p>
+                        <time datetime="2025-12-12" class="news-card__time">12.12.2025</time>
+                        <svg class="news-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </a>
+                </article>
             </div>
-            <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Снижение нагрузки на диспетчерскую и офис</h3>
-                <p class="leading-[1.875] text-grayDark">
-                    При наличии мобильного приложения, более 65% собственников выбирают именно этот канал коммуникации
-                </p>
-            </div>
-            <div>
-                <h3 class="title-4 !leading-[1.4] mb-5 md1:mb-3">Автоматизация, прозрачность и контроль для УК</h3>
-                <p class="leading-[1.875] text-grayDark">Коммуникация и архив взаимодействия в едином канале</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-                <section class="mt-[160px] md1:mt-20" id="features-block">
-    <div class="container flex gap-20 md1:flex-col md1:gap-9">
-        <div
-            class="w-[640px] h-[640px] flex-shrink-0 bg-cyan flex justify-center items-end rounded-[54px] md1:rounded-3xl relative md1:w-full md4:h-[580px] md5:h-[515px]">
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" data-features-image="0">
-                <source srcset="./img/owner-app-banner-1.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-1.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="1">
-                <source srcset="./img/owner-app-banner-2.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-2.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="2">
-                <source srcset="./img/owner-app-banner-3.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-3.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="3">
-                <source srcset="./img/owner-app-banner-4.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-4.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="4">
-                <source srcset="./img/owner-app-banner-5.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-5.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-        </div>
-        <div class="flex-grow relative min-w-0">
-            <h3 class="title-4-5 mmd1:mt-[115px] mb-11 md1:mb-5">Функции приложения</h3>
-            <div class="swiper" id="features-block-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="mt-12 flex gap-3 md1:mt-10 md1:justify-center">
-                <button class="btn-nav btn-nav--prev" id="features-block-prev" aria-label="Предыдущий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-left"></use>
-                    </svg>
-                </button>
-                <button class="btn-nav btn-nav--next" id="features-block-next" aria-label="Следующий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </div>
-</section>
-
-                <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop">
-        <div class="bg-dark rounded-primary py-[54px] px-14 md1:p-6">
-            <div class="flex gap-14 md1:flex-col md1:gap-8">
-                <div class="flex-grow">
-                    <h1 class="title-1 text-white">Поможем подобрать решение для вас</h1>
-                    <p class="mt-6 text-paragraph text-white">Наши менеджеры проведут презентацию и&nbsp;ответят на&nbsp;все возникшие вопросы</p>
-                </div>
-                <div class="mmd1:w-[470px] flex-shrink-0">
-                    <form action="#" id="form-bid" class="mmd1:p-[42px] mmd1:rounded-[42px] mmd1:bg-[rgba(255,255,255,0.08)]">
-                        <div class="flex flex-col gap-4">
-                            <label class="form-input">
-                                <input type="text" name="name" class="input input-secondary input-s-default" placeholder="Имя" />
-                            </label>
-                            <label class="form-input">
-                                <input type="text" name="email" class="input input-secondary input-s-default" placeholder="Электронная почта" />
-                            </label>
-                            <label class="form-input">
-                                <input type="tel" name="phone" class="input input-secondary input-s-default" placeholder="Телефон" />
-                            </label>
-                        </div>
-                        <button type="submit" class="mt-4 btn btn-third btn-s-default w-full">Отправить заявку</button>
-                        <div class="mt-5 checkbox checkbox-gray">
-                            <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
-                            <label for="c_agreement_2" class="checkbox__label">
-                                <div class="checkbox__mark">
-                                    <div class="checkbox__mark-check"></div>
-                                </div>
-                                <span class="checkbox__text !text-[12px]">
-                                    Заполняя форму, вы соглашаетесь на
-                                    <a href="/policy" class="inline">обработку персональных данных</a>
-                                </span>
-                            </label>
-                        </div>
-                    </form>
-                    <!-- у полей "name" связаны с валидацией, если валидация не нужна то с формы убирай id="form-bid"
-                    const formBid = document.querySelector("#form-bid");
-                    formBid.addEventListener("submit", e => {
-                        if (e.target.classList.contains("is-valid")) {
-                            console.log("submit");
-                            const formData = new FormData(formBid);
-                            for (let pair of formData.entries()) {
-                                console.log(pair[0] + ": " + pair[1]);
-                            }
-                        }
-                    });  -->
-                </div>
-            </div>
-            <div class="mt-14 md1:mt-8 bg-[rgba(255,255,255,0.08)] rounded-primary py-[54px] px-14 md1:p-6 flex justify-between gap-6 md1:flex-col">
-                <h4 class="title-4 text-white">Не хотите ждать звонка?</h4>
-                <div class="mmd1:w-[413px]">
-                    <a href="tel:84997068428" class="link-primary title-4 text-white">8 (499) 706-84-28</a>
-                    <p class="mt-4 text-paragraph text-white">Свяжитесь с нами — ответим на все вопросы</p>
-                </div>
-            </div>
+            <button class="btn btn-primary btn-s-default mt-[100px] md1:mt-10 mx-auto">Еще новости</button>
         </div>
     </div>
 </section>
 
             </main>
-            <footer class="footer mt-24 md1:mt-16">
+            <footer class="footer mt-[160px] md1:mt-16">
     <div class="container-big">
         <div class="footer__items">
-            <div class="mt-2 mmd1:ml-3">
-                <img src="./img/logo.svg" width="137" height="36" alt="КАК ДОМА" />
-                <!-- <p class="mt-9">Текст в процессе</p> -->
+            <div class="mt-2 mmd1:ml-3 max-w-[306px]">
+                <h3 class="title-3 !text-[26px] !font-bold mb-6">М-Проперти</h3>
+                <div>
+                    <svg class="w-6 h-6 text-purpleSecond mb-3">
+                        <use xlink:href="img/sprite.svg#location"></use>
+                    </svg>
+                    <p class="leading-[1.375]">
+                        г. Москва, Ходынский бульвар, д. 2, -1 этаж, помещение № 42, вход с 1 этажа, дверь слева от стоматологии
+                    </p>
+                </div>
             </div>
             <div>
                 <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Информация</h4>
                 <ul>
                     <li>
-                        <a class="footer__link link-primary" href="#">О компании</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Продукты</h4>
-                <ul>
-                    <li>
-                        <a class="footer__link link-primary" href="/ecosystem">Экосистема для ЖКХ</a>
-                    </li>
-                    <li>
-                        <a class="footer__link link-primary" href="/ads">Диспетчерская служба</a>
-                    </li>
-                    <li>
-                        <a class="footer__link link-primary" href="/cloud-pass-service">Бюро пропусков</a>
-                    </li>
-                    <li>
-                        <a class="footer__link link-primary" href="/confident-management">Доверительное управление</a>
-                    </li>
-                    <li>
-                        <a class="footer__link link-primary" href="/owner-app2">Приложение собственника</a>
-                    </li>
-                    <li>
-                        <a class="footer__link link-primary" href="/employee-app">Приложение сотрудника</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Контакты</h4>
-                <ul>
-                    <li>
-                        <a
-                            data-graph-path="create-bid"
-                            data-graph-animation="fadeInUp"
-                            data-graph-speed="350"
-                            class="footer__link link-primary"
-                            href="#"
-                            >Форма обратной связи</a
-                        >
+                        <a class="footer__link link-primary" href="#">Контакты</a>
                     </li>
                     <li>
                         <a class="footer__link link-primary" href="tel:84997068428">8 (499) 706-84-28</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Меню</h4>
+                <ul>
+                    <li>
+                        <a class="footer__link link-primary" href="#">Новости</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="#">Объекты</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="#">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="footer__link link-primary" href="#">Информация</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-[151px]">
+                <h4 class="text-[18px] leading-[1.22] font-semibold mb-6 md1:mb-4">Режим работы</h4>
+                <ul class="flex flex-col gap-2">
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Пн</span>
+                        <span>11:00-20:00</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Вт</span>
+                        <span>11:00-20:00</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Ср</span>
+                        <span>09:00-18:00</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Чт</span>
+                        <span>11:00-20:00</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Пт</span>
+                        <span>09:00-18:00</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Сб</span>
+                        <span>выходной</span>
+                    </li>
+                    <li class="flex items-center justify-between gap-9">
+                        <span>Вс</span>
+                        <span>выходной</span>
                     </li>
                 </ul>
             </div>
@@ -363,7 +276,7 @@
             </div>
         </div>
         <div class="footer__bottom">
-            <span class="text-center">© 2025 ООО «КАК ДОМА» </span>
+            <span class="text-center">© 2025 ООО «М-Проперти»</span>
             <a href="/terms-of-use" rel="nofollow" class="link-primary text-center">Политика конфиденциальности</a>
             <a href="/policy" rel="nofollow" class="link-primary text-center">Согласие на обработку персональных данных</a>
         </div>

@@ -1,5 +1,10 @@
 .news-card {
-    @apply border border-solid border-[#dbe2ed] rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col;
+    @apply border border-solid border-[#dbe2ed] rounded-32 md1:rounded-3xl p-8 md1:p-6 bg-white relative;
+
+    &__wrapper {
+        @apply flex flex-col h-full;
+    }
+
     &__badge {
         @apply mb-8 h-[34px] px-4 flex-center-all gap-2 self-start text-[16px] font-medium text-black rounded-[56px] bg-gray 
         backdrop-blur-[20px];
@@ -8,9 +13,49 @@
             @apply w-5 h-5 text-[currentColor];
         }
     }
+
     &__title {
+        @apply cut cut-3;
     }
+
     &__descr {
-        @apply text-grayDark mt-4;
+        @apply text-grayDark mt-4 cut cut-3;
+    }
+
+    &__time {
+        @apply pt-8 mt-auto text-grayDark;
+    }
+
+    &__arrow {
+        @apply absolute text-black w-25 h-25;
+
+        top: 34px;
+        right: 28px;
+
+        opacity: 0;
+        transform: translate3d(-4px, 4px, 0);
+        transition:
+            opacity 0.2s ease-out 0.05s,
+            transform 0.2s ease-out 0.05s;
+    }
+
+    &.news-card--big {
+        @apply border-none;
+        .news-card {
+            &__descr {
+                @apply mt-8;
+            }
+        }
+    }
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            .news-card {
+                &__arrow {
+                    opacity: 1;
+                    transform: translateZ(0);
+                }
+            }
+        }
     }
 }

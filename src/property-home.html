@@ -5,7 +5,9 @@
     <body>
         <div class="site-container">
             @include('partials/components/header-top.html')
-            @include('partials/header-property.html')
+            @include('partials/header-property.html', {
+                 "isLoggedIn": true
+            })
             <main class="main">
                 @include('partials/property/home/hero.html')
                 @include('partials/property/home/about-us.html')
