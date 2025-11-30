@@ -1,0 +1,22 @@
+.breadcrumbs {
+    @apply text-grayDark flex items-end;
+    &__icon {
+        @apply w-5 h-5 text-[currentColor] mr-[10px];
+    }
+    &__list {
+        @apply flex items-center;
+    }
+    &__item {
+        @apply text-[currentColor] relative flex items-center;
+        &:not(:last-child) {
+            @apply mr-2;
+            a,
+            span {
+                @apply mr-2;
+            }
+            &::after {
+                content: ">";
+            }
+        }
+    }
+}

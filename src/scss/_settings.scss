@@ -248,6 +248,15 @@ button {
     }
 }
 
+.title-5 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    @media (max-width: $desktop) {
+        font-size: 16px;
+    }
+}
+
 .text-paragraph {
     font-size: 20px;
     font-weight: 400;
@@ -668,4 +677,16 @@ button {
     height: 100%;
     position: relative;
     z-index: 20;
+}
+
+.news-page-content {
+    a {
+        transition: color $transitionSpeed $transitionFunction;
+        color: var(--hover-primary);
+        @media (min-width: $desktop-min) {
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
 }

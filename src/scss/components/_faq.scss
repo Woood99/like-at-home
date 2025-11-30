@@ -23,4 +23,11 @@
     &__content {
         @apply mt-4 md1:mt-3;
     }
+    &--default {
+        .faq {
+            &__arrow {
+                @apply w-25 h-25 basis-[25px];
+            }
+        }
+    }
 }
