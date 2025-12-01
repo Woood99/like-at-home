@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Готовый сайт управляющей компании" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', {
+              "linkName": 'Продукты и решения'
+            })
+
+            <main class="main">
+                @include('partials/website-for-uk/hero.html')
+                @include('partials/website-for-uk/product-solutions.html')
+                @include('partials/website-for-uk/features.html')
+                @include('partials/website-for-uk/banner-owner-info.html')
+                @include('partials/website-for-uk/without-internet.html')
+                @include('partials/website-for-uk/tariff-selection.html')
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
+                @include('partials/website-for-uk/ecosystem-of-services.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

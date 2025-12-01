@@ -18,14 +18,15 @@
 	<script defer src="js/main.js"></script>
 </head>
 
+    <script src="https://pos.gosuslugi.ru/bin/script.min.js"></script>
 
     <body>
         <div class="site-container">
-            <div class="flex-center-all bg-purpleSecond h-[58px] text-white">
+            <div class="flex-center-all bg-purpleSecond h-[58px] text-white md1:hidden">
     <p>Важная информация будет создаваться в админке</p>
 </div>
 
-            <header class="header header--property">
+            <header class="header header--border-bottom">
     <div class="container flex items-center h-full">
         <a href="/" class="mmd1:mb-3">
             <img src="./img/logo-property.png" class="logo-property" width="99" height="40" alt="М-Проперти" />
@@ -111,8 +112,8 @@
                 <section class="mt-[50px] md1:mt-0 md1:bg-gray rounded-b-3xl" id="hero-block">
     <div class="container-desktop">
         <div
-            class="bg-bluePale rounded-primary mmd1:rounded-br-none md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
-            <div class="mmd1:max-w-[580px] flex flex-col flex-grow">
+            class="bg-bluePale rounded-primary md1:rounded-none py-[54px] px-14 md1:py-6 md1:px-0 mmd1:min-h-[488px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
+            <div class="mmd1:max-w-[580px] flex flex-col flex-grow md1:px-6">
                 <span class="mb-5">Управляющая компания</span>
                 <h1 class="title-1">М-Проперти</h1>
                 <p class="mt-7 text-paragraph-2">
@@ -126,7 +127,7 @@
                 </div>
             </div>
 
-            <picture>
+            <picture class='md1:self-end'>
                 <source srcset="./img/property-hero-bg.webp" type="image/webp" />
                 <img
                     loading="lazy"
@@ -140,7 +141,7 @@
             </picture>
         </div>
     </div>
-    <div class="container-desktop !mt-6 md1:!-mt-2 relative">
+    <div class="container-desktop !mt-6 md1:!mt-0 relative">
         <div class="px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:bg-gray">
             <div>
                 <h3 class="title-4-5 !leading-[1.4] mb-3">Оплата квитанций за&nbsp;ЖКУ и&nbsp;капитальный ремонт</h3>
@@ -174,8 +175,8 @@
 </section>
 
                 <section class="mt-[140px] relative md1:mt-20">
-    <div class="container">
-        <div class="bg-gray rounded-primary px-14 pt-[60px] pb-24 relative md1:p-6 overflow-hidden flex gap-20">
+    <div class="container-desktop">
+        <div class="bg-gray rounded-primary px-14 pt-[60px] pb-24 relative md1:p-6 overflow-hidden flex gap-20 md1:flex-col md1:gap-8">
             <div class="mmd1:max-w-[490px]">
                 <h2 class="title-2">О нас</h2>
                 <p class="mt-6 text-paragraph-2">
@@ -183,7 +184,7 @@
                     из&nbsp;возможных решений в&nbsp;сфере управления жилой недвижимостью.
                 </p>
             </div>
-            <div class="flex-grow grid grid-cols-2 gap-8 mt-5">
+            <div class="flex-grow grid grid-cols-2 gap-8 mmd1:mt-5 md3:grid-cols-1 md3:gap-4">
                 <div class="rounded-20 bg-white py-6 px-7 min-h-[132px] h-max">
                     <h3 class="title-2">38</h3>
                     <p class="mt-2">Объектов в управлении</p>
@@ -242,16 +243,24 @@
             </a>
         </div>
         <div class="grid grid-cols-4 gap-6 md1:gap-5 md1:grid-cols-2 md3:grid-cols-1">
-            <a href="#" class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] mmd1:hover:-translate-y-2 transition-primary-all">
+            <a
+                href="#"
+                class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] md1:h-[120px] mmd1:hover:-translate-y-2 transition-primary-all">
                 <h3 class="title-4 text-[22px]">Поверка счетчиков</h3>
             </a>
-            <a href="#" class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] mmd1:hover:-translate-y-2 transition-primary-all">
+            <a
+                href="#"
+                class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] md1:h-[120px] mmd1:hover:-translate-y-2 transition-primary-all">
                 <h3 class="title-4 text-[22px]">Google Play</h3>
             </a>
-            <a href="#" class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] mmd1:hover:-translate-y-2 transition-primary-all">
+            <a
+                href="#"
+                class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] md1:h-[120px] mmd1:hover:-translate-y-2 transition-primary-all">
                 <h3 class="title-4 text-[22px]">RuStore</h3>
             </a>
-            <a href="#" class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] mmd1:hover:-translate-y-2 transition-primary-all">
+            <a
+                href="#"
+                class="bg-bluePale rounded-32 md1:rounded-3xl p-8 md1:p-6 flex flex-col h-[220px] md1:h-[120px] mmd1:hover:-translate-y-2 transition-primary-all">
                 <h3 class="title-4 text-[22px]">RuStore</h3>
             </a>
         </div>
@@ -336,7 +345,28 @@
 
                 <section class="mt-[160px] relative md1:mt-20">
     <div class="container-desktop">
-        <div class="bg-bluePale rounded-primary mmd1:min-h-[250px] relative">123</div>
+        <div id="js-show-iframe-wrapper">
+            <div class="pos-banner-fluid bf-38">
+                <div class="bf-38__decor">
+                    <div class="bf-38__logo-wrap">
+                        <img class="bf-38__logo" src="https://pos.gosuslugi.ru/bin/banner-fluid/gosuslugi-logo-blue.svg" alt="Госуслуги" />
+                        <div class="bf-38__slogan">Решаем вместе</div>
+                    </div>
+                </div>
+                <div class="bf-38__content">
+                    <div class="bf-38__description">
+                        <span class="bf-38__text"> В квитанциях ошибки, в подъезде мусор, сотрудники управляющей хамят? </span>
+                        <span class="bf-38__text bf-38__text_small"> Расскажите о проблемах с ЖКХ </span>
+                    </div>
+
+                    <div class="bf-38__bottom-wrap">
+                        <div class="bf-38__btn-wrap">
+                            <button class="pos-banner-btn_2" type="button">Написать о проблеме</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
@@ -838,4 +868,112 @@
 	</div>
 </div>
 
+    
+<script>
+    (function () {
+        "use strict";
+
+        function ownKeys(e, t) {
+            var n = Object.keys(e);
+            if (Object.getOwnPropertySymbols) {
+                var o = Object.getOwnPropertySymbols(e);
+                if (t) o = o.filter(function (t) {
+                    return Object.getOwnPropertyDescriptor(e, t).enumerable
+                });
+                n.push.apply(n, o)
+            }
+            return n
+        }
+
+        function _objectSpread(e) {
+            for (var t = 1; t < arguments.length; t++) {
+                var n = null != arguments[t] ? arguments[t] : {};
+                if (t % 2) ownKeys(Object(n), true).forEach(function (t) {
+                    _defineProperty(e, t, n[t])
+                });
+                else if (Object.getOwnPropertyDescriptors) Object.defineProperties(e, Object.getOwnPropertyDescriptors(n));
+                else ownKeys(Object(n)).forEach(function (t) {
+                    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
+                })
+            }
+            return e
+        }
+
+        function _defineProperty(e, t, n) {
+            if (t in e) Object.defineProperty(e, t, {
+                value: n,
+                enumerable: true,
+                configurable: true,
+                writable: true
+            });
+            else e[t] = n;
+            return e
+        }
+        var POS_PREFIX_38 = "--pos-banner-fluid-38__",
+            posOptionsInitialBanner38 = {
+                background: "#fc6554",
+                "grid-template-columns": "100%",
+                "grid-template-rows": "264px auto",
+                "max-width": "100%",
+                "text-font-size": "20px",
+                "text-small-font-size": "14px",
+                "text-margin": "0 0 12px 0",
+                "description-margin": "0 0 24px 0",
+                "button-wrap-max-width": "100%",
+                "bg-url": "url('https://pos.gosuslugi.ru/bin/banner-fluid/35/banner-fluid-bg-35.svg')",
+                "bg-url-position": "right bottom",
+                "content-padding": "26px 24px 20px",
+                "content-grid-row": "0",
+                "logo-wrap-padding": "16px 12px 12px",
+                "logo-width": "65px",
+                "logo-wrap-top": "0",
+                "slogan-font-size": "12px"
+            },
+            setStyles = function (e, t) {
+                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : POS_PREFIX_38;
+                Object.keys(e).forEach(function (o) {
+                    t.style.setProperty(n + o, e[o])
+                })
+            },
+            removeStyles = function (e, t) {
+                var n = arguments.length > 2 && void 0 !== arguments[2] ? arguments[2] : POS_PREFIX_38;
+                Object.keys(e).forEach(function (e) {
+                    t.style.removeProperty(n + e)
+                })
+            };
+
+        function changePosBannerOnResize() {
+            var e = document.documentElement,
+                t = _objectSpread({}, posOptionsInitialBanner38),
+                n = document.getElementById("js-show-iframe-wrapper"),
+                o = n ? n.offsetWidth : document.body.offsetWidth;
+            if (o > 340) t["button-wrap-max-width"] = "209px";
+            if (o > 360) t["bg-url"] = "url('https://pos.gosuslugi.ru/bin/banner-fluid/35/banner-fluid-bg-35-2.svg')", t["bg-url-position"] = "calc(100% + 135px) bottom";
+            if (o > 482) t["text-font-size"] = "23px", t["text-small-font-size"] = "18px", t["bg-url-position"] = "center bottom";
+            if (o > 568) t["bg-url"] = "url('https://pos.gosuslugi.ru/bin/banner-fluid/35/banner-fluid-bg-35.svg')", t["bg-url-position"] = "calc(100% + 35px) bottom", t[
+                    "text-font-size"] = "24px", t["text-small-font-size"] = "14px", t["grid-template-columns"] = "1fr 292px", t["grid-template-rows"] = "100%", t[
+                    "content-grid-row"] = "1",
+                t["content-padding"] = "48px 24px";
+            if (o > 783) t["grid-template-columns"] = "1fr 390px", t["bg-url"] = "url('https://pos.gosuslugi.ru/bin/banner-fluid/35/banner-fluid-bg-35-2.svg')", t[
+                    "bg-url-position"] =
+                "calc(100% + 144px) bottom", t["text-small-font-size"] = "18px", t["content-padding"] = "30px 24px";
+            if (o > 820) t["grid-template-columns"] = "1fr 420px";
+            if (o > 918) t["bg-url-position"] = "calc(100% + 100px) bottom";
+            if (o > 1098) t["bg-url-position"] = "center bottom", t["grid-template-columns"] = "1fr 557px", t["text-font-size"] = "32px", t["content-padding"] = "34px 50px", t[
+                "logo-width"] = "78px", t["slogan-font-size"] = "15px", t["logo-wrap-padding"] = "20px 16px 16px";
+            if (o > 1422) t["max-width"] = "1422px", t["grid-template-columns"] = "1fr 720px", t.background = "linear-gradient(90deg, #fc6554 50%, #E0ECFE 50%)";
+            setStyles(t, e)
+        }
+        changePosBannerOnResize(), window.addEventListener("resize", changePosBannerOnResize), window.onunload = function () {
+            var e = document.documentElement,
+                t = _objectSpread({}, posOptionsInitialBanner38);
+            window.removeEventListener("resize", changePosBannerOnResize), removeStyles(t, e)
+        };
+    })()
+
+</script>
+    <script>
+    Widget("https://pos.gosuslugi.ru/form", 381784)
+
+</script>
 </html>

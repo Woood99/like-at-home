@@ -18,6 +18,7 @@ module.exports = {
             veryLightBlue: "var(--very-light-blue)",
             lightBlue: "var(--light-blue)",
             bluePale: "var(--blue-pale)",
+            blueLightest: "var(--blue-lightest)",
             cyan: "var(--cyan)",
             lightCyan: "var(--light-cyan)",
             darkCyan: "var(--dark-cyan)",

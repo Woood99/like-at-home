@@ -4,20 +4,23 @@
     @apply flex items-center gap-[25px] bg-gray text-black rounded-32 pt-10 pb-10 pl-12 pr-14;
 
     &__icon {
-        @apply w-10 h-10 text-[currentColor];
-
+        @apply flex-grow-0 flex-shrink-0 w-10 h-10 basis-10 text-[currentColor];
         @media (max-width: $desktop) {
-            @apply w-7-5 h-7-5;
+            @apply w-7-5 h-7-5 basis-7-5;
         }
+    }
+
+    &.features-item-link--border {
+        @apply bg-[transparent] border border-solid border-[#e0e0e0];
+    }
+
+    @media (max-width: $mobile-max) {
+        @apply gap-4 p-8 rounded-3xl;
     }
 
     @media (min-width: $desktop-min) {
         &:hover {
             @apply bg-lightBlue text-white;
         }
-    }
-
-    @media (max-width: $mobile-max) {
-        @apply gap-4 p-8 rounded-3xl;
     }
 }

@@ -11,6 +11,10 @@
         width: 100%;
         z-index: 999;
         background-color: var(--white);
+        &.header--border-bottom {
+            border-bottom: 1px solid #e6e6e6;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
     }
 }
 

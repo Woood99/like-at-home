@@ -12,6 +12,14 @@
     @apply bg-white text-black border border-solid border-black;
 }
 
+.tag-three {
+    @apply text-black border border-solid border-[currentColor] w-max font-medium;
+}
+
 .tag-big {
     @apply h-[70px] md1:h-[50px];
+}
+
+.tag-small {
+    @apply h-[34px] px-4;
 }
