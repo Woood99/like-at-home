@@ -81,9 +81,91 @@
             <main class="main">
                 <section class="mt-11 md1:mt-8">
     <div class="container-desktop">
-        <h2 class="title-2 text-center">Объекты</h2>
+        <h1 class="title-2 text-center">Объекты</h1>
 
         <div class="mt-20 md1:mt-8 bg-gray rounded-primary px-14 py-[52px] md1:py-6 md1:px-4">
+            <label class="form-input relative">
+                <input type="search" name="search" class="input input-secondary input-s-veryBig" placeholder="Поиск" />
+                <button type="button" class="flex-center-all absolute right-4 top-0 h-full w-12">
+                    <svg class="w-6 h-6">
+                        <use xlink:href="img/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </label>
+            <div class="mt-20 md1:mt-8 grid grid-cols-2 md1:grid-cols-1 gap-6 md1:gap-3">
+                <article class="building-card">
+                    <a href="#" class="building-card__link"></a>
+                    <div class="building-card__wrapper">
+                        <h3 class="building-card__title title-4">Проспект Мира 22, Московская область г. Реутов</h3>
+                        <div class="building-card__bottom">
+                            <div class="building-card__address">
+                                <picture class="flex-shrink-0">
+                                    <source srcset="./img/building-map-1.webp" type="image/webp" />
+                                    <img
+                                        loading="lazy"
+                                        src="./img/building-map-1.png"
+                                        width="79"
+                                        height="87"
+                                        alt="Проспект Мира 22, Московская область г. Реутов" />
+                                </picture>
+                                <span>Проспект Мира 22, Московская область г. Реутов</span>
+                            </div>
+                            <a href="#" class="building-card__chat-link link-primary">
+                                <img loading="lazy" src="./img/telegram-circle.svg" width="26" height="26" alt="Чат жителей" />
+                                <span>Чат жителей</span>
+                            </a>
+                        </div>
+                        <svg class="building-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="building-card building-card--image">
+                    <a href="#" class="building-card__link"></a>
+                    <div class="building-card__wrapper">
+                        <picture>
+                            <source srcset="./img/card-5.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/card-5.jpg" width="580" height="320" alt="" />
+                        </picture>
+                    </div>
+                </article>
+                <article class="building-card">
+                    <a href="#" class="building-card__link"></a>
+                    <div class="building-card__wrapper">
+                        <h3 class="building-card__title title-4">Проспект Мира 22, Московская область г. Реутов</h3>
+                        <div class="building-card__bottom">
+                            <div class="building-card__address">
+                                <picture class="flex-shrink-0">
+                                    <source srcset="./img/building-map-1.webp" type="image/webp" />
+                                    <img
+                                        loading="lazy"
+                                        src="./img/building-map-1.png"
+                                        width="79"
+                                        height="87"
+                                        alt="Проспект Мира 22, Московская область г. Реутов" />
+                                </picture>
+                                <span>Проспект Мира 22, Московская область г. Реутов</span>
+                            </div>
+                            <a href="#" class="building-card__chat-link link-primary">
+                                <img loading="lazy" src="./img/telegram-circle.svg" width="26" height="26" alt="Чат жителей" />
+                                <span>Чат жителей</span>
+                            </a>
+                        </div>
+                        <svg class="building-card__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                        </svg>
+                    </div>
+                </article>
+                <article class="building-card building-card--image">
+                    <a href="#" class="building-card__link"></a>
+                    <div class="building-card__wrapper">
+                        <svg class="w-20 h-20 text-gray">
+                            <use xlink:href="img/sprite.svg#empty-image"></use>
+                        </svg>
+                        <span class="mt-3">Нет изображения</span>
+                    </div>
+                </article>
+            </div>
             <button class="btn btn-primary btn-s-default mt-20 md1:mt-10 mx-auto md3:w-full">Еще обьекты</button>
         </div>
     </div>

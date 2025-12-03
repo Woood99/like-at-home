@@ -22,9 +22,22 @@
 }
 
 .input-s-default {
-    @apply h-[56px] rounded-[20px];
+    @apply h-[56px] rounded-20;
 }
 
 .input-s-big {
-    @apply h-[60px] rounded-[20px];
+    @apply h-[60px] rounded-20;
+}
+
+.input-s-veryBig {
+    @apply h-[65px] rounded-20 text-[18px];
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+/* Для Internet Explorer */
+input[type="search"]::-ms-clear {
+    display: none;
 }

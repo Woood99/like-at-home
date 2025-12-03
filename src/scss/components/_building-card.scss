@@ -1,0 +1,78 @@
+.building-card {
+    @apply relative rounded-32 md1:rounded-3xl p-10 md1:p-6 bg-white overflow-hidden;
+
+    &__link {
+        @apply absolute inset-0 w-full h-full z-10;
+    }
+
+    &__wrapper {
+        @apply flex flex-col h-full;
+    }
+
+    &__title {
+        @apply mmd1:max-w-[80%];
+    }
+
+    &__bottom {
+        @apply mt-auto pt-[90px] md1:pt-10 flex gap-6 mmd1:justify-between mmd1:items-end md1:flex-col;
+    }
+
+    &__address {
+        @apply flex items-end leading-normal gap-6 max-w-[270px];
+    }
+
+    &__chat-link {
+        @apply flex items-center gap-3 relative z-20;
+        img {
+            @apply rounded-full w-[26px] h-[26px];
+        }
+    }
+
+    &__arrow {
+        position: absolute;
+        top: 34px;
+        right: 28px;
+        width: 25px;
+        height: 25px;
+        color: var(--black);
+
+        opacity: 0;
+        transform: translate3d(-4px, 4px, 0);
+        transition:
+            opacity 0.2s ease-out 0.05s,
+            transform 0.2s ease-out 0.05s;
+    }
+
+    &.building-card--image {
+        @apply p-0 min-h-[320px];
+
+        .building-card {
+            &__wrapper {
+                @apply flex-center-all flex-col;
+            }
+        }
+        picture {
+            @apply min-h-full;
+            img {
+                @apply w-full h-full;
+            }
+        }
+        @media (max-width: $desktop) {
+            @apply min-h-[200px];
+        }
+        @media (max-width: $tablet-max) {
+            @apply hidden;
+        }
+    }
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            .building-card {
+                &__arrow {
+                    opacity: 1;
+                    transform: translateZ(0);
+                }
+            }
+        }
+    }
+}
