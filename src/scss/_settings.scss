@@ -662,14 +662,17 @@ button {
     backface-visibility: hidden;
 }
 
-.parallax-layer {
-    position: absolute !important;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex !important;
-    z-index: 99;
+.cloud-pass-service-parallax,
+.banner-slide--parallax {
+    .parallax-layer {
+        position: absolute !important;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        z-index: 99;
+    }
 }
 
 .cloud-pass-service-parallax {

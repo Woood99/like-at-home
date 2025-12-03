@@ -7,7 +7,9 @@ import "./functions/fix-fullheight.js";
 import { getHeaderHeight } from "./functions/header-height.js";
 import Modal from "./functions/modal.js";
 import spollers from "./functions/spollers.js";
+import tabs from "./functions/tabs.js";
 import Marquee3k from "marquee3000";
+import SimpleParallax from "simple-parallax-js/vanilla";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
@@ -15,6 +17,7 @@ Swiper.use([Navigation, Pagination]);
 
 document.addEventListener("DOMContentLoaded", () => {
     spollers();
+    tabs();
     featuresTabs();
     Marquee3k.init();
     getHeaderHeight();
@@ -269,6 +272,14 @@ document.addEventListener("DOMContentLoaded", () => {
             btn.classList.toggle("_active");
         });
     }
+
+    const images = document.querySelectorAll("[data-simple-parallax]");
+    new SimpleParallax(images, {
+        orientation: "up",
+        scale: 1.5,
+        overflow: true,
+        customWrapper: ".parallax-wrapper"
+    });
 
     // if (isDesktop()) {
     //     document.querySelectorAll(".banner-parallax").forEach(item => {

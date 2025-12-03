@@ -1,13 +1,13 @@
 .breadcrumbs {
     @apply text-grayDark flex items-end;
     &__icon {
-        @apply w-5 h-5 text-[currentColor] mr-[10px];
+        @apply w-5 h-5 basis-5 flex-shrink-0 text-[currentColor] mr-[10px];
     }
     &__list {
-        @apply flex items-center;
+        @apply flex items-center whitespace-nowrap overflow-y-hidden overflow-x-auto;
     }
     &__item {
-        @apply text-[currentColor] relative flex items-center;
+        @apply text-[currentColor] relative flex items-center whitespace-nowrap;
         &:not(:last-child) {
             @apply mr-2;
             a,

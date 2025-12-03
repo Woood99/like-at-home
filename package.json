@@ -69,6 +69,7 @@
         "marquee3000": "^1.1.1",
         "parallax-js": "^3.1.0",
         "sass": "^1.75.0",
+        "simple-parallax-js": "^6.3.3",
         "swiper": "^11.1.1"
     }
 }

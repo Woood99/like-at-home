@@ -1,0 +1,51 @@
+<section class="mt-20 md1:mt-8">
+    <div class="container-desktop">
+        <div class="breadcrumbs md1:px-4">
+            <svg class="breadcrumbs__icon">
+                <use xlink:href="img/sprite.svg#house"></use>
+            </svg>
+            <ul class="breadcrumbs__list">
+                <li class="breadcrumbs__item">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="#">Объекты</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span>Ходынский бульвар 20а</span>
+                </li>
+            </ul>
+        </div>
+        <div class="mt-10 md1:mt-8">
+            <h1 class="title-2 mb-10 md1:mb-8 md1:px-4">ЖК Лайнер Восток</h1>
+            <div class="mt-10 md1:mt-8">
+                <div class="md1:px-4">
+                    <div class="bg-gray w-full rounded-primary h-[200px] overflow-hidden relative">
+                        <div class="parallax-wrapper w-full h-full overflow-hidden">
+                            <img
+                                src="./img/building-photo-1.jpg"
+                                class="w-full h-[150%] object-cover min-w-full"
+                                style="object-position: 0% 60%"
+                                data-simple-parallax
+                                alt="ЖК Лайнер Восток" />
+                        </div>
+                    </div>
+                </div>
+
+                <div data-tabs class="mt-20 md1:mt-8 tabs">
+                    <nav data-tabs-titles class="tabs__navigation">
+                        <button type="button" class="btn btn-reset tabs__title _tab-active">Контакты</button>
+                        <button type="button" class="btn btn-reset tabs__title">Новости</button>
+                        <button type="button" class="btn btn-reset tabs__title">Раскрытие информации</button>
+                        <div class="line" aria-hidden="true"></div>
+                    </nav>
+                    <div data-tabs-body class="tabs__content mt-10 md1:mt-6">
+                        <div class="tabs__body">@include('building-contacts.html')</div>
+                        <div class="tabs__body">@include('building-news.html')</div>
+                        <div class="tabs__body">@include('building-info.html')</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

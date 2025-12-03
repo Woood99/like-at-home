@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Объекты" })
+    <body>
+        <div class="site-container">
+            @include('partials/header-property.html', {
+                 "isLoggedIn": false
+            })
+            <main class="main">
+                @include('partials/property/buildings/hero.html')
+            </main>
+            @include('partials/footer-property.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>
