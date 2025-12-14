@@ -16,24 +16,29 @@
                 </li>
             </ul>
         </div>
+
         <div class="mt-10 md1:mt-8">
             <h1 class="title-2 mb-10 md1:mb-8 md1:px-4">ЖК Лайнер Восток</h1>
             <div class="mt-10 md1:mt-8">
                 <div class="md1:px-4">
-                    <!-- <div class="bg-gray w-full rounded-primary h-[200px] overflow-hidden relative flex-center-all flex-col">
-                        <svg class="w-20 h-20 text-white">
-                            <use xlink:href="img/sprite.svg#empty-image"></use>
-                        </svg>
-                        <span class="text-grayDark mt-3">Нет изображения</span>
-                    </div> -->
                     <div class="bg-gray w-full rounded-primary h-[200px] md1:h-[160px] overflow-hidden relative flex-center-all flex-col">
-                        <div class="parallax-wrapper w-full h-full overflow-hidden">
+                        <div class="parallax-wrapper w-full h-full overflow-hidden image-wrapper">
                             <img
                                 src="./img/building-photo-1.jpg"
-                                class="w-full h-[145%] object-cover min-w-full"
+                                onerror="this.style.display='none';"
+                                class="w-full h-[145%] object-cover min-w-full relative -top-[10%] z-10"
                                 style="object-position: 0% 60%"
                                 data-simple-parallax
+                                loading="lazy"
+                                width="1296"
+                                height="290"
                                 alt="ЖК Лайнер Восток" />
+                            <div class="image-wrapper__placeholder">
+                                <svg class="w-20 h-20 text-white md1:w-16 md1:h-16">
+                                    <use xlink:href="img/sprite.svg#empty-image"></use>
+                                </svg>
+                                <span class="text-grayDark mt-3">Нет изображения</span>
+                            </div>
                         </div>
                     </div>
                 </div>

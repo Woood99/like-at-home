@@ -44,7 +44,11 @@
     }
 
     &.building-card--image {
-        @apply p-0 min-h-[320px];
+        --height: 320px;
+        min-height: var(--height);
+        max-height: var(--height);
+        height: var(--height);
+        @apply p-0;
 
         .building-card {
             &__wrapper {
@@ -52,13 +56,13 @@
             }
         }
         picture {
-            @apply min-h-full;
+            @apply min-h-full w-full h-full;
             img {
                 @apply w-full h-full;
             }
         }
         @media (max-width: $desktop) {
-            @apply min-h-[200px];
+            --height: 200px;
         }
         @media (max-width: $tablet-max) {
             @apply hidden;

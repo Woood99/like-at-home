@@ -693,3 +693,33 @@ button {
         }
     }
 }
+
+.image-wrapper {
+    &__placeholder {
+        @apply absolute inset-0 hidden items-center justify-center flex-col z-0;
+        &:first-child {
+            @apply flex;
+        }
+    }
+
+    img[data-failed="true"] + &__placeholder,
+    img:not([src]) + &__placeholder {
+        @apply flex;
+    }
+}
+
+.circle-icon {
+    @apply bg-white w-[58px] h-[58px] flex-center-all rounded-full md1:w-11 md1:h-11;
+
+    svg {
+        @apply w-7-5 h-7-5 text-black md1:w-6 md1:h-6;
+    }
+
+    &.circle-icon--secondary {
+        @apply w-16 h-16 md1:w-12 md1:h-12 rounded-20 md1:rounded-2xl;
+
+        svg {
+            @apply w-8 h-8 md1:w-6 md1:h-6;
+        }
+    }
+}

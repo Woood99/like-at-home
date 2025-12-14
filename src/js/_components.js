@@ -276,7 +276,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const images = document.querySelectorAll("[data-simple-parallax]");
     new SimpleParallax(images, {
         orientation: "up",
-        scale: 1.5,
+        scale: 1.25,
+        delay: 0,
         overflow: true,
         customWrapper: ".parallax-wrapper"
     });
