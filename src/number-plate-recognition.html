@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Система распознавания автомобильных номеров" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "linkName": 'Продукты и решения'
+            })
+            <main class="main">
+                @include('partials/number-plate-recognition/hero.html') 
+                @include('partials/number-plate-recognition/product-solutions.html') 
+                @include('partials/number-plate-recognition/benefits.html') 
+                @include('partials/number-plate-recognition/target-audience.html') 
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

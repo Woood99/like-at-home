@@ -85,6 +85,21 @@
     }
 }
 
+.btn-green {
+    @apply bg-greenLiht text-white;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-white text-darkPressed;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-white text-darkPressed;
+        }
+    }
+}
+
 .btn-s-small {
     @apply h-[51px];
 }

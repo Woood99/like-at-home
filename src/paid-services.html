@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Платные услуги" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "linkName": 'Продукты и решения'
+            })
+            <main class="main">
+                @include('partials/paid-services/hero.html') 
+                @include('partials/paid-services/benefits.html') 
+                @include('partials/payment/methods.html')
+                @include('partials/paid-services/how-it-works.html') 
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>
