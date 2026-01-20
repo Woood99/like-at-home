@@ -11,7 +11,7 @@
     position: relative;
 
     &__icon {
-      width: 48px;
+        width: 48px;
         height: 48px;
         border-radius: 12px;
 
@@ -43,6 +43,32 @@
         gap: 12px;
     }
 
+    &__badge-icon {
+        margin-bottom: 12px;
+
+        padding: 0 16px;
+        font-size: 16px;
+        line-height: 1.375;
+        font-weight: 500;
+        color: var(--black);
+        border-radius: 55px;
+        height: 34px;
+
+        backdrop-filter: blur(20px);
+        background-color: var(--white);
+
+        display: flex;
+        align-items: center;
+        align-self: start;
+        gap: 8px;
+
+        svg {
+            width: 20px;
+            height: 20px;
+            color: currentColor;
+        }
+    }
+
     &__content {
         margin-top: auto;
     }
@@ -54,7 +80,6 @@
         font-size: 16px;
         line-height: 1.56;
         color: var(--black);
-        letter-spacing: 0.3px;
         opacity: 0;
         max-height: 32px;
         transition:

@@ -1,5 +1,6 @@
 import Api from "./components/api.js";
 import featuresTabs from "./components/featuresTabs.js";
+import navDropdown from "./components/navDropdown.js";
 import validateForms from "./components/validate-forms.js";
 import "./functions/burger.js";
 import "./functions/dynamic-adapt.js";
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
     featuresTabs();
     Marquee3k.init();
     getHeaderHeight();
+    navDropdown();
     const modal = new Modal();
     if (modal) window.modal = modal;
 

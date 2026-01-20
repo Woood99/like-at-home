@@ -8,6 +8,7 @@ html {
 body {
     font-family: var(--font-family);
     font-size: var(--default-fz);
+    letter-spacing: 0.015em;
     line-height: 1;
 
     color: var(--black);
@@ -15,6 +16,7 @@ body {
     margin: 0;
     min-width: 320px;
     min-height: 100%;
+
     &::after {
         content: "";
         position: fixed;
@@ -22,14 +24,21 @@ body {
         height: 100%;
         top: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.25);
+        background-color: rgba(0, 0, 0, 0.35);
         backdrop-filter: blur(7.5px);
-        z-index: 100;
+        z-index: 98;
         opacity: 0;
         visibility: hidden;
         transition:
             opacity 0.32s ease-in-out,
             visibility 0.32s ease-in-out;
+    }
+
+    &._nav-active-mask {
+        &::after {
+            opacity: 1;
+            visibility: visible;
+        }
     }
 }
 
@@ -55,7 +64,6 @@ p {
     margin: 0;
     font-weight: 400;
     font-size: inherit;
-    letter-spacing: 0.015em;
 }
 
 img {
@@ -376,7 +384,7 @@ button {
     object-fit: cover;
 }
 
-.provide-solution__arrow-top-right {
+.arrow-top-right {
     position: absolute;
     width: 25px;
     height: 25px;
@@ -554,9 +562,9 @@ button {
         }
     }
     & ~ .features-tabs-text {
-      @media (max-width:$desktop){
-         display: none; 
-      }
+        @media (max-width: $desktop) {
+            display: none;
+        }
     }
 }
 
