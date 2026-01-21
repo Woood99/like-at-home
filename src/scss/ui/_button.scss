@@ -86,7 +86,7 @@
 }
 
 .btn-green {
-    @apply bg-greenLiht text-white;
+    @apply bg-greenLight text-white;
 
     @media (min-width: $desktop-min) {
         &:hover {

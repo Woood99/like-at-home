@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "ЕДС" })
+    @include('partials/head.html', { "title": "Системы онлайн заселения" })
 
     <body>
         <div class="site-container">
@@ -8,11 +8,12 @@
               "linkName": 'Продукты и решения'
             })
             <main class="main">
-                @include('partials/eds/hero.html') 
-                @include('partials/eds/tools-services.html') 
-                @include('partials/eds/banner-owner-info.html') 
-                @include('partials/eds/tariff-selection.html') 
-                @include('partials/eds/faq.html', { "className":"mt-[160px]" })
+                @include('partials/online-check-in/hero.html') 
+                @include('partials/online-check-in/industries.html') 
+                @include('partials/online-check-in/equipment.html') 
+                @include('partials/online-check-in/supported-points.html') 
+                @include('partials/online-check-in/why-choose-us.html') 
+                @include('partials/online-check-in/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

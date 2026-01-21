@@ -8,6 +8,13 @@
             @apply w-6 h-6 text-black;
         }
     }
+    &__icon--green {
+        @apply bg-greenLight;
+
+        svg {
+            @apply text-white;
+        }
+    }
     &__title {
         @apply mb-4;
     }
