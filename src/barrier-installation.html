@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Установка и модернизация шлагбаумов" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "linkName": 'Продукты и решения'
+            })
+            <main class="main">
+                @include('partials/barrier-installation/hero.html') 
+                @include('partials/barrier-installation/installation-options.html') 
+                @include('partials/barrier-installation/checkpoint-automation.html') 
+                @include('partials/barrier-installation/additional-services.html') 
+                @include('partials/barrier-installation/banner.html') 
+                @include('partials/online-check-in/why-choose-us.html') 
+                @include('partials/payment/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

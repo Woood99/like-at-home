@@ -12,9 +12,9 @@ import tabs from "./functions/tabs.js";
 import Marquee3k from "marquee3000";
 import SimpleParallax from "simple-parallax-js/vanilla";
 import Swiper from "swiper";
-import { Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-Swiper.use([Navigation, Pagination]);
+Swiper.use([Navigation, Pagination, Autoplay]);
 
 document.addEventListener("DOMContentLoaded", () => {
     spollers();
@@ -33,6 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const swiperBannerEl = document.querySelector("#swiper-banner");
     const ourSolutionsEl = document.querySelector("#our-solutions");
     const featuresEl = document.querySelector("#features-block");
+    const navDropdownSliders = document.querySelectorAll(".nav-dropdown-slider");
 
     if (swiperBannerEl) {
         new Swiper(swiperBannerEl, {
@@ -99,6 +100,24 @@ document.addEventListener("DOMContentLoaded", () => {
                 activeImage.style.opacity = "1";
             }
         }
+    }
+
+    if (!!navDropdownSliders.length) {
+        navDropdownSliders.forEach(item => {
+            new Swiper(item, {
+                slidesPerView: 1,
+                spaceBetween: 8,
+                pagination: {
+                    el: ".nav-dropdown-slider-pagination",
+                    clickable: true
+                },
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true
+                }
+            });
+        });
     }
 
     const createBidForm = document.querySelector("#create-bid-form");

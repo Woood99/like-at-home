@@ -21,4 +21,8 @@
     &__descr {
         @apply leading-[1.5625];
     }
+
+    &.info-card--second {
+        @apply bg-gray border-none;
+    }
 }

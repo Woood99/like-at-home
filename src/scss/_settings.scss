@@ -296,6 +296,7 @@ button {
 
 .slider-pagination {
     @apply flex items-center gap-1;
+
     .swiper-pagination-bullet {
         transition: all $transitionSpeed $transitionFunction;
         margin: 0 !important;
@@ -304,6 +305,16 @@ button {
 
     .swiper-pagination-bullet-active {
         @apply w-6 bg-[rgba(255,255,255,0.5)];
+    }
+
+    &.slider-pagination--dark {
+        .swiper-pagination-bullet {
+            @apply bg-[#191919];
+        }
+
+        .swiper-pagination-bullet-active {
+            @apply w-6 bg-[rgba(25,25,25,0.5)];
+        }
     }
 }
 
@@ -748,6 +759,13 @@ button {
     }
     &.circle-icon--blue {
         @apply bg-[#575ad6] blur-[20px];
+
+        svg {
+            @apply text-white;
+        }
+    }
+    &.circle-icon--dark {
+        @apply bg-[#15171c] blur-[20px];
 
         svg {
             @apply text-white;
