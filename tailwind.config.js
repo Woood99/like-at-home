@@ -28,6 +28,7 @@ module.exports = {
             grayLight: "var(--gray-light)",
             grayDark: "var(--gray-dark)",
             grayMedium: "var(--gray-medium)",
+            grayText: "var(--gray-text)",
             hoverPrimary: "var(--hover-primary)"
         },
         fontFamily: {

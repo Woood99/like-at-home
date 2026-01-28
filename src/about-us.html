@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "О нас" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', { 
+              "linkName": 'Продукты и решения'
+            })
+            <main class="main">
+                @include('partials/about-us/hero.html') 
+                @include('partials/about-us/our-process.html') 
+                @include('partials/about-us/contacts.html') 
+                @include('partials/about-us/details.html') 
+                @include('partials/about-us/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+</html>

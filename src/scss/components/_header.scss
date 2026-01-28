@@ -81,25 +81,28 @@
 
     &__subitem {
         background-color: transparent;
-        padding: 6px 11px;
         border-radius: 5px;
+        transition: all $transitionSpeed $transitionFunction;
 
         > a {
             font-size: 13px;
             line-height: 1.84;
             color: var(--gray-medium);
+            padding: 6px 11px;
+            width: 100%;
         }
 
         @media (max-width: $desktop) {
             width: 100%;
             text-align: center;
         }
+        @media (min-width: $desktop-min) {
+            &:hover {
+                background-color: var(--gray);
 
-        &._active {
-            background-color: var(--gray);
-
-            > a {
-                color: var(--black);
+                > a {
+                    color: var(--black);
+                }
             }
         }
     }
@@ -181,9 +184,9 @@
             color: var(--gray-medium);
         }
     }
-    &__banner{
-        @media (max-width:$desktop){
-             display: none; 
+    &__banner {
+        @media (max-width: $desktop) {
+            display: none;
         }
     }
 

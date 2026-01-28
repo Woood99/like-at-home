@@ -7,7 +7,7 @@ const navDropdown = () => {
     items.forEach(item => {
         const link = item.querySelector(".nav-dropdown__link");
         link.addEventListener("mouseenter", () => {
-            if (window.innerWidth <= 1326) return;
+            if (window.innerWidth <= 1296) return;
             removeActiveNav();
             if (!item.classList.contains("_active")) {
                 item.classList.add("_active");
@@ -15,7 +15,7 @@ const navDropdown = () => {
             }
         });
         item.addEventListener("mouseleave", e => {
-            if (window.innerWidth <= 1326) return;
+            if (window.innerWidth <= 1296) return;
             removeActiveNav();
             toggleMask();
         });

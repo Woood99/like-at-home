@@ -9,18 +9,20 @@
             })
             <main class="main">
                 @include('partials/ads/hero.html') 
-                @include('partials/ads/real-savings.html') 
+                @include('partials/ads/remote-access-control-for-hoa.html')
                 @include('partials/ads/how-it-works.html') 
+                @include('partials/ads/tariff-selection.html') 
+                @include('partials/ads/provide-solution.html') 
+                @include('partials/ads/banner-eds.html') 
+                @include('partials/ads/whats-included.html') 
                 @include('partials/components/analytics.html', { 
-                    "title":"Всегда подробная аналитика по звонкам", 
+                    "title":"Подробная аналитика", 
                     "descr": "Система собирает данные и формирует полную аналитику по всем <br class='md1:hidden' /> необходимым параметрам для анализа эффективности",
-                    "className":"mt-[130px]",
+                    "className":"mt-[160px]",
                     "imageDefault": "call-analytics-banner.jpg",
                     "imageWebp": "call-analytics-banner.webp",
                     "classNameImage": "pt-9 pr-10 pb-10 pl-[30px]"
                 })
-                @include('partials/ads/tariff-selection.html') 
-                @include('partials/ads/provide-solution.html') 
                 @include('partials/components/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать индивидуальный тариф", "className":"mt-[164px]" })
             </main>
