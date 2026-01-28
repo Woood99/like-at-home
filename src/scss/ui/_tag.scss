@@ -1,5 +1,5 @@
 .tag {
-    @apply flex-center-all rounded-[55px] h-[54px] px-5 md1:rounded-3xl md1:h-[38px] md1:px-4 md1:text-[14px];
+    @apply flex-center-all rounded-[55px] h-[54px] px-5 md1:rounded-3xl md1:h-[38px] md1:px-4 md1:text-[14px] font-medium;
 }
 
 .tag-primary {
@@ -17,7 +17,7 @@
 }
 
 .tag-four {
-    @apply text-white bg-black w-max font-medium ;
+    @apply text-white bg-black w-max font-medium;
 }
 
 .tag-big {
