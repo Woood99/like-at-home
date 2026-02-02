@@ -96,6 +96,7 @@
             width: 100%;
             text-align: center;
         }
+
         @media (min-width: $desktop-min) {
             &:hover {
                 background-color: var(--gray);
@@ -176,13 +177,7 @@
     &__item-links {
         display: flex;
         flex-direction: column;
-        gap: 15px;
-
-        > a {
-            font-size: 13px;
-            line-height: 1.84;
-            color: var(--gray-medium);
-        }
+        gap: 2px;
     }
     &__banner {
         @media (max-width: $desktop) {
