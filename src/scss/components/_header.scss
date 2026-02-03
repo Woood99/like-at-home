@@ -114,7 +114,7 @@
             height: 100%;
             top: 100%;
             left: 0;
-            width: 100%;
+            width: 96%;
             min-height: 535px;
 
             opacity: 0;
@@ -135,7 +135,7 @@
     &__content {
         display: flex;
         gap: 40px;
-        padding: 35px 40px 40px 40px;
+        padding: 35px 30px 40px 30px;
         border-radius: 30px;
         height: 100%;
         background-color: var(--white);

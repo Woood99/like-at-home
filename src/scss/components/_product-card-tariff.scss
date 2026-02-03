@@ -1,7 +1,7 @@
 .product-card-tariff {
     display: flex;
     flex-direction: column;
-    padding: 40px 56px 56px;
+    padding: 40px 40px 56px;
     background-color: var(--gray);
     position: relative;
     @apply rounded-32;
@@ -106,6 +106,10 @@
 
     &--dark {
         background: linear-gradient(215deg, #232323 0%, #232323 100%);
+    }
+
+    &--blue {
+        background: linear-gradient(215deg, #5046e5 0%, #5046e5 100%);
     }
 
     @media (max-width: $desktop) {
