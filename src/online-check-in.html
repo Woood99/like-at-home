@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Системы онлайн заселения" })
+    @include('partials/head.html', { "title": "Система онлайн заселения" })
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продукты и решения'
             })
             <main class="main">
-                @include('partials/online-check-in/hero.html') 
-                @include('partials/online-check-in/industries.html') 
-                @include('partials/online-check-in/equipment.html') 
-                @include('partials/online-check-in/supported-points.html') 
-                @include('partials/online-check-in/why-choose-us.html') 
-                @include('partials/online-check-in/faq.html', { "className":"mt-[160px]" })
+                @include('partials/online-check-in/hero.html')
+                @include('partials/online-check-in/industries.html')
+                @include('partials/online-check-in/equipment.html')
+                @include('partials/online-check-in/supported-points.html')
+                @include('partials/online-check-in/why-choose-us.html')
+                <!-- @include('partials/online-check-in/faq.html', { "className":"mt-[160px]" }) -->
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>
     </body>
     @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
 </html>

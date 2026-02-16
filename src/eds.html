@@ -4,14 +4,14 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продукты и решения'
             })
             <main class="main">
-                @include('partials/eds/hero.html') 
-                @include('partials/eds/tools-services.html') 
-                @include('partials/eds/banner-owner-info.html') 
-                @include('partials/eds/tariff-selection.html') 
+                @include('partials/eds/hero.html')
+                @include('partials/eds/tools-services.html')
+                @include('partials/eds/banner-owner-info.html')
+                @include('partials/eds/tariff-selection.html')
                 @include('partials/eds/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
@@ -19,4 +19,5 @@
         </div>
     </body>
     @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
 </html>

@@ -4,18 +4,19 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', { 
+            @include('partials/header.html', {
               "linkName": 'Продукты и решения'
             })
             <main class="main">
-                @include('partials/owner-account/hero.html') 
-                @include('partials/owner-account/benefits.html') 
-                @include('partials/owner-account/features.html') 
-                @include('partials/owner-account/faq.html', { "className":"mt-[160px]" })
+                @include('partials/owner-account/hero.html')
+                @include('partials/owner-account/benefits.html')
+                @include('partials/owner-account/features.html')
+                <!-- @include('partials/owner-account/faq.html', { "className":"mt-[160px]" }) -->
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>
     </body>
     @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
 </html>

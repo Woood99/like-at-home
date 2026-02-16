@@ -5,7 +5,7 @@
     <body>
         <div class="site-container">
             @include('partials/header.html', {
-              "linkName": 'Продуктовые направления'
+              "linkName": 'Продукты и решения'
             })
             <main class="main">
                 @include('partials/ecosystem/hero.html')
@@ -13,11 +13,12 @@
                 @include('partials/ecosystem/features2.html')
                 @include('partials/ecosystem/our-tasks.html')
                 @include('partials/components/objects.html', { "title": "Наши решения уже используют" })
-                @include('partials/components/faq.html', { "className":"mt-[160px]" })
+                @include('partials/ecosystem/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[102px]" })
             </main>
             @include('partials/footer.html')
         </div>
     </body>
     @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
 </html>
