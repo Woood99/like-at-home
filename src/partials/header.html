@@ -4,9 +4,9 @@
             <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
         <div class="nav" data-menu>
-            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-4 md1:flex-col mmd1:h-full">
+            <ul class="md1:w-full flex items-center gap-4 md1:flex-col mmd1:h-full">
                 <li class="nav-dropdown">
-                    <a href="#" class="link-primary nav-dropdown__link _spoller-active" data-spoller>
+                    <a href="#" class="link-primary nav-dropdown__link md1:hidden">
                         <span>@linkName</span>
                         <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
@@ -14,8 +14,13 @@
                     </a>
                     <div class="nav-dropdown__container container">
                         <div class="nav-dropdown__content">
-                            <div class="nav-dropdown__sidebar">
-                                <h4 class="font-semibold mb-4 mmd1:ml-[11px] md1:hidden">Сервисы ЖКХ</h4>
+                            <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__sidebar">
+                                <button type="button" class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between" data-spoller>
+                                    <h4 class="font-semibold md1:text-xl">Сервисы ЖКХ</h4>
+                                    <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
+                                        <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                    </svg>
+                                </button>
                                 <ul class="nav-dropdown__list">
                                     <li class="nav-dropdown__subitem">
                                         <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
@@ -44,8 +49,55 @@
                                 </ul>
                             </div>
                             <div class="nav-dropdown__items">
-                                <div class="nav-dropdown__item">
-                                    <h4 class="font-semibold mb-4 mmd1:ml-[11px]">Контроль доступа</h4>
+                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
+                                    <button type="button" class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between" data-spoller>
+                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
+                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
+                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="nav-dropdown__item-links">
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="#" class="link-primary">Диспетчеризация шлагбаумов</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/eds" class="link-primary"
+                                                >Прием в работу заявок ЕДС МО <span class="text-greenLight">eds.mosreg.ru</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
+                                    <button type="button" class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between" data-spoller>
+                                        <h4 class="font-semibold md1:text-xl">Управление арендой</h4>
+                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
+                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                    </button>
+                                    <ul class="nav-dropdown__item-links">
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/confident-management" class="link-primary"
+                                                >Доверительное управление арендой квартир и аппартаментов</a
+                                            >
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/online-check-in" class="link-primary">Сервис удаленного заселения</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
+                                    <button
+                                        type="button"
+                                        class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between"
+                                        data-spoller>
+                                        <h4 class="font-semibold md1:text-xl">Контроль доступа</h4>
+                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
+                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                                        </svg>
+                                    </button>
                                     <ul class="nav-dropdown__item-links">
                                         <li class="nav-dropdown__subitem">
                                             <a href="/cloud-pass-service" class="link-primary">Сервис оформления пропусков</a>
@@ -58,33 +110,6 @@
                                         </li>
                                         <li class="nav-dropdown__subitem">
                                             <a href="#" class="link-primary">IP - домофония </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="nav-dropdown__item">
-                                    <h4 class="font-semibold mb-4 mmd1:ml-[11px]">Управление арендой</h4>
-                                    <ul class="nav-dropdown__item-links">
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/confident-management" class="link-primary">Доверительное управление арендой квартир и аппартаментов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/online-check-in" class="link-primary">Сервис удаленного заселения</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="nav-dropdown__item">
-                                    <h4 class="font-semibold mb-4 mmd1:ml-[11px]">Диспетческая служба</h4>
-                                    <ul class="nav-dropdown__item-links">
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="#" class="link-primary">Диспетчеризация шлагбаумов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary"
-                                                >Прием в работу заявок ЕДС МО <span class="text-greenLight">eds.mosreg.ru</span>
-                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -130,7 +155,7 @@
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
                 <a href="tel:84997068428" class="link-primary md1:hidden">8 (499) 706-84-28</a>
                 <button
-                    class="btn btn-primary btn-s-default md1:w-full"
+                    class="btn btn-primary btn-s-default md1:w-full md1:mt-10"
                     data-graph-path="create-bid"
                     data-graph-animation="fadeInUp"
                     data-graph-speed="350">
