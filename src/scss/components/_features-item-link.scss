@@ -49,13 +49,14 @@
     @media (max-width: $mobile-max) {
         @apply gap-4 p-8 rounded-3xl;
     }
-
-    @media (min-width: $desktop-min) {
-        &:hover {
-            @apply bg-lightBlue text-white;
-            .features-item-link-second {
-                &__icon {
-                    @apply bg-white text-black;
+    &--link {
+        @media (min-width: $desktop-min) {
+            &:hover {
+                @apply bg-lightBlue text-white;
+                .features-item-link-second {
+                    &__icon {
+                        @apply bg-white text-black;
+                    }
                 }
             }
         }

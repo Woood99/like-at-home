@@ -17,7 +17,7 @@
 
     &.tag-three-link {
         transition: all $transitionSpeed $transitionFunction;
-
+        @apply border-black;
         &:hover {
             @apply bg-black text-white;
         }

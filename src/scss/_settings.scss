@@ -777,3 +777,8 @@ button {
         }
     }
 }
+
+.scrollbar-none {
+    -webkit-box-align: center;
+    scrollbar-width: none;
+}
