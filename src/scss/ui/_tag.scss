@@ -14,10 +14,22 @@
 
 .tag-three {
     @apply text-black border border-solid border-[currentColor] w-max font-medium;
+
+    &.tag-three-link {
+        transition: all $transitionSpeed $transitionFunction;
+
+        &:hover {
+            @apply bg-black text-white;
+        }
+    }
 }
 
 .tag-four {
     @apply text-white bg-black w-max font-medium;
+}
+
+.tag-lg {
+    @apply h-[40px] rounded-[50px] md1:rounded-2xl text-[14px];
 }
 
 .tag-big {

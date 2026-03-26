@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "CRM - для УК" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', {
+              "linkName": 'Продукты и решения'
+            })
+            <main class="main py-10">
+               <div class='flex flex-col gap-10'>
+                    @include('partials/components/crm-banner.html')
+                    @include('partials/components/mobile-app-banner.html')
+                    @include('partials/components/security-services-banner.html')
+                    @include('partials/components/contact-center-banner.html')
+                    @include('partials/components/features-block.html')
+                    @include('partials/components/branded-app-banner.html')
+               </div>
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
+</html>

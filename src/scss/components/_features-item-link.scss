@@ -24,3 +24,40 @@
         }
     }
 }
+
+.features-item-link-second {
+    transition: all $transitionSpeed $transitionFunction;
+
+    @apply flex items-center gap-10 bg-gray text-black rounded-20 p-10;
+    &__icon {
+        transition: all $transitionSpeed $transitionFunction;
+
+        @apply rounded-[22px] flex-center-all w-16 h-16 flex-grow-0 flex-shrink-0 basis-16 bg-black text-white md1:rounded-xl;
+        svg {
+            transition: all $transitionSpeed $transitionFunction;
+
+            @apply w-7 h-7;
+            @media (max-width: $desktop) {
+                @apply w-5 h-5;
+            }
+        }
+        @media (max-width: $desktop) {
+            @apply w-12 h-12 basis-12;
+        }
+    }
+
+    @media (max-width: $mobile-max) {
+        @apply gap-4 p-8 rounded-3xl;
+    }
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-lightBlue text-white;
+            .features-item-link-second {
+                &__icon {
+                    @apply bg-white text-black;
+                }
+            }
+        }
+    }
+}

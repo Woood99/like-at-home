@@ -6,6 +6,7 @@ import "./functions/burger.js";
 import "./functions/dynamic-adapt.js";
 import "./functions/fix-fullheight.js";
 import { getHeaderHeight } from "./functions/header-height.js";
+import { isDesktop } from "./functions/isDesktop.js";
 import Modal from "./functions/modal.js";
 import spollers from "./functions/spollers.js";
 import tabs from "./functions/tabs.js";
@@ -302,6 +303,20 @@ document.addEventListener("DOMContentLoaded", () => {
         overflow: true,
         customWrapper: ".parallax-wrapper"
     });
+
+    if (isDesktop()) {
+        const imagesPhones = document.querySelectorAll("[data-simple-parallax-phone]");
+        imagesPhones.forEach(item => {
+            const orientation = item.dataset.simpleParallaxPhoneOrientation;
+            new SimpleParallax(item, {
+                orientation: orientation,
+                scale: 1.3,
+                delay: 0,
+                overflow: true,
+                customWrapper: ".parallax-wrapper"
+            });
+        });
+    }
 
     // if (isDesktop()) {
     //     document.querySelectorAll(".banner-parallax").forEach(item => {
