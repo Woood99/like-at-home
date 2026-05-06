@@ -1,13 +1,13 @@
 <section id="tariffSelection" class="mt-[160px] md1:mt-24">
     <div class="container mmd1:max-w-[1184px] mmd1:p-0">
-        <h2 class="title-1-25 mb-20 md1:mb-8">Тарифы на подключение</h2>
-        <div class="grid grid-cols-3 gap-6 md1:mt-8 md1:grid-cols-2 md2:grid-cols-1">
+        <h2 class="title-1-25 mb-20 md1:mb-8">Тарифы на подключение</h2>
+        <div class="grid grid-cols-3 gap-4 md1:mt-8 md1:grid-cols-2 md2:grid-cols-1">
             <div class="product-card-tariff">
                 <span class="product-card-tariff__mode">Ночной</span>
-                <h3 class="title-3 product-card-tariff__title">от 0,20 ₽ за м2</h3>
+                <h3 class="title-3 product-card-tariff__title">от 0,22 ₽ за м2</h3>
                 <p class="product-card-tariff__descr">Приём всех заявок с 17:00 до 8:00 по будням, в выходные круглосуточно</p>
-                <h4 class="text-paragraph product-card-tariff__price">6000 ₽ в месяц</h4>
-                <p class="product-card-tariff__price-descr">до 50 обращений или 250 минут</p>
+                <h4 class="text-paragraph-2 product-card-tariff__price">12000 ₽ в месяц</h4>
+                <p class="product-card-tariff__price-descr">Минимальная стоимость подключения</p>
                 <div class="mt-auto">
                     <button
                         data-graph-path="create-bid"
@@ -20,10 +20,10 @@
             </div>
             <div class="product-card-tariff">
                 <span class="product-card-tariff__mode">Базовый</span>
-                <h3 class="title-3 product-card-tariff__title">от 0,30 ₽ за м2</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок</p>
-                <h4 class="text-paragraph product-card-tariff__price">20000 ₽ в месяц</h4>
-                <p class="product-card-tariff__price-descr">до 200 обращений или 500 минут</p>
+                <h3 class="title-3 product-card-tariff__title">от 0,32 ₽ за м2</h3>
+                <p class="product-card-tariff__descr">Круглосуточный прием заявок</p>
+                <h4 class="text-paragraph-2 product-card-tariff__price">12000 ₽ в месяц</h4>
+                <p class="product-card-tariff__price-descr">Минимальная стоимость подключения</p>
                 <div class="mt-auto">
                     <button
                         data-graph-path="create-bid"
@@ -36,8 +36,8 @@
             </div>
             <div class="product-card-tariff product-card-tariff--text-white product-card-tariff--blue">
                 <span class="product-card-tariff__mode">Оптимальный</span>
-                <h3 class="title-3 product-card-tariff__title">от 0,35 ₽ за м2</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок и контроль их исполнения.</p>
+                <h3 class="title-3 product-card-tariff__title">от 0,45 ₽ за м2</h3>
+                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок и&nbsp;контроль их&nbsp;исполнения</p>
                 <div class="mt-auto">
                     <button
                         data-graph-path="create-bid"
@@ -46,6 +46,54 @@
                         class="btn btn-secondary btn-s-default product-card-tariff__btn">
                         Подключить
                     </button>
+                </div>
+            </div>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Аварийный</span>
+                <h3 class="title-3 product-card-tariff__title">от 0,25 ₽ за м2</h3>
+                <p class="product-card-tariff__descr">Круглосуточный приём аварийных заявок</p>
+                <h4 class="text-paragraph-2 product-card-tariff__price">12000 ₽ в месяц</h4>
+                <p class="product-card-tariff__price-descr">Минимальная стоимость подключения</p>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подключить
+                    </button>
+                </div>
+            </div>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">AI диспетчер</span>
+                <h3 class="title-3 product-card-tariff__title">от 5000 ₽ в месяц</h3>
+                <p class="product-card-tariff__descr">Круглосуточный прием заявок и&nbsp;назначение исполнителей</p>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подключить
+                    </button>
+                </div>
+            </div>
+            <div class="product-card-tariff product-card-tariff--border">
+                <h3 class="title-4-5 !leading-[1.56]">
+                    Мы&nbsp;разработали для вас гибкую систему тарифов и&nbsp;точно расчитаем стоимость услуг по&nbsp;организации АДС
+                </h3>
+
+                <div class="mt-auto">
+                    <div class="mt-12 flex flex-col">
+                        <picture>
+                            <source srcset="./img/avatar-5.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/avatar-5.png" width="50" height="50" alt="Фото Екатерины" />
+                        </picture>
+                        <p class="mt-5 text-paragraph-2 !font-bold cut cut-1">Екатерина</p>
+                        <p class="mt-1 font-medium leading-[1.24] text-[14px] text-[#A3A6A9]">
+                            Руководитель аварийно-диспетчерской службы &laquo;КАК ДОМА&raquo;
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>

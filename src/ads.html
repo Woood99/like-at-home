@@ -9,21 +9,22 @@
             })
             <main class="main">
                 @include('partials/ads/hero.html')
-                @include('partials/ads/remote-access-control-for-hoa.html')
                 @include('partials/ads/how-it-works.html')
+                @include('partials/ads/remote-access-control-for-hoa.html')
+                @include('partials/ads/dispatcher-communicates.html')
                 @include('partials/ads/tariff-selection.html')
-                @include('partials/ads/provide-solution.html')
-                @include('partials/ads/banner-eds.html')
-                @include('partials/ads/whats-included.html')
+                @include('partials/ads/tools.html')
+                @include('partials/ads/max-bot-banner.html')
+                @include('partials/ads/banner-eds-2.html')
                 @include('partials/components/analytics.html', {
                     "title":"Подробная аналитика",
-                    "descr": "Система собирает данные и формирует полную аналитику по всем <br class='md1:hidden' /> необходимым параметрам для анализа эффективности",
+                    "descr": "Глубокий анализ данных для принятия обоснованных управленческих <br class='md1:hidden' /> решений, контроля показателей и повышения эффективности работы",
                     "className":"mt-[160px]",
                     "imageDefault": "call-analytics-banner.jpg",
                     "imageWebp": "call-analytics-banner.webp",
                     "classNameImage": "pt-9 pr-10 pb-10 pl-[30px]"
                 })
-                <!-- @include('partials/components/faq.html', { "className":"mt-[160px]" }) -->
+                @include('partials/components/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать индивидуальный тариф", "className":"mt-[164px]" })
             </main>
             @include('partials/footer.html')

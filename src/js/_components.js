@@ -1,4 +1,5 @@
 import Api from "./components/api.js";
+import { AudioVisualize } from "./components/audioVisualize.js";
 import featuresTabs from "./components/featuresTabs.js";
 import navDropdown from "./components/navDropdown.js";
 import validateForms from "./components/validate-forms.js";
@@ -318,13 +319,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // if (isDesktop()) {
-    //     document.querySelectorAll(".banner-parallax").forEach(item => {
-    //         new Parallax(item, parallaxOnBodyConfig);
-    //     });
-
-    //     document.querySelectorAll(".cloud-pass-service-parallax").forEach(item => {
-    //         new Parallax(item, parallaxOnBodyConfig);
-    //     });
-    // }
+    document.querySelectorAll("[data-audio-src]").forEach(element => {
+        const player = new AudioVisualize(element);
+        player.loadAudio(element.getAttribute("data-audio-src"));
+        element.player = player;
+    });
 });
