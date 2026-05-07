@@ -48,17 +48,20 @@
                                     </svg>
                                 </button>
                                 <ul class="nav-dropdown__list">
-                                    <li class="nav-dropdown__subitem">
+                                    <!-- <li class="nav-dropdown__subitem">
                                         <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-dropdown__subitem">
                                         <a href="/crm" class="link-primary">CRM - система для УК и ТСЖ</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
-                                        <a href="/owner-app2" class="link-primary">Приложение для собственников</a>
+                                        <a href="/owner-app" class="link-primary">Приложение для собственников</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
                                         <a href="/employee-app" class="link-primary">Приложение для сотрудников</a>
+                                    </li>
+                                    <li class="nav-dropdown__subitem">
+                                        <a href="/brand-app" class="link-primary">Брендированное приложение УК</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
                                         <a href="/owner-account" class="link-primary">Личный кабинет собственника</a>
@@ -90,11 +93,7 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="#" class="link-primary">Диспетчеризация шлагбаумов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary"
-                                                >Прием в работу заявок ЕДС МО <span class="text-greenLight">eds.mosreg.ru</span>
+                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -139,9 +138,6 @@
                                         </li>
                                         <li class="nav-dropdown__subitem">
                                             <a href="/barrier-installation" class="link-primary">Установка шлагбаумов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="#" class="link-primary">IP - домофония </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -221,18 +217,17 @@
                 <p class="mt-5 leading-normal text-grayDark">
                     Автоматизируйте рабочие процессы, экономьте ресурсы и выводите ваш сервис на новый уровень
                 </p>
-                <div class="mt-auto">
-                    <div class="mt-12 flex gap-3 md3:flex-col">
-                        <a href="/owner-account" class="btn btn-primary btn-s-default"> Подробнее </a>
-                    </div>
+                <div class="mt-14 flex flex-wrap gap-2">
+                    <a href="/crm" class="tag tag-three tag-lg tag-three-link">Для УК</a>
+                    <a href="/owner-account" class="tag tag-three tag-lg tag-three-link">Для собственника</a>
                 </div>
             </div>
 
             <picture>
-                <source srcset="./img/banner-4.webp" type="image/webp" />
+                <source srcset="./img/crm-hero-banner-2.webp" type="image/webp" />
                 <img
                     loading="lazy"
-                    src="./img/banner-4.png"
+                    src="./img/crm-hero-banner-2.png"
                     class="absolute md1:relative -bottom-1 right-0 rounded-tl-[24px] md1:rounded-tr-[24px]"
                     width="573"
                     height="411"
@@ -249,13 +244,13 @@
         <div
             class="bg-grayTwo rounded-32 mmd1:rounded-br-none md1:rounded-none px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
             <div class="mmd1:max-w-[468px] flex flex-col flex-grow mmd1:pb-11">
-                <h2 class="title-4">Мобильное приложение УК</h2>
+                <h2 class="title-4">Фирменное мобильное приложение</h2>
                 <p class="mt-5 leading-normal text-grayDark">
-                    Удобный сервис для собственников и эффективный инструмент управления под вашим брендом
+                    Премиальный сервис для собственников и эффективный инструмент управления под вашим брендом
                 </p>
                 <div class="mt-auto">
                     <div class="mt-12 flex gap-3 md3:flex-col">
-                        <a href="/owner-account" class="btn btn-primary btn-s-default"> Подробнее </a>
+                        <a href="/brand-app" class="btn btn-primary btn-s-default"> Подробнее </a>
                     </div>
                 </div>
             </div>
@@ -275,14 +270,14 @@
             <div class="flex flex-col flex-grow mmd2:max-w-[500px]">
                 <h2 class="title-4">Сервисы безопасности</h2>
                 <p class="mt-5 leading-normal text-grayDark mmd1:max-w-[400px]">
-                    Облачный сервис для автоматизации заказа пропусков, позволит перевести заявки в цифровой вид и управлять ими онлайн
+                    Включают все необходимое для безопасности жителей и территории ваших ЖК
                 </p>
                 <div class="mt-14 flex flex-wrap gap-2">
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">Бюро пропусков</a>
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">Домофония</a>
+                    <a href="/cloud-pass-service" class="tag tag-three tag-lg tag-three-link">Бюро пропусков</a>
+                    <a href="#" class="tag tag-three tag-lg tag-three-link">IP Домофония</a>
                     <a href="#" class="tag tag-three tag-lg tag-three-link">Видеонаблюдение</a>
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">Электронные замки</a>
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">Шлагбаумы</a>
+                    <a href="/online-check-in" class="tag tag-three tag-lg tag-three-link">Электронные замки</a>
+                    <a href="/barrier-installation" class="tag tag-three tag-lg tag-three-link">Шлагбаумы</a>
                 </div>
             </div>
 
@@ -293,7 +288,6 @@
         </div>
     </div>
 </section>
-
                     <section>
     <div class="container-desktop mmd1:max-w-[1184px] !px-0">
         <div
@@ -307,8 +301,8 @@
                     Берем на&nbsp;себя всю работу с&nbsp;заявками от&nbsp;собственников и&nbsp;контроль исполнителей
                 </p>
                 <div class="mt-4 flex flex-wrap gap-2">
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">АДС24</a>
-                    <a href="#" class="tag tag-three tag-lg tag-three-link">ЕДС Московской области</a>
+                    <a href="/ads" class="tag tag-three tag-lg tag-three-link">АДС24</a>
+                    <a href="/eds" class="tag tag-three tag-lg tag-three-link">ЕДС Московской области</a>
                 </div>
             </div>
 
@@ -470,7 +464,7 @@
                         <a class="footer__link link-primary" href="/confident-management">Доверительное управление</a>
                     </li>
                     <li>
-                        <a class="footer__link link-primary" href="/owner-app2">Приложение собственника</a>
+                        <a class="footer__link link-primary" href="/owner-app">Приложение собственника</a>
                     </li>
                     <li>
                         <a class="footer__link link-primary" href="/employee-app">Приложение сотрудника</a>
@@ -723,7 +717,7 @@
 </div>
 
     <div class="action-tg">
-    <a href="#" class="action-tg-link">Написать вопрос в Telegram</a>
+    <a href="https://t.me/kakdomalife" class="action-tg-link">Написать вопрос в Telegram</a>
     <button class="action-tg-btn">
         <svg class="action-tg-btn-message" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_5108_7032)">

@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Приложение УК под собственным брендом" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html', {
+              "linkName": 'Продукты и решения'
+            })
+
+            <main class="main">
+                @include('partials/brand-app/hero.html')
+                @include('partials/brand-app/benefits.html')
+                @include('partials/brand-app/features.html')
+                @include('partials/brand-app/banner.html')
+                @include('partials/brand-app/why.html')
+                @include('partials/brand-app/banner2.html')
+                @include('partials/brand-app/faq.html', { "className":"mt-[160px]" })
+                @include('partials/components/form-bid.html', { "title":"Получите бесплатную индивидуальную консультацию", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
+</html>

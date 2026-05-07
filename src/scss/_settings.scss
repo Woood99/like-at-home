@@ -440,7 +440,7 @@ button {
 
     display: flex;
 
-    z-index: 20;
+    z-index: 1000;
 
     &._active {
         .action-tg-link {
@@ -624,6 +624,9 @@ button {
     }
     &.features-tabs-images--purple {
         @apply bg-[rgba(80,70,229,0.4)];
+    }
+    &.features-tabs-images--gray {
+        @apply bg-[--gray]
     }
     &.features-tabs-images--square {
         .features-tabs-image {

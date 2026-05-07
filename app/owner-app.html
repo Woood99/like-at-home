@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="theme-color" content="#111111" />
-	<title>Приложение собственника</title>
+	<title>Мобильное приложения собственника</title>
 	<link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
@@ -48,17 +48,20 @@
                                     </svg>
                                 </button>
                                 <ul class="nav-dropdown__list">
-                                    <li class="nav-dropdown__subitem">
+                                    <!-- <li class="nav-dropdown__subitem">
                                         <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
-                                    </li>
+                                    </li> -->
                                     <li class="nav-dropdown__subitem">
                                         <a href="/crm" class="link-primary">CRM - система для УК и ТСЖ</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
-                                        <a href="/owner-app2" class="link-primary">Приложение для собственников</a>
+                                        <a href="/owner-app" class="link-primary">Приложение для собственников</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
                                         <a href="/employee-app" class="link-primary">Приложение для сотрудников</a>
+                                    </li>
+                                    <li class="nav-dropdown__subitem">
+                                        <a href="/brand-app" class="link-primary">Брендированное приложение УК</a>
                                     </li>
                                     <li class="nav-dropdown__subitem">
                                         <a href="/owner-account" class="link-primary">Личный кабинет собственника</a>
@@ -90,11 +93,7 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="#" class="link-primary">Диспетчеризация шлагбаумов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary"
-                                                >Прием в работу заявок ЕДС МО <span class="text-greenLight">eds.mosreg.ru</span>
+                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -139,9 +138,6 @@
                                         </li>
                                         <li class="nav-dropdown__subitem">
                                             <a href="/barrier-installation" class="link-primary">Установка шлагбаумов</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="#" class="link-primary">IP - домофония </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -211,11 +207,13 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo rounded-b-3xl">
+                <section class="mt-[50px] md1:mt-0">
     <div class="container-desktop">
         <div class="bg-cyan rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
-            <div class="mmd1:max-w-[435px] flex flex-col flex-grow">
-                <h1 class="title-1">Мобильное приложения собственника</h1>
+            <div class="mmd1:max-w-[525px] flex flex-col flex-grow">
+                <h1 class="title-1">
+                    Мобильное приложение собственника
+                </h1>
                 <div class="mt-auto">
                     <div class="mt-12 flex gap-3 md3:flex-col">
                         <button
@@ -229,95 +227,437 @@
                 </div>
             </div>
 
-            <picture class="mmd1:absolute bottom-0 right-[71px]">
+            <picture class="mmd1:absolute -bottom-[100px] right-20 md1:mb-6">
                 <source srcset="./img/owner-app-hero-phones.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-hero-phones.png" width="552" height="454" alt="" role="presentation" aria-hidden="true" />
+                <img loading="lazy" src="./img/owner-app-hero-phones.png" width="536" height="608" alt="" role="presentation" aria-hidden="true" />
             </picture>
         </div>
     </div>
-    <div class="container-desktop !mt-6 md1:!mt-0">
-        <div class="mmd1:bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-10 rounded-primary md1:rounded-none md1:grid-cols-1 md1:p-6">
-            <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Имидж современной управляющей компании</h3>
-                <p class="leading-[1.875] text-grayDark">Цифровой сервис для собственников становится стандартом для УК</p>
+    <div class="container !mt-5">
+        <div class="mmd1:ml-14 pt-[54px] md1:pt-5 max-w-[430px]">
+            <h3 class="title-4-25 !leading-[1.4] mb-4">Используйте современные технологии для повышения качества сервиса</h3>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container-desktop mmd1:max-w-[1184px] !px-0">
+        <h2 class="title-1-25">Зачем подключать <br class="md1:hidden" />мобильное приложение?</h2>
+        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-4 md2:grid-cols-1">
+            <div class="features-item-link-second">
+                <div class="features-item-link-second__icon">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#like"></use>
+                    </svg>
+                </div>
+
+                <h4 class="title-4 mmd1:text-[22px]">Имидж современной управляющей компании</h4>
             </div>
-            <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Снижение нагрузки на диспетчерскую и офис</h3>
-                <p class="leading-[1.875] text-grayDark">
-                    При наличии мобильного приложения, более 65% собственников выбирают именно этот канал коммуникации
-                </p>
+            <div class="features-item-link-second">
+                <div class="features-item-link-second__icon">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#user-check"></use>
+                    </svg>
+                </div>
+
+                <h4 class="title-4 mmd1:text-[22px]">Доверительные отношения с жителями</h4>
             </div>
-            <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Автоматизация, прозрачность и контроль для УК</h3>
-                <p class="leading-[1.875] text-grayDark">Коммуникация и архив взаимодействия в едином канале</p>
+            <div class="features-item-link-second">
+                <div class="features-item-link-second__icon">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#cpu"></use>
+                    </svg>
+                </div>
+
+                <h4 class="title-4 mmd1:text-[22px]">Автоматизация процессов</h4>
+            </div>
+            <div class="features-item-link-second">
+                <div class="features-item-link-second__icon">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#bell"></use>
+                    </svg>
+                </div>
+
+                <h4 class="title-4 mmd1:text-[22px]">Оповещения и уведомления о начиследниях</h4>
             </div>
         </div>
     </div>
 </section>
 
-                <section class="mt-[160px] md1:mt-20" id="features-block">
-    <div class="container flex gap-20 md1:flex-col md1:gap-9">
-        <div
-            class="w-[640px] h-[640px] flex-shrink-0 bg-cyan flex justify-center items-end rounded-[54px] md1:rounded-3xl relative md1:w-full md4:h-[580px] md5:h-[515px]">
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" data-features-image="0">
-                <source srcset="./img/owner-app-banner-1.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-1.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="1">
-                <source srcset="./img/owner-app-banner-2.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-2.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="2">
-                <source srcset="./img/owner-app-banner-3.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-3.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="3">
-                <source srcset="./img/owner-app-banner-4.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-4.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
-            <picture class="absolute transition-primary-all opacity-100 md4:w-[90%]" style="opacity: 0" data-features-image="4">
-                <source srcset="./img/owner-app-banner-5.webp" type="image/webp" />
-                <img loading="lazy" src="./img/owner-app-banner-5.png" width="326" height="568" alt="" role="presentation" aria-hidden="true" />
-            </picture>
+                <section class="mt-[160px] md1:mt-20" id="data-features-tabs">
+    <div class="container mmd1:max-w-[1184px] mmd1:p-0 ">
+        <h2 class="title-1-25">Возможности приложения</h2>
+        <p class="mt-6 text-paragraph mmd1:max-w-[910px]">Приложение имеет стандартный набор функций, который полностью
+            отвечает запросу УК. Дополнительно мы реализовали более 100+ интеграций.</p>
+
+        <div class="mt-20 flex gap-[100px] md1:gap-7 md1:flex-col justify-between">
+            <div class="features-tabs-images features-tabs-images--gray mmd1:max-w-[580px] !h-[580px]">
+                <div data-features-tabs-image="1" class="features-tabs-image _active">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-1.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-1.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div data-features-tabs-image="2" class="features-tabs-image">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-2.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-2.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div data-features-tabs-image="3" class="features-tabs-image">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-3.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-3.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div data-features-tabs-image="4" class="features-tabs-image">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-4.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-4.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div data-features-tabs-image="5" class="features-tabs-image">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-5.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-5.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+                <div data-features-tabs-image="6" class="features-tabs-image">
+                    <picture>
+                        <source srcset="./img/owner-app-banner-6.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/owner-app-banner-6.png" width="260" height="566" alt=""
+                            role="presentation" aria-hidden="true" />
+                    </picture>
+                </div>
+            </div>
+            <div class="mmd1:hidden order-2">
+                <p data-features-tabs-text="1" class="features-tabs-text features-tabs-text-anim _active">
+                    Лучший сервис для обработки обращений от собственников и арендаторов.
+                </p>
+                <p data-features-tabs-text="2" class="features-tabs-text features-tabs-text-anim">
+                    Оплата коммунальных и дополнительных услуг управляющей компании
+                </p>
+                <p data-features-tabs-text="3" class="features-tabs-text features-tabs-text-anim">
+                    Передавайте показания счетчиков из приложения для точного начисления ЖКУ
+                </p>
+                <p data-features-tabs-text="4" class="features-tabs-text features-tabs-text-anim">
+                    Создание разовых, временных и постоянныйх пропусков для ваших гостей
+                </p>
+                <p data-features-tabs-text="5" class="features-tabs-text features-tabs-text-anim">
+                    Отправляйте информацию в управляющую компанию из приложения
+                </p>
+                <p data-features-tabs-text="6" class="features-tabs-text features-tabs-text-anim">
+                    Лучший сервис для обработки обращений от собственников и арендаторов.6
+                </p>
+            </div>
+            <div class="mmd1:mt-9 mmd1:max-w-[517px] md1:order-1">
+                <div class="md1:overflow-x-auto md1:pb-4">
+                    <ul class="inline-flex flex-col gap-9 md1:flex-row md1:gap-6 md1:shadow-[0_2px_0_0_#0000001a]">
+                        <li>
+                            <button data-features-tabs-btn="1" class="features-tabs-btn _active">Все под рукой</button>
+                            <p data-features-tabs-text="1" class="features-tabs-text features-tabs-text-anim _active">
+                                Лучший сервис для обработки обращений от собственников и арендаторов.
+                            </p>
+                        </li>
+                        <li>
+                            <button data-features-tabs-btn="2" class="features-tabs-btn">Прием платежей</button>
+                            <p data-features-tabs-text="2" class="features-tabs-text features-tabs-text-anim">
+                                Оплата коммунальных и дополнительных услуг управляющей компании
+                            </p>
+                        </li>
+                        <li>
+                            <button data-features-tabs-btn="4" class="features-tabs-btn">Оформление пропусков</button>
+                            <p data-features-tabs-text="4" class="features-tabs-text features-tabs-text-anim">
+                                Создание разовых, временных и постоянныйх пропусков для ваших гостей
+                            </p>
+                        </li>
+                        <li>
+                            <button data-features-tabs-btn="5" class="features-tabs-btn">Создание заявок</button>
+                            <p data-features-tabs-text="5" class="features-tabs-text features-tabs-text-anim">
+                                Отправляйте информацию в управляющую компанию из приложения
+                            </p>
+                        </li>
+                        <li>
+                            <button data-features-tabs-btn="3" class="features-tabs-btn">Показания счетчиков</button>
+                            <p data-features-tabs-text="3" class="features-tabs-text features-tabs-text-anim">
+                                Передавайте показания счетчиков из приложения для точного начисления ЖКУ
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="flex-grow relative min-w-0">
-            <h3 class="title-4-5 mmd1:mt-[115px] mb-11 md1:mb-5">Функции приложения</h3>
-            <div class="swiper" id="features-block-swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
-                    </div>
-                    <div class="swiper-slide">
-                        <h2 class="title-2">Создание заявок</h2>
-                        <p class="text-paragraph text-grayDark mt-5 md1:mt-4">Лучший сервис для обработки обращений от собственников и арендаторов.</p>
+        <button data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350"
+            class="btn btn-primary btn-s-default mmd3:min-w-[450px] md3:w-full w-max mt-20 md1:mt-8 mx-auto">
+            Отправить заявку
+        </button>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container-desktop mmd1:max-w-[1184px] !px-0">
+        <h2 class="title-1-25">Приложение под брендом УК</h2>
+        <div
+            class="mt-20 md1:mt-8 bg-[#15171c] rounded-32 mmd1:rounded-br-none md1:rounded-none p-11 md1:p-6 mmd1:min-h-[471px] flex flex-col relative overflow-hidden md1:gap-10">
+            <div class="mmd1:max-w-[497px] flex flex-col flex-grow">
+                <h2 class="title-4 text-white">
+                    Фирменное приложение <br class="md1:hidden" />
+                    под вашим брендом
+                </h2>
+                <p class="mt-5 leading-normal text-[#cdcdcd]">
+                    Сосредоточьтесь на&nbsp;росте и&nbsp;развитии бизнеса&nbsp;&mdash; все процессы, связанные
+                    с&nbsp;запуском, мы&nbsp;берём
+                    на&nbsp;себя.
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-12 flex gap-3 md3:flex-col">
+                        <button
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350"
+                            class="btn btn-secondary btn-s-default">
+                            Подробнее
+                        </button>
                     </div>
                 </div>
             </div>
-            <div class="mt-12 flex gap-3 md1:mt-10 md1:justify-center">
-                <button class="btn-nav btn-nav--prev" id="features-block-prev" aria-label="Предыдущий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-left"></use>
-                    </svg>
-                </button>
-                <button class="btn-nav btn-nav--next" id="features-block-next" aria-label="Следующий слайд">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#arrow-right"></use>
-                    </svg>
-                </button>
+            <div class="parallax-wrapper absolute top-0 -right-[50px] grid grid-cols-3 gap-6 md1:hidden">
+                <div class="flex flex-col gap-6 relative top-[-37%]" data-simple-parallax-phone
+                    data-simple-parallax-phone-orientation="down">
+                    <img loading="lazy" src="./img/branded-app-phone-1.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                    <img loading="lazy" src="./img/branded-app-phone-4.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                </div>
+                <div class="flex flex-col gap-6 relative top-[-42%]" data-simple-parallax-phone
+                    data-simple-parallax-phone-orientation="down">
+                    <img loading="lazy" src="./img/branded-app-phone-2.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                    <img loading="lazy" src="./img/branded-app-phone-5.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                </div>
+                <div class="flex flex-col gap-6 relative top-[-14%]" data-simple-parallax-phone
+                    data-simple-parallax-phone-orientation="up">
+                    <img loading="lazy" src="./img/branded-app-phone-3.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                    <img loading="lazy" src="./img/branded-app-phone-6.png" width="200" height="433" alt=""
+                        role="presentation" aria-hidden="true" />
+                </div>
             </div>
+            <div
+                class="gap-4 flex bg-black py-10 px-6 rounded-20 overflow-y-hidden overflow-x-auto scrollbar-none mmd1:hidden">
+                <img loading="lazy" src="./img/branded-app-phone-4.png" width="200" height="433" alt=""
+                    role="presentation" aria-hidden="true" class="md3:w-[150px] md3:h-max" />
+                <img loading="lazy" src="./img/branded-app-phone-5.png" width="200" height="433" alt=""
+                    role="presentation" aria-hidden="true" class="md3:w-[150px] md3:h-max" />
+                <img loading="lazy" src="./img/branded-app-phone-3.png" width="200" height="433" alt=""
+                    role="presentation" aria-hidden="true" class="md3:w-[150px] md3:h-max" />
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <h2 class="title-1-25">Установка приложения</h2>
+        <p class="mt-5 text-paragraph">Скачайте приложение по&nbsp;ссылке или отсканируйте QR-код</p>
+        <div class="mt-20 md1:mt-8 grid grid-cols-3 gap-4 md1:grid-cols-2 md3:grid-cols-1">
+            <article class="relative group mmd1:!p-8 mmd1:!pb-14 rounded-32 md1:rounded-3xl bg-gray flex flex-col md1:p-6">
+                <a href="https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0/id6746429678" class="absolute inset-0" target="_blank" aria-hidden="true"></a>
+                <h4 class="title-4">Apple Store</h4>
+                <p class="mt-7-5 md1:mt-5 transition-all group-hover:text-hoverPrimary flex items-center gap-2">
+                    <span class="font-medium">Скачать</span>
+                    <svg class="w-5 h-5 text-[currentColor]">
+                        <use xlink:href="img/sprite.svg#external-link"></use>
+                    </svg>
+                </p>
+
+                <picture class="self-center">
+                    <source srcset="./img/qr-code-owner-apple-store.webp" type="image/webp" />
+                    <img
+                        loading="lazy"
+                        src="./img/qr-code-owner-apple-store.jpg"
+                        class="mt-[58px] md1:mt-8 rounded-[15px]"
+                        width="140"
+                        height="140"
+                        alt="Apple Store qr" />
+                </picture>
+            </article>
+            <article class="relative group mmd1:!p-8 mmd1:!pb-14 rounded-32 md1:rounded-3xl bg-gray flex flex-col md1:p-6">
+                <a href="https://play.google.com/store/apps/details?id=life.kakdoma.app&hl=ru" class="absolute inset-0" target="_blank" aria-hidden="true"></a>
+                <h4 class="title-4">Google Play</h4>
+                <p class="mt-7-5 md1:mt-5 transition-all group-hover:text-hoverPrimary flex items-center gap-2">
+                    <span class="font-medium">Скачать</span>
+                    <svg class="w-5 h-5 text-[currentColor]">
+                        <use xlink:href="img/sprite.svg#external-link"></use>
+                    </svg>
+                </p>
+                <picture class="self-center">
+                    <source srcset="./img/qr-code-owner-app-google-play.webp" type="image/webp" />
+                    <img
+                        loading="lazy"
+                        src="./img/qr-code-owner-app-google-play.jpg"
+                        class="mt-[58px] md1:mt-8 rounded-[15px]"
+                        width="140"
+                        height="140"
+                        alt="Google Play qr" />
+                </picture>
+            </article>
+            <article class="relative group mmd1:!p-8 mmd1:!pb-14 rounded-32 md1:rounded-3xl bg-gray flex flex-col md1:p-6">
+                <a href="https://www.rustore.ru/catalog/app/life.kakdoma.app" class="absolute inset-0" target="_blank" aria-hidden="true"></a>
+                <h4 class="title-4">RuStore</h4>
+                <p class="mt-7-5 md1:mt-5 transition-all group-hover:text-hoverPrimary flex items-center gap-2">
+                    <span class="font-medium">Скачать</span>
+                    <svg class="w-5 h-5 text-[currentColor]">
+                        <use xlink:href="img/sprite.svg#external-link"></use>
+                    </svg>
+                </p>
+                <picture class="self-center">
+                    <source srcset="./img/qr-code-owner-app-rustore.webp" type="image/webp" />
+                    <img
+                        loading="lazy"
+                        src="./img/qr-code-owner-app-rustore.jpg"
+                        class="mt-[58px] md1:mt-8 rounded-[15px]"
+                        width="140"
+                        height="140"
+                        alt="RuStore qr" />
+                </picture>
+            </article>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <h2 class="title-1-25">Входит в&nbsp;экосистему сервисов для&nbsp;УК</h2>
+
+        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-6 md2:grid-cols-1 md1:gap-4">
+            <a href="/crm" class="product-card !pb-[32px]">
+                <div class="circle-icon circle-icon--secondary circle-icon--dark mb-10 md1:mb-8">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#monitor"></use>
+                    </svg>
+                </div>
+                <div class="product-card__content">
+                    <h4 class="title-4 product-card__title">CRM-система для управляющих <br class="md1:hidden" />компаний</h4>
+                </div>
+                <svg class="product-card__arrow">
+                    <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                </svg>
+            </a>
+            <a href="/ads" class="product-card !pb-[32px]">
+                <div class="circle-icon circle-icon--secondary circle-icon--dark mb-10 md1:mb-8">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#headset"></use>
+                    </svg>
+                </div>
+                <div class="product-card__content">
+                    <h4 class="title-4 product-card__title">Аварийно-диспетчерская служба для управляющих компаний</h4>
+                </div>
+                <svg class="product-card__arrow">
+                    <use xlink:href="img/sprite.svg#arrow-right-top"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20 faq">
+    <div class="container mmd1:max-w-[1184px] mmd1:p-0 flex gap-8 md1:flex-col">
+        <div class="flex-shrink-0">
+            <h2 class="title-1-25">
+                Вопросы <br class='md1:hidden' />
+                и ответы
+            </h2>
+        </div>
+
+
+
+
+
+
+
+
+        <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-4">
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Что такое приложение сервисной службы?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Это мобильное приложение для сотрудников управляющей компании и подрядчиков, которое помогает принимать, распределять и выполнять заявки жителей в цифровом формате.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Какие задачи решает приложение?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            - Получение заявок с адресом и описанием проблемы<br/>
+                            - Назначение исполнителей<br/>
+                            - Контроль сроков выполнении<br/>
+                            - Фотофиксация до и после выполнения работ<br/>
+                            - Закрытие заявки с комментарием
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Как контролируется качество выполнения работ?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Система фиксирует сроки, действия исполнителя и фотоотчёты. Руководство видит аналитику по скорости и качеству работы.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можно ли настроить роли и уровни доступа?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Да. Доступ настраивается индивидуально — для мастеров, диспетчеров, подрядчиков и руководителей.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Что видит сотрудник в приложении?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Адрес объекта, описание проблемы, контакты заявителя, сроки выполнения, историю обращений и комментарии диспетчера.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Работает ли приложение без интернета?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Да, данные могут сохраняться и синхронизироваться при подключении к сети.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>
@@ -327,8 +667,8 @@
         <div class="bg-dark rounded-primary py-[54px] px-14 md1:p-6">
             <div class="flex gap-14 md1:flex-col md1:gap-8">
                 <div class="flex-grow">
-                    <h1 class="title-1 text-white">Поможем подобрать решение для вас</h1>
-                    <p class="mt-6 text-paragraph text-white">Наши менеджеры проведут презентацию и&nbsp;ответят на&nbsp;все возникшие вопросы</p>
+                    <h1 class="title-1 text-white">Получите бесплатную индивидуальную консультацию</h1>
+                    <p class="mt-6 text-paragraph text-white">Обсудим вашу задачу и предложим готовое решение под ваши бизнес-процессы</p>
                 </div>
                 <div class="mmd1:w-[470px] flex-shrink-0">
                     <form action="#" id="form-bid" class="mmd1:p-[42px] mmd1:rounded-[42px] mmd1:bg-[rgba(255,255,255,0.08)]">
@@ -413,7 +753,7 @@
                         <a class="footer__link link-primary" href="/confident-management">Доверительное управление</a>
                     </li>
                     <li>
-                        <a class="footer__link link-primary" href="/owner-app2">Приложение собственника</a>
+                        <a class="footer__link link-primary" href="/owner-app">Приложение собственника</a>
                     </li>
                     <li>
                         <a class="footer__link link-primary" href="/employee-app">Приложение сотрудника</a>
@@ -666,7 +1006,7 @@
 </div>
 
     <div class="action-tg">
-    <a href="#" class="action-tg-link">Написать вопрос в Telegram</a>
+    <a href="https://t.me/kakdomalife" class="action-tg-link">Написать вопрос в Telegram</a>
     <button class="action-tg-btn">
         <svg class="action-tg-btn-message" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_5108_7032)">

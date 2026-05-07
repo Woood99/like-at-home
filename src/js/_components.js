@@ -204,6 +204,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         window.modal.speed = 350;
                         window.modal._nextContainer = document.querySelector(`[data-graph-target="success-bid"]`);
                         window.modal.open();
+                        ym(105410871,'reachGoal','zakaz');
                     }
                 });
             }
@@ -279,6 +280,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         window.modal.speed = 350;
                         window.modal._nextContainer = document.querySelector(`[data-graph-target="success-bid"]`);
                         window.modal.open();
+                        ym(105410871,'reachGoal','zakaz');
                     }
                 });
             }
