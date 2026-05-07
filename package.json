@@ -61,6 +61,7 @@
         "webpack-stream": "^7.0.0"
     },
     "dependencies": {
+        "cwebp-bin": "^8.0.0",
         "graph-modal": "^1.0.7",
         "graph-tabs": "^1.0.2",
         "gulp-postcss": "^10.0.0",
