@@ -90,6 +90,10 @@ button {
     background: 0 0;
     cursor: pointer;
     user-select: none;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    letter-spacing: inherit;
 }
 
 input {
@@ -183,6 +187,7 @@ button {
     font-weight: 600;
     @media (max-width: $desktop) {
         font-size: 36px;
+        line-height: 1.12;
     }
 }
 .title-1-25 {
@@ -191,15 +196,17 @@ button {
     font-weight: 600;
     @media (max-width: $desktop) {
         font-size: 30px;
+        line-height: 1.25;
     }
 }
 
 .title-1-5 {
     font-size: 48px;
-    line-height: 1.14;
+    line-height: 1.15;
     font-weight: 600;
     @media (max-width: $desktop) {
         font-size: 30px;
+        line-height: 1.2;
     }
 }
 
@@ -235,7 +242,7 @@ button {
     line-height: 1.4;
     font-weight: 600;
     @media (max-width: $desktop) {
-        font-size: 18px;
+        font-size: 16px;
     }
 }
 
@@ -626,7 +633,7 @@ button {
         @apply bg-[rgba(80,70,229,0.4)];
     }
     &.features-tabs-images--gray {
-        @apply bg-[--gray]
+        @apply bg-[--gray];
     }
     &.features-tabs-images--square {
         .features-tabs-image {
@@ -767,6 +774,13 @@ button {
     }
     &.circle-icon--blue {
         @apply bg-[#575ad6] blur-[20px];
+
+        svg {
+            @apply text-white;
+        }
+    }
+    &.circle-icon--lightBlue {
+        @apply bg-[#2290ff] blur-[20px];
 
         svg {
             @apply text-white;

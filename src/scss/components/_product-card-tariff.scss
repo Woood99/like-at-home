@@ -82,6 +82,12 @@
             color: #4a3aff;
         }
     }
+    &__info-item--dark {
+        color: var(--gray-dark);
+        svg {
+            color: var(--black);
+        }
+    }
 
     &--text-white {
         color: var(--white);

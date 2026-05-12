@@ -241,7 +241,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20" id="data-features-tabs">
-    <div class="container mmd1:max-w-[1184px] mmd1:p-0 flex gap-[100px] md1:gap-7 md1:flex-col justify-between">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-[100px] md1:gap-7 md1:flex-col justify-between">
         <div class="features-tabs-images">
             <div data-features-tabs-image="1" class="features-tabs-image _active">
                 <picture>
@@ -347,7 +347,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
         <h2 class="title-1-25">Установка приложения</h2>
         <p class="mt-5 text-paragraph">Скачайте приложение по&nbsp;ссылке или отсканируйте QR-код</p>
         <div class="mt-20 md1:mt-8 grid grid-cols-3 gap-4 md1:grid-cols-2 md3:grid-cols-1">
@@ -417,7 +417,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
         <h2 class="title-1-25">Входит в&nbsp;экосистему сервисов для&nbsp;УК</h2>
 
         <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-6 md2:grid-cols-1 md1:gap-4">
@@ -452,7 +452,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20 faq">
-    <div class="container mmd1:max-w-[1184px] mmd1:p-0 flex gap-8 md1:flex-col">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-8 md1:flex-col">
         <div class="flex-shrink-0">
             <h2 class="title-1-25">
                 Вопросы <br class='md1:hidden' />
@@ -460,15 +460,15 @@
             </h2>
         </div>
         <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
-            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-4">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-5">
                 <li class="faq__item">
-                    <button class="faq__btn" data-spoller>
+                    <button class="faq__btn _spoller-active" data-spoller>
                         <h3 class="title-4">Оставьте заявку</h3>
                         <svg class="ml-3 faq__arrow">
                             <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
                         </svg>
                     </button>
-                    <div class="faq__content text-paragraph-3" hidden>
+                    <div class="faq__content text-paragraph-3">
                         <p>Мы свяжемся с вами в удобное время</p>
                     </div>
                 </li>
@@ -822,7 +822,10 @@
                 для сотрудников
             </h3>
             <div class="flex flex-col gap-4 md1:items-center">
-                <a href="https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/id6747736629" target="_blank" class="md1:w-44">
+                <a
+                    href="https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/id6747736629"
+                    target="_blank"
+                    class="md1:w-44">
                     <img loading="lazy" src="./img/app-store.svg" class="md1:w-full" width="151" height="45" alt="Скачать с App Store" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=life.kakdoma.service&hl=ru" target="_blank" class="md1:w-44">
@@ -842,26 +845,33 @@
         </div>
     </div>
     <div
-		class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
-		role="dialog"
-		aria-modal="true"
-		data-graph-target="success-bid"
-	>
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="success-bid">
         <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
         <div class="text-center w-[100%]">
-            <img
-                loading="lazy"
-                src="./img/svg/circle.svg"
-                width="48"
-                height="48"
-                class="mb-6 mx-auto"
-                alt=""
-            />
+            <img loading="lazy" src="./img/svg/circle.svg" width="48" height="48" class="mb-6 mx-auto" alt="" />
             <h3 class="title-3 mb-6 md1:mb-4">Спасибо за заявку</h3>
             <p class="text-paragraph-2">Мы свяжемся с вами в ближайшее время</p>
             <button type="button" class="mt-6 md1:mt-4 btn btn-third btn-s-big w-full js-modal-close">Хорошо</button>
         </div>
-	</div>
+    </div>
+    <div
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="error-bid">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+        <div class="text-center w-[100%]">
+            <svg class="w-12 h-12 text-red mb-6">
+                <use xlink:href="img/sprite.svg#error"></use>
+            </svg>
+            <h3 class="title-3 mb-6 md1:mb-4">Произошла ошибка</h3>
+            <p class="text-paragraph-2">Повторите попытку позже</p>
+            <button type="button" class="mt-6 md1:mt-4 btn btn-primary btn-s-big w-full js-modal-close">Закрыть</button>
+        </div>
+    </div>
 </div>
 
     <div class="action-tg">

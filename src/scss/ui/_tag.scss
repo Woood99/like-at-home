@@ -28,6 +28,10 @@
     @apply text-white bg-black w-max font-medium;
 }
 
+.tag-five {
+    @apply text-black bg-grayTwo w-max font-bold;
+}
+
 .tag-lg {
     @apply h-[40px] rounded-[50px] md1:rounded-2xl text-[14px];
 }
@@ -36,7 +40,7 @@
     @apply h-[70px] md1:h-[50px];
 }
 .tag-big-lg {
-    @apply h-[70px] md1:h-[50px] px-8;
+    @apply h-[70px] md1:h-[50px] px-8 md1:px-6;
 }
 
 .tag-small {

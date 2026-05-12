@@ -207,7 +207,7 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo rounded-b-3xl" id="hero-block">
+                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo mmd1:rounded-b-3xl" id="hero-block">
     <div class="container-desktop">
         <div
             class="bg-lightBlue rounded-primary mmd1:rounded-br-none md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative mmd1:overflow-hidden md1:gap-10 md1:pb-0">
@@ -249,7 +249,7 @@
         </div>
     </div>
     <div class="container-desktop !mt-6 md1:!-mt-2 relative">
-        <div class="px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-10 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:bg-gray">
+        <div class="px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-5 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:bg-gray">
             <div>
                 <h3 class="title-4-25 mb-4 md1:mb-3">Связь с&nbsp;управляющей компанией</h3>
                 <p class="leading-[1.875]">Обращения, уведомления и&nbsp;объявления доступны в&nbsp;личном кабинете в&nbsp;онлайн-режиме</p>
@@ -271,9 +271,9 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
         <h2 class="title-1-25">Цифровая платформа</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-4 md3:grid-cols-1">
+        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-5 md1:gap-4 md3:grid-cols-1">
             <div
                 class="mmd3:col-span-2 bg-grayTwo rounded-32 mmd1:rounded-br-none p-11 md1:p-6 mmd1:min-h-[471px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
                 <div class="mmd1:max-w-[468px] flex flex-col flex-grow">
@@ -329,7 +329,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px]">
+    <div class="container-desktop mmd1:max-w-[1186px]">
         <h2 class="title-1-25 md1:px-4">Приложение под брендом УК</h2>
 
         <div class="mt-20 md1:mt-8 bg-[#15171c] rounded-32 md1:rounded-none p-11 md1:p-6 mmd1:min-h-[471px] flex flex-col relative overflow-hidden md1:gap-10">
@@ -392,10 +392,10 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px]">
+    <div class="container-desktop mmd1:max-w-[1186px]">
         <h2 class="title-1-25 md1:px-4">Коммерческие сервисы</h2>
 
-        <div class="mt-20 md1:mt-8 flex flex-col gap-4">
+        <div class="mt-20 md1:mt-8 flex flex-col gap-5">
             <div
                 class="bg-grayTwo rounded-32 md1:rounded-none px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
                 <div class="mmd1:max-w-[468px] flex flex-col flex-grow mmd1:pb-11">
@@ -439,7 +439,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px]">
+    <div class="container-desktop mmd1:max-w-[1186px]">
         <h2 class="title-1-25 md1:px-4">Сервисы безопасности</h2>
 
         <div class="mt-20 md1:mt-8">
@@ -466,7 +466,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px] mmd1:!p-0">
+    <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
         <div class="bg-black rounded-32 md1:rounded-2xl overflow-hidden p-11 md1:px-6 grid grid-cols-2 md1:grid-cols-1 relative gap-12 md1:gap-4">
             <div class="mmd1:max-w-[480px] flex flex-col flex-grow">
                 <h2 class="title-3 !text-white">
@@ -476,28 +476,40 @@
                 </h2>
             </div>
             <div>
-                <p class="text-white leading-normal">
-                    Оставьте заявку&nbsp;&mdash; предложим решения по&nbsp;внедрению сервиса в&nbsp;ваши бизнес-процессы.
-                </p>
-                <div class="mt-12 flex gap-3 md3:flex-col">
-                    <button
-                        data-graph-path="create-bid"
-                        data-graph-animation="fadeInUp"
-                        data-graph-speed="350"
-                        class="btn btn-secondary btn-s-default min-w-[172px]">
-                        Оставить заявку
-                    </button>
-                </div>
+                <form action="#" id="create-bid-form-mini">
+                    <p class="text-paragraph-2 text-white">Если у&nbsp;вас индивидуальный запрос, оставьте заявку и&nbsp;специалист перезвонит вам</p>
+                    <div class="mt-8 gap-2 flex">
+                        <label class="form-input flex-grow">
+                            <input type="tel" name="phone" class="input input-primary input-s-default" placeholder="+7" />
+                        </label>
+                        <button type="submit" class="btn btn-blue btn-s-default !px-5">Оставить заявку</button>
+                    </div>
+                    <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
+                        <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_2" class="checkbox__label">
+                            <div class="checkbox__mark">
+                                <div class="checkbox__mark-check"></div>
+                            </div>
+                            <span class="checkbox__text !text-[12px] !leading-normal">
+                                Вы соглашаетесь с политикой
+                                <a href="/policy" class="inline"
+                                    >обработи персональных данных <br class="md1:hidden" />
+                                    и условиями политики конфиденциальности</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container-desktop mmd1:max-w-[1184px]">
+    <div class="container-desktop mmd1:max-w-[1186px]">
         <h2 class="title-1-25 md1:px-4">Дополнительные сервисы</h2>
 
-        <div class="mt-20 md1:mt-8 flex flex-col gap-4">
+        <div class="mt-20 md1:mt-8 flex flex-col gap-5">
             <div
                 class="bg-grayTwo rounded-32 md1:rounded-none p-11 md1:p-6 mmd1:min-h-[471px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
                 <div class="mmd1:max-w-[468px] flex flex-col flex-grow">
@@ -548,194 +560,9 @@
     </div>
 </section>
 
-                <section class="mt-[160px] md1:mt-20">
-    <div class="container flex gap-6 md1:flex-col">
-        <div class="mmd1:w-[636px] flex-shrink-0">
-            <h2 class="title-1 mmd1:ml-[56px] mb-[121px] md1:mb-8">Платформа</h2>
-            <div class="grid grid-cols-2 gap-6 md2:grid-cols-1" id="platform-blocks">
-                <a href="/owner-app" class="product-card">
-                    <div class="product-card__badge">
-                        <div class="product-card__icon">
-                            <svg class="">
-                                <use xlink:href="img/sprite.svg#users"></use>
-                            </svg>
-                        </div>
-
-                        <span>Собственникам</span>
-                    </div>
-                    <div class="product-card__content">
-                        <h4 class="title-4 product-card__title">Мобильное приложение собственника</h4>
-                        <p class="product-card__descr">Бесплатное мобильное приложение для связи с управляющей компанией</p>
-                    </div>
-                    <svg class="product-card__arrow">
-                        <use xlink:href="img/sprite.svg#arrow-right-top"></use>
-                    </svg>
-                </a>
-                <a href="/employee-app" class="product-card">
-                    <div class="product-card__badge">
-                        <div class="product-card__icon">
-                            <svg class="">
-                                <use xlink:href="img/sprite.svg#user-check"></use>
-                            </svg>
-                        </div>
-
-                        <span>Сотрудникам</span>
-                    </div>
-                    <div class="product-card__content">
-                        <h4 class="title-4 product-card__title">Мобильное приложение сотрудника</h4>
-                        <p class="product-card__descr">Бесплатный сервис для контроля заявок и постановки задач</p>
-                    </div>
-                    <svg class="product-card__arrow">
-                        <use xlink:href="img/sprite.svg#arrow-right-top"></use>
-                    </svg>
-                </a>
-            </div>
-        </div>
-        <a href="/crm" class="flex-grow platform-card" data-da="#platform-blocks,799,first">
-            <picture>
-                <source srcset="./img/platform-image.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/platform-image.jpg"
-                    class="w-full md1:pb-[120px] md3:pb-[180px]"
-                    width="621"
-                    height="373"
-                    alt="Заявки от жителей" />
-            </picture>
-            <div class="platform-card__content">
-                <div class="text-white font-medium flex-center-all gap-2 self-start text-[18px]">
-                    <div class="h-[48px] w-[48px] rounded-xl blur-[20px] bg-[rgba(255,255,255,0.2)] flex-center-all">
-                        <svg class="w-[22px] h-[22px] text-white">
-                            <use xlink:href="img/sprite.svg#monitor"></use>
-                        </svg>
-                    </div>
-                    <span>Для УК и ТСЖ</span>
-                </div>
-
-                <div>
-                    <h3 class="title-4 platform-card__title">CRM-система</h3>
-                    <p class="platform-card__descr">Автоматизация рабочих процессов</p>
-                </div>
-                <svg class="platform-card__arrow">
-                    <use xlink:href="img/sprite.svg#arrow-right-top"></use>
-                </svg>
-            </div>
-        </a>
-    </div>
-</section>
-
-                <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
-        <h2 class="title-1-25">
-            Дополнительные <br class="md1:hidden" />
-            направления и&nbsp;сервисы
-        </h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-4 gap-y-5 md2:grid-cols-1 md1:gap-4">
-            <a href="/website-for-uk" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--stroke" stroke="none">
-                    <use xlink:href="img/sprite.svg#monitor"></use>
-                </svg>
-                <h4 class="title-4-5">Готовый сайт управляющей компании</h4>
-            </a>
-            <a href="/cloud-pass-service" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--stroke">
-                    <use xlink:href="img/sprite.svg#shield"></use>
-                </svg>
-                <h4 class="title-4-5">Мобильное бюро пропусков</h4>
-            </a>
-            <a href="/paid-services" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--stroke">
-                    <use xlink:href="img/sprite.svg#shopping-cart"></use>
-                </svg>
-                <h4 class="title-4-5">Магазин платных услуг</h4>
-            </a>
-            <!-- <a href="#" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--stroke">
-                    <use xlink:href="img/sprite.svg#message-square"></use>
-                </svg>
-                <h4 class="title-4-5">Управление в мессенджерах</h4>
-            </a> -->
-            <a href="/ads" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--fill">
-                    <use xlink:href="img/sprite.svg#headset"></use>
-                </svg>
-                <h4 class="title-4-5">Аварийно-диспетчерская служба</h4>
-            </a>
-            <a href="/owner-account" class="features-item-link">
-                <svg class="features-item-link__icon features-item-link__icon--stroke">
-                    <use xlink:href="img/sprite.svg#users"></use>
-                </svg>
-                <h4 class="title-4-5">Личный кабинет собственника</h4>
-            </a>
-        </div>
-    </div>
-</section>
-
-                <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
-        <h2 class="title-1-25">
-            Берем на&nbsp;себя задачи <br class="md1:hidden" />
-            по&nbsp;внедрению
-        </h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-4 md3:grid-cols-1">
-            <article class="task-card">
-                <svg class="task-card__icon">
-                    <use xlink:href="img/sprite.svg#download"></use>
-                </svg>
-                <h3 class="title-4 mb-7-5">Перенесем данные</h3>
-                <ul class="task-card__items">
-                    <li class="task-card__item">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>
-                        <p>Перенесем справочники, лицевые счета, списки объектов и&nbsp;другую информацию</p>
-                    </li>
-                    <li class="task-card__item">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>
-                        <p>Настроим базовые интеграции со&nbsp;сторонними системами и&nbsp;сервисами если необходимо</p>
-                    </li>
-                </ul>
-                <button
-                    data-graph-path="create-bid"
-                    data-graph-animation="fadeInUp"
-                    data-graph-speed="350"
-                    class="btn btn-primary btn-s-small mt-[50px]">Подключить</button>
-            </article>
-            <article class="task-card">
-                <svg class="task-card__icon">
-                    <use xlink:href="img/sprite.svg#coffee"></use>
-                </svg>
-                <h3 class="title-4 mb-7-5">Настроим процессы</h3>
-                <ul class="task-card__items">
-                    <li class="task-card__item">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>
-                        <p>Пригласим сотрудников и&nbsp;разграничим для них права доступа</p>
-                    </li>
-                    <li class="task-card__item">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>
-                        <p>Научим сострудников пользоваться мобильными приложениями</p>
-                    </li>
-                    <li class="task-card__item">
-                        <svg>
-                            <use xlink:href="img/sprite.svg#check"></use>
-                        </svg>
-                        <p>В&nbsp;течении всего времени будем сопровождать и&nbsp;отвечать на&nbsp;вопросы связанные с&nbsp;работой системы</p>
-                    </li>
-                </ul>
-            </article>
-        </div>
-    </div>
-</section>
-
-                <section class="bg-dark mt-[160px] md1:mt-20 pt-[160px] md1:pt-20 pb-[80px]" id="our-solutions">
+                <section class="bg-dark mt-[160px] md1:mt-20 pt-[128px] md1:pt-20 pb-[80px]" id="our-solutions">
     <div class="container">
-        <h2 class="title-1-25 mmd1:ml-[56px] mb-20 md1:mb-8 text-white">Наши решения уже используют</h2>
+        <h2 class="title-1-25 mmd1:ml-[56px] mb-20 md1:mb-8 text-white">Наши решения на объектах</h2>
         <div class="swiper" id="swiper-solutions">
             <div class="swiper-wrapper">
                 <div class="swiper-slide complex-card">
@@ -805,7 +632,7 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20 faq">
-    <div class="container mmd1:max-w-[1184px] mmd1:p-0 flex gap-8 md1:flex-col">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-8 md1:flex-col">
         <div class="flex-shrink-0">
             <h2 class="title-1-25">
                 Вопросы <br class='md1:hidden' />
@@ -813,15 +640,15 @@
             </h2>
         </div>
         <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
-            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-4">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-5">
                 <li class="faq__item">
-                    <button class="faq__btn" data-spoller>
+                    <button class="faq__btn _spoller-active" data-spoller>
                         <h3 class="title-4">Что такое экосистема сервисов для ЖКХ?</h3>
                         <svg class="ml-3 faq__arrow">
                             <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
                         </svg>
                     </button>
-                    <div class="faq__content text-paragraph-3" hidden>
+                    <div class="faq__content text-paragraph-3">
                         <p>Это единая цифровая платформа, которая объединяет собственников, управляющие компании и подрядчиков в одной системе. Все ключевые процессы, от заявок до онлайн-платежей,  работают согласованно и прозрачно.</p>
                     </div>
                 </li>
@@ -1208,7 +1035,10 @@
                 для сотрудников
             </h3>
             <div class="flex flex-col gap-4 md1:items-center">
-                <a href="https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/id6747736629" target="_blank" class="md1:w-44">
+                <a
+                    href="https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/id6747736629"
+                    target="_blank"
+                    class="md1:w-44">
                     <img loading="lazy" src="./img/app-store.svg" class="md1:w-full" width="151" height="45" alt="Скачать с App Store" />
                 </a>
                 <a href="https://play.google.com/store/apps/details?id=life.kakdoma.service&hl=ru" target="_blank" class="md1:w-44">
@@ -1228,26 +1058,33 @@
         </div>
     </div>
     <div
-		class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
-		role="dialog"
-		aria-modal="true"
-		data-graph-target="success-bid"
-	>
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="success-bid">
         <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
         <div class="text-center w-[100%]">
-            <img
-                loading="lazy"
-                src="./img/svg/circle.svg"
-                width="48"
-                height="48"
-                class="mb-6 mx-auto"
-                alt=""
-            />
+            <img loading="lazy" src="./img/svg/circle.svg" width="48" height="48" class="mb-6 mx-auto" alt="" />
             <h3 class="title-3 mb-6 md1:mb-4">Спасибо за заявку</h3>
             <p class="text-paragraph-2">Мы свяжемся с вами в ближайшее время</p>
             <button type="button" class="mt-6 md1:mt-4 btn btn-third btn-s-big w-full js-modal-close">Хорошо</button>
         </div>
-	</div>
+    </div>
+    <div
+        class="graph-modal__container graph-modal-container-fadeInUp w-[560px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="error-bid">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+        <div class="text-center w-[100%]">
+            <svg class="w-12 h-12 text-red mb-6">
+                <use xlink:href="img/sprite.svg#error"></use>
+            </svg>
+            <h3 class="title-3 mb-6 md1:mb-4">Произошла ошибка</h3>
+            <p class="text-paragraph-2">Повторите попытку позже</p>
+            <button type="button" class="mt-6 md1:mt-4 btn btn-primary btn-s-big w-full js-modal-close">Закрыть</button>
+        </div>
+    </div>
 </div>
 
     <div class="action-tg">

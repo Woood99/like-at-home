@@ -1,0 +1,45 @@
+.slider-tabs {
+    position: relative;
+    &__btns {
+        position: relative;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 55px;
+        overflow-x: auto;
+        scrollbar-width: thin;
+
+        &::-webkit-scrollbar {
+            height: 4px;
+        }
+        &::-webkit-scrollbar-track {
+            background: #e5e7eb;
+            border-radius: 4px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #9ca3af;
+            border-radius: 4px;
+        }
+    }
+    &__btn {
+        position: relative;
+        flex-shrink: 0;
+        padding: 24px 0;
+        color: var(--black);
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        transition: color 0.3s ease;
+        white-space: nowrap;
+    }
+    &__active-line {
+        position: absolute;
+        bottom: 0;
+        height: 4px;
+        background-color: var(--black);
+        transition:
+            transform 0.3s cubic-bezier(0.4, 0, 0.2, 1),
+            width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        will-change: transform, width;
+        pointer-events: none;
+    }
+}
