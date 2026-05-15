@@ -6,6 +6,7 @@ import featuresTabs from "./components/featuresTabs.js";
 import initParallax from "./components/initParallax.js";
 import initSliders from "./components/initSliders.js";
 import navDropdown from "./components/navDropdown.js";
+import { setCurrentMonth } from "./components/setCurrentMonth.js";
 import "./functions/burger.js";
 import "./functions/dynamic-adapt.js";
 import "./functions/fix-fullheight.js";
@@ -34,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
     initParallax();
     initSliders();
 
+    document.querySelectorAll("[data-current-month]").forEach(element => {
+        setCurrentMonth(element);
+    });
     document.querySelectorAll("[data-audio-src]").forEach(element => {
         const player = new AudioVisualize(element);
         player.loadAudio(element.getAttribute("data-audio-src"));

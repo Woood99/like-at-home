@@ -242,7 +242,7 @@ button {
     line-height: 1.4;
     font-weight: 600;
     @media (max-width: $desktop) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -251,7 +251,7 @@ button {
     line-height: 1.2;
     font-weight: 600;
     @media (max-width: $desktop) {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
@@ -334,6 +334,13 @@ button {
     width: 137px;
     @media (max-width: $desktop) {
         width: 100px;
+    }
+}
+
+.logo-rent {
+    width: 236px;
+    @media (max-width: $desktop) {
+        width: 165px;
     }
 }
 

@@ -1,0 +1,59 @@
+<header class="header">
+    <div class="container flex items-center h-full">
+        <a href="/">
+            <img src="./img/logo-rent.svg" class="logo-rent" width="236" height="26" alt="КАК ДОМА" />
+        </a>
+        <div class="nav-mini" data-menu>
+            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-14 md1:flex-col">
+                <li class="nav-mini-dropdown">
+                    <a href="#" class="link-primary nav-mini-dropdown__link" data-spoller>
+                        <span>Собственникам</span>
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                    <ul class="nav-mini-dropdown__list">
+                        <li class="nav-mini-dropdown__subitem">
+                            <a href="/ecosystem" class="link-primary">Сдать квартиру</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-mini-dropdown">
+                    <a href="#" class="link-primary nav-mini-dropdown__link" data-spoller>
+                        <span>Арендаторам</span>
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                    <ul class="nav-mini-dropdown__list">
+                        <li class="nav-mini-dropdown__subitem">
+                            <a href="/ecosystem" class="link-primary">Снять квартиру</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
+                <a href="tel:84997068428" class="link-primary md1:hidden">8 (499) 706-84-28</a>
+                <button
+                    class="btn btn-primary btn-s-default md1:w-full"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+
+        <a href="tel:84997068428" class="ml-auto mmd1:hidden" aria-label="Позвонить по номеру 8 (499) 706-84-28">
+            <svg class="w-6 h-6 text-blue">
+                <use xlink:href="img/sprite.svg#phone"></use>
+            </svg>
+        </a>
+
+        <button class="ml-6 burger mmd1:hidden" aria-label="Открыть меню" aria-expanded="false" data-burger>
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</header>

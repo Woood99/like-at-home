@@ -1,7 +1,8 @@
 const navDropdown = () => {
-    const container = document.querySelector(".header");
+    const header = document.querySelector(".header");
+    if (!header) return;
+    const container = header.querySelector("[data-nav-dropdown]");
     if (!container) return;
-    console.log(container);
 
     const items = container.querySelectorAll(".nav-dropdown");
     items.forEach(item => {
@@ -20,14 +21,15 @@ const navDropdown = () => {
             toggleMask();
         });
     });
+
     function toggleMask() {
-        const activeItem = container.querySelector(".nav-dropdown._active");
+        const activeItem = header.querySelector(".nav-dropdown._active");
         const body = document.body;
         activeItem ? body.classList.add("_nav-active-mask") : body.classList.remove("_nav-active-mask");
     }
 
     function removeActiveNav() {
-        const activeItem = container.querySelector(".nav-dropdown._active");
+        const activeItem = header.querySelector(".nav-dropdown._active");
         if (activeItem) activeItem.classList.remove("_active");
     }
 };

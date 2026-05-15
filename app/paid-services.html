@@ -22,168 +22,43 @@
     <body>
         <div class="site-container">
             <header class="header">
-    <div class="container flex items-center h-full relative">
+    <div class="container flex items-center h-full">
         <a href="/">
-            <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
+            <img src="./img/logo-rent.svg" class="logo-rent" width="236" height="26" alt="КАК ДОМА" />
         </a>
-        <div class="nav" data-menu>
-            <ul class="md1:w-full flex items-center gap-4 md1:flex-col mmd1:h-full">
-                <li class="nav-dropdown">
-                    <a href="#" class="link-primary nav-dropdown__link md1:hidden">
-                        <span>Продукты и решения</span>
+        <div class="nav-mini" data-menu>
+            <ul data-one-spoller data-spollers="1296,max" class="md1:w-full flex items-center gap-14 md1:flex-col">
+                <li class="nav-mini-dropdown">
+                    <a href="#" class="link-primary nav-mini-dropdown__link" data-spoller>
+                        <span>Собственникам</span>
                         <svg class="w-2.5 h-2.5 text-[currentColor]">
                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                         </svg>
                     </a>
-                    <div class="nav-dropdown__container container">
-                        <div class="nav-dropdown__content">
-                            <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__sidebar">
-                                <button
-                                    type="button"
-                                    class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
-                                    data-spoller>
-                                    <h4 class="font-semibold md1:text-xl">Сервисы ЖКХ</h4>
-                                    <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
-                                        <use xlink:href="img/sprite.svg#arrow-down"></use>
-                                    </svg>
-                                </button>
-                                <ul class="nav-dropdown__list">
-                                    <!-- <li class="nav-dropdown__subitem">
-                                        <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
-                                    </li> -->
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/crm" class="link-primary">CRM - система для УК и ТСЖ</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/owner-app" class="link-primary">Приложение для собственников</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/employee-app" class="link-primary">Приложение для сотрудников</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/brand-app" class="link-primary">Брендированное приложение УК</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/owner-account" class="link-primary">Личный кабинет собственника</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/website-for-uk" class="link-primary">Сайт управляющей компании</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/paid-services" class="link-primary">Маркет дополнительных услуг</a>
-                                    </li>
-                                    <li class="nav-dropdown__subitem">
-                                        <a href="/payment" class="link-primary">Онлайн оплата ЖКУ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="nav-dropdown__items">
-                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
-                                    <button
-                                        type="button"
-                                        class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
-                                        data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
-                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
-                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </button>
-                                    <ul class="nav-dropdown__item-links">
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
-                                    <button
-                                        type="button"
-                                        class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
-                                        data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Управление арендой</h4>
-                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
-                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </button>
-                                    <ul class="nav-dropdown__item-links">
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/confident-management" class="link-primary"
-                                                >Доверительное управление арендой квартир и аппартаментов</a
-                                            >
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/online-check-in" class="link-primary">Сервис удаленного заселения</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div data-one-spoller data-spollers="1296,max" class="nav-dropdown__item">
-                                    <button
-                                        type="button"
-                                        class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
-                                        data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Контроль доступа</h4>
-                                        <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
-                                            <use xlink:href="img/sprite.svg#arrow-down"></use>
-                                        </svg>
-                                    </button>
-                                    <ul class="nav-dropdown__item-links">
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/cloud-pass-service" class="link-primary">Сервис оформления пропусков</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/number-plate-recognition" class="link-primary">Распознавание автомобильных номеров</a>
-                                        </li>
-                                        <li class="nav-dropdown__subitem">
-                                            <a href="/barrier-installation" class="link-primary">Установка шлагбаумов</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="nav-dropdown__banner swiper self-start nav-dropdown-slider w-[300px] min-h-[400px]">
-                                <div class="swiper-wrapper h-full items-stretch">
-                                    <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-purpleSecond flex flex-col h-[370px] px-6 py-8 rounded-2xl">
-                                            <div class="flex-center-all blue-[20px] bg-[rgba(255,255,255,0.5)] rounded-xl w-11 h-11 mb-auto">
-                                                <svg class="w-[22px] h-[22px]">
-                                                    <use xlink:href="img/sprite.svg#barrier"></use>
-                                                </svg>
-                                            </div>
-                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Для транспортных компаний</h3>
-                                            <p class="text-white leading-[1.5625] mt-3">Учет автотранспорта с распределенной структурой хранения</p>
-                                        </article>
-                                    </div>
-                                    <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-gray flex flex-col h-[370px] px-6 pb-8 pt-[67px] rounded-2xl">
-                                            <picture class="self-center mb-auto">
-                                                <source srcset="./img/hands.webp" type="image/webp" />
-                                                <img
-                                                    loading="lazy"
-                                                    src="./img/hands.png"
-                                                    width="202"
-                                                    height="102"
-                                                    alt=""
-                                                    role="presentation"
-                                                    aria-hidden="true" />
-                                            </picture>
-                                            <h3 class="title-4 mmd1:text-[22px]">Гибкость решений</h3>
-                                            <p class="leading-[1.5625] mt-3">Возможны индивидуальные доработки под ваши задачи</p>
-                                        </article>
-                                    </div>
-                                </div>
-                                <div
-                                    class="slider-pagination slider-pagination--dark !top-5 !bottom-0 !left-5 z-20 relative nav-dropdown-slider-pagination"></div>
-                            </div>
-                        </div>
-                    </div>
+                    <ul class="nav-mini-dropdown__list">
+                        <li class="nav-mini-dropdown__subitem">
+                            <a href="/ecosystem" class="link-primary">Сдать квартиру</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-mini-dropdown">
+                    <a href="#" class="link-primary nav-mini-dropdown__link" data-spoller>
+                        <span>Арендаторам</span>
+                        <svg class="w-2.5 h-2.5 text-[currentColor]">
+                            <use xlink:href="img/sprite.svg#arrow-down"></use>
+                        </svg>
+                    </a>
+                    <ul class="nav-mini-dropdown__list">
+                        <li class="nav-mini-dropdown__subitem">
+                            <a href="/ecosystem" class="link-primary">Снять квартиру</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
             <div class="flex items-center gap-6 md1:w-full md1:mt-auto">
                 <a href="tel:84997068428" class="link-primary md1:hidden">8 (499) 706-84-28</a>
                 <button
-                    class="btn btn-primary btn-s-default md1:w-full md1:mt-10"
+                    class="btn btn-primary btn-s-default md1:w-full"
                     data-graph-path="create-bid"
                     data-graph-animation="fadeInUp"
                     data-graph-speed="350">
@@ -207,11 +82,15 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-0">
+                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo mmd1:rounded-b-3xl" id="hero-block">
     <div class="container-desktop">
-        <div class="bg-[#575AD6] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
-            <div class="mmd1:max-w-[500px] flex flex-col flex-grow">
-                <h1 class="title-1 !text-white">Платные услуги управляющей компании</h1>
+        <div class="bg-gray rounded-primary md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex relative md1:gap-10 md1:flex-col">
+            <div class="mmd1:max-w-[574px] flex flex-col flex-grow">
+                <h1 class="title-1-25">Владельцы квартир <span class="text-orangeLight">зарабатывают</span> с&nbsp;нами</h1>
+                <p class="mt-6 text-paragraph">
+                    Сервис аренды квартир &laquo;Как Дома&raquo; поможет обустроить, подготовить и&nbsp;сдать вашу квартиру в&nbsp;аренду, как
+                    на&nbsp;краткосрочный, так и&nbsp;на&nbsp;долгосрочный период.
+                </p>
                 <div class="mt-auto">
                     <div class="mt-12 flex gap-3 md3:flex-col">
                         <button
@@ -219,131 +98,721 @@
                             data-graph-animation="fadeInUp"
                             data-graph-speed="350"
                             class="btn btn-primary btn-s-default">
-                            Подключить
+                            Оставить заявку
                         </button>
                     </div>
                 </div>
             </div>
 
-            <picture class="mmd1:absolute -bottom-[95px] right-20 md1:mb-6">
-                <source srcset="./img/paid-services-banner-hero.webp" type="image/webp" />
-                <img
-                    loading="lazy"
-                    src="./img/paid-services-banner-hero.png"
-                    width="536"
-                    height="608"
-                    alt=""
-                    role="presentation"
-                    aria-hidden="true" />
+            <div class="relative flex-grow md1:hidden">
+                <div class="absolute right-[0%] bottom-[44.3%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-5.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-5.png" width="191" height="217" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute right-[15.9%] bottom-[17.5%] shadow-[0_22px_58px_0_rgba(31,76,192,0.2)] rounded-[28px]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-4.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-4.png" width="136" height="136" alt="" />
+                    </picture>
+                    <span
+                        class="absolute top-4 left-[15px] text-[15px] leading-[1.33] font-semibold text-white -tracking-[0.02em]"
+                        data-current-month></span>
+                </div>
+                <div class="absolute right-[0%] -bottom-[3.4%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-3.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-3.png" width="91" height="92" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute left-[44.1%] top-[5.5%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-2.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-2.png" width="113" height="86" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute left-[10%] bottom-[2.6%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-1.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-1.png" width="290" height="218" alt="" />
+                    </picture>
+                    <div
+                        class="w-[152px] h-[74px] rounded-[26px] bg-white shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] flex-center-all flex-col absolute top-[30px] right-0">
+                        <p class="text-[19px] text-black font-semibold text-center">+80 000 ₽</p>
+                        <p class="mt-1.5 text-[8px] text-[#a2a2a2] font-semibold text-center">от Натальи, арендатор</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-desktop !mt-5 md1:!-mt-2 relative">
+        <div
+            class="px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-5 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:border mmd1:border-solid mmd1:border-[#8e8e96]">
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Найдем жильцов и&nbsp;подготовим квартиру</h3>
+                <p class="text-grayDark leading-[1.875]">Берём на&nbsp;себя показы и&nbsp;переговоры с&nbsp;арендаторами</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Проконсультируем по&nbsp;юридическим вопросам</h3>
+                <p class="text-grayDark leading-[1.875]">Учитываем все нюансы аренды и&nbsp;особенности вашего обьекта</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Проконтролируем процесс проживания</h3>
+                <p class="text-grayDark leading-[1.875]">Проследим, чтоб квартира используется бережно</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Возьмем на&nbsp;себя часть расходов на&nbsp;старте</h3>
+                <p class="text-grayDark leading-[1.875]">Установим электронные замки, мебелируем, покрасим стены</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-1-25">
+            Превратим вашу квартиру <br class="md1:hidden" />
+            в&nbsp;источник стабильного дохода
+        </h2>
+
+        <div class="mt-20 md1:mt-8 grid grid-cols-3 gap-5 md1:gap-4 md1:grid-cols-2 md3:grid-cols-1">
+            <article class="bg-gray rounded-32 md1:rounded-3xl px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-1-25 !leading-[1.4]">1125</h3>
+                <p class="text-paragraph-2 text-grayDark mt-0.5">Довольных клиентов</p>
+            </article>
+            <article class="bg-gray rounded-32 md1:rounded-3xl px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-1-25 !leading-[1.4]">200+</h3>
+                <p class="text-paragraph-2 text-grayDark mt-0.5">Объектов в управлении</p>
+            </article>
+            <article class="bg-gray rounded-32 md1:rounded-3xl px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-1-25 !leading-[1.4]">98%</h3>
+                <p class="text-paragraph-2 text-grayDark mt-0.5">Арендаторов платят вовремя</p>
+            </article>
+        </div>
+        <div
+            class="mt-5 md1:mt-4 bg-grayTwo rounded-32 md1:rounded-3xl px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+            <div class="mmd1:max-w-[468px] flex flex-col flex-grow mmd1:pb-11">
+                <h2 class="title-4">Защитим квартиру от&nbsp;неприятностей</h2>
+                <p class="mt-5 leading-normal text-grayDark">
+                    Финансовая защита, гарантия того, что с&nbsp;вашей квартирой всё будет в&nbsp;полном порядке.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-2">
+                    <a href="#" class="tag tag-three tag-lg tag-three-link">Страхование </a>
+                </div>
+            </div>
+
+            <picture class="self-end md1:self-center mmd1:mr-5 mb-7 md1:mb-4">
+                <source srcset="./img/cat-in-box.webp" type="image/webp" />
+                <img loading="lazy" src="./img/cat-in-box.png" width="444" height="303" alt="" role="presentation" aria-hidden="true" />
             </picture>
         </div>
-    </div>
-    <div class="container !mt-[49px] md1:!mt-6">
-        <div class="mmd1:ml-14 max-w-[430px]">
-            <h3 class="title-3 !leading-[1.4]">
-                Маркетплейс платных <br class="md1:hidden" />
-                услуг для собственников
-            </h3>
+        <div
+            class="mt-5 md1:mt-4 bg-orangeLight rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:px-6 md1:py-8 flex items-center justify-between relative gap-12 md2:gap-6 md2:flex-col">
+            <div class="mmd1:max-w-[393px] flex flex-col flex-grow">
+                <h2 class="title-4-25 !text-white !leading-[1.4]">Собственная онлайн платформа для контроля процеса проживания</h2>
+            </div>
+            <button
+                type="button"
+                class="btn btn-secondary btn-s-default mmd2:!min-w-max md2:w-full"
+                data-graph-path="create-bid"
+                data-graph-animation="fadeInUp"
+                data-graph-speed="350">
+                Оставить заявку
+            </button>
         </div>
     </div>
 </section>
-
+ 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Какие услуги можно продавать?</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Сантехнические и&nbsp;электромонтажные работы</h4>
-            </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Клининговые услуги и&nbsp;мелкий бытовой ремонт</h4>
-            </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Замена или установка нового оборудования</h4>
-            </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Услуги подрядчиков и&nbsp;другие услуги для собственников</h4>
-            </article>
+        <div class="flex items-start gap-5 md2:flex-col">
+            <div class="flex items-center gap-5">
+                <picture>
+                    <source srcset="./img/avatar-8.webp" type="image/webp" />
+                    <img loading="lazy" src="./img/avatar-8.png" width="60" height="60" alt="Фото Новикова Дмитрия" />
+                </picture>
+                <div class="w-60">
+                    <p class="text-paragraph-3 !font-semibold cut cut-1">Дмитрий</p>
+                    <p class="text-paragraph-3 cut cut-1 text-[#a3a6a9] !text-[14px]">Основатель &laquo;КАК ДОМА&raquo;</p>
+                </div>
+            </div>
+            <h2 class="title-4 mmd1:text-[22px] mmd1:max-w-[783px]">
+                Для нас доверительное управление — это не просто контроль всех процессов, а ежедневная ответственность перед собственником. Мы
+                выстроили сервис так, чтобы аренда приносила стабильный доход.
+            </h2>
         </div>
-        <button
-            class="btn btn-primary btn-s-default mt-20 md1:mt-8 mx-auto md3:w-full"
-            data-graph-path="create-bid"
-            data-graph-animation="fadeInUp"
-            data-graph-speed="350">
-            Подключить
-        </button>
     </div>
 </section>
-
+ 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Cпособы онлайн-оплаты</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-6 md3:grid-cols-1">
-            <article class="bg-gray rounded-32 md1:rounded-3xl pt-10 px-10 md1:pt-6 md1:px-6 flex flex-col">
-                <h4 class="title-4 mb-20">
-                    Оплата в мобильном <br class="md1:hidden" />
-                    приложении
-                </h4>
-                <picture class="self-center mt-auto">
-                    <source srcset="./img/payment-phone.webp" type="image/webp" />
-                    <img loading="lazy" src="./img/payment-phone.png" width="289" height="365" alt="" role="presentation" aria-hidden="true" />
-                </picture>
-            </article>
-            <article class="bg-gray rounded-32 md1:rounded-3xl pt-10 pl-10 md1:pt-6 md1:pl-6 flex flex-col">
-                <h4 class="title-4 mb-20">Оплата в личном кабинете собственника</h4>
+        <h2 class="title-2">Как работает сервис</h2>
+        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-5 md1:gap-4">
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-orangeLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Проводим оценку квартиры на&nbsp;месте</h4>
+                    <p class="text-paragraph-3 md1:text-center">Подскажем, как сдать её&nbsp;быстрее и&nbsp;выгоднее.</p>
+                    <button
+                        class="btn btn-primary btn-s-small mt-4 md1:mx-auto"
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350">
+                        Оставить заявку
+                    </button>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-orangeLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Готовим квартиру к&nbsp;сдаче</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Подчеркнём преимущества для будущих арендаторов и&nbsp;разместим объявления на&nbsp;популярных площадках.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-orangeLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">3</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Проводим показы</h4>
+                    <p class="text-paragraph-3 md1:text-center">Проверяем и&nbsp;подбираем арендатора по&nbsp;утверждённым параметрам.</p>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-orangeLight flex-shrink-0 flex-center-all">
+                    <svg class="w-6 h-6 text-white">
+                        <use xlink:href="img/sprite.svg#smile"></use>
+                    </svg>
+                </span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Готово!</h4>
+                    <p class="text-paragraph-3 md1:text-center">Ваша квартира начинает приносить стабильный доход.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <div class="grid grid-cols-2 md2:grid-cols-1 gap-5 md1:gap-4">
+            <div
+                class="mmd2:col-span-2 bg-grayTwo rounded-32 md1:rounded-3xl p-11 md1:p-6 h-[410px] md1:h-[350px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
+                <div class="mmd1:max-w-[513px] flex flex-col flex-grow relative z-10">
+                    <h2 class="title-4">Мебелируем ваш объект для аренды</h2>
+                    <p class="mt-5 text-paragraph-3 text-grayDark">
+                        Поможем с&nbsp;мебелью и&nbsp;обустройством, чтобы квартира выглядела привлекательно для будущих жильцов
+                    </p>
+                </div>
 
-                <picture class="self-end mt-auto">
-                    <source srcset="./img/payment-lc-banner.webp" type="image/webp" />
-                    <img loading="lazy" src="./img/payment-lc-banner.png" width="491" height="365" alt="" role="presentation" aria-hidden="true" />
+                <picture>
+                    <source srcset="./img/furniture-banner.webp" type="image/webp" />
+                    <img
+                        loading="lazy"
+                        src="./img/furniture-banner.jpg"
+                        class="absolute inset-0 w-full h-full"
+                        width="1186"
+                        height="410"
+                        alt=""
+                        role="presentation"
+                        aria-hidden="true" />
                 </picture>
-            </article>
-            <article class="bg-[#dde6ff] rounded-32 md1:rounded-3xl p-10 md1:pt-6 md1:px-6 flex flex-col md1:pb-6">
-                <h4 class="title-4">Оплата по ссылке</h4>
-                <p class="mt-5 mb-20 leading-normal text-black">
-                    Ссылку можно сформировать и&nbsp;направить собственнику по&nbsp;элетронной почте, сообщением в&nbsp;меседжере или СМС
+            </div>
+            <article class="rounded-20 p-10 md1:p-6 flex flex-col bg-grayTwo h-[410px] md1:h-[350px] relative overflow-hidden">
+                <h3 class="title-4">Платим вперёд за&nbsp;жильцов</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">
+                    Не&nbsp;ждите пока арендатор переведёт деньги, получите сумму вперед отправив запрос в&nbsp;личном кабинете
                 </p>
-                <picture class="self-center mt-auto">
-                    <source srcset="./img/payment-link.webp" type="image/webp" />
-                    <img loading="lazy" src="./img/payment-link.png" width="473" height="260" alt="" role="presentation" aria-hidden="true" />
-                </picture>
+                <img
+                    loading="lazy"
+                    src="./img/curved-line-2.svg"
+                    class="absolute left-[28%] -bottom-[45px] md1:max-w-[220px] md1:left-auto md1:right-0 md1:-bottom-[65px]"
+                    width="312"
+                    height="280"
+                    alt="" />
             </article>
-            <article class="bg-gray rounded-32 md1:rounded-3xl pt-10 px-10 md1:pt-6 md1:px-6 flex flex-col">
-                <h4 class="title-4 mb-20">Оплата по QR-коду</h4>
-                <picture class="self-center mt-auto">
-                    <source srcset="./img/payment-qr-phone.webp" type="image/webp" />
-                    <img loading="lazy" src="./img/payment-qr-phone.png" width="289" height="365" alt="" role="presentation" aria-hidden="true" />
-                </picture>
+            <article class="rounded-20 p-10 pt-7 md1:p-6 flex flex-col border border-solid border-[#e0e0e0] h-[410px] md1:h-[350px]">
+                <p class="text-paragraph-2 text-grayDark">Отзыв</p>
+                <h3 class="title-4-5 mt-2 mb-auto !leading-[1.55]">
+                    Передала квартиру в&nbsp;управление. Всё прозрачно, жильцы найдены быстро, а&nbsp;оплату можно получать заранее&nbsp;&mdash; это
+                    действительно удобно
+                </h3>
+                <div class="mt-12 flex flex-col">
+                    <picture>
+                        <source srcset="./img/avatar-7.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/avatar-7.png" width="50" height="50" alt="Фото Екатерины" />
+                    </picture>
+                    <p class="mt-5 text-paragraph-2 !font-bold cut cut-1">Екатерина А.</p>
+                    <p class="mt-1 font-medium leading-[1.24] text-[14px] text-[#A3A6A9]">Собственник аппартаментов</p>
+                </div>
             </article>
         </div>
     </div>
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-2 mb-5">Как работает маркетплейс</h2>
-        <p class="text-paragraph">Дополнительный канал дохода для управляющей компании с&nbsp;онлайн оплатой</p>
-        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-4">
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">УК создаёт услуги в CRM-системе</h4>
-                    <p class="text-paragraph-2 md1:text-center">Указывает описание, стоимость и условия.</p>
+    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
+        <h2 class="title-1-25">Круглосуточная поддержка</h2>
+
+        <div class="mt-20 md1:mt-8 grid grid-cols-3 md2:grid-cols-1 gap-5 md1:gap-4">
+            <div
+                class="mmd2:col-span-3 bg-grayTwo rounded-32 md1:rounded-3xl px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+                <div class="mmd1:max-w-[513px] flex flex-col flex-grow mmd1:pb-11">
+                    <h2 class="title-4">Контакт-центр 24</h2>
+                    <p class="mt-5 leading-normal text-grayDark">
+                        Единый центр обработки обращений для коммуникации с&nbsp;жильцами по&nbsp;любым вопросам.
+                    </p>
+                    <div class="mt-auto">
+                        <div class="mt-12 flex gap-3 md3:flex-col">
+                            <a href="/owner-account" class="btn btn-five btn-s-default">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="self-end mmd1:mr-[66px] relative">
+                    <div
+                        class="bg-purpleSecond h-[51px] px-[19px] text-[15px] leading-[1.22] text-white font-semibold rounded-[10px] flex-center-all w-max absolute top-[79px] -left-[123px] md1:top-14 md1:-left-20 md3:h-7 md3:px-2 md3:text-[10px] md3:top-12 md3:-left-8 md3:rounded-md">
+                        Мы всегда рядом
+                        <svg
+                            class="absolute -bottom-[2px] -right-[5.5px]"
+                            width="17"
+                            height="16"
+                            viewBox="0 0 17 16"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M15.3269 15.2594L5.99646 14L4.49646 14L-4.88162e-05 14L9.64339 -0.000127435L10.9965 3.00098L12.1538 5.16954L16.3602 13.8316C16.7088 14.5493 16.1177 15.3662 15.3269 15.2594Z"
+                                fill="#7D57DC" />
+                        </svg>
+                    </div>
+                    <picture>
+                        <source srcset="./img/dispatcher.webp" type="image/webp" />
+                        <img
+                            loading="lazy"
+                            src="./img/dispatcher.png"
+                            width="326"
+                            height="368"
+                            alt=""
+                            class="md3:max-w-[245px]"
+                            role="presentation"
+                            aria-hidden="true" />
+                    </picture>
                 </div>
             </div>
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">Собственники оформляют заказы</h4>
-                    <p class="text-paragraph-2 md1:text-center">Заказ можно оформить с любого устройства в удобное время.</p>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Администраторы</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">Служба по&nbsp;работе с&nbsp;собственниками и&nbsp;арендаторами</p>
+            </article>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Центр чистоты</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">Высокие стандарты и&nbsp;собственный штат специалистов по&nbsp;уборке</p>
+            </article>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col border border-solid border-black">
+                <h3 class="title-4">Мастера по&nbsp;ремонту</h3>
+                <p class="text-paragraph-3 mt-4 md1:mt-3">Электрики, сантехники, мастера бытовых услуг в&nbsp;штате</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+                <section id="tariffSelection" class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0">
+        <h2 class="title-1-25 mb-20 md1:mb-8">Тарифы</h2>
+        <div class="grid grid-cols-3 gap-5 md1:gap-4 md1:mt-8 md1:grid-cols-2 md2:grid-cols-1">
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Базовый</span>
+                <h3 class="title-4 product-card-tariff__title !mb-8">10% от арендной платы</h3>
+                <ul class="product-card-tariff__info !mt-0">
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Создание, размещение и&nbsp;продвижение рекламного обьявления на&nbsp;онлайн&nbsp;&mdash; площадках</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Прием и обработка звонков</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Показы объекта и подписание договора</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Заселение Арендаторов</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Ведение Арендаторов весь период проживания</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Контроль своевременной оплаты</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Контроль оплаты коммунальных услуг</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Выселение Арендатора, контроль повреждений, финальный расчет</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Коммуникация с управляющей компанией по всем вопросам</span>
+                    </li>
+                </ul>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подробнее
+                    </button>
                 </div>
             </div>
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">3</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">УК получает информацию о заказе</h4>
-                    <p class="text-paragraph-2 md1:text-center">Удобный формат без звонков и визитов в офис.</p>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Расширенный</span>
+                <h3 class="title-4 product-card-tariff__title !mb-8">15% от арендной платы</h3>
+                <p class="product-card-tariff__descr">Все опции входящие в&nbsp;пакет Базовый, плюс дополнительные услуги</p>
+                <ul class="product-card-tariff__info !mt-0">
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Генеральная уборка при выезде гостя</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Услуги мастеров (мелкий ремонт, диагностика транспортировка техники в&nbsp;ремонт и&nbsp;другие бытовые услуги)</span>
+                    </li>
+                </ul>
+                <img loading="lazy" src="./img/curved-line.svg" class="self-end my-auto pt-10" width="170" height="162" alt="" />
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подробнее
+                    </button>
                 </div>
             </div>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Премиум</span>
+                <h3 class="title-4 product-card-tariff__title !mb-8">20% от арендной платы</h3>
+                <ul class="product-card-tariff__info !mt-0">
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span
+                            >Все опции входящие в&nbsp;пакет <b class="text-[#191919]">Базовый</b> и&nbsp;<b class="text-[#191919]">Расширенны</b>,
+                            плюс дополнительные услуги</span
+                        >
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Косметический ремонт через 7&nbsp;лет</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Добровольное страхование имущества</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Страхование гражданской ответственности</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Ущерб третьим лицам (затопление, пожар и&nbsp;т.п.) в&nbsp;пределах страховой выплаты</span>
+                    </li>
+                    <li class="product-card-tariff__info-item product-card-tariff__info-item--dark">
+                        <svg>
+                            <use xlink:href="img/sprite.svg#check-circle-fill"></use>
+                        </svg>
+                        <span>Покрытиеущерба имуществу сверх залоговой стоимости, в&nbsp;пределах страховой выплаты</span>
+                    </li>
+                </ul>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="bg-grayTwo mt-[160px] md1:mt-20 py-[96px] md1:py-12 rounded-primary">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0">
+        <div class="mb-14 md1:mb-8">
+            <h2 class="title-1-25 mb-6 md1:mb-4">Сравните сами</h2>
+            <p class="text-paragraph-2">Ни&nbsp;один агент не&nbsp;предоставит такой сервис и&nbsp;поддержку, как&nbsp;мы </p>
+        </div>
+
+        <div class="flex flex-col">
+            <div class="ml-auto flex gap-2 mb-4">
+                <p class="w-[320px] h-[91px] flex-center-all rounded-32 md1:rounded-3xl bg-white text-paragraph-2">Агент</p>
+                <p class="w-[320px] h-[91px] flex-center-all rounded-32 md1:rounded-3xl bg-orangeLight text-white text-paragraph-2">
+                    Сервис &laquo;Как дома&raquo;
+                </p>
+            </div>
+            <div class="flex flex-col gap-2">
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Бесконтактное заселение</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Круглосуточный контакт-центр</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Страхование квартиры</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Проверка арендатора</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Подготовка квартиры к сдаче</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Мебелировка квартиры</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Косметический ремонт</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Личный кабинет инвестора</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+                <div class="w-full h-[91px] bg-white pl-20 pr-10 rounded-32 md1:rounded-3xl grid items-center grid-cols-[565px_280px_1fr] gap-10">
+                    <span class="text-paragraph text-grayDark">Отельный сервис</span>
+                    <span class="text-paragraph">нет</span>
+                    <span class="text-paragraph">да</span>
+                </div>
+            </div>
+        </div>
+        <div
+            class="mt-14 md1:mt-8 bg-purpleSecond rounded-32 md1:rounded-3xl overflow-hidden px-11 md1:px-6 md1:py-8 flex items-center justify-between relative gap-12 md2:gap-6 md2:flex-col">
+            <div class="mmd1:max-w-[552px] flex flex-col flex-grow mmd1:py-10">
+                <h2 class="title-4-25 !text-white !leading-[1.4]">
+                    При подключении к&nbsp;сервису в&nbsp;мае, электронный замок с&nbsp;установкой в&nbsp;подарок.
+                </h2>
+            </div>
+            <div class="flex items-center gap-7 md2:w-full">
+                <picture class="md1:hidden">
+                    <source srcset="./img/automation-3.webp" type="image/webp" />
+                    <img loading="lazy" src="./img/automation-3.png" width="214" height="142" alt="" />
+                </picture>
+                <button
+                    type="button"
+                    class="btn btn-secondary btn-s-default mmd2:!min-w-max md2:w-full"
+                    data-graph-path="create-bid"
+                    data-graph-animation="fadeInUp"
+                    data-graph-speed="350">
+                    Оставить заявку
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20 faq">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-8 md1:flex-col">
+        <div class="flex-shrink-0">
+            <h2 class="title-1-25">
+                Вопросы <br class="md1:hidden" />
+                и ответы
+            </h2>
+        </div>
+
+        <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-5">
+                <li class="faq__item">
+                    <button class="faq__btn _spoller-active" data-spoller>
+                        <h3 class="title-4">Сколько это стоит?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3">
+                        <p>Самый популярный тарифт Базовый&nbsp;&mdash; это&nbsp;10% от&nbsp;арендной платы за&nbsp;объект в&nbsp;месяц.</p>
+                        <button
+                            class="btn btn-primary btn-s-small mt-4 relative z-[11]"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Оставить заявку
+                        </button>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Как работает доверительное управление арендой?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Мы&nbsp;полностью берём аренду квартиры на&nbsp;себя: от&nbsp;подготовки объекта и&nbsp;поиска жильцов до&nbsp;оплаты
+                            коммунальных услуг и&nbsp;решения бытовых вопросов.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Кто будет общаться с&nbsp;жильцами?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Все коммуникации берём на&nbsp;себя: показы, договоры, поддержка арендаторов, решение вопросов и&nbsp;контроль оплаты.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Что делать, если жильцы съедут раньше?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Мы&nbsp;оперативно найдём новых арендаторов и&nbsp;организуем повторную сдачу квартиры без вашего участия.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можно&nbsp;ли получать оплату заранее?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Да, в&nbsp;сервисе доступна возможность получать арендные платежи авансом&nbsp;&mdash; без ожидания даты оплаты
+                            от&nbsp;жильца.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Кто оплачивает коммунальные услуги?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            По&nbsp;вашему выбору, но&nbsp;чаще всего коммунальные платежи оплачивают жильцы, а&nbsp;вы&nbsp;контролируете оплату
+                            через сервис.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Что входит в&nbsp;подготовку квартиры?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Помогаем привести объект в&nbsp;порядок: клининг, мелкий ремонт, рекомендации по&nbsp;мебели и&nbsp;подготовка квартиры
+                            к&nbsp;заселению.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Как я&nbsp;могу следить за&nbsp;своей квартирой?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Вы&nbsp;всегда видите статус аренды, оплаты и&nbsp;обращения через удобный личный кабинет или отчёты от&nbsp;менеджера.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Нужно&nbsp;ли приезжать для подписания документов?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Нет, большинство процессов можно оформить дистанционно&nbsp;&mdash; от&nbsp;договора до&nbsp;передачи квартиры
+                            в&nbsp;управление.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Что будет, если в&nbsp;квартире что-то сломается?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Мы&nbsp;организуем решение бытовых вопросов и&nbsp;при необходимости вызовем мастеров, чтобы вам не&nbsp;приходилось
+                            заниматься этим самостоятельно.
+                        </p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

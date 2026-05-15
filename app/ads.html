@@ -26,7 +26,7 @@
         <a href="/">
             <img src="./img/logo.svg" class="logo" width="137" height="36" alt="КАК ДОМА" />
         </a>
-        <div class="nav" data-menu>
+        <div class="nav" data-menu data-nav-dropdown>
             <ul class="md1:w-full flex items-center gap-4 md1:flex-col mmd1:h-full">
                 <li class="nav-dropdown">
                     <a href="#" class="link-primary nav-dropdown__link md1:hidden">
@@ -304,7 +304,7 @@
                 </svg>
             </div>
 
-            <div class="flex flex-col rounded-32 md1:rounded-2xl p-10 bg-gray md1:p-6">
+            <div class="flex flex-col rounded-32 md1:rounded-3xl p-10 bg-gray md1:p-6">
                 <h4 class="title-4 mb-5">Принимаем входящие обращения</h4>
                 <p class="text-paragraph-3 text-grayText">
                     Мы&nbsp;обрабатыавем телефонные звонки, заявки из&nbsp;мобильных приложений, заявки с&nbsp;сайтов и&nbsp;меседжеров.
@@ -320,7 +320,7 @@
                     </picture>
                 </div>
             </div>
-            <div class="flex flex-col rounded-32 md1:rounded-2xl p-10 bg-gray md1:p-6">
+            <div class="flex flex-col rounded-32 md1:rounded-3xl p-10 bg-gray md1:p-6">
                 <h4 class="title-4 mb-5">Назначаем исполнителей</h4>
                 <p class="text-paragraph-3 text-grayText">
                     Фиксируем обращение в&nbsp;системе и&nbsp;направляется ответственному исполнителю с&nbsp;учетом его загрузки привязке
@@ -333,7 +333,7 @@
                     </picture>
                 </div>
             </div>
-            <div class="flex flex-col rounded-32 md1:rounded-2xl p-10 bg-gray md1:p-6">
+            <div class="flex flex-col rounded-32 md1:rounded-3xl p-10 bg-gray md1:p-6">
                 <h4 class="title-4 mb-5">Контролируем выполнение заявок</h4>
                 <p class="text-paragraph-3 text-grayText">
                     Отслеживаем время исполнения, статусы заявок, напоминаем и&nbsp;подтверждаем выполнение, а&nbsp;жителю направляем уведомление
@@ -370,6 +370,20 @@
                 <p class="text-paragraph-2 text-grayDark mt-3">Статусы и исполнители</p>
             </article>
         </div>
+        <div
+            class="mt-5 md1:mt-4 bg-orangeLight rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:px-6 md1:py-8 flex items-center justify-between relative gap-12 md2:gap-6 md2:flex-col">
+            <div class="mmd1:max-w-[401px] flex flex-col flex-grow">
+                <h2 class="text-paragraph !text-white !leading-[1.4]">Не используем роботов для обработки звонков, только реальные диспетчеры</h2>
+            </div>
+            <button
+                type="button"
+                class="btn btn-secondary btn-s-default mmd2:!min-w-max md2:w-full"
+                data-graph-path="create-bid"
+                data-graph-animation="fadeInUp"
+                data-graph-speed="350">
+                Оставить заявку
+            </button>
+        </div>
     </div>
 </section>
 
@@ -378,12 +392,12 @@
         <h2 class="title-1-25 mb-10 md1:mb-6">Как диспетчер общается с жителями</h2>
         <p class="text-paragraph">Реальные записи разговоров диспетчера.</p>
         <div class="mt-20 md1:mt-8 flex gap-5 md1:gap-4 md1:flex-col">
-            <div class="flex flex-col bg-gray p-10 pb-14 rounded-32 md1:rounded-2xl md1:p-6">
+            <div class="flex flex-col bg-gray p-10 pb-14 rounded-32 md1:rounded-3xl md1:p-6">
                 <h3 class="title-4">Пример &#8470;&nbsp;1&nbsp;&mdash; Прием заявки</h3>
                 <p class="text-paragraph-3 mt-5 md1:mt-4 text-grayText">Диспетчер ведет диалог с&nbsp;жителем, который хочет оставить новую заявку</p>
                 <div class="mt-10 md1:mt-8 max-w-[285px]" data-audio-src="./audio-example.mp3"></div>
             </div>
-            <div class="flex flex-col bg-gray p-10 pb-14 rounded-32 md1:rounded-2xl md1:p-6">
+            <div class="flex flex-col bg-gray p-10 pb-14 rounded-32 md1:rounded-3xl md1:p-6">
                 <h3 class="title-4">Пример &#8470;&nbsp;2&nbsp;&mdash; передача заявки в&nbsp;работу</h3>
                 <p class="text-paragraph-3 mt-4 md1:mt-4 text-grayText">
                     Диспетчер сообщает о&nbsp;заявке исполнителю и&nbsp;подтверждает взятие заявки в&nbsp;работу
