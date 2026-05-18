@@ -48,9 +48,6 @@
                                     </svg>
                                 </button>
                                 <ul class="nav-dropdown__list">
-                                    <!-- <li class="nav-dropdown__subitem">
-                                        <a href="/ecosystem" class="link-primary">Экосистема сервисов для ЖКХ</a>
-                                    </li> -->
                                     <li class="nav-dropdown__subitem">
                                         <a href="/crm" class="link-primary">CRM - система для УК и ТСЖ</a>
                                     </li>
@@ -714,7 +711,7 @@
         <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
         <div>
             <h3 class="title-3 mmd1:max-w-[256px] mb-12 md1:mb-8 md1:text-center">
-                <span class="text-[#3c46ff]">Скачайте</span>
+                <span class="text-darkBlue">Скачайте</span>
                 приложение <br />
                 КАК ДОМА
             </h3>
@@ -746,7 +743,7 @@
         <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
         <div>
             <h3 class="title-3 mmd1:max-w-[256px] mb-12 md1:mb-8 md1:text-center">
-                <span class="text-[#3c46ff]">Скачайте</span>
+                <span class="text-darkBlue">Скачайте</span>
                 приложение <br />
                 для сотрудников
             </h3>
@@ -799,6 +796,100 @@
             <h3 class="title-3 mb-6 md1:mb-4">Произошла ошибка</h3>
             <p class="text-paragraph-2">Повторите попытку позже</p>
             <button type="button" class="mt-6 md1:mt-4 btn btn-primary btn-s-big w-full js-modal-close">Закрыть</button>
+        </div>
+    </div>
+    <div
+        class="graph-modal__container graph-modal-container-fadeInUp w-[1050px] mmd1:rounded-[40px] mmd1:px-[45px] mmd1:pt-[51px] mmd1:pb-[63px] md1:w-full bg-darkBlue"
+        role="dialog"
+        aria-modal="true"
+        data-graph-target="upload-files-soon">
+        <button class="btn-reset js-modal-close graph-modal__close z-[9999999] mmd1:hidden" aria-label="Закрыть модальное окно"></button>
+        <div class="graph-modal__content flex gap-6 mmd2:justify-between md2:flex-col md2:gap-12">
+            <div class="mmd2:w-[430px]">
+                <h3 class="title-3 mmd1:!text-[32px] mb-6 md1:mb-4 !text-white">Скоро подгрузим файлы</h3>
+                <p class="text-paragraph-2 !text-white">Оставьте ваш номер телефона, мы перезвоним и проведем индивидуальную консультацию.</p>
+                <form action="#" class="mt-[76px] md1:mt-10" data-create-bid-form-mini>
+                    <label class="form-input">
+                        <input type="tel" name="phone" class="input input-primary input-s-default" placeholder="+7" />
+                    </label>
+                    <div class="mt-4 checkbox checkbox-gray">
+                        <input id="c_agreement_3" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_3" class="checkbox__label">
+                            <div class="checkbox__mark">
+                                <div class="checkbox__mark-check"></div>
+                            </div>
+                            <span class="checkbox__text !text-[12px] !leading-normal">
+                                <a href="/policy" class="inline">Я соглашаюсь с политикой обработки персональных данных</a>
+                            </span>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-s-default mt-9 md1:mt-6 md2:w-full">Оставить заявку</button>
+                </form>
+            </div>
+            <div class="w-max relative mmd1:mr-[75px] md2:self-center" data-eye-animation>
+                <img loading="lazy" src="./img/cat-mini.svg" class="" width="314" height="384" alt="" />
+                <img loading="lazy" src="./img/cat-mini-face.svg" class="absolute top-[108px] left-[73px]" width="169" height="145" alt="" />
+                <div class="eye eye-left absolute top-[102px] left-[78px]">
+                    <svg class="eye-svg" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="blink-target">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M47.8759 36.2605C41.4609 36.2605 36.2605 41.4609 36.2605 47.8759C36.2605 54.2909 41.4609 59.4913 47.8759 59.4913C54.291 59.4913 59.4914 54.2909 59.4914 47.8759C59.4914 41.4609 54.291 36.2605 47.8759 36.2605ZM33 47.8759C33 39.6602 39.6602 33 47.8759 33C56.0917 33 62.7519 39.6602 62.7519 47.8759C62.7519 56.0916 56.0917 62.7518 47.8759 62.7518C39.6602 62.7518 33 56.0916 33 47.8759Z"
+                                fill="#95F9FF" />
+                        </g>
+                        <defs>
+                            <filter
+                                id="filter0_d_3911_686"
+                                x="0"
+                                y="0"
+                                width="95.752"
+                                height="95.7518"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset />
+                                <feGaussianBlur stdDeviation="16.5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 1 0 0 0 0.45 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3911_686" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3911_686" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="eye eye-right absolute top-[102px] right-[78px]">
+                    <svg class="eye-svg" width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g class="blink-target">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M47.615 36.2605C41.3125 36.2605 36.2033 41.4609 36.2033 47.8759C36.2033 54.2909 41.3125 59.4913 47.615 59.4913C53.9175 59.4913 59.0267 54.2909 59.0267 47.8759C59.0267 41.4609 53.9175 36.2605 47.615 36.2605ZM33 47.8759C33 39.6602 39.5433 33 47.615 33C55.6866 33 62.2299 39.6602 62.2299 47.8759C62.2299 56.0916 55.6866 62.7518 47.615 62.7518C39.5433 62.7518 33 56.0916 33 47.8759Z"
+                                fill="#95F9FF" />
+                        </g>
+                        <defs>
+                            <filter
+                                id="filter0_d_3911_687"
+                                x="0"
+                                y="0"
+                                width="95.2305"
+                                height="95.7518"
+                                filterUnits="userSpaceOnUse"
+                                color-interpolation-filters="sRGB">
+                                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                <feOffset />
+                                <feGaussianBlur stdDeviation="16.5" />
+                                <feComposite in2="hardAlpha" operator="out" />
+                                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.88 0 0 0 0 1 0 0 0 0.45 0" />
+                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3911_687" />
+                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3911_687" result="shape" />
+                            </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
         </div>
     </div>
 </div>

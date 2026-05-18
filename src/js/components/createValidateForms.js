@@ -4,7 +4,6 @@ import validateForms from "./validate-forms.js";
 const createValidateForms = () => {
     const formBidForm = document.querySelector("#form-bid");
     const createBidForm = document.querySelector("#create-bid-form");
-    const createBidFormMini = document.querySelector("#create-bid-form-mini");
 
     if (createBidForm) {
         validateForms(createBidForm, [
@@ -76,7 +75,7 @@ const createValidateForms = () => {
         createBidForm.addEventListener("submit", requestForm);
     }
 
-    if (createBidFormMini) {
+    document.querySelectorAll("[data-create-bid-form-mini]").forEach(createBidFormMini => {
         validateForms(createBidFormMini, [
             {
                 ruleSelector: "[name='phone']",
@@ -111,7 +110,7 @@ const createValidateForms = () => {
         ]);
 
         createBidFormMini.addEventListener("submit", requestForm);
-    }
+    });
 
     if (formBidForm) {
         validateForms(formBidForm, [

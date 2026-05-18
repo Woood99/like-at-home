@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', { "title": "Виртуальный диспетчер" })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html')
+            <main class="main">
+                @include('partials/virtual-dispatcher/hero.html')
+                @include('partials/virtual-dispatcher/skills.html')
+                @include('partials/virtual-dispatcher/dispatcher-communicates.html')
+                @include('partials/virtual-dispatcher/help-banner.html')
+                @include('partials/virtual-dispatcher/tools.html')
+                @include('partials/virtual-dispatcher/notification-banner.html')
+                @include('partials/virtual-dispatcher/quick-connection.html')
+                @include('partials/virtual-dispatcher/comparison.html')
+                @include('partials/virtual-dispatcher/tariffs.html')
+                @include('partials/virtual-dispatcher/faq.html')
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
+</html>

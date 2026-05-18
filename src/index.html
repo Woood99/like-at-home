@@ -4,14 +4,11 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header.html', {
-              "linkName": 'Продукты и решения'
-            })
+            @include('partials/header.html')
             <main class="main">
                 @include('partials/home/hero.html')
                 @include('partials/home/product-lines.html')
                 @include('partials/home/our-growth.html')
-                <!-- @include('partials/home/banner.html') -->
                 @include('partials/home/work-cities-block.html')
                 @include('partials/components/objects.html', { "title": "Наши решения на объектах" })
                 @include('partials/home/popular.html')

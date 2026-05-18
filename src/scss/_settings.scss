@@ -806,3 +806,103 @@ button {
     -webkit-box-align: center;
     scrollbar-width: none;
 }
+
+.eye-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+.eye-svg .blink-target {
+    transform-origin: 50% 45%;
+}
+
+.eye-svg.blink .blink-target {
+    animation: blinkAnimation 0.35s ease-in-out forwards;
+}
+
+@keyframes blinkAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+    35% {
+        transform: scaleY(0.02);
+    }
+    65% {
+        transform: scaleY(0.02);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.formatting-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.66;
+    letter-spacing: 0.01em;
+    @media (max-width: $desktop) {
+        font-size: 16px;
+    }
+    * {
+        font-size: inherit;
+        font-weight: inherit;
+        line-height: inherit;
+        letter-spacing: inherit;
+    }
+
+    h2 {
+        font-weight: 700;
+        margin: 28px 0 4px 0;
+        padding-left: 20px;
+    }
+
+    ul,
+    ol {
+        margin: 0.5em 0 1em 1.2em;
+        padding-left: 1.5em;
+    }
+
+    .letter-list {
+        list-style-type: none;
+        margin-left: 20px;
+        padding-left: 32px;
+        position: relative;
+        counter-reset: letter-counter;
+        li {
+            margin-left: 0;
+            padding-left: 8px;
+            position: relative;
+            counter-increment: letter-counter;
+            margin-bottom: 8px;
+
+            &::before {
+                content: counter(letter-counter, lower-latin) ".";
+                position: absolute;
+                left: -18px;
+                font-weight: normal;
+            }
+        }
+    }
+
+    .dot-list {
+        list-style-type: none;
+        margin-left: 1.2em;
+        padding-left: 1.8em;
+
+        li {
+            margin-left: 0;
+            padding-left: 0.5em;
+            position: relative;
+            margin-bottom: 0.4em;
+
+            &::before {
+                content: "•";
+                position: absolute;
+                left: -12px;
+                color: #111;
+            }
+        }
+    }
+}

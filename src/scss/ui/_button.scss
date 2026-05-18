@@ -115,6 +115,9 @@
     }
 }
 
+.btn-s-verySmall {
+    @apply h-[32px] px-4 rounded-lg;
+}
 .btn-s-small {
     @apply h-[51px];
 }

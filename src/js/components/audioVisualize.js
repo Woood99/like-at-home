@@ -12,6 +12,7 @@ export class AudioVisualize {
             buttonColor: "#1B1D1F",
             iconColor: "#FFFFFF",
             height: 34,
+            visualOnly: false,
             ...options
         };
 
@@ -141,6 +142,9 @@ export class AudioVisualize {
         this.resizeHandler = () => this.setupCanvas();
 
         window.addEventListener("resize", this.resizeHandler);
+        if (this.options.visualOnly) {
+            this.container.classList.add("visual-only");
+        }
 
         this.initEvents();
     }
@@ -197,6 +201,8 @@ export class AudioVisualize {
     }
 
     initEvents() {
+        if (this.options.visualOnly) return;
+
         this.playButton.addEventListener("click", e => {
             e.stopPropagation();
             this.toggle();
