@@ -7,8 +7,11 @@
             @include('partials/header.html')
             <main class="main">
                 @include('partials/employee-app/hero.html')
-                @include('partials/employee-app/who-use-app.html')
-                @include('partials/employee-app/without-internet.html')
+                @include('partials/employee-app/who-use.html')
+                @include('partials/employee-app/task.html')
+                @include('partials/employee-app/quality.html')
+                @include('partials/employee-app/performance.html')
+                @include('partials/brand-app/banner2.html')
                 @include('partials/components/install-application.html', {
                     "className":"mt-[160px]",
                     "QrCodeApple": "qr-code-employee-apple-store",
@@ -18,8 +21,7 @@
                     "urlGoogle": "https://play.google.com/store/apps/details?id=life.kakdoma.service&hl=ru",
                     "urlRuStore": "https://www.rustore.ru/catalog/developer/eiwb2vzj",
                 })
-                @include('partials/owner-app/ecosystem-of-services.html', { "className":"mt-[160px]" })
-                @include('partials/owner-app/faq.html', { "className":"mt-[160px]" })
+                @include('partials/employee-app/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

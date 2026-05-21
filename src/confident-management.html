@@ -1,17 +1,21 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Доверительно управление" })
+    @include('partials/head.html', { "title": "Аренда" })
 
     <body>
         <div class="site-container">
-            @include('partials/header.html')
+            @include('partials/header-2.html')
             <main class="main">
                 @include('partials/confident-management/hero.html')
-                @include('partials/confident-management/info.html')
-                @include('partials/confident-management/banner.html')
-                @include('partials/confident-management/info-banners.html')
-                @include('partials/confident-management/how-it-works.html')
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })
+                @include('partials/confident-management/stable-income.html') 
+                @include('partials/confident-management/info.html') 
+                @include('partials/confident-management/how-it-works.html') 
+                @include('partials/confident-management/banners-info.html')
+                @include('partials/confident-management/support.html')
+                @include('partials/confident-management/tariffs.html') 
+                @include('partials/confident-management/comparison.html')
+                @include('partials/confident-management/faq.html')
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>

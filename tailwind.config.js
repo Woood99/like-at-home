@@ -24,6 +24,7 @@ module.exports = {
             blueLightest: "var(--blue-lightest)",
             cyan: "var(--cyan)",
             lightCyan: "var(--light-cyan)",
+            lightCyan2: "var(--light-cyan2)",
             darkCyan: "var(--dark-cyan)",
             gray: "var(--gray)",
             grayTwo: "var(--gray-two)",

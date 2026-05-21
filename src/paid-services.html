@@ -4,18 +4,13 @@
 
     <body>
         <div class="site-container">
-            @include('partials/header-2.html')
+            @include('partials/header.html')
             <main class="main">
                 @include('partials/paid-services/hero.html')
-                @include('partials/paid-services/stable-income.html') 
-                @include('partials/paid-services/info.html') 
-                @include('partials/paid-services/how-it-works.html') 
-                @include('partials/paid-services/banners-info.html')
-                @include('partials/paid-services/support.html')
-                @include('partials/paid-services/tariffs.html')
-                @include('partials/paid-services/comparison.html')
-                @include('partials/paid-services/faq.html')
-                @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
+                @include('partials/paid-services/benefits.html')
+                @include('partials/payment/methods.html')
+                @include('partials/paid-services/how-it-works.html')
+                @include('partials/components/form-bid.html', {"className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')
         </div>

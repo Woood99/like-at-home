@@ -1,20 +1,40 @@
 <section class="mt-[160px] md1:mt-20">
     <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
         <div
-            class="bg-black rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:p-6 grid grid-cols-2 relative md1:pb-0 gap-12">
+            class="bg-black rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:px-6 md1:py-8 grid grid-cols-2 md1:grid-cols-1 relative gap-12 md1:gap-4">
             <div class="mmd1:max-w-[480px] flex flex-col flex-grow">
-                <h1 class="title-3 !text-white">Расскажем подробнее</h1>
+                <h2 class="title-3 !text-white">
+                    Расскажем подробнее
+                    <br />
+                    о возможностях
+                </h2>
             </div>
             <div>
-                <p class="text-white leading-normal">
-                    Если у вас индивидуальный запрос, оставьте заявку и специалист перезвонит вам
-                </p>
-                <div class="mt-12 flex gap-3 md3:flex-col">
-                    <button data-graph-path="create-bid" data-graph-animation="fadeInUp"
-                        data-graph-speed="350" class="btn btn-secondary btn-s-default min-w-[172px]">
-                        Оставить заявку
-                    </button>
-                </div>
+                <form action="#" data-create-bid-form-mini>
+                    <input type="hidden" name="name" class="input input-secondary input-s-default" value="-">
+                    <p class="text-paragraph-2 text-white">Если у&nbsp;вас индивидуальный запрос, оставьте заявку и&nbsp;специалист перезвонит вам</p>
+                    <div class="mt-8 gap-2 flex md3:flex-col">
+                        <label class="form-input flex-grow">
+                            <input type="tel" name="phone" class="input input-primary input-s-default" placeholder="+7" />
+                        </label>
+                        <button type="submit" class="btn btn-third btn-s-default !px-5">Оставить заявку</button>
+                    </div>
+                    <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
+                        <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_2" class="checkbox__label">
+                            <div class="checkbox__mark">
+                                <div class="checkbox__mark-check"></div>
+                            </div>
+                            <span class="checkbox__text !text-[12px] !leading-normal">
+                                Вы соглашаетесь с политикой
+                                <a href="/policy" class="inline"
+                                    >обработи персональных данных <br class="md1:hidden" />
+                                    и условиями политики конфиденциальности</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+                </form>
             </div>
         </div>
     </div>

@@ -1,130 +1,85 @@
 <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo mmd1:rounded-b-3xl" id="hero-block">
-    <div class="container-desktop flex gap-5 md1:flex-col md1:gap-3">
-        <div class="h-full flex-grow">
-            <div class="bg-blue rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] md1:min-h-[520px] relative md1:rounded-none flex flex-col">
-                <h1 class="title-1 text-white">
-                    Доверительное <br class="md1:hidden" />
-                    управление <br class="md1:hidden" />
-                    арендой
-                </h1>
-                <p class="mt-6 text-white text-paragraph">
-                    Помогаем обустроить, подготовить и сдать вашу квартиру в аренду <br class="md1:hidden" />
-                    на период от 11 месяцев
+    <div class="container-desktop">
+        <div class="bg-gray rounded-primary md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex relative md1:gap-10 md1:flex-col">
+            <div class="mmd1:max-w-[574px] flex flex-col flex-grow">
+                <h1 class="title-1-25">Владельцы квартир <span class="text-orangeLight">зарабатывают</span> с&nbsp;нами</h1>
+                <p class="mt-6 text-paragraph">
+                    Сервис аренды квартир &laquo;Как Дома&raquo; поможет обустроить, подготовить и&nbsp;сдать вашу квартиру в&nbsp;аренду, как
+                    на&nbsp;краткосрочный, так и&nbsp;на&nbsp;долгосрочный период.
                 </p>
-                <div class="mmd1:mt-auto">
-                    <div class="mt-14 flex gap-3 md3:flex-col">
+                <div class="mt-auto">
+                    <div class="mt-12 flex gap-3 md3:flex-col">
                         <button
                             data-graph-path="create-bid"
                             data-graph-animation="fadeInUp"
                             data-graph-speed="350"
-                            class="btn btn-secondary btn-s-default">
-                            Получить консультацию
+                            class="btn btn-primary btn-s-default">
+                            Оставить заявку
                         </button>
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- <div class="mmd1:w-[416px] flex-shrink-0 relative">
-            <div class="swiper h-full" id="swiper-banner">
-                <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
-                    <div class="swiper-slide h-full md1:h-auto">
-                        <div class="banner-slide h-full" style="background-color: var(--light-blue)">
 
-
-                            <picture>
-                                <source srcset="./img/bed-banner.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    src="./img/bed-banner.jpg"
-                                    class="absolute bottom-0 right-0 w-full h-full"
-                                    width="416"
-                                    height="488"
-                                    alt="Доверительное управление арендой" />
-                            </picture>
-                        </div>
+            <div class="relative flex-grow md1:hidden">
+                <div class="absolute right-[0%] bottom-[44.3%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-5.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-5.png" width="191" height="217" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute right-[15.9%] bottom-[17.5%] shadow-[0_22px_58px_0_rgba(31,76,192,0.2)] rounded-[28px]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-4.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-4.png" width="136" height="136" alt="" />
+                    </picture>
+                    <span
+                        class="absolute top-4 left-[15px] text-[15px] leading-[1.33] font-semibold text-white -tracking-[0.02em]"
+                        data-current-month></span>
+                </div>
+                <div class="absolute right-[0%] -bottom-[3.4%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-3.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-3.png" width="91" height="92" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute left-[44.1%] top-[5.5%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-2.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-2.png" width="113" height="86" alt="" />
+                    </picture>
+                </div>
+                <div class="absolute left-[10%] bottom-[2.6%]">
+                    <picture>
+                        <source srcset="./img/paid-services-hero-1.webp" type="image/webp" />
+                        <img loading="lazy" src="./img/paid-services-hero-1.png" width="290" height="218" alt="" />
+                    </picture>
+                    <div
+                        class="w-[152px] h-[74px] rounded-[26px] bg-white shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] flex-center-all flex-col absolute top-[30px] right-0">
+                        <p class="text-[19px] text-black font-semibold text-center">+80 000 ₽</p>
+                        <p class="mt-1.5 text-[8px] text-[#a2a2a2] font-semibold text-center">от Натальи, арендатор</p>
                     </div>
                 </div>
-                <div
-                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
-                    id="swiper-banner-pagination"></div>
-            </div>
-        </div> -->
-        <div class="mmd1:w-[416px] flex-shrink-0 relative md1:hidden">
-            <div class="swiper h-full" id="swiper-banner">
-                <div class="swiper-wrapper h-full items-stretch min-h-[450px]">
-                    <div class="swiper-slide h-full md1:h-auto">
-                        <div class="banner-slide banner-slide--parallax h-full" style="background-color: var(--light-cyan)">
-                            <div class="banner-slide__parallax banner-parallax">
-                                <div data-depth="0.25" class="parallax-layer" style="padding: 170px 0 0 60px">
-                                    <div
-                                        class="flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
-                                                fill="#26AD50" />
-                                        </svg>
-                                        <div class="flex flex-col items-center text-center">
-                                            <span class="text-[20px] text-[#141414] font-medium">+70 000 ₽</span>
-                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">от Ольги, арендатор</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div data-depth="0.3" class="parallax-layer" style="padding: 353px 0px 0px 142px">
-                                    <div
-                                        class="z-10 flex-center-all gap-4 bg-[#f7f7f7] shadow-[0_22px_58px_0_rgba(137,121,104,0.2)] h-[72px] px-6 rounded-[20px]">
-                                        <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M19.0001 37.3333C8.87458 37.3333 0.666748 29.1255 0.666748 19C0.666748 8.87449 8.87458 0.666656 19.0001 0.666656C29.1256 0.666656 37.3334 8.87449 37.3334 19C37.3334 29.1255 29.1256 37.3333 19.0001 37.3333ZM16.8422 22.9233L11.7731 17.8505L9.83342 19.7902L15.5516 25.512C15.8954 25.8557 16.3616 26.0488 16.8477 26.0488C17.3339 26.0488 17.8001 25.8557 18.1439 25.512L29.0559 14.6037L27.1089 12.6567L16.8422 22.9233Z"
-                                                fill="#26AD50" />
-                                        </svg>
-                                        <div class="flex flex-col items-center text-center">
-                                            <span class="text-[20px] text-[#141414] font-medium">+50 000 ₽</span>
-                                            <span class="mt-1 font-medium text-[9px] text-grayMedium">от Натальи, арендатор</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <picture>
-                                <source srcset="./img/bed-banner.webp" type="image/webp" />
-                                <img
-                                    loading="lazy"
-                                    src="./img/bed-banner.jpg"
-                                    class="absolute bottom-0 right-0 w-full h-full"
-                                    width="416"
-                                    height="488"
-                                    alt="Доверительное управление арендой" />
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="absolute !bottom-[42px] !left-[42px] z-20 slider-pagination md1:!bottom-8 md1:!left-8"
-                    id="swiper-banner-pagination"></div>
             </div>
         </div>
     </div>
-    <div class="container-desktop !mt-5 md1:!mt-0">
-        <div class="mmd1:bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-5 rounded-primary md1:rounded-none md1:grid-cols-1 md1:p-6">
+    <div class="container-desktop !mt-5 md1:!-mt-2 relative">
+        <div
+            class="px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-5 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:border mmd1:border-solid mmd1:border-[#8e8e96]">
             <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Самостоятельно подберем арендаторов для вас</h3>
-                <p class="leading-[1.875] text-grayDark">Берём на себя показы, переговоры и оформление документов</p>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Найдем жильцов и&nbsp;подготовим квартиру</h3>
+                <p class="text-grayDark leading-[1.875]">Берём на&nbsp;себя показы и&nbsp;переговоры с&nbsp;арендаторами</p>
             </div>
             <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Решим все важные юридические вопросы</h3>
-                <p class="leading-[1.875] text-grayDark">
-                    Составляем юридически грамотные договора с&nbsp;учётом всех нюансов аренды и&nbsp;вашего обьекта
-                </p>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Проконсультируем по юридическим вопросам</h3>
+                <p class="text-grayDark leading-[1.875]">Учитываем все нюансы аренды и&nbsp;особенности вашего обьекта</p>
             </div>
             <div>
                 <h3 class="title-4-25 mb-4 md1:mb-3">Проконтролируем процесс проживания</h3>
-                <p class="leading-[1.875] text-grayDark">
-                    Будем общаться с жильцами сами и <br class="md1:hidden" />
-                    проследим, чтоб квартира используется бережно и по назначению
-                </p>
+                <p class="text-grayDark leading-[1.875]">Проследим, чтоб квартира используется бережно</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Возьмем на&nbsp;себя часть расходов на&nbsp;старте</h3>
+                <p class="text-grayDark leading-[1.875]">Установим электронные замки, мебелируем, покрасим стены</p>
             </div>
         </div>
     </div>

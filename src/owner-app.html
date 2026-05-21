@@ -8,8 +8,10 @@
             <main class="main">
                 @include('partials/owner-app/hero.html')
                 @include('partials/brand-app/benefits.html')
-                @include('partials/brand-app/features.html')
+                @include('partials/brand-app/window.html')
+                @include('partials/owner-app/reminder.html')
                 @include('partials/owner-app/banner.html')
+                @include('partials/brand-app/features.html')
                 @include('partials/components/install-application.html', {
                     "className":"mt-[160px]",
                     "QrCodeApple": "qr-code-owner-apple-store",
@@ -19,7 +21,6 @@
                     "urlGoogle": "https://play.google.com/store/apps/details?id=life.kakdoma.app&hl=ru",
                     "urlRuStore": "https://www.rustore.ru/catalog/app/life.kakdoma.app",
                 })
-                @include('partials/owner-app/ecosystem-of-services.html', { "className":"mt-[160px]" })
                 @include('partials/owner-app/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Получите бесплатную индивидуальную консультацию", "className":"mt-[160px]" })
             </main>
