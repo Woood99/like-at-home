@@ -766,7 +766,7 @@ button {
     }
 
     &.circle-icon--secondary {
-        @apply w-16 h-16 md1:w-12 md1:h-12 rounded-20 md1:rounded-2xl;
+        @apply w-16 h-16 md1:w-12 md1:h-12 rounded-[22px] md1:rounded-2xl;
 
         svg {
             @apply w-7 h-7 md1:w-6 md1:h-6;
@@ -793,8 +793,22 @@ button {
             @apply text-white;
         }
     }
+    &.circle-icon--blueGrey {
+        @apply bg-[#58a7c1] blur-[20px];
+
+        svg {
+            @apply text-white;
+        }
+    }
     &.circle-icon--dark {
         @apply bg-[#15171c] blur-[20px];
+
+        svg {
+            @apply text-white;
+        }
+    }
+    &.circle-icon--greenLight {
+        @apply bg-greenLight blur-[20px];
 
         svg {
             @apply text-white;
