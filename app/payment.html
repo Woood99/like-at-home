@@ -82,7 +82,7 @@
                                         type="button"
                                         class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
                                         data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
+                                        <h4 class="font-semibold md1:text-xl">Услуги АДС</h4>
                                         <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
                                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                                         </svg>
@@ -92,7 +92,10 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span> </a>
+                                            <a href="/eds" class="link-primary">Интеграция с eds.mosreg.ru</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/virtual-dispatcher" class="link-primary">Виртуальный диспетчер</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -143,32 +146,48 @@
                             <div class="nav-dropdown__banner swiper self-start nav-dropdown-slider w-[300px] min-h-[400px]">
                                 <div class="swiper-wrapper h-full items-stretch">
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-purpleSecond flex flex-col h-[370px] px-6 py-8 rounded-2xl">
-                                            <div class="flex-center-all blue-[20px] bg-[rgba(255,255,255,0.5)] rounded-xl w-11 h-11 mb-auto">
+                                        <a href="/ecosystem" class="bg-[#2290FF] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#grid"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Экосистема сервисов для ЖКХ</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Всё, что нужно УК и ТСЖ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/ads" class="bg-[#5046e5] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#headset"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Аварийно диспетчерская служба</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Профессиональный контакт-центр для ЖКХ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/cloud-pass-service" class="bg-[#1E6C77] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
                                                 <svg class="w-[22px] h-[22px]">
                                                     <use xlink:href="img/sprite.svg#barrier"></use>
                                                 </svg>
                                             </div>
-                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Для транспортных компаний</h3>
-                                            <p class="text-white leading-[1.5625] mt-3">Учет автотранспорта с распределенной структурой хранения</p>
-                                        </article>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Облачный сервис оформления пропусков</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Автоматизация и управление доступом под ключ</p>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-gray flex flex-col h-[370px] px-6 pb-8 pt-[67px] rounded-2xl">
-                                            <picture class="self-center mb-auto">
-                                                <source srcset="./img/hands.webp" type="image/webp" />
-                                                <img
-                                                    loading="lazy"
-                                                    src="./img/hands.png"
-                                                    width="202"
-                                                    height="102"
-                                                    alt=""
-                                                    role="presentation"
-                                                    aria-hidden="true" />
-                                            </picture>
-                                            <h3 class="title-4 mmd1:text-[22px]">Гибкость решений</h3>
-                                            <p class="leading-[1.5625] mt-3">Возможны индивидуальные доработки под ваши задачи</p>
-                                        </article>
+                                        <a href="https://arenda.kakdoma.life" class="bg-[#F35534] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#like"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Доверительное управление арендой</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Владельцы квартир зарабатывают с нами</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div
@@ -207,7 +226,7 @@
             <main class="main">
                 <section class="mt-[50px] md1:mt-0">
     <div class="container-desktop">
-        <div class="bg-[#575AD6] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
+        <div class="bg-[#5046E5] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
             <div class="mmd1:max-w-[500px] flex flex-col flex-grow">
                 <h1 class="title-1 !text-white">
                     Оплата ЖКУ <br class="md1:hidden" />
@@ -243,56 +262,69 @@
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
         <h2 class="title-1-25">Зачем подключать онлайн-оплату?</h2>
         <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <article class="bg-gray rounded-2xl p-10 md1:p-6 flex flex-col">
-                <div class="circle-icon circle-icon--secondary circle-icon--blue mb-10 md1:mb-8">
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary flex-shrink-0">
                     <svg>
-                        <use xlink:href="img/sprite.svg#users"></use>
+                        <use xlink:href="img/sprite.svg#like"></use>
                     </svg>
                 </div>
-                <h4 class="title-4">Платёжная дисциплина</h4>
-                <p class="mt-5 leading-normal">Чем проще оплатить услуги УК&nbsp;&mdash; тем выше собираемость и&nbsp;меньше задолженностей</p>
+                <h4 class="title-4 mmd1:text-[22px]">Платёжная дисциплина</h4>
             </article>
-            <article class="bg-gray rounded-2xl p-10 md1:p-6 flex flex-col">
-                <div class="circle-icon circle-icon--secondary circle-icon--blue mb-10 md1:mb-8">
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary flex-shrink-0">
                     <svg>
-                        <use xlink:href="img/sprite.svg#users"></use>
+                        <use xlink:href="img/sprite.svg#file-text_b"></use>
                     </svg>
                 </div>
-                <h4 class="title-4">Электронные квитанции</h4>
-                <p class="mt-5 leading-normal">
-                    Собственники получают электронные квитанции и&nbsp;контролируют начисления в&nbsp;приложении и&nbsp;личной кабинете
-                </p>
+                <h4 class="title-4 mmd1:text-[22px]">Электронные квитанции</h4>
             </article>
-            <article class="bg-gray rounded-2xl p-10 md1:p-6 flex flex-col">
-                <div class="circle-icon circle-icon--secondary circle-icon--blue mb-10 md1:mb-8">
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary flex-shrink-0">
                     <svg>
-                        <use xlink:href="img/sprite.svg#users"></use>
+                        <use xlink:href="img/sprite.svg#bell"></use>
                     </svg>
                 </div>
-                <h4 class="title-4">Единые реестры платежей</h4>
-                <p class="mt-5 leading-normal">
-                    Ежедневно направляем реестр платежей с&nbsp;разбивкой по&nbsp;типам платежей, услугам и&nbsp;лицевым счетам
-                </p>
+                <h4 class="title-4 mmd1:text-[22px]">Система уведомлений</h4>
             </article>
-            <article class="bg-gray rounded-2xl p-10 md1:p-6 flex flex-col">
-                <div class="circle-icon circle-icon--secondary circle-icon--blue mb-10 md1:mb-8">
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary flex-shrink-0">
                     <svg>
-                        <use xlink:href="img/sprite.svg#users"></use>
+                        <use xlink:href="img/sprite.svg#user-check"></use>
                     </svg>
                 </div>
-                <h4 class="title-4">Удобство для собственников</h4>
-                <p class="mt-5 leading-normal">
-                    Собствениники получают понятный онлайн-инструмент для оплаты ЖКУ и&nbsp;взносов на&nbsp;капитальный ремонт
-                </p>
+                <h4 class="title-4 mmd1:text-[22px]">Удобство для собственников</h4>
             </article>
         </div>
-        <button
-            class="btn btn-primary btn-s-default mt-20 md1:mt-8 mx-auto md3:w-full"
-            data-graph-path="create-bid"
-            data-graph-animation="fadeInUp"
-            data-graph-speed="350">
-            Подключить
-        </button>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container-desktop mmd1:max-w-[1186px] !p-0">
+        <div class="bg-grayTwo rounded-32 md1:rounded-none px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+            <div class="mmd1:max-w-[420px] flex flex-col flex-grow mmd1:pb-11">
+                <h2 class="title-4">Доступно для каждого</h2>
+                <p class="mt-5 leading-normal text-grayDark mmd1:max-w-[494px]">
+                    Чем больше вы&nbsp;предлагает вариантов для оплаты тем выше собираемость платежей
+                </p>
+                <div class="mt-auto">
+                    <div class="mt-12 flex gap-3 md3:flex-col">
+                        <button data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350" class="btn btn-primary btn-s-default">
+                            Подробнее
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <picture class="mmd1:mt-9 mmd1:mr-[65px] md1:self-end md1:mr-12 md1:mb-5 md3:-mr-3 md3:mb-3">
+                <source srcset="./img/doc.webp" type="image/webp">
+                <img loading="lazy" src="./img/doc.png" width="422" height="300" alt="" role="presentation" class="md3:max-w-[300px]" aria-hidden="true">
+            </picture>
+
+            <picture class="w-max absolute bottom-0 right-0 z-10 md1:-bottom-4 md1:-right-10 md3:bottom-0">
+                <source srcset="./img/cat-paw-2.webp" type="image/webp">
+                <img loading="lazy" src="./img/cat-paw-2.png" class="md3:max-w-[160px]" width="243" height="173" alt="" role="presentation" aria-hidden="true">
+            </picture>
+        </div>
     </div>
 </section>
 
@@ -363,8 +395,8 @@
                         <button type="submit" class="btn btn-third btn-s-default !px-5">Оставить заявку</button>
                     </div>
                     <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
-                        <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
-                        <label for="c_agreement_2" class="checkbox__label">
+                        <input id="c_agreement_3" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_3" class="checkbox__label">
                             <div class="checkbox__mark">
                                 <div class="checkbox__mark-check"></div>
                             </div>
@@ -421,7 +453,7 @@
                     </p>
                     <div class="mt-auto">
                         <div class="mt-12 flex gap-3 md3:flex-col">
-                            <a href="/owner-account" class="btn btn-primary btn-s-default"> Подробнее </a>
+                            <a href="/paid-services" class="btn btn-primary btn-s-default"> Подробнее </a>
                         </div>
                     </div>
                 </div>

@@ -82,7 +82,7 @@
                                         type="button"
                                         class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
                                         data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
+                                        <h4 class="font-semibold md1:text-xl">Услуги АДС</h4>
                                         <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
                                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                                         </svg>
@@ -92,7 +92,10 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span> </a>
+                                            <a href="/eds" class="link-primary">Интеграция с eds.mosreg.ru</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/virtual-dispatcher" class="link-primary">Виртуальный диспетчер</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -143,32 +146,48 @@
                             <div class="nav-dropdown__banner swiper self-start nav-dropdown-slider w-[300px] min-h-[400px]">
                                 <div class="swiper-wrapper h-full items-stretch">
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-purpleSecond flex flex-col h-[370px] px-6 py-8 rounded-2xl">
-                                            <div class="flex-center-all blue-[20px] bg-[rgba(255,255,255,0.5)] rounded-xl w-11 h-11 mb-auto">
+                                        <a href="/ecosystem" class="bg-[#2290FF] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#grid"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Экосистема сервисов для ЖКХ</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Всё, что нужно УК и ТСЖ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/ads" class="bg-[#5046e5] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#headset"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Аварийно диспетчерская служба</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Профессиональный контакт-центр для ЖКХ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/cloud-pass-service" class="bg-[#1E6C77] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
                                                 <svg class="w-[22px] h-[22px]">
                                                     <use xlink:href="img/sprite.svg#barrier"></use>
                                                 </svg>
                                             </div>
-                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Для транспортных компаний</h3>
-                                            <p class="text-white leading-[1.5625] mt-3">Учет автотранспорта с распределенной структурой хранения</p>
-                                        </article>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Облачный сервис оформления пропусков</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Автоматизация и управление доступом под ключ</p>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-gray flex flex-col h-[370px] px-6 pb-8 pt-[67px] rounded-2xl">
-                                            <picture class="self-center mb-auto">
-                                                <source srcset="./img/hands.webp" type="image/webp" />
-                                                <img
-                                                    loading="lazy"
-                                                    src="./img/hands.png"
-                                                    width="202"
-                                                    height="102"
-                                                    alt=""
-                                                    role="presentation"
-                                                    aria-hidden="true" />
-                                            </picture>
-                                            <h3 class="title-4 mmd1:text-[22px]">Гибкость решений</h3>
-                                            <p class="leading-[1.5625] mt-3">Возможны индивидуальные доработки под ваши задачи</p>
-                                        </article>
+                                        <a href="https://arenda.kakdoma.life" class="bg-[#F35534] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#like"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Доверительное управление арендой</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Владельцы квартир зарабатывают с нами</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div
@@ -262,7 +281,7 @@
                 <p class="mt-5 leading-normal text-grayDark font-medium">
                     Удобный кабинет поможет настроить регулярные и разовые задачи в нужных локациях, а так же объединить исполнителей в команды.<br/>&nbsp;
                 </p>
-                <div class="circle-icon circle-icon--secondary circle-icon--dark mt-12 md1:mt-8 ml-auto">
+                <div class="circle-icon circle-icon--secondary mt-12 md1:mt-8">
                     <svg>
                         <use xlink:href="img/sprite.svg#check-circle"></use>
                     </svg>
@@ -273,7 +292,7 @@
                 <p class="mt-5 leading-normal text-grayDark font-medium">
                     Используются современные средства идентификации QR-Код, NFC, GPS, WIFI которые позволяют обеспечить контроль присутствия сотрудника в границах локации.
                 </p>
-                <div class="circle-icon circle-icon--secondary circle-icon--dark mt-12 md1:mt-8 ml-auto">
+                <div class="circle-icon circle-icon--secondary mt-12 md1:mt-8">
                     <svg>
                         <use xlink:href="img/sprite.svg#maximize-2"></use>
                     </svg>
@@ -284,7 +303,7 @@
                 <p class="mt-5 leading-normal text-grayDark font-medium">
                     Система контролирует приходы, уходы, опоздания, прогулы сотрудников и формирует на каждого табель с выработкой фактических часов, указывая на отклонения.
                 </p>
-                <div class="circle-icon circle-icon--secondary circle-icon--dark mt-12 md1:mt-8 ml-auto">
+                <div class="circle-icon circle-icon--secondary mt-12 md1:mt-8">
                     <svg>
                         <use xlink:href="img/sprite.svg#refresh-cw"></use>
                     </svg>
@@ -295,7 +314,7 @@
                 <p class="mt-5 leading-normal text-grayDark font-medium">
                     Приложение показывает сотруднику, где, когда, что и с чем нужно сделать. В задачах могут быть инструкции в любом формате.<br/><br/><br/>&nbsp;
                 </p>
-                <div class="circle-icon circle-icon--secondary circle-icon--dark mt-12 md1:mt-8 ml-auto">
+                <div class="circle-icon circle-icon--secondary mt-12 md1:mt-8">
                     <svg>
                         <use xlink:href="img/sprite.svg#check-circle"></use>
                     </svg>
@@ -306,7 +325,7 @@
                 <p class="mt-5 leading-normal text-grayDark font-medium">
                     Удобный кабинет поможет настроить регулярные и разовые задачи в нужных локациях, а так же объединить исполнителей в команды.<br/><br/>&nbsp;
                 </p>
-                <div class="circle-icon circle-icon--secondary circle-icon--dark mt-12 md1:mt-8 ml-auto">
+                <div class="circle-icon circle-icon--secondary mt-12 md1:mt-8">
                     <svg>
                         <use xlink:href="img/sprite.svg#maximize-2"></use>
                     </svg>
@@ -446,8 +465,8 @@
                         <button type="submit" class="btn btn-third btn-s-default !px-5">Оставить заявку</button>
                     </div>
                     <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
-                        <input id="c_agreement_2" name="agreement" class="checkbox__input" type="checkbox" />
-                        <label for="c_agreement_2" class="checkbox__label">
+                        <input id="c_agreement_3" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_3" class="checkbox__label">
                             <div class="checkbox__mark">
                                 <div class="checkbox__mark-check"></div>
                             </div>

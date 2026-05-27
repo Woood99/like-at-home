@@ -1,5 +1,4 @@
 import actionTg from "./components/actionTg.js";
-import Api from "./components/api.js";
 import { AudioVisualize } from "./components/audioVisualize.js";
 import { cookieConsent } from "./components/cookie-consent.js";
 import createValidateForms from "./components/createValidateForms.js";

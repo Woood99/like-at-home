@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.png" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<meta name="theme-color" content="#111111" />
-	<title>Платные услуги</title>
+	<title>Платные услуги управляющей компании</title>
 	<link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
 	<link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
@@ -82,7 +82,7 @@
                                         type="button"
                                         class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
                                         data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
+                                        <h4 class="font-semibold md1:text-xl">Услуги АДС</h4>
                                         <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
                                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                                         </svg>
@@ -92,7 +92,10 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span> </a>
+                                            <a href="/eds" class="link-primary">Интеграция с eds.mosreg.ru</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/virtual-dispatcher" class="link-primary">Виртуальный диспетчер</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -143,32 +146,48 @@
                             <div class="nav-dropdown__banner swiper self-start nav-dropdown-slider w-[300px] min-h-[400px]">
                                 <div class="swiper-wrapper h-full items-stretch">
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-purpleSecond flex flex-col h-[370px] px-6 py-8 rounded-2xl">
-                                            <div class="flex-center-all blue-[20px] bg-[rgba(255,255,255,0.5)] rounded-xl w-11 h-11 mb-auto">
+                                        <a href="/ecosystem" class="bg-[#2290FF] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#grid"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Экосистема сервисов для ЖКХ</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Всё, что нужно УК и ТСЖ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/ads" class="bg-[#5046e5] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#headset"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Аварийно диспетчерская служба</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Профессиональный контакт-центр для ЖКХ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/cloud-pass-service" class="bg-[#1E6C77] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
                                                 <svg class="w-[22px] h-[22px]">
                                                     <use xlink:href="img/sprite.svg#barrier"></use>
                                                 </svg>
                                             </div>
-                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Для транспортных компаний</h3>
-                                            <p class="text-white leading-[1.5625] mt-3">Учет автотранспорта с распределенной структурой хранения</p>
-                                        </article>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Облачный сервис оформления пропусков</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Автоматизация и управление доступом под ключ</p>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-gray flex flex-col h-[370px] px-6 pb-8 pt-[67px] rounded-2xl">
-                                            <picture class="self-center mb-auto">
-                                                <source srcset="./img/hands.webp" type="image/webp" />
-                                                <img
-                                                    loading="lazy"
-                                                    src="./img/hands.png"
-                                                    width="202"
-                                                    height="102"
-                                                    alt=""
-                                                    role="presentation"
-                                                    aria-hidden="true" />
-                                            </picture>
-                                            <h3 class="title-4 mmd1:text-[22px]">Гибкость решений</h3>
-                                            <p class="leading-[1.5625] mt-3">Возможны индивидуальные доработки под ваши задачи</p>
-                                        </article>
+                                        <a href="https://arenda.kakdoma.life" class="bg-[#F35534] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#like"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Доверительное управление арендой</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Владельцы квартир зарабатывают с нами</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div
@@ -207,7 +226,7 @@
             <main class="main">
                 <section class="mt-[50px] md1:mt-0">
     <div class="container-desktop">
-        <div class="bg-[#575AD6] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
+        <div class="bg-[#5046E5] rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
             <div class="mmd1:max-w-[500px] flex flex-col flex-grow">
                 <h1 class="title-1 !text-white">Платные услуги управляющей компании</h1>
                 <div class="mt-auto">
@@ -247,29 +266,130 @@
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
-        <h2 class="title-1-25">Какие услуги можно продавать?</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Сантехнические и&nbsp;электромонтажные работы</h4>
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-1-25">Какие услуги можно размещать</h2>
+        <div class="mt-20 md1:mt-8 flex items-center gap-[10px] flex-wrap mmd1:max-w-[1100px]">
+            <div class="tag tag-five tag-big-lg">Уборка</div>
+            <div class="tag tag-five tag-big-lg">Электромонтажные работы</div>
+            <div class="tag tag-five tag-big-lg">Сантехнические работы</div>
+            <div class="tag tag-five tag-big-lg">Мелкий бытовой ремонт</div>
+            <div class="tag tag-five tag-big-lg">Вывоз мусора</div>
+            <div class="tag tag-five tag-big-lg">Домашний интернет</div>
+            <div class="tag tag-five tag-big-lg">Доставка воды</div>
+            <div class="tag tag-five tag-big-lg">Домофония</div>
+            <div class="tag tag-five tag-big-lg">Страхование</div>
+            <div class="tag tag-five tag-big-lg">Ремонт техники</div>
+            <div class="tag tag-five tag-big-lg">и другие услуги</div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-2">Как работает сервис</h2>
+        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-5 md1:gap-4">
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-darkBlue flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Житель открывает приложение</h4>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-darkBlue flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Выбирает услугу</h4>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-darkBlue flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">3</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Создает заявку или оплачивает сервис</h4>
+                    <p class="text-paragraph-3 md1:text-center">Система поддерживает различные варианты заказа, можно установить фиксированную сумму или настроить оплату после выполнения.</p>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-darkBlue flex-shrink-0 flex-center-all">
+                    <svg class="w-6 h-6 text-white">
+                        <use xlink:href="img/sprite.svg#smile"></use>
+                    </svg>
+                </span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Мастер УК или партнер, выполняет заказ!</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
+        <div
+            class="bg-black rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:px-6 md1:py-8 grid grid-cols-2 md1:grid-cols-1 relative gap-12 md1:gap-4">
+            <div class="mmd1:max-w-[480px] flex flex-col flex-grow">
+                <h2 class="title-3 !text-white">
+                    Расскажем подробнее
+                </h2>
+            </div>
+            <div>
+                <form action="#" data-create-bid-form-mini>
+                    <input type="hidden" name="name" class="input input-secondary input-s-default" value="-">
+                    <p class="text-paragraph-2 text-white">Если у&nbsp;вас индивидуальный запрос, оставьте заявку и&nbsp;специалист перезвонит вам</p>
+                    <div class="mt-8 gap-2 flex md3:flex-col">
+                        <label class="form-input flex-grow">
+                            <input type="tel" name="phone" class="input input-primary input-s-default" placeholder="+7" />
+                        </label>
+                        <button type="submit" class="btn btn-darkBlue btn-s-default !px-5">Оставить заявку</button>
+                    </div>
+                    <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
+                        <input id="c_agreement_3" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_3" class="checkbox__label">
+                            <div class="checkbox__mark">
+                                <div class="checkbox__mark-check"></div>
+                            </div>
+                            <span class="checkbox__text !text-[12px] !leading-normal">
+                                Вы соглашаетесь с политикой
+                                <a href="/policy" class="inline"
+                                    >обработи персональных данных <br class="md1:hidden" />
+                                    и условиями политики конфиденциальности</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-1-25">Ваш дополнительный доход</h2>
+        <div class="mt-20 md1:mt-8 grid grid-cols-3 gap-5 md1:gap-4 md2:grid-cols-2 md3:grid-cols-1">
+            <article class="rounded-32 p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Комиссии от заказов</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">Получайте дополнительный доход с каждой заявки</p>
             </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Клининговые услуги и&nbsp;мелкий бытовой ремонт</h4>
+            <article class="rounded-32 p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Партнерская программа</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">Зарабатывайте на сервисах партнеров, внутри ваших ЖК</p>
             </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Замена или установка нового оборудования</h4>
-            </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Услуги подрядчиков и&nbsp;другие услугидля собственников</h4>
+            <article class="rounded-32 p-10 md1:p-6 flex flex-col border border-solid border-black">
+                <h3 class="title-4">Процент с оплат</h3>
+                <p class="text-paragraph-3 text-grayDark mt-4 md1:mt-3">Возвращаем часть комиссии банка при оплате услуг в приложении</p>
             </article>
         </div>
-        <button
-            class="btn btn-primary btn-s-default mt-20 md1:mt-8 mx-auto md3:w-full"
-            data-graph-path="create-bid"
-            data-graph-animation="fadeInUp"
-            data-graph-speed="350">
-            Подключить
-        </button>
+        <div class="mt-5 md1:mt-4 bg-darkBlue rounded-32 md1:rounded-3xl overflow-hidden p-10 md1:px-6 md1:py-8 flex items-center justify-between relative gap-12 md2:gap-6 md2:flex-col">
+            <div class="mmd1:max-w-[393px] flex flex-col flex-grow">
+                <h2 class="title-4-25 !text-white !leading-[1.4]">Включите новые источники дохода и добавьте удобства жителям</h2>
+            </div>
+            <button type="button" class="btn btn-secondary btn-s-default mmd2:!min-w-max md2:w-full" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">
+                Подключить
+            </button>
+        </div>
     </div>
 </section>
 
@@ -318,32 +438,53 @@
     </div>
 </section>
 
-                <section class="mt-[160px] md1:mt-24">
-    <div class="container mmd1:max-w-[1184px] mmd1:!p-0">
-        <h2 class="title-2 mb-5">Как работает маркетплейс</h2>
-        <p class="text-paragraph">Дополнительный канал дохода для управляющей компании с&nbsp;онлайн оплатой</p>
-        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-4">
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">УК создаёт услуги в CRM-системе</h4>
-                    <p class="text-paragraph-2 md1:text-center">Указывает описание, стоимость и условия.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">Собственники оформляют заказы</h4>
-                    <p class="text-paragraph-2 md1:text-center">Заказ можно оформить с любого устройства в удобное время.</p>
-                </div>
-            </div>
-            <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
-                <span class="w-9 h-9 rounded-full bg-[#7f42e1] flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">3</span>
-                <div>
-                    <h4 class="title-4 mb-4 md1:text-center">УК получает информацию о заказе</h4>
-                    <p class="text-paragraph-2 md1:text-center">Удобный формат без звонков и визитов в офис.</p>
-                </div>
-            </div>
+                <section class="mt-[160px] md1:mt-20 faq">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-8 md1:flex-col">
+        <div class="flex-shrink-0">
+            <h2 class="title-1-25">
+                Вопросы <br class="md1:hidden" />
+                и ответы
+            </h2>
+        </div>
+
+        <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-5">
+                <li class="faq__item">
+                    <button class="faq__btn _spoller-active" data-spoller>
+                        <h3 class="title-4">Кто оказывает услуги?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3">
+                        <p>Услуги выполняют управляющая компания или проверенные партнеры, подключенные к платформе.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можно ли оплатить услуги онлайн?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Да, все услуги поддерживают онлайн-оплату банковской картой или СБП прямо в приложении.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можно ли подключать своих подрядчиков?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Да, система поддерживает подключение собственных партнеров и исполнителей.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
 </section>

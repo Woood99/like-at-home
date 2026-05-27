@@ -115,6 +115,21 @@
     }
 }
 
+.btn-darkBlue {
+    @apply bg-darkBlue text-white;
+
+    @media (min-width: $desktop-min) {
+        &:hover {
+            @apply bg-white text-darkPressed;
+        }
+    }
+    @media (max-width: $desktop) {
+        &:active {
+            @apply bg-white text-darkPressed;
+        }
+    }
+}
+
 .btn-s-verySmall {
     @apply h-[32px] px-4 rounded-lg;
 }

@@ -178,6 +178,7 @@ const createValidateForms = () => {
             const formData = new FormData(target);
             const resp = new Api().sendRequest(formData);
             resp.then(isSuccess => {
+                target.reset();
                 if (isSuccess) {
                     createModalSuccess();
                 } else {

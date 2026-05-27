@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Платные услуги" })
+    @include('partials/head.html', { "title": "Платные услуги управляющей компании" })
 
     <body>
         <div class="site-container">
@@ -8,8 +8,11 @@
             <main class="main">
                 @include('partials/paid-services/hero.html')
                 @include('partials/paid-services/benefits.html')
-                @include('partials/payment/methods.html')
                 @include('partials/paid-services/how-it-works.html')
+                @include('partials/paid-services/bid-small.html')
+                @include('partials/paid-services/income.html')
+                @include('partials/payment/methods.html')
+                @include('partials/paid-services/faq.html')
                 @include('partials/components/form-bid.html', {"className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

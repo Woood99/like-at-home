@@ -82,7 +82,7 @@
                                         type="button"
                                         class="mmd1:ml-[11px] flex items-center gap-2 mmd1:mb-4 mmd1:cursor-auto w-full justify-between text-black"
                                         data-spoller>
-                                        <h4 class="font-semibold md1:text-xl">Диспетческая служба</h4>
+                                        <h4 class="font-semibold md1:text-xl">Услуги АДС</h4>
                                         <svg class="w-2.5 h-2.5 text-[currentColor] mmd1:hidden md1:w-4 md1:h-4">
                                             <use xlink:href="img/sprite.svg#arrow-down"></use>
                                         </svg>
@@ -92,7 +92,10 @@
                                             <a href="/ads" class="link-primary">Аварийно-диспетчерская служба для УК и ТСЖ</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="/eds" class="link-primary">Интеграция с <span class="text-greenLight">eds.mosreg.ru</span> </a>
+                                            <a href="/eds" class="link-primary">Интеграция с eds.mosreg.ru</a>
+                                        </li>
+                                        <li class="nav-dropdown__subitem">
+                                            <a href="/virtual-dispatcher" class="link-primary">Виртуальный диспетчер</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -143,32 +146,48 @@
                             <div class="nav-dropdown__banner swiper self-start nav-dropdown-slider w-[300px] min-h-[400px]">
                                 <div class="swiper-wrapper h-full items-stretch">
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-purpleSecond flex flex-col h-[370px] px-6 py-8 rounded-2xl">
-                                            <div class="flex-center-all blue-[20px] bg-[rgba(255,255,255,0.5)] rounded-xl w-11 h-11 mb-auto">
+                                        <a href="/ecosystem" class="bg-[#2290FF] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#grid"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Экосистема сервисов для ЖКХ</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Всё, что нужно УК и ТСЖ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/ads" class="bg-[#5046e5] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#headset"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Аварийно диспетчерская служба</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Профессиональный контакт-центр для ЖКХ</p>
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide h-full md1:h-auto">
+                                        <a href="/cloud-pass-service" class="bg-[#1E6C77] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
                                                 <svg class="w-[22px] h-[22px]">
                                                     <use xlink:href="img/sprite.svg#barrier"></use>
                                                 </svg>
                                             </div>
-                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Для транспортных компаний</h3>
-                                            <p class="text-white leading-[1.5625] mt-3">Учет автотранспорта с распределенной структурой хранения</p>
-                                        </article>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Облачный сервис оформления пропусков</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Автоматизация и управление доступом под ключ</p>
+                                        </a>
                                     </div>
                                     <div class="swiper-slide h-full md1:h-auto">
-                                        <article class="bg-gray flex flex-col h-[370px] px-6 pb-8 pt-[67px] rounded-2xl">
-                                            <picture class="self-center mb-auto">
-                                                <source srcset="./img/hands.webp" type="image/webp" />
-                                                <img
-                                                    loading="lazy"
-                                                    src="./img/hands.png"
-                                                    width="202"
-                                                    height="102"
-                                                    alt=""
-                                                    role="presentation"
-                                                    aria-hidden="true" />
-                                            </picture>
-                                            <h3 class="title-4 mmd1:text-[22px]">Гибкость решений</h3>
-                                            <p class="leading-[1.5625] mt-3">Возможны индивидуальные доработки под ваши задачи</p>
-                                        </article>
+                                        <a href="https://arenda.kakdoma.life" class="bg-[#F35534] flex flex-col h-[370px] px-6 py-8 rounded-2xl">
+                                            <div class="flex-center-all blue-[20px] bg-white rounded-xl w-11 h-11 mb-auto">
+                                                <svg class="w-[22px] h-[22px]">
+                                                    <use xlink:href="img/sprite.svg#like"></use>
+                                                </svg>
+                                            </div>
+                                            <h3 class="title-4 mmd1:text-[22px] !text-white">Доверительное управление арендой</h3>
+                                            <p class="text-white leading-[1.5625] mt-3">Владельцы квартир зарабатывают с нами</p>
+                                        </a>
                                     </div>
                                 </div>
                                 <div
@@ -344,7 +363,11 @@
                     </p>
                     <div class="mt-auto">
                         <div class="mt-12 flex gap-3 md3:flex-col">
-                            <a href="/cloud-pass-service" class="btn btn-primary btn-s-default"> Подробнее </a>
+                            <button
+                                class="btn btn-primary btn-s-default"
+                                data-graph-path="create-bid"
+                                data-graph-animation="fadeInUp"
+                                data-graph-speed="350">Подробнее</button>
                         </div>
                     </div>
                 </div>
@@ -395,7 +418,7 @@
                         Пропуск можно создать в&nbsp;приложении или онлайн версии кабинета. Так&nbsp;же можно направить ссылку в&nbsp;меседжер чтоб
                         курьер или гости самостоятельно заполнили данные
                     </p>
-                    <button class="btn btn-primary btn-s-small mt-5 md1:mx-auto">Создать пропуск</button>
+                    <button class="btn btn-primary btn-s-small mt-5 md1:mx-auto" data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350">Создать пропуск</button>
                 </div>
             </div>
             <div class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
