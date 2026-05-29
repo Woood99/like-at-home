@@ -21,7 +21,7 @@ const sliderTabs = element => {
         const containerRect = btnsContainer.getBoundingClientRect();
         const btnRect = activeBtn.getBoundingClientRect();
 
-        const leftOffset = btnRect.left - containerRect.left;
+        const leftOffset = btnRect.left - containerRect.left + btnsContainer.scrollLeft;
         const btnWidth = btnRect.width;
 
         activeLine.style.transform = `translateX(${leftOffset}px)`;
@@ -44,6 +44,15 @@ const sliderTabs = element => {
         if (swiper && !swiper.destroyed && index >= 0 && index < swiper.slides.length) {
             swiper.slideTo(index, 300, false);
             updateActiveTab(index);
+
+            const activeBtn = btns[index];
+            if (activeBtn) {
+                activeBtn.scrollIntoView({
+                    behavior: "smooth",
+                    block: "nearest",
+                    inline: "center"
+                });
+            }
         }
     };
 
@@ -87,8 +96,8 @@ const sliderTabs = element => {
     });
 
     btnsContainer.addEventListener("scroll", () => {
-        if (swiper && !swiper.destroyed) {
-            const currentIndex = swiper.activeIndex;
+        const currentIndex = swiper && !swiper.destroyed ? swiper.activeIndex : [...btns].findIndex(btn => btn.classList.contains("active"));
+        if (currentIndex !== -1) {
             updateActiveLine(currentIndex);
         }
     });

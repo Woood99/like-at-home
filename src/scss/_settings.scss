@@ -643,7 +643,7 @@ button {
     &.features-tabs-images--square {
         .features-tabs-image {
             picture {
-                @apply mmd1:w-full bottom-1/2 translate-y-1/2 md2:w-[70%] md3:w-[85%];
+                @apply mmd1:w-full bottom-1/2 translate-y-1/2 md2:w-[70%] md3:w-[85%] md1:w-auto;
             }
             img {
                 @apply rounded-20 mx-auto;
@@ -676,22 +676,14 @@ button {
     }
 
     picture {
-        @apply absolute transition-primary-all opacity-100 bottom-0 left-1/2 transform -translate-x-1/2;
+        @apply absolute transition-primary-all opacity-100 bottom-0 left-1/2 transform -translate-x-1/2 md1:w-full;
 
         img {
             @media (max-width: $desktop) {
                 margin: 0 auto;
-                max-height: 500px;
-                width: 100%;
+                max-height: 545px;
+                width: auto;
                 height: 100%;
-            }
-
-            @media (max-width: $tablet-max) {
-                max-height: 400px;
-            }
-
-            @media (max-width: $mobile-max) {
-                max-height: 350px;
             }
         }
     }
