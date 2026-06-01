@@ -12,7 +12,17 @@ const validateForms = (formEl, rules) => {
     for (let item of rules) {
         if (item.tel) {
             const inputMask = new Inputmask("+7 (999) 999-99-99");
-            inputMask.mask(formEl.querySelector(item.ruleSelector));
+            const input = formEl.querySelector(item.ruleSelector);
+
+            inputMask.mask(input);
+
+            input.addEventListener("input", () => {
+                const digits = input.inputmask.unmaskedvalue();
+
+                if (digits.startsWith("7") || digits.startsWith("8")) {
+                    input.inputmask.setValue("+7  ");
+                }
+            });
         }
         validation.addField(item.ruleSelector, item.rules);
     }
