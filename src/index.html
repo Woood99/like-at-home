@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "КАК ДОМА — цифровая платформа для девелоперов и управляющих компаний" })
+    @include('partials/head.html', { "title": "Цифровая платформа для управляющих компаний и девелоперов | КАК ДОМА" })
 
     <body>
         <div class="site-container">
@@ -12,6 +12,10 @@
                 @include('partials/home/work-cities-block.html')
                 @include('partials/components/objects.html', { "title": "Наши решения на объектах" })
                 @include('partials/home/popular.html')
+                @include('partials/home/support.html')
+                @include('partials/home/bid-small.html')
+                @include('partials/home/quick-start.html')
+                @include('partials/home/faq.html')
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[132px]" })
             </main>
             @include('partials/footer.html')

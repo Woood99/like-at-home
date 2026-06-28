@@ -4,7 +4,7 @@ const navDropdown = () => {
     const container = header.querySelector("[data-nav-dropdown]");
     if (!container) return;
 
-    const items = container.querySelectorAll(".nav-dropdown");
+    const items = container.querySelectorAll("[data-nav-dropdown-item]");
     items.forEach(item => {
         const link = item.querySelector(".nav-dropdown__link");
         link.addEventListener("mouseenter", () => {

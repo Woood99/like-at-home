@@ -1,48 +1,40 @@
-<section>
+<section class="bg-gray mt-[160px] md1:mt-20 py-[100px] md1:py-8">
     <div class="container-desktop mmd1:max-w-[1186px] !px-0">
-        <div
-            class="bg-grayTwo rounded-32 md1:rounded-3xl px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
-            <div class="mmd1:max-w-[403px] flex flex-col flex-grow mmd1:pb-11">
-                <h2 class="title-4">
-                    Услуги диспетческой<br />
-                    Контакт-центр 24/7
+        <div class="grid grid-cols-2 gap-5 md1:gap-4 md1:grid-cols-1">
+            <div class="flex flex-col p-10 pr-[60px] md1:p-6 rounded-32 md1:rounded-2xl bg-white mmd1:min-h-[530px] md1:min-h-[300px]">
+                <h2 class="title-2 mmd1:text-[38px]">
+                    Контакт-центр <br class="md1:hidden" />
+                    для управляющих <br class="md1:hidden" />
+                    компаний
                 </h2>
-                <p class="mt-5 leading-normal text-grayDark">
-                    Берем на&nbsp;себя всю работу с&nbsp;заявками от&nbsp;жителей и&nbsp;контроль исполнителей
+                <p class="mt-6 md1:mt-5 leading-[1.4]">
+                    Профессиональная аварийно-диспетчерская служба для ЖКХ под ключ, берем на&nbsp;себя прием заявок и&nbsp;работу с&nbsp;жителями.
+                    Снижаем расходы на&nbsp;АДС до&nbsp;80%.
                 </p>
-                <div class="mt-8 md1:mt-6 flex flex-wrap gap-2">
-                    <a href="/ads" class="tag tag-three tag-lg tag-three-link">АДС24</a>
-                    <a href="/eds" class="tag tag-three tag-lg tag-three-link">ЕДС Московской области</a>
+                <div class="mt-auto self-start">
+                    <div class="mt-14">
+                        <a href="/ads" class="btn btn-five btn-s-default">Подробнее</a>
+                    </div>
                 </div>
             </div>
-            <div class="self-end mmd1:mr-[66px] relative">
-                <div
-                    class="bg-[#3373f5] h-[51px] px-[19px] text-[15px] leading-[1.22] text-white font-semibold rounded-[10px] flex-center-all w-max absolute top-[79px] -left-[123px] md1:top-14 md1:-left-20 md3:h-7 md3:px-2 md3:text-[10px] md3:top-12 md3:-left-8 md3:rounded-md">
-                    Мы всегда рядом
-                    <svg
-                        class="absolute -bottom-[2px] -right-[5.5px]"
-                        width="17"
-                        height="16"
-                        viewBox="0 0 17 16"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M15.3269 15.2594L5.99646 14L4.49646 14L-4.88162e-05 14L9.64339 -0.000127435L10.9965 3.00098L12.1538 5.16954L16.3602 13.8316C16.7088 14.5493 16.1177 15.3662 15.3269 15.2594Z"
-                            fill="#3373f5"></path>
-                    </svg>
+            <div
+                class="flex flex-col p-10 pr-[60px] md1:p-6 rounded-32 md1:rounded-2xl bg-[#5046e5] mmd1:min-h-[530px] md1:min-h-[400px] bg-contain bg-no-repeat bg-[top_24px_left_56px] md3:bg-[top_56px_left_0px]"
+                style="background-image: url(&quot;./img/dispatcher-3.webp&quot;)">
+                <div class="mt-auto">
+                    <h2 class="title-3 mmd1:text-[32px] !text-white">
+                        Поможем <br class="md1:hidden" />
+                        подобрать тариф <br class="md1:hidden" />
+                        для вас
+                    </h2>
+
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-secondary btn-s-default mt-[30px] md1:mt-5">
+                        Расчитать тариф
+                    </button>
                 </div>
-                <picture>
-                    <source srcset="./img/dispatcher-2.webp" type="image/webp" />
-                    <img
-                        loading="lazy"
-                        src="./img/dispatcher-2.png"
-                        width="326"
-                        height="368"
-                        alt=""
-                        class="md3:max-w-[245px]"
-                        role="presentation"
-                        aria-hidden="true" />
-                </picture>
             </div>
         </div>
     </div>
