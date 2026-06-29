@@ -1,64 +1,25 @@
 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25 mb-20 md1:mb-8">Популярные продукты платформы</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <a href="/crm" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">CRM для управляющей компании</h4>
-            </a>
-            <a href="/ads" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">Аварийно-диспетчерская служба&nbsp;УК</h4>
-            </a>
-            <a href="/owner-app" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">Мобильное приложение для жителей</h4>
-            </a>
-            <a href="/owner-account" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">Личный кабинет собственника</h4>
-            </a>
-            <a href="/employee-app" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">Мобильное приложение для сотрудников&nbsp;УК</h4>
-            </a>
-            <a href="/virtual-dispatcher" class="bg-gray rounded-32 md1:rounded-2xl px-10 py-6 md1:px-6 flex gap-[25px] items-center mmd1:h-[130px]">
-                <svg class="flex-shrink-0 w-[46px] h-[46px] md1:w-10 md1:h-10">
-                    <use xlink:href="img/sprite.svg#check-right"></use>
-                </svg>
-                <h4 class="title-4 mmd1:text-[20px]">Электронный диспетчер</h4>
-            </a>
+        <h2 class="title-1-25">Популярные продукты платформы</h2>
+        <div class="mt-20 md1:mt-8 flex flex-col gap-5 md1:gap-4">
+            @include('../components/crm-banner.html')
+            @include('../components/mobile-app-banner.html')
+            @include('../components/security-services-banner.html') 
         </div>
-        <div class="mt-[30px] md1:mt-6 grid grid-cols-4 gap-5 md1:grid-cols-2 md3:grid-cols-1 md1:gap-4">
+        <div class="mt-8 md1:mt-6 grid grid-cols-4 gap-5 md1:grid-cols-2 md3:grid-cols-1 md1:gap-4">
             <article class="px-5 mmd1:!pl-0 py-5 mmd1:h-[132px] flex items-center">
-                <h4 class="title-5 mmd1:text-[17px] !leading-[1.4] !font-medium">
-                    Снижайте дебиторскую задолженность с&nbsp;помощью сервиса уведомлений
-                </h4>
+                <h4 class="title-5 mmd1:text-[17px] text-paragraph-3">Снижайте дебиторскую задолженность с&nbsp;помощью сервиса уведомлений</h4>
             </article>
             <article class="px-5 py-5 mmd1:h-[132px] flex items-center">
-                <h4 class="title-5 mmd1:text-[17px] !leading-[1.4] !font-medium">
-                    Зарабатывайте на&nbsp;продаже дополнительных услуг через приложение
-                </h4>
+                <h4 class="title-5 mmd1:text-[17px] text-paragraph-3">Зарабатывайте на&nbsp;продаже дополнительных услуг через приложение</h4>
             </article>
             <article class="px-5 py-5 mmd1:h-[132px] flex items-center">
-                <h4 class="title-5 mmd1:text-[17px] !leading-[1.4] !font-medium">
-                    Внедряйте цифровые продукты ЖКХ и&nbsp;повышайте качество вашего сервиса
-                </h4>
+                <h4 class="title-5 mmd1:text-[17px] text-paragraph-3">Внедряйте цифровые продукты ЖКХ и&nbsp;повышайте качество вашего сервиса</h4>
             </article>
             <article
                 class="bg-[#222427] rounded-32 md1:rounded-2xl px-10 md1:px-6 py-5 mmd1:h-[132px] flex items-center relative transition-all hover:-translate-y-1.5">
                 <a href="/ecosystem" class="absolute inset-0" aria-hidden="true"></a>
-                <h4 class="title-5 mmd1:text-[17px] !text-white !leading-[1.4] !font-medium">
+                <h4 class="title-5 mmd1:text-[17px] !text-white text-paragraph-3">
                     Другие <br />
                     возможности <br />
                     платформы
