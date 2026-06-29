@@ -1,10 +1,13 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Цифровая платформа для управляющих компаний и девелоперов | КАК ДОМА" })
+    @include('partials/head.html', {
+        "title": "КАК ДОМА — цифровая платформа для девелоперов и управляющих компаний",
+        "description": "Программа для управляющих компаний и ТСЖ: автоматизация ЖКХ, CRM, аварийно-диспетчерская служба, мобильные приложения и онлайн-сервисы для жителей"
+    })
 
     <body>
         <div class="site-container">
-            @include('partials/header.html')
+            @include('partials/header.html', { "isLink": false })
             <main class="main">
                 @include('partials/home/hero.html')
                 @include('partials/home/product-lines.html')

@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#111111" />
     <title>@title</title>
+    @if (typeof description !== 'undefined' && description != '') {
+        <meta name="description" content="@description">
+    }
     <link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/ManropeSemiBold.woff2" as="font" type="font/woff2" crossorigin />
@@ -14,7 +17,4 @@
     <link rel="stylesheet" href="css/vendor.css" />
     <link rel="stylesheet" href="css/main.css" />
     <script defer src="js/main.js"></script>
-    <meta
-        name="description"
-        content="Программа для управляющих компаний и ТСЖ: автоматизация ЖКХ, CRM, аварийно-диспетчерская служба, мобильные приложения и онлайн-сервисы для жителей." />
 </head>

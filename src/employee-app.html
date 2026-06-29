@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Мобильное приложение для сотрудников" })
+    @include('partials/head.html', {
+        "title": "Мобильное приложение для сотрудников управляющей компании",
+        "description": "Контроль заявок, обходы домов, выполнение работ, плановые работы, фотофиксация, уведомления и мобильное рабочее место сотрудников ЖКХ"
+    })
 
     <body>
         <div class="site-container">
@@ -19,7 +22,7 @@
                     "QrCodeRuStore": "qr-code-employee-app-rustore",
                     "urlApple": "https://apps.apple.com/us/app/%D0%BA%D0%B0%D0%BA-%D0%B4%D0%BE%D0%BC%D0%B0-%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81/id6747736629",
                     "urlGoogle": "https://play.google.com/store/apps/details?id=life.kakdoma.service&hl=ru",
-                    "urlRuStore": "https://www.rustore.ru/catalog/developer/eiwb2vzj",
+                    "urlRuStore": "https://www.rustore.ru/catalog/app/life.kakdoma.service",
                 })
                 @include('partials/employee-app/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать решение для вас", "className":"mt-[160px]" })

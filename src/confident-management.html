@@ -1,18 +1,21 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Аренда" })
+    @include('partials/head.html', {
+        "title": "Доверительное управление арендой недвижимости | Сдача квартир под ключ",
+        "description": "Поможем быстро сдать квартиру: берем на себя поиск арендаторов, готовим квартиру, проводим заселение, контролируем оплаты, обслуживаем  объект и сопровождаем на весь срок аренды."
+    })
 
     <body>
         <div class="site-container">
             @include('partials/header-2.html')
             <main class="main">
                 @include('partials/confident-management/hero.html')
-                @include('partials/confident-management/stable-income.html') 
-                @include('partials/confident-management/info.html') 
-                @include('partials/confident-management/how-it-works.html') 
+                @include('partials/confident-management/stable-income.html')
+                @include('partials/confident-management/info.html')
+                @include('partials/confident-management/how-it-works.html')
                 @include('partials/confident-management/banners-info.html')
                 @include('partials/confident-management/support.html')
-                @include('partials/confident-management/tariffs.html') 
+                @include('partials/confident-management/tariffs.html')
                 @include('partials/confident-management/comparison.html')
                 @include('partials/confident-management/faq.html')
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })

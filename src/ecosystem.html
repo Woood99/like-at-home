@@ -1,6 +1,9 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Экосистема ЖКХ" })
+    @include('partials/head.html', {
+        "title": "Экосистема сервисов для ЖКХ | CRM, приложения и автоматизация УК",
+        "description": "Единая платформа для управляющих компаний и ТСЖ: CRM, мобильные приложения, электронный диспетчер, онлайн-оплата, СКУД и сервисы для жителей"
+    })
 
     <body>
         <div class="site-container">
@@ -12,6 +15,7 @@
                 @include('partials/ecosystem/commercial-services.html')
                 @include('partials/ecosystem/security-services.html')
                 @include('partials/components/help-banner.html')
+                @include('partials/ecosystem/ads.html')
                 @include('partials/ecosystem/additional-services.html')
                 @include('partials/components/objects.html', { "title": "Наши решения на объектах" })
                 @include('partials/ecosystem/faq.html', { "className":"mt-[160px]" })
