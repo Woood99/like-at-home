@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="ru">
-    @include('partials/head.html', { "title": "Система онлайн заселения" })
+    @include('partials/head.html', { "title": "Сервис удаленного заселения" })
 
     <body>
         <div class="site-container">
@@ -9,9 +9,13 @@
                 @include('partials/online-check-in/hero.html')
                 @include('partials/online-check-in/industries.html')
                 @include('partials/online-check-in/equipment.html')
-                @include('partials/online-check-in/supported-points.html')
+                @include('partials/online-check-in/automation-banner.html')
+                @include('partials/online-check-in/info.html')
+                @include('partials/online-check-in/bid-small.html')
+                @include('partials/online-check-in/how-it-works.html')
+                @include('partials/home/work-cities-block.html')
                 @include('partials/online-check-in/why-choose-us.html')
-                <!-- @include('partials/online-check-in/faq.html', { "className":"mt-[160px]" }) -->
+                @include('partials/online-check-in/faq.html', { "className":"mt-[160px]" })
                 @include('partials/components/form-bid.html', { "title":"Поможем подобрать продукт для вашего бизнеса", "className":"mt-[160px]" })
             </main>
             @include('partials/footer.html')

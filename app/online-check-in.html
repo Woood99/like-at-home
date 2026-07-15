@@ -7,7 +7,7 @@
     <link rel="icon" href="/favicon.png" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="theme-color" content="#111111" />
-    <title>Система онлайн заселения</title>
+    <title>Сервис удаленного заселения</title>
     
     <link rel="preload" href="fonts/ManropeRegular.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="preload" href="fonts/ManropeMedium.woff2" as="font" type="font/woff2" crossorigin />
@@ -26,9 +26,8 @@
     <div class="container flex items-center h-full relative">
         <div class="h-[36px] flex-center-all">
             <div class="text-[26px] md1:text-[22px] leading-none tracking-normal">
-                
-                
-                    <a href="/" class="text-black font-extrabold">КАК ДОМА</a>
+                 
+                <a href="/" class="text-black font-extrabold">КАК ДОМА</a>
                 
             </div>
         </div>
@@ -99,7 +98,13 @@
                                             <a href="/eds" class="link-primary">Интеграция с eds.mosreg.ru</a>
                                         </li>
                                         <li class="nav-dropdown__subitem">
-                                            <a href="/virtual-dispatcher" class="link-primary">Виртуальный диспетчер</a>
+                                            <a href="/virtual-dispatcher" class="link-primary flex items-center">
+                                                <span>Виртуальный диспетчер</span>
+                                                <span
+                                                    class="ml-4 md1:ml-3 h-6 px-2.5 flex-center-all rounded-20 text-xs font-bold bg-[#e7dcfe] text-[#7f42e1]">
+                                                    ИИ
+                                                </span>
+                                            </a>
                                         </li>
                                     </ul>
                                 </div>
@@ -239,9 +244,12 @@
                 <section class="mt-[50px] md1:mt-0">
     <div class="container-desktop">
         <div class="bg-greenLight rounded-primary py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative md1:rounded-none md1:pb-0 gap-12">
-            <div class="mmd1:max-w-[500px] flex flex-col flex-grow">
-                <h1 class="title-1 !text-white mmd1:text-[60px]">Система онлайн заселения</h1>
-                <p class="mt-6 text-white text-paragraph mmd1:text-[24px]">Удаленное управление доступом</p>
+            <div class="mmd1:max-w-[643px] flex flex-col flex-grow">
+                <h1 class="title-1 !text-white mmd1:text-[60px]">Сервис удаленного заселения</h1>
+                <p class="mt-6 text-white text-paragraph">
+                    Современное решение для управления арендой, <br class="md1:hidden" />
+                    без передачи ключей и&nbsp;риска потери доступа.
+                </p>
                 <div class="mt-auto">
                     <div class="mt-12 flex gap-3 md3:flex-col">
                         <button
@@ -249,7 +257,7 @@
                             data-graph-animation="fadeInUp"
                             data-graph-speed="350"
                             class="btn btn-secondary btn-s-default">
-                            Попробовать бесплатно
+                            Получить консультацию
                         </button>
                     </div>
                 </div>
@@ -257,20 +265,30 @@
 
             <picture class="absolute md1:relative bottom-0 mmd1:right-6 md1:self-end">
                 <source srcset="./img/online-check-in-hero.webp" type="image/webp" />
-                <img loading="lazy" src="./img/online-check-in-hero.png" width="407" height="524" alt="" role="presentation" aria-hidden="true" />
+                <img loading="lazy" src="./img/online-check-in-hero.png" width="389" height="508" alt="" role="presentation" aria-hidden="true" />
             </picture>
         </div>
     </div>
-    <div class="container !mt-5">
-        <div class="mmd1:ml-14 pt-[54px] md1:pt-0 flex gap-32 md1:gap-6 md1:flex-col">
-            <div class="max-w-[471px]">
-                <h3 class="title-4">Комплект оборудования, монтаж и&nbsp;программное обеспечение для управления доступом онлайн</h3>
+    <div class="container-desktop !mt-5 md1:!-mt-2 relative">
+        <div
+            class="px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-5 rounded-primary md1:grid-cols-1 md1:p-6 mmd1:border mmd1:border-solid mmd1:border-greenLight">
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Контроль оплаты и&nbsp;доступа</h3>
+                <p class="text-grayDark leading-[1.875]">Если оплата не&nbsp;поступила доступ не&nbsp;продлевается</p>
             </div>
-            <div class="max-w-[513px]">
-                <h3 class="title-3">
-                    Цифровое гостеприимство <br class="md1:hidden" />
-                    это ваше преимущество
-                </h3>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Заселение в&nbsp;любое удобное время</h3>
+                <p class="text-grayDark leading-[1.875]">Преимущество при выборе объекта для аренды</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Без физической передачи ключей</h3>
+                <p class="text-grayDark leading-[1.875]">NFC, МАХ бот, звонок и&nbsp;код для краткосрочной аренды</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Сервис под ключ</h3>
+                <p class="text-grayDark leading-[1.875]">
+                    Комплект оборудования, монтаж и&nbsp;программное обеспечение для управления вашим объектом
+                </p>
             </div>
         </div>
     </div>
@@ -278,10 +296,9 @@
 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Где используют сервис</h2>
+        <h2 class="title-1-25">Где используют</h2>
         <div class="mt-20 md1:mt-8 flex items-center gap-[10px] flex-wrap max-w-[1100px]">
             <div class="tag tag-four tag-big-lg">Квартиры и Аппартаменты</div>
-            <div class="tag tag-four tag-big-lg">Офисы и Коворкинги</div>
             <div class="tag tag-four tag-big-lg">Гостевые дома</div>
             <div class="tag tag-four tag-big-lg">Отели</div>
             <div class="tag tag-four tag-big-lg">Аппарт-отели</div>
@@ -292,122 +309,270 @@
         </div>
     </div>
 </section>
+
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Оборудование</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-6 md3:grid-cols-1">
-            <div
-                class="p-8 bg-[rgba(0,190,161,0.2)] rounded-32 md1:rounded-3xl relative min-h-[283px] overflow-hidden transition-all hover:-translate-y-2">
-                <h2 class="title-4 max-w-[255px]">Электронные <br class="md1:hidden" /> замки</h2>
-                <picture>
-                    <source srcset="./img/automation-2.webp" type="image/webp" />
-                    <img
-                        loading="lazy"
-                        src="./img/automation-2.png"
-                        width="160"
-                        height="206"
-                        class="absolute bottom-0 right-0"
-                        alt="Электронные замки" />
-                </picture>
-            </div>
-            <div
-                class="p-8 bg-white border border-solid border-[#e0e0e0] rounded-32 md1:rounded-3xl relative min-h-[283px] overflow-hidden transition-all hover:-translate-y-2">
-                <h2 class="title-4 max-w-[255px]">Шлюзы <br class="md1:hidden" /> управления</h2>
-                <picture>
-                    <source srcset="./img/control-gateways.webp" type="image/webp" />
-                    <img
-                        loading="lazy"
-                        src="./img/control-gateways.png"
-                        width="130"
-                        height="135"
-                        class="absolute bottom-8 right-8"
-                        alt="Шлюзы управления" />
-                </picture>
-            </div>
-            <div
-                class="p-8 bg-white border border-solid border-[#e0e0e0] rounded-32 md1:rounded-3xl relative min-h-[283px] overflow-hidden transition-all hover:-translate-y-2">
-                <h2 class="title-4 max-w-[255px]">Хранение ключей <br class="md1:hidden" /> Key-Box</h2>
-                <picture>
-                    <source srcset="./img/key-box.webp" type="image/webp" />
-                    <img
-                        loading="lazy"
-                        src="./img/key-box.png"
-                        width="130"
-                        height="127"
-                        class="absolute bottom-8 right-8"
-                        alt="Хранение ключей Key-Box" />
-                </picture>
-            </div>
-            <div
-                class="p-8 bg-white border border-solid border-[#e0e0e0] rounded-32 md1:rounded-3xl relative min-h-[283px] overflow-hidden transition-all hover:-translate-y-2">
-                <h2 class="title-4 max-w-[255px]">
-                    Контролеры <br class="md1:hidden" />
-                    и панели доступа
-                </h2>
-                <picture>
-                    <source srcset="./img/controllers-and-panels.webp" type="image/webp" />
-                    <img
-                        loading="lazy"
-                        src="./img/controllers-and-panels.png"
-                        width="90"
-                        height="158"
-                        class="absolute bottom-8 right-8"
-                        alt="Контролеры и панели доступа" />
-                </picture>
-            </div>
-        </div>
+        <h2 class="title-1-25">
+            Почему арендодатели переходят <br class="md1:hidden" />
+            на&nbsp;умные замки
+        </h2>
+        <div class="mt-20 md1:mt-8 grid grid-cols-3 md2:grid-cols-1 gap-5 md1:gap-4">
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Доступ 24/7</h3>
+                <p class="text-paragraph-3 pt-3 mt-auto text-grayDark">Гость сможет попасть на&nbsp;территорию один раз на&nbsp;одном КПП</p>
+            </article>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Без передачи ключей</h3>
+                <p class="text-paragraph-3 pt-3 mt-auto text-grayDark">Не&nbsp;ограничивает кол-во посещений, действует в&nbsp;указанный период</p>
+            </article>
 
-        <button
-            class="btn btn-primary btn-s-default mt-20 md1:mt-8 mx-auto md3:w-full"
-            data-graph-path="create-bid"
-            data-graph-animation="fadeInUp"
-            data-graph-speed="350">
-            Подключить
-        </button>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col border border-solid border-black">
+                <h3 class="title-4">Автономность</h3>
+                <p class="text-paragraph-3 pt-3 mt-auto text-grayDark">Замки работают автономно, интернет не&nbsp;обязателен</p>
+            </article>
+
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Блокировка доступа после выезда</h3>
+                <p class="text-paragraph-3 pt-3 mt-auto text-grayDark">Полный доступ на&nbsp;объект без ограницения кол-ва посещений</p>
+            </article>
+            <article class="rounded-32 md1:rounded-3xl p-10 md1:p-6 flex flex-col bg-grayTwo">
+                <h3 class="title-4">Удалённое управление объектом</h3>
+                <p class="text-paragraph-3 pt-3 mt-auto text-grayDark">Гость сможет сам заполнить данные и&nbsp;приехать в&nbsp;удобное время</p>
+            </article>
+        </div>
     </div>
 </section>
 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Поддерживаемые точки доступа</h2>
-        <div class="mt-20 md1:mt-8 grid grid-cols-4 gap-5 md1:gap-4 md1:grid-cols-2 md3:grid-cols-1">
-            <article class="info-card info-card--second">
-                <div class="info-card__icon info-card__icon--green">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#door"></use>
-                    </svg>
+        <h2 class="title-1-25">Автомацизация = преимущество</h2>
+        <div class="mt-20 md1:mt-8">
+            <div
+                class="bg-grayTwo rounded-32 md1:rounded-none px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+                <div class="mmd1:max-w-[602px] flex flex-col flex-grow mmd1:pb-11">
+                    <h2 class="title-4">Ваш объект, выбирают чаще</h2>
+                    <p class="mt-5 leading-normal text-grayDark mmd1:max-w-[494px]">
+                        Предложения с&nbsp;возможностью удалённого заселения выглядят современнее, повышают доверие гостей и&nbsp;помогают выделяться
+                        среди конкурентов.
+                    </p>
+                    <div class="mt-auto">
+                        <div class="mt-12 flex gap-3 md3:flex-col">
+                            <button
+                                data-graph-path="create-bid"
+                                data-graph-animation="fadeInUp"
+                                data-graph-speed="350"
+                                class="btn btn-five btn-s-default">
+                                Подключить
+                            </button>
+                        </div>
+                    </div>
                 </div>
-                <h3 class="title-4 info-card__title">Двери и калитки</h3>
-                <p class="info-card__descr">С&nbsp;различными видами считывателей</p>
-            </article>
-            <article class="info-card info-card--second">
-                <div class="info-card__icon info-card__icon--green">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#barrier"></use>
-                    </svg>
-                </div>
-                <h3 class="title-4 info-card__title">Шлагбаумы</h3>
-                <p class="info-card__descr">Оборудованные камерами, контроллерами, датчиками</p>
-            </article>
 
-            <article class="info-card info-card--second">
-                <div class="info-card__icon info-card__icon--green">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#turnstiles"></use>
-                    </svg>
+                <div
+                    class="w-max mmd1:mt-14 mmd1:mr-[66px] rounded-20 bg-white flex justify-center flex-col pl-14 pr-9 h-[160px] md1:h-[110px] md1:px-7 md1:self-end md1:mr-7 md1:mb-[95px]">
+                    <div class="mmd1:!text-[50px] flex items-end gap-4">
+                        <span class="title-1-5">5,0</span>
+                        <div class="flex items-center gap-[3px] mb-1.5">
+                            <svg class="text-[#f9a602] w-[30px] h-[30px] md1:w-25 md1:h-25">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="text-yellow w-[30px] h-[30px] md1:w-25 md1:h-25">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="text-yellow w-[30px] h-[30px] md1:w-25 md1:h-25">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="text-yellow w-[30px] h-[30px] md1:w-25 md1:h-25">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="text-yellow w-[30px] h-[30px] md1:w-25 md1:h-25">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <p class="mt-2 md1:text-[14px]">Оценка от арендаторов</p>
                 </div>
-                <h3 class="title-4 info-card__title">Турникеты</h3>
-                <p class="info-card__descr">Оборудованные камерами, контроллерами, датчиками</p>
-            </article>
-            <article class="info-card info-card--second">
-                <div class="info-card__icon info-card__icon--green">
-                    <svg>
-                        <use xlink:href="img/sprite.svg#gates"></use>
-                    </svg>
+
+                <picture class="w-max absolute bottom-0 right-0 z-10 md1:-bottom-4 md1:-right-7">
+                    <source srcset="./img/cat-paw.webp" type="image/webp" />
+                    <img
+                        loading="lazy"
+                        src="./img/cat-paw.png"
+                        class="md1:max-w-[185px]"
+                        width="253"
+                        height="119"
+                        alt=""
+                        role="presentation"
+                        aria-hidden="true" />
+                </picture>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[140px] md1:mt-16">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <div class="flex items-start gap-5 md2:flex-col">
+            <div class="flex items-center gap-5">
+                <picture>
+                    <source srcset="./img/avatar-9.webp" type="image/webp" />
+                    <img loading="lazy" src="./img/avatar-9.png" width="60" height="60" alt="Фото Новикова Дмитрия" />
+                </picture>
+                <div class="w-60">
+                    <p class="text-paragraph-3 !font-semibold cut cut-1">Дмитрий</p>
+                    <p class="text-paragraph-3 cut cut-1 text-[#a3a6a9] !text-[14px]">CEO &laquo;КАК ДОМА&raquo;</p>
                 </div>
-                <h3 class="title-4 info-card__title">Ворота</h3>
-                <p class="info-card__descr">Любых видов, рольставни, откатные и&nbsp;другие</p>
-            </article>
+            </div>
+            <h2 class="title-4 mmd1:text-[22px] mmd1:max-w-[783px] !leading-[1.4]">
+                Мы&nbsp;помогаем арендодателям внедрить удобную экосистему удалённого заселения, подбираем оптимальные решения под конкретный объект,
+                бюджет и&nbsp;сценарии работы. Предлагаем варианты интеграций, не&nbsp;привязывая к&nbsp;конкретному оборудованию.
+            </h2>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
+        <div
+            class="bg-black rounded-32 md1:rounded-3xl overflow-hidden p-11 md1:px-6 md1:py-8 grid grid-cols-2 md1:grid-cols-1 relative gap-12 md1:gap-4">
+            <div class="mmd1:max-w-[480px] flex flex-col flex-grow">
+                <h2 class="title-3 !text-white">
+                    Решение которое <br class="md1:hidden" />
+                    станет стандартом
+                </h2>
+            </div>
+            <div>
+                <form action="#" data-create-bid-form-mini>
+                    <input type="hidden" name="name" class="input input-secondary input-s-default" value="-" />
+                    <p class="text-paragraph-3 text-white">
+                        Автоматизируйте заселение гостей, повысьте <br class="md1:hidden" />
+                        безопасность и&nbsp;сделайте аренду удобнее
+                    </p>
+                    <div class="mt-8 gap-2 flex md3:flex-col">
+                        <label class="form-input flex-grow">
+                            <input type="tel" name="phone" class="input input-primary input-s-default" placeholder="+7" />
+                        </label>
+                        <button type="submit" class="btn btn-green btn-s-default !px-5">Оставить заявку</button>
+                    </div>
+                    <div class="mt-6 md1:mt-4 checkbox checkbox-gray">
+                        <input id="c_agreement_3" name="agreement" class="checkbox__input" type="checkbox" />
+                        <label for="c_agreement_3" class="checkbox__label">
+                            <div class="checkbox__mark">
+                                <div class="checkbox__mark-check"></div>
+                            </div>
+                            <span class="checkbox__text !text-[12px] !leading-normal">
+                                Вы соглашаетесь с политикой
+                                <a href="/policy" class="inline"
+                                    >обработи персональных данных <br class="md1:hidden" />
+                                    и условиями политики конфиденциальности</a
+                                >
+                            </span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-1-25">Как работает сервис</h2>
+        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-5 md1:gap-4">
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Устанавливаем электронный замок</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Настраиваем цифровой доступ. Замку не&nbsp;обязательно подключение к&nbsp;интернет. Все замки имеют режимы аварийного
+                        открытия, коды, карты и&nbsp;даже аварийные физические ключи.
+                    </p>
+                    <button
+                        class="btn btn-primary btn-s-small mt-5 md1:mx-auto"
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350">
+                        Оставить заявку
+                    </button>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Гость получает код или ссылку</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Для арендодателей достпны различные типы передачи доступов. При долгосрочной аренде это обычно карты и&nbsp;NFC, а&nbsp;при
+                        краткосрочной это коды, ссылки. Доступно открытие через приложение и&nbsp;по&nbsp;звонку.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">3</span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Гость заселяется самостоятельно</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Доступ остается активным на&nbsp;весь период проживания гостя и&nbsp;по&nbsp;окончанию срока проживания замок блокируется.
+                    </p>
+                </div>
+            </div>
+
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 bg-gray border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all">
+                    <svg class="w-5 h-5 text-white">
+                        <use xlink:href="img/sprite.svg#like"></use>
+                    </svg>
+                </span>
+                <div>
+                    <h4 class="title-4 mb-4 md1:text-center">Собственник контролирует доступ онлайн</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Информация по&nbsp;заселению всегда доступна в&nbsp;приложении и&nbsp;личном кабинете собственника.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                <section class="work-cities-block mt-[128px] overflow-hidden md1:mt-20">
+    <div class="container">
+        <div class="mmd1:ml-[56px] mb-[60px] md1:mb-12">
+            <h2 class="title-1-25">Работаем по всей России</h2>
+        </div>
+    </div>
+    <div class="container mmd1:max-w-[2900px] overflow-hidden">
+        <div class="flex flex-col gap-4 md1:gap-3">
+            <div class="marquee3k ticker-slider" data-speed="0.4">
+                <div>
+                    <div class="tag tag-secondary tag-big">Москва</div>
+                    <div class="tag tag-secondary tag-big">Екатеринбург</div>
+                    <div class="tag tag-secondary tag-big">Нижний новгород</div>
+                    <div class="tag tag-secondary tag-big">Красноярск</div>
+                    <div class="tag tag-secondary tag-big">Пермь</div>
+                    <div class="tag tag-secondary tag-big">Челябинск</div>
+                    <div class="tag tag-secondary tag-big">Уфа</div>
+                    <div class="tag tag-secondary tag-big">Самара</div>
+                    <div class="tag tag-secondary tag-big">Ростов-на-Дону</div>
+                    <div class="tag tag-secondary tag-big">Краснодар</div>
+                </div>
+            </div>
+            <div class="marquee3k ticker-slider" data-speed="0.4" data-reverse="true">
+                <div>
+                    <div class="tag tag-secondary tag-big">Набережные Челны</div>
+                    <div class="tag tag-secondary tag-big">Кемерово</div>
+                    <div class="tag tag-secondary tag-big">Ставрополь</div>
+                    <div class="tag tag-secondary tag-big">Томск</div>
+                    <div class="tag tag-secondary tag-big">Ярославль</div>
+                    <div class="tag tag-secondary tag-big">Владивосток</div>
+                    <div class="tag tag-secondary tag-big">Иркутск</div>
+                    <div class="tag tag-secondary tag-big">Хабаровск</div>
+                    <div class="tag tag-secondary tag-big">Казань</div>
+                    <div class="tag tag-secondary tag-big">Санкт-Петербург</div>
+                </div>
+            </div>
         </div>
     </div>
 </section>
@@ -416,23 +581,93 @@
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
         <h2 class="title-1-25">Почему выбирают нас</h2>
         <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Профессиональный и&nbsp;быстрый монтаж оборудования</h4>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#like"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Решение задач по&nbsp;подключению любой сложности</h4>
             </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Решение задач по&nbsp;подключению любой сложности</h4>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#tool"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Профессиональная и&nbsp;быстрая настройка</h4>
             </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Возможность внедрегия без смены уже установленного оборудования</h4>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#key"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Возможность подключения к&nbsp;вашему оборудованию</h4>
             </article>
-            <article class="bg-gray rounded-20 p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Оперативный выезд на&nbsp;осмотр вашего обьекта</h4>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#zap"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Не&nbsp;привязываем к&nbsp;сервису, вы&nbsp;можете управлять замком сами</h4>
             </article>
         </div>
     </div>
 </section>
 
-                
+                <section class="mt-[160px] md1:mt-20 faq">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0 flex gap-8 md1:flex-col">
+        <div class="flex-shrink-0">
+            <h2 class="title-1-25">
+                Вопросы <br class="md1:hidden" />
+                и ответы
+            </h2>
+        </div>
+        <div class="mmd1:max-w-[753px] mmd1:ml-auto flex-grow">
+            <ul data-one-spoller data-spollers class="w-full flex flex-col gap-5">
+                <li class="faq__item">
+                    <button class="faq__btn _spoller-active" data-spoller>
+                        <h3 class="title-4">Подходит&nbsp;ли решение для крупных автопарков?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3">
+                        <p>Да, система рассчитана на&nbsp;управление автопарками с&nbsp;большим количеством автомобилей.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можно&nbsp;ли контролировать несколько паркингов?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Да, доступно централизованное управление несколькими площадками.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Требуется&nbsp;ли замена оборудования?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Нет, замена оборудования не&nbsp;требуется. Мы&nbsp;можем интергировать блоки управления в&nbsp;уже существующее
+                            оборудование.
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
                 <section class="mt-[160px] md1:mt-20">
     <div class="container-desktop">
         <div class="bg-dark rounded-primary py-[54px] px-14 md1:p-6">
