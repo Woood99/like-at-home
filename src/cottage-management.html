@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', {
+        "title": "Сервис для эффективной передачи заявок eds.mosreg.ru | ЕДС БОТ",
+        "description": "Отслеживаем поступление заявок через eds.mosreg.ru от 1500р/месяц."
+     })
+
+    <body>
+        <div class="site-container">
+            @include('partials/header.html')
+            <main class="main">
+                @include('partials/cottage-management/hero.html')
+                @include('partials/cottage-management/digital-platform.html')
+                @include('partials/cottage-management/passes.html')
+                @include('partials/cottage-management/control-system.html')
+                @include('partials/cottage-management/services.html')
+                @include('partials/cottage-management/bid-small.html')
+                @include('partials/cottage-management/faq.html')
+                @include('partials/components/form-bid.html', { "title":"Поможем подобрать индивидуальный тариф", "className":"mt-[164px]" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
+</html>

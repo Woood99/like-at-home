@@ -15,6 +15,13 @@
             @apply text-white;
         }
     }
+    &__icon--dark {
+        @apply bg-[#191919];
+
+        svg {
+            @apply text-white;
+        }
+    }
     &__title {
         @apply mb-4;
     }

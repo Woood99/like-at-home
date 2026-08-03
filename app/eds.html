@@ -244,10 +244,10 @@
 </header>
 
             <main class="main">
-                <section class="mt-[50px] md1:mt-0 md1:bg-grayTwo rounded-b-3xl" id="hero-block">
+                <section class="mt-[50px] md1:mt-0 md1:bg-gray rounded-b-3xl" id="hero-block">
     <div class="container-desktop">
         <div
-            class="bg-[#191919] rounded-primary md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative overflow-hidden md1:gap-10 md1:pb-0">
+            class="bg-[#1b1d1f] rounded-primary md1:rounded-none py-[54px] px-14 md1:p-6 mmd1:min-h-[488px] flex flex-col relative overflow-hidden mmd1:rounded-br-none md1:gap-10 md1:pb-0">
             <div class="mmd1:max-w-[700px] flex flex-col flex-grow">
                 <h1 class="title-1 text-white">
                     <span class="text-white">Интеграция с&nbsp;ЕДС Московской области</span>
@@ -264,18 +264,18 @@
                             data-graph-animation="fadeInUp"
                             data-graph-speed="350"
                             class="btn btn-green btn-s-default">
-                            Подключить 
+                            Подключить
                         </button>
                     </div>
                 </div>
             </div>
 
-            <picture class='md1:self-end md1:relative md1:-right-6'>
+            <picture class="md1:self-end md1:relative md1:-right-6">
                 <source srcset="./img/eds-hero.webp" type="image/webp" />
                 <img
                     loading="lazy"
                     src="./img/eds-hero.png"
-                    class="absolute md1:relative -bottom-1 right-0 rounded-tl-[24px] md1:rounded-tr-[24px]"
+                    class="absolute md1:relative -bottom-1 -right-[1px] rounded-tl-[24px]"
                     width="530"
                     height="439"
                     alt=""
@@ -285,24 +285,26 @@
         </div>
     </div>
     <div class="container-desktop !mt-5 md1:!mt-0">
-        <div class="mmd1:bg-grayTwo px-14 py-[54px] pb-[46px] grid grid-cols-3 gap-5 rounded-primary md1:rounded-none md1:grid-cols-1 md1:p-6">
+        <div class="mmd1:bg-gray px-14 py-[54px] pb-[46px] grid grid-cols-4 gap-5 rounded-primary md1:rounded-none md1:grid-cols-1 md1:p-6">
             <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Принимаем обращения в работу в течение 5 минут</h3>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Принимаем заявки <span class="text-greenLight">в&nbsp;работу</span> за&nbsp;5&nbsp;минут</h3>
                 <p class="leading-[1.875] text-grayDark">
-                    Мы автоматически отслеживаем новые <br class="md1:hidden" />
-                    заявки и устанавливаем статус “В работе”
+                    Автоматически отслеживаем новые заявки <span class="text-black">eds.mosreg.ru</span> и устанавливаем статус “В&nbsp;работе”;
                 </p>
             </div>
             <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">
-                    Оповещаем о&nbsp;заявках <br class="md1:hidden" />
-                    всех сотрудников
-                </h3>
-                <p class="leading-[1.875] text-grayDark">Направляем оповещения, без ограничений и&nbsp;увеличения стоимости</p>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Оповещаем сотрудников о&nbsp;новых заявках</h3>
+                <p class="leading-[1.875] text-grayDark">
+                    Направляем уведомления с&nbsp;описанием заявки в&nbsp;меседжер или на&nbsp;этектронную почту
+                </p>
             </div>
             <div>
-                <h3 class="title-4-25 mb-4 md1:mb-3">Закрываем заявки в&nbsp;ЕДС после окончания работ</h3>
-                <p class="leading-[1.875] text-grayDark">Меняем статус заявки на&nbsp;портале, после завершения работ</p>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Контролируем сроки исполнения</h3>
+                <p class="leading-[1.875] text-grayDark">Предупреждаем когда подходит время закрывать заявку и&nbsp;не&nbsp;допускаем просрок</p>
+            </div>
+            <div>
+                <h3 class="title-4-25 mb-4 md1:mb-3">Собираем обратную связь от&nbsp;жителей</h3>
+                <p class="leading-[1.875] text-grayDark">Помогаем оценивать качество работы и&nbsp;вовремя реагировать на&nbsp;замечания</p>
             </div>
         </div>
     </div>
@@ -310,74 +312,160 @@
 
                 <section class="mt-[160px] md1:mt-20">
     <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-25">Возможности сервиса</h2>
+        <h2 class="title-1-25">Зачем подключать ЕДС БОТ?</h2>
         <div class="mt-20 md1:mt-8 grid grid-cols-2 gap-x-5 gap-y-6 md3:grid-cols-1 md1:gap-4">
-            <article class="bg-gray rounded-20 md1:rounded-3xl p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Быстрый прием в работу</h4>
-                <p class="mt-5 leading-normal">
-                    Принимаем в&nbsp;работу заявки не&nbsp;позднее 5&nbsp;минут после поступления, не&nbsp;допуская просрочек
-                </p>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#like"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Повышение рейтинга управляющей компании</h4>
             </article>
-            <article class="bg-gray rounded-20 md1:rounded-3xl p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Уведомления и оповещения</h4>
-                <p class="mt-5 leading-normal">Направляем уведомления о&nbsp;новых обращениях в&nbsp;меседжеры, и&nbsp;по&nbsp;электронной почте</p>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#user-check"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Быстрая реакция на&nbsp;заявки</h4>
             </article>
-            <article class="bg-gray rounded-20 md1:rounded-3xl p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Напоминания</h4>
-                <p class="mt-5 leading-normal">Отслеживаем установленные даты выполнения заявок и&nbsp;вовремя напоминаем</p>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#cpu"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Автоматизация</h4>
             </article>
-            <article class="bg-gray rounded-20 md1:rounded-3xl p-10 md1:p-6 flex flex-col">
-                <h4 class="title-4">Закрытие заявок в ЕДС</h4>
-                <p class="mt-5 leading-normal">Закрываем заявки в&nbsp;сисеме eds.mosreg.ru, после выполнения и&nbsp;изменение статуста</p>
+            <article class="bg-gray rounded-20 p-10 md1:p-6 flex gap-10 md1:gap-6 items-center">
+                <div class="circle-icon circle-icon--secondary circle-icon--greenLight flex-shrink-0">
+                    <svg>
+                        <use xlink:href="img/sprite.svg#bell"></use>
+                    </svg>
+                </div>
+                <h4 class="title-4 mmd1:text-[22px]">Уведомления без проверки личного кабинета ЕДС</h4>
             </article>
         </div>
     </div>
 </section>
 
-                <section class="mt-20">
+                <section class="mt-[160px] md1:mt-20">
     <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
-        <div class="bg-[rgba(0,190,161,0.1)] rounded-32 md1:rounded-3xl py-[61px] px-14 md1:px-6 md1:py-8 flex relative gap-12 overflow-hidden">
-            <div class="flex flex-col flex-grow mmd1:max-w-[547px] md1:max-w-[600px] relative z-20">
-                <span class="tag tag-three tag-small mb-10">Дополнительные возможности</span>
-                <h1 class="title-1-5">
-                    Личный кабинет <br />
-                    собственника
-                </h1>
-                <p class="mt-6 leading-normal">
-                    При подключнии личного кабинета, количество обращений в&nbsp;ЕДС МО&nbsp;снижается. Собственники направляют заявки напряму
-                    в&nbsp;УК.
+        <div
+            class="mmd2:col-span-3 bg-grayTwo rounded-32 md1:rounded-3xl px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+            <div class="mmd1:max-w-[513px] flex flex-col flex-grow mmd1:pb-11">
+                <h2 class="title-4">Теперь ни&nbsp;одной пропущеной заявки</h2>
+                <p class="mt-5 leading-normal text-grayDark max-w-[440px]">
+                    Даже если ваш диспетчер пропустил заявку, БОТ гарантировано установим статус
+                    <span class="text-greenLight font-bold">“В работе”</span>
                 </p>
-                <div class="mt-14 flex gap-3 md3:flex-col md1:mt-12">
-                    <button data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350" class="btn btn-primary btn-s-default">
-                        Подробнее
-                    </button>
+                <div class="mt-auto">
+                    <div class="mt-12 flex gap-3 md3:flex-col">
+                        <button
+                            class="btn btn-primary btn-s-default"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Тестовый период
+                        </button>
+                    </div>
                 </div>
             </div>
-            <picture class="absolute mmd1:bottom-[90px] mmd1:right-10 md1:top-0 md1:right-0 md2:-top-4 md2:-right-4 z-10">
-                <source srcset="./img/message.webp" type="image/webp" />
+            <picture class="self-end md1:self-center mmd1:mr-[66px]">
+                <source srcset="./img/phone-12.webp" type="image/webp" />
                 <img
                     loading="lazy"
-                    src="./img/message.png"
-                    width="439"
-                    height="337"
+                    src="./img/phone-12.png"
+                    width="250"
+                    height="350"
                     alt=""
-                    class="md1:max-w-[320px] md2:max-w-[160px]"
                     role="presentation"
                     aria-hidden="true" />
             </picture>
+        </div>
+        <div class="mt-5 md1:mt-4 grid grid-cols-3 gap-5 md1:gap-4 md1:grid-cols-2 md3:grid-cols-1">
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">Все под контролем</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">Нет просроченых заявок</p>
+            </article>
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">24/7</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">Круглосуточный мониторинг</p>
+            </article>
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">Снижение затрат</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">На&nbsp;содержание диспетчера ЕДС</p>
+            </article>
+        </div>
+    </div>
+</section>
+
+                <section class="mt-[160px] md1:mt-20">
+    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
+        <h2 class="title-1-25">Как подключить услугу</h2>
+        <div class="mmd1:ml-auto mt-20 md1:mt-8 mmd1:max-w-[753px] flex flex-col gap-5 md1:gap-4">
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">1</span>
+                <div>
+                    <h4 class="title-4 [&amp;:not(:last-child)]:mb-4 md1:text-center">Отправить запрос</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        Мы&nbsp;подробно расскажем, как пользоваться услугой и&nbsp;поможем настроить тестовый период. Обычно весь процесс занимает
+                        не&nbsp;более 30&nbsp;минут. Настройку мы&nbsp;выполним самостоятельно.
+                    </p>
+                    <button
+                        class="btn btn-primary btn-s-small mt-5 md1:mx-auto"
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350">
+                        Подключить
+                    </button>
+                </div>
+            </div>
+            <div
+                class="flex items-start gap-8 rounded-32 md1:rounded-3xl pl-12 pr-14 py-9 border border-solid border-black md1:p-6 md1:gap-6 md1:flex-col md1:items-center">
+                <span class="w-9 h-9 rounded-full bg-greenLight flex-shrink-0 flex-center-all text-white text-paragraph !font-semibold">2</span>
+                <div>
+                    <h4 class="title-4 [&amp;:not(:last-child)]:mb-4 md1:text-center">Заключить договор</h4>
+                    <p class="text-paragraph-3 md1:text-center">
+                        После тестового периода мы&nbsp;заключаем договор и&nbsp;приступаем к&nbsp;работе по&nbsp;выбранному вами тарифу. Используем
+                        формат договра оферты, так быстрее и&nbsp;проще.
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
 </section>
 
                 <section id="tariffSelection" class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-5 mb-6">Выберите подходящий тариф</h2>
-        <div class="mt-20 grid grid-cols-2 gap-5 md1:gap-4 md1:mt-8 md2:grid-cols-1">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0">
+        <h2 class="title-1-25 mb-20 md1:mb-8">Выберите подходящий тариф</h2>
+        <div class="grid grid-cols-3 gap-5 md1:gap-4 md1:mt-8 md1:grid-cols-2 md2:grid-cols-1">
             <div class="product-card-tariff">
                 <span class="product-card-tariff__mode">Выгодный</span>
-                <h3 class="title-3 product-card-tariff__title">600 ₽ в месяц</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок в работу</p>
-                <p class="product-card-tariff__price-descr">При оплате за период от 3х месяцев</p>
+                <h3 class="title-3 product-card-tariff__title">0 ₽ в месяц</h3>
+                <p class="product-card-tariff__descr">
+                    Круглосуточная обработка поступающих заявок в&nbsp;ЕДС МО&nbsp;и&nbsp;установка для них статуса “В работе”
+                </p>
+                <h4 class="text-paragraph-2 product-card-tariff__price">0 ₽ в год</h4>
+                <p class="product-card-tariff__price-descr">При подключении услуги контакт-центра</p>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Стандарт</span>
+                <h3 class="title-3 product-card-tariff__title">2100 ₽ в месяц</h3>
+                <p class="product-card-tariff__descr">
+                    Круглосуточная обработка поступаюших заявок в&nbsp;ЕДС МО&nbsp;и&nbsp;установка для них статуса “В работе”
+                </p>
                 <div class="mt-auto">
                     <button
                         data-graph-path="create-bid"
@@ -388,18 +476,21 @@
                     </button>
                 </div>
             </div>
-            <div class="product-card-tariff product-card-tariff--text-white product-card-tariff--dark">
-                <span class="product-card-tariff__mode">Стандартный</span>
-                <h3 class="title-3 product-card-tariff__title">700 ₽ в месяц</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок в&nbsp;работу</p>
+
+            <div class="product-card-tariff !bg-[#e5f8f5]">
+                <h3 class="title-4-5 !leading-[1.56]">
+                    С&nbsp;ботом проще осуществлять контроль: все новые заявки автоматически переходят в&nbsp;статус “В работе”
+                </h3>
+
                 <div class="mt-auto">
-                    <button
-                        data-graph-path="create-bid"
-                        data-graph-animation="fadeInUp"
-                        data-graph-speed="350"
-                        class="btn btn-secondary btn-s-default product-card-tariff__btn">
-                        Подключить
-                    </button>
+                    <div class="mt-12 flex flex-col">
+                        <picture>
+                            <source srcset="./img/avatar-5.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/avatar-5.png" width="50" height="50" alt="Фото Екатерины" />
+                        </picture>
+                        <p class="mt-5 text-paragraph-2 !font-bold cut cut-1">Екатерина</p>
+                        <p class="mt-1 font-medium leading-[1.24] text-[14px]">Руководитель аварийно-диспетчерской службы “ДОМЛАЙТ”</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -425,8 +516,9 @@
                     </button>
                     <div class="faq__content text-paragraph-3">
                         <p>
-                            Наш сервис интегрирован с Единой диспетчерской службой eds.mosreg.ru. Мы отслеживаем появление новых заявок на портале
-                            eds.mosreg.ru и автоматически принимаем их в работу.
+                            Бот интегрирован с&nbsp;Единой диспетчерской службой московской области
+                            <span class="text-greenLight">eds.mosreg.ru</span>. Отслеживает появление новых заявок на&nbsp;портале
+                            и&nbsp;автоматически принимает&nbsp;их “В работу”.
                         </p>
                     </div>
                 </li>
@@ -443,24 +535,133 @@
                 </li>
                 <li class="faq__item">
                     <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можете&nbsp;ли вы&nbsp;оповещать нас по&nbsp;телефону?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Да. За&nbsp;это отвечает электронный диспетчер, он&nbsp;сразу позвонит и&nbsp;сообщит о&nbsp;наличии новой заявки.
+                            А&nbsp;при необходимости назначит исполнителя, оповестит его и&nbsp;проверит выпопление.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Можете&nbsp;ли вы&nbsp;собирать обратную связь?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Да. После выполнения заявки мы&nbsp;можем уточнить у&nbsp;жителя о&nbsp;результатах работ, зафиксируем оценку
+                            и&nbsp;проинформируем&nbsp;УК если у&nbsp;жителя остались вопросы.
+                        </p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
                         <h3 class="title-4">Сколько сотрудников можно подключить?</h3>
                         <svg class="ml-3 faq__arrow">
                             <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
                         </svg>
                     </button>
                     <div class="faq__content text-paragraph-3" hidden>
-                        <p>Для одной компании вы можете подключить любое количество сотрудников без ограничений и увеличесния стоимости.</p>
+                        <p>Вы&nbsp;можете подключить любое количество сотрудников без увеличесния стоимости.</p>
                     </div>
                 </li>
                 <li class="faq__item">
                     <button class="faq__btn" data-spoller>
-                        <h3 class="title-4">Можно ли подключить сразу несколько управляющих организаций</h3>
+                        <h3 class="title-4">Можно&nbsp;ли подключить сразу несколько управляющих организаций?</h3>
                         <svg class="ml-3 faq__arrow">
                             <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
                         </svg>
                     </button>
                     <div class="faq__content text-paragraph-3" hidden>
-                        <p>Да, это возможно. Оповещения будут направляться на указанные номера телефонов.</p>
+                        <p>Да, это возможно. Оповещения будут направляться на&nbsp;указанные номера телефонов ваших сотрудников.</p>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Как быстро можно подключить бот?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Настройка займет 10&nbsp;до&nbsp;30&nbsp;минут. Нам потребуются данные для входа на&nbsp;портал eds.mosreg.ru. Пробный
+                            период бсплатно.
+                        </p>
+                        <button
+                            class="btn btn-primary btn-s-small mt-4 relative z-[11]"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Протестировать
+                        </button>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Как оплатить?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Оплата производится на&nbsp;основании счёта и&nbsp;Договора-оферты, опубликованного на&nbsp;сайте. Оплата счёта является
+                            полным и&nbsp;безоговорочным акцептом условий оферты в&nbsp;соответствии со&nbsp;ст.&nbsp;438&nbsp;ГК РФ
+                        </p>
+                        <button
+                            class="btn btn-five btn-s-small mt-4 relative z-[11]"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Договор-оферта
+                        </button>
+                    </div>
+                </li>
+                <li class="faq__item">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Есть&nbsp;ли тестовый период?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>Да, мы&nbsp;можем предоставить бесплатный тестовый период для тестирования и&nbsp;демонстрации.</p>
+                        <button
+                            class="btn btn-primary btn-s-small mt-4 relative z-[11]"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Протестировать
+                        </button>
+                    </div>
+                </li>
+                <li class="faq__item bg-[#e5f8f5]">
+                    <button class="faq__btn" data-spoller>
+                        <h3 class="title-4">Оказываете&nbsp;ли вы&nbsp;услуги контакт-центра?</h3>
+                        <svg class="ml-3 faq__arrow">
+                            <use xlink:href="img/sprite.svg#arrow-bottom-circle"></use>
+                        </svg>
+                    </button>
+                    <div class="faq__content text-paragraph-3" hidden>
+                        <p>
+                            Да, мы&nbsp;предлагаем услуги удаленного контакт-центра. Подробнее ознакомиться с&nbsp;услугой и&nbsp;тарифами можно
+                            перейдя на&nbsp;страницу с&nbsp;подробным описанием.
+                        </p>
+                        <button
+                            class="btn btn-primary !bg-greenLight btn-s-small mt-4 relative z-[11]"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Подробнее
+                        </button>
                     </div>
                 </li>
             </ul>

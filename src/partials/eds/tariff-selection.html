@@ -1,12 +1,31 @@
 <section id="tariffSelection" class="mt-[160px] md1:mt-20">
-    <div class="container mmd1:max-w-[1186px] mmd1:!p-0">
-        <h2 class="title-1-5 mb-6">Выберите подходящий тариф</h2>
-        <div class="mt-20 grid grid-cols-2 gap-5 md1:gap-4 md1:mt-8 md2:grid-cols-1">
+    <div class="container mmd1:max-w-[1186px] mmd1:p-0">
+        <h2 class="title-1-25 mb-20 md1:mb-8">Выберите подходящий тариф</h2>
+        <div class="grid grid-cols-3 gap-5 md1:gap-4 md1:mt-8 md1:grid-cols-2 md2:grid-cols-1">
             <div class="product-card-tariff">
                 <span class="product-card-tariff__mode">Выгодный</span>
-                <h3 class="title-3 product-card-tariff__title">600 ₽ в месяц</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок в работу</p>
-                <p class="product-card-tariff__price-descr">При оплате за период от 3х месяцев</p>
+                <h3 class="title-3 product-card-tariff__title">0 ₽ в месяц</h3>
+                <p class="product-card-tariff__descr">
+                    Круглосуточная обработка поступающих заявок в&nbsp;ЕДС МО&nbsp;и&nbsp;установка для них статуса “В работе”
+                </p>
+                <h4 class="text-paragraph-2 product-card-tariff__price">0 ₽ в год</h4>
+                <p class="product-card-tariff__price-descr">При подключении услуги контакт-центра</p>
+                <div class="mt-auto">
+                    <button
+                        data-graph-path="create-bid"
+                        data-graph-animation="fadeInUp"
+                        data-graph-speed="350"
+                        class="btn btn-five btn-s-default product-card-tariff__btn">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+            <div class="product-card-tariff">
+                <span class="product-card-tariff__mode">Стандарт</span>
+                <h3 class="title-3 product-card-tariff__title">2100 ₽ в месяц</h3>
+                <p class="product-card-tariff__descr">
+                    Круглосуточная обработка поступаюших заявок в&nbsp;ЕДС МО&nbsp;и&nbsp;установка для них статуса “В работе”
+                </p>
                 <div class="mt-auto">
                     <button
                         data-graph-path="create-bid"
@@ -17,18 +36,21 @@
                     </button>
                 </div>
             </div>
-            <div class="product-card-tariff product-card-tariff--text-white product-card-tariff--dark">
-                <span class="product-card-tariff__mode">Стандартный</span>
-                <h3 class="title-3 product-card-tariff__title">700 ₽ в месяц</h3>
-                <p class="product-card-tariff__descr">Круглосуточный прием всех заявок в&nbsp;работу</p>
+
+            <div class="product-card-tariff !bg-[#e5f8f5]">
+                <h3 class="title-4-5 !leading-[1.56]">
+                    С&nbsp;ботом проще осуществлять контроль: все новые заявки автоматически переходят в&nbsp;статус “В работе”
+                </h3>
+
                 <div class="mt-auto">
-                    <button
-                        data-graph-path="create-bid"
-                        data-graph-animation="fadeInUp"
-                        data-graph-speed="350"
-                        class="btn btn-secondary btn-s-default product-card-tariff__btn">
-                        Подключить
-                    </button>
+                    <div class="mt-12 flex flex-col">
+                        <picture>
+                            <source srcset="./img/avatar-5.webp" type="image/webp" />
+                            <img loading="lazy" src="./img/avatar-5.png" width="50" height="50" alt="Фото Екатерины" />
+                        </picture>
+                        <p class="mt-5 text-paragraph-2 !font-bold cut cut-1">Екатерина</p>
+                        <p class="mt-1 font-medium leading-[1.24] text-[14px]">Руководитель аварийно-диспетчерской службы “ДОМЛАЙТ”</p>
+                    </div>
                 </div>
             </div>
         </div>

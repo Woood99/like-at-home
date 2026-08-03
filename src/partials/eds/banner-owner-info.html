@@ -1,34 +1,50 @@
-<section class="mt-20">
+<section class="mt-[160px] md1:mt-20">
     <div class="container-desktop mmd1:max-w-[1186px] mmd1:!p-0">
-        <div class="bg-[rgba(0,190,161,0.1)] rounded-32 md1:rounded-3xl py-[61px] px-14 md1:px-6 md1:py-8 flex relative gap-12 overflow-hidden">
-            <div class="flex flex-col flex-grow mmd1:max-w-[547px] md1:max-w-[600px] relative z-20">
-                <span class="tag tag-three tag-small mb-10">Дополнительные возможности</span>
-                <h1 class="title-1-5">
-                    Личный кабинет <br />
-                    собственника
-                </h1>
-                <p class="mt-6 leading-normal">
-                    При подключнии личного кабинета, количество обращений в&nbsp;ЕДС МО&nbsp;снижается. Собственники направляют заявки напряму
-                    в&nbsp;УК.
+        <div
+            class="mmd2:col-span-3 bg-grayTwo rounded-32 md1:rounded-3xl px-11 pt-11 md1:px-6 md1:pt-6 mmd1:min-h-[410px] flex mmd1:justify-between md1:flex-col relative overflow-hidden md1:gap-10">
+            <div class="mmd1:max-w-[513px] flex flex-col flex-grow mmd1:pb-11">
+                <h2 class="title-4">Теперь ни&nbsp;одной пропущеной заявки</h2>
+                <p class="mt-5 leading-normal text-grayDark max-w-[440px]">
+                    Даже если ваш диспетчер пропустил заявку, БОТ гарантировано установим статус
+                    <span class="text-greenLight font-bold">“В работе”</span>
                 </p>
-                <div class="mt-14 flex gap-3 md3:flex-col md1:mt-12">
-                    <button data-graph-path="create-bid" data-graph-animation="fadeInUp" data-graph-speed="350" class="btn btn-primary btn-s-default">
-                        Подробнее
-                    </button>
+                <div class="mt-auto">
+                    <div class="mt-12 flex gap-3 md3:flex-col">
+                        <button
+                            class="btn btn-primary btn-s-default"
+                            data-graph-path="create-bid"
+                            data-graph-animation="fadeInUp"
+                            data-graph-speed="350">
+                            Тестовый период
+                        </button>
+                    </div>
                 </div>
             </div>
-            <picture class="absolute mmd1:bottom-[90px] mmd1:right-10 md1:top-0 md1:right-0 md2:-top-4 md2:-right-4 z-10">
-                <source srcset="./img/message.webp" type="image/webp" />
+            <picture class="self-end md1:self-center mmd1:mr-[66px]">
+                <source srcset="./img/phone-12.webp" type="image/webp" />
                 <img
                     loading="lazy"
-                    src="./img/message.png"
-                    width="439"
-                    height="337"
+                    src="./img/phone-12.png"
+                    width="250"
+                    height="350"
                     alt=""
-                    class="md1:max-w-[320px] md2:max-w-[160px]"
                     role="presentation"
                     aria-hidden="true" />
             </picture>
+        </div>
+        <div class="mt-5 md1:mt-4 grid grid-cols-3 gap-5 md1:gap-4 md1:grid-cols-2 md3:grid-cols-1">
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">Все под контролем</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">Нет просроченых заявок</p>
+            </article>
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">24/7</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">Круглосуточный мониторинг</p>
+            </article>
+            <article class="bg-gray rounded-32 px-10 py-8 md1:px-8 md1:py-6 flex flex-col">
+                <h3 class="title-3">Снижение затрат</h3>
+                <p class="text-paragraph-2 text-grayDark mt-3">На&nbsp;содержание диспетчера ЕДС</p>
+            </article>
         </div>
     </div>
 </section>
