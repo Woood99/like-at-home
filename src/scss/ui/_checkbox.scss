@@ -88,6 +88,17 @@
 .checkbox-gray {
     --color: #aaa;
 }
+
+.checkbox-white-border {
+    --color: #fff;
+    .checkbox {
+        &__mark {
+            background-color: var(--color);
+            border: 1px solid #000;
+        }
+    }
+}
+
 .checkbox-white {
     --color: #fff;
     .checkbox {
