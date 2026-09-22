@@ -20,8 +20,10 @@
         font-weight: 700;
     }
     &__descr {
-        margin-bottom: 28px;
         line-height: 1.7;
+        &:not(:last-child) {
+            margin-bottom: 28px;
+        }
     }
     &__price-descr {
         line-height: 1.3;

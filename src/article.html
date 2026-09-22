@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ru">
+    @include('partials/head.html', {
+        "title": "Автоматизация службы",
+     })
+
+    <body>
+        <div>
+            @include('partials/header.html')
+            <main class="main">
+                @include('partials/article/content.html')
+                @include('partials/components/more-articles.html')
+                @include('partials/components/form-bid.html', { "title": "Расскажите о своей задаче или оставьте контакты для связи" })
+            </main>
+            @include('partials/footer.html')
+        </div>
+    </body>
+    @include('partials/modals.html')
+    @include('partials/components/action-tg.html')
+</html>
